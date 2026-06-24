@@ -1,8 +1,8 @@
 import 'dart:math';
 import 'package:flutter_test/flutter_test.dart';
 
-import 'package:country_quiz/data/country.dart';
-import 'package:country_quiz/data/quiz_repository.dart';
+import 'package:marcopolo/data/country.dart';
+import 'package:marcopolo/data/quiz_repository.dart';
 
 CountryData _fakeData() {
   Country c(String code, String fa, String region) => Country(

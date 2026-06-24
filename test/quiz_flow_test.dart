@@ -3,10 +3,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
-import 'package:country_quiz/data/country.dart';
-import 'package:country_quiz/data/quiz_repository.dart';
-import 'package:country_quiz/state/game_controller.dart';
-import 'package:country_quiz/screens/quiz_screen.dart';
+import 'package:marcopolo/data/country.dart';
+import 'package:marcopolo/data/quiz_repository.dart';
+import 'package:marcopolo/state/game_controller.dart';
+import 'package:marcopolo/screens/quiz_screen.dart';
 
 CountryData _fakeData() {
   Country c(String code, String fa, String region) => Country(
