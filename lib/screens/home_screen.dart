@@ -151,6 +151,18 @@ class _ModeCard extends StatelessWidget {
                   color: AppColors.faint,
                 ),
               ),
+            )
+          else
+            Padding(
+              padding: const EdgeInsets.only(top: 6),
+              child: Text(
+                'رکورد: ${toPersianDigits(record)}',
+                style: const TextStyle(
+                  fontFamily: AppTheme.sans,
+                  fontSize: 11,
+                  color: AppColors.muted,
+                ),
+              ),
             ),
         ],
       ),

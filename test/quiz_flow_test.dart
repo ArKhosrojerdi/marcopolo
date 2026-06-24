@@ -53,7 +53,7 @@ void main() {
     expect(c.streak, 1);
     expect(c.record, 1);
     expect(find.text('آفرین! درست بود'), findsOneWidget);
-    expect(prefs.getInt('streak_record'), 1);
+    expect(prefs.getInt('streak_record_capital'), 1);
 
     // advance
     await tester.tap(find.text('سوال بعدی ‹'));
