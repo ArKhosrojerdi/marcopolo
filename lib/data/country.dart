@@ -22,7 +22,7 @@ class Country {
     required this.fa,
     required this.en,
     required this.capital,
-    required this.capitalFa,
+    this.capitalFa = '',
     required this.currencyName,
     required this.currencyFa,
     required this.currencySymbol,

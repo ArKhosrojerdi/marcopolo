@@ -44,7 +44,7 @@ class HomeScreen extends StatelessWidget {
         child: Center(
           child: ConstrainedBox(
             constraints: const BoxConstraints(maxWidth: 420),
-            child: Padding(
+            child: SingleChildScrollView(
               padding: const EdgeInsets.symmetric(horizontal: 18, vertical: 22),
               child: Column(
                 children: [
@@ -70,25 +70,23 @@ class HomeScreen extends StatelessWidget {
                     ),
                   ),
                   const SizedBox(height: 24),
-                  Expanded(
-                    child: ListenableBuilder(
-                      listenable: controller,
-                      builder: (context, _) => GridView.count(
-                        crossAxisCount: 2,
-                        mainAxisSpacing: 16,
-                        crossAxisSpacing: 14,
-                        childAspectRatio: 1.15,
-                        physics: const NeverScrollableScrollPhysics(),
-                        shrinkWrap: true,
-                        children: [
-                          for (final mode in GameMode.values)
-                            _ModeCard(
-                              mode: mode,
-                              record: controller.recordFor(mode),
-                              onTap: () => _pick(context, mode),
-                            ),
-                        ],
-                      ),
+                  ListenableBuilder(
+                    listenable: controller,
+                    builder: (context, _) => GridView.count(
+                      crossAxisCount: 2,
+                      mainAxisSpacing: 16,
+                      crossAxisSpacing: 14,
+                      childAspectRatio: 1.15,
+                      physics: const NeverScrollableScrollPhysics(),
+                      shrinkWrap: true,
+                      children: [
+                        for (final mode in GameMode.values)
+                          _ModeCard(
+                            mode: mode,
+                            record: controller.recordFor(mode),
+                            onTap: () => _pick(context, mode),
+                          ),
+                      ],
                     ),
                   ),
                   const SizedBox(height: 12),

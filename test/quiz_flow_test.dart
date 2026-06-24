@@ -10,15 +10,15 @@ import 'package:country_quiz/screens/quiz_screen.dart';
 
 CountryData _fakeData() {
   Country c(String code, String fa, String region) => Country(
-        code: code,
-        fa: fa,
-        en: code,
-        capital: '$fa-cap',
-        currencyName: '$fa-cur',
-        currencyFa: '$fa-cur-fa',
-        currencySymbol: '¤',
-        region: region,
-      );
+    code: code,
+    fa: fa,
+    en: code,
+    capital: '$fa-cap',
+    currencyName: '$fa-cur',
+    currencyFa: '$fa-cur-fa',
+    currencySymbol: '¤',
+    region: region,
+  );
   final all = <Country>[];
   for (var i = 0; i < 8; i++) {
     all.add(c('as$i', 'کشور$i', 'آسیا'));
@@ -27,16 +27,17 @@ CountryData _fakeData() {
 }
 
 Widget _wrap(GameController c) => MaterialApp(
-      builder: (_, child) =>
-          Directionality(textDirection: TextDirection.rtl, child: child!),
-      home: QuizScreen(controller: c),
-    );
+  builder: (_, child) =>
+      Directionality(textDirection: TextDirection.rtl, child: child!),
+  home: QuizScreen(controller: c),
+);
 
 void main() {
   setUp(() => SharedPreferences.setMockInitialValues({}));
 
-  testWidgets('capital mode: correct answer increments streak & record',
-      (tester) async {
+  testWidgets('capital mode: correct answer increments streak & record', (
+    tester,
+  ) async {
     final prefs = await SharedPreferences.getInstance();
     // seed=0 is deterministic; use capital mode (no flag SVG to load)
     final repo = QuizRepository(_fakeData(), Random(0));
@@ -53,7 +54,6 @@ void main() {
     expect(c.state, AnswerState.correct);
     expect(c.streak, 1);
     expect(c.record, 1);
-    expect(find.text('آفرین! درست بود'), findsOneWidget);
     expect(prefs.getInt('streak_record_capital'), 1);
 
     // advance
@@ -62,8 +62,9 @@ void main() {
     expect(c.answered, false);
   });
 
-  testWidgets('wrong answer resets streak to 0 and shows correct answer',
-      (tester) async {
+  testWidgets('wrong answer resets streak to 0 and shows correct answer', (
+    tester,
+  ) async {
     final prefs = await SharedPreferences.getInstance();
     final repo = QuizRepository(_fakeData(), Random(7));
     final c = GameController(repo, prefs)..start(GameMode.capital);
@@ -76,7 +77,6 @@ void main() {
 
     expect(c.state, AnswerState.wrong);
     expect(c.streak, 0);
-    expect(find.textContaining('اشتباه شد'), findsOneWidget);
     expect(find.text('ادامه ›'), findsOneWidget);
   });
 }

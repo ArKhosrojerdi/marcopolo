@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import '../theme/app_theme.dart';
+import 'press_sink.dart';
 
 /// Visual state of an answer option after the user has answered.
 enum OptionVisual { idle, correct, wrong, dim }
@@ -34,8 +34,6 @@ class OptionButton extends StatefulWidget {
 
 class _OptionButtonState extends State<OptionButton>
     with TickerProviderStateMixin {
-  bool _pressed = false;
-
   // Pop for the correct answer (quick scale-up then settle).
   late final AnimationController _popCtrl = AnimationController(
     vsync: this,
@@ -62,11 +60,6 @@ class _OptionButtonState extends State<OptionButton>
     TweenSequenceItem(tween: Tween(begin: -6.0, end: 4.0), weight: 2),
     TweenSequenceItem(tween: Tween(begin: 4.0, end: 0.0), weight: 1),
   ]).animate(CurvedAnimation(parent: _shakeCtrl, curve: Curves.easeInOut));
-
-  void _setPressed(bool value) {
-    if (_pressed == value) return;
-    setState(() => _pressed = value);
-  }
 
   void _runForVisual(OptionVisual v) {
     // The correct card always plays its badge reveal; the card-pop scale is
@@ -121,32 +114,19 @@ class _OptionButtonState extends State<OptionButton>
         shadow = Colors.transparent;
     }
 
-    final enabled = widget.onTap != null;
-    final pressed = enabled && _pressed;
-    final hasShadow = shadow != Colors.transparent;
-
-    final card = AnimatedContainer(
-      duration: Duration(milliseconds: pressed ? 70 : 220),
-      curve: Curves.easeOut,
-      // sink the card down by the shadow's height when pressed
-      transform: Matrix4.translationValues(0, pressed ? 2 : 0, 0),
+    // The press sink (pressed-state, haptic, tap sound, sink + collapsing
+    // shadow) is shared via [PressSink]; this widget keeps only the per-visual
+    // surface and the pop/shake animations below. Once answered onTap is null,
+    // so PressSink renders inert. The dim state has no shadow (transparent).
+    final card = PressSink(
+      onTap: widget.onTap,
       width: double.infinity,
       padding: const EdgeInsets.all(14),
-      decoration: BoxDecoration(
-        color: bg,
-        border: Border.all(color: border, width: borderWidth),
-        borderRadius: BorderRadius.circular(4),
-        boxShadow: hasShadow
-            ? [
-                BoxShadow(
-                  color: shadow,
-                  // shadow collapses as the card sinks into it
-                  offset: Offset(0, pressed ? 0 : 2),
-                  blurRadius: 0,
-                ),
-              ]
-            : null,
-      ),
+      background: bg,
+      border: border,
+      borderWidth: borderWidth,
+      borderRadius: 4,
+      shadowColor: shadow,
       child: Text(
         widget.label,
         textAlign: TextAlign.center,
@@ -199,17 +179,7 @@ class _OptionButtonState extends State<OptionButton>
       child: marked,
     );
 
-    if (!enabled) return animated;
-    return GestureDetector(
-      onTapDown: (_) => _setPressed(true),
-      onTapUp: (_) => _setPressed(false),
-      onTapCancel: () => _setPressed(false),
-      onTap: () {
-        HapticFeedback.lightImpact();
-        widget.onTap!.call();
-      },
-      child: animated,
-    );
+    return animated;
   }
 
   Widget _mark(String glyph, Color color) => Container(
