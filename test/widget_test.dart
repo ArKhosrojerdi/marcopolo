@@ -60,4 +60,42 @@ void main() {
       expect(q.answer.region, 'اروپا');
     }
   });
+
+  test('neighbor: correct option is the non-neighbor, others are neighbors', () {
+    // a (≥3 neighbors) borders b,c,d; e..h are non-neighbors in same region.
+    Country c(String code, List<String> borders) => Country(
+          code: code,
+          fa: code,
+          en: code.toUpperCase(),
+          capital: '$code-cap',
+          currencyName: '',
+          currencyFa: '',
+          currencySymbol: '',
+          region: 'آسیا',
+          borders: borders,
+        );
+    final data = CountryData.fromList([
+      c('a', ['b', 'c', 'd']),
+      c('b', ['a']),
+      c('c', ['a']),
+      c('d', ['a']),
+      c('e', []),
+      c('f', []),
+      c('g', []),
+      c('h', []),
+    ]);
+    final repo = QuizRepository(data, Random(7));
+    for (var i = 0; i < 30; i++) {
+      final q = repo.next(GameMode.neighbor)!;
+      expect(q.options.length, 4);
+      expect(q.options.toSet().length, 4); // distinct
+      expect(q.answer.code, 'a'); // only country with >=3 neighbors
+      final correct = q.options[q.correctIndex];
+      expect(q.answer.borders, isNot(contains(correct))); // truly not a neighbor
+      for (var j = 0; j < q.options.length; j++) {
+        if (j == q.correctIndex) continue;
+        expect(q.answer.borders, contains(q.options[j])); // others are neighbors
+      }
+    }
+  });
 }

@@ -14,6 +14,7 @@ class Country {
   final String currencyFa;
   final String currencySymbol;
   final String region; // Persian bucket: آسیا/اروپا/آفریقا/آمریکا/سایر
+  final List<String> borders; // codes of neighboring countries (alpha-2)
 
   const Country({
     required this.code,
@@ -24,6 +25,7 @@ class Country {
     required this.currencyFa,
     required this.currencySymbol,
     required this.region,
+    this.borders = const [],
   });
 
   factory Country.fromJson(Map<String, dynamic> j) => Country(
@@ -35,6 +37,7 @@ class Country {
         currencyFa: j['currencyFa'] as String? ?? '',
         currencySymbol: j['currencySymbol'] as String? ?? '',
         region: j['region'] as String? ?? 'سایر',
+        borders: (j['borders'] as List?)?.cast<String>() ?? const [],
       );
 
   String get flagAsset => 'assets/flags/4x3/$code.svg';
@@ -42,6 +45,7 @@ class Country {
   bool get hasCurrency => currencyName.isNotEmpty;
   bool get hasCapital => capital.isNotEmpty;
   bool get hasMap => kMapCodes.contains(code);
+  bool get hasNeighbors => borders.length >= 3;
 }
 
 /// Loads and caches the bundled country dataset.

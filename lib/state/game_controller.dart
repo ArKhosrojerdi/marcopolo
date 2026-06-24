@@ -30,6 +30,10 @@ class GameController extends ChangeNotifier {
   AnswerState _state = AnswerState.unanswered;
   int? _selectedIndex;
 
+  /// True only on the answer that pushed the streak past the previous record
+  /// (for the "new record!" pulse). Cleared on [next].
+  bool _justBeatRecord = false;
+
   /// Country codes already asked this round (never repeated within a round).
   final Set<String> _seen = {};
   int _correct = 0;
@@ -41,6 +45,7 @@ class GameController extends ChangeNotifier {
   CapitalDirection get direction => _direction;
   Question? get question => _question;
   int get streak => _streak;
+  bool get justBeatRecord => _justBeatRecord;
 
   /// Round progress — correct answers, total answered, and whether the whole
   /// pool has been walked (round over).
@@ -90,6 +95,7 @@ class GameController extends ChangeNotifier {
     _seen.clear();
     _state = AnswerState.unanswered;
     _selectedIndex = null;
+    _justBeatRecord = false;
   }
 
   /// User taps an option. Evaluates and updates streak/record.
@@ -105,6 +111,7 @@ class GameController extends ChangeNotifier {
       if (_streak > record) {
         _records[_mode] = _streak;
         _prefs.setInt(_recordKey(_mode), _streak);
+        _justBeatRecord = true;
       }
     } else {
       _state = AnswerState.wrong;
@@ -129,6 +136,7 @@ class GameController extends ChangeNotifier {
     }
     _state = AnswerState.unanswered;
     _selectedIndex = null;
+    _justBeatRecord = false;
     _question = q;
     _seen.add(q.answer.code);
     notifyListeners();

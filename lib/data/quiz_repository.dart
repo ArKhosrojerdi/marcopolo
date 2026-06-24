@@ -1,7 +1,7 @@
 import 'dart:math';
 import 'country.dart';
 
-enum GameMode { flag, currency, map, capital }
+enum GameMode { flag, currency, map, capital, neighbor }
 
 /// Direction for the capital mode: show the country and ask its capital, or
 /// show the capital and ask which country it belongs to.
@@ -13,10 +13,15 @@ extension GameModeInfo on GameMode {
         GameMode.currency => 'واحد پول',
         GameMode.map => 'نقشه کشور',
         GameMode.capital => 'پایتخت',
+        GameMode.neighbor => 'همسایه‌ها',
       };
 
-  /// Whether this mode has a region (continent) selection step. Flag + map.
-  bool get hasRegionStep => this == GameMode.flag || this == GameMode.map;
+  /// Whether this mode has a region (continent) selection step. Flag + map +
+  /// neighbor.
+  bool get hasRegionStep =>
+      this == GameMode.flag ||
+      this == GameMode.map ||
+      this == GameMode.neighbor;
 
   /// Whether this mode has a direction selection step. Capital only.
   bool get hasDirectionStep => this == GameMode.capital;
@@ -48,6 +53,7 @@ class Question {
             ? 'پایتختِ ${answer.capital} مربوط به کدام کشور است؟'
             : 'پایتختِ ${answer.fa} کدام است؟',
         GameMode.map => 'این کدام کشور است؟',
+        GameMode.neighbor => 'کدام کشور همسایهٔ ${answer.fa} نیست؟',
       };
 }
 
@@ -69,6 +75,8 @@ class QuizRepository {
       pool = pool.where((c) => c.hasCapital).toList();
     } else if (mode == GameMode.map) {
       pool = pool.where((c) => c.hasMap).toList();
+    } else if (mode == GameMode.neighbor) {
+      pool = pool.where((c) => c.hasNeighbors).toList();
     }
     if (region != null && regions.contains(region)) {
       final filtered = pool.where((c) => c.region == region).toList();
@@ -98,6 +106,10 @@ class QuizRepository {
     if (remaining.isEmpty) return null;
     final answer = remaining[_rng.nextInt(remaining.length)];
 
+    if (mode == GameMode.neighbor) {
+      return _nextNeighbor(answer);
+    }
+
     // distractors: 3 other countries from same pool, distinct labels
     final correctLabel = _label(mode, answer, direction);
     final used = <String>{correctLabel};
@@ -123,11 +135,52 @@ class QuizRepository {
     );
   }
 
+  /// Builds an "odd one out" neighbor question: three real neighbors of
+  /// [answer] plus one country that does NOT border it. The non-neighbor is the
+  /// correct choice. Non-neighbor is drawn from the same region when possible so
+  /// it stays plausible, falling back to the whole world otherwise.
+  Question _nextNeighbor(Country answer) {
+    final byCode = {for (final c in _data.all) c.code: c};
+
+    // three real neighbors, distinct labels
+    final neighbors = answer.borders
+        .map((code) => byCode[code])
+        .whereType<Country>()
+        .toList()
+      ..shuffle(_rng);
+    final usedLabels = <String>{};
+    final picked = <Country>[];
+    for (final n in neighbors) {
+      if (picked.length == 3) break;
+      if (usedLabels.add(n.fa)) picked.add(n);
+    }
+
+    // non-neighbor: not the answer, not a neighbor, distinct label. Prefer same
+    // region for a believable distractor.
+    final excluded = {answer.code, ...answer.borders};
+    bool eligible(Country c) =>
+        !excluded.contains(c.code) && !usedLabels.contains(c.fa);
+    final sameRegion =
+        _data.all.where((c) => eligible(c) && c.region == answer.region).toList();
+    final candidates = sameRegion.isNotEmpty
+        ? sameRegion
+        : _data.all.where(eligible).toList();
+    final nonNeighbor = candidates[_rng.nextInt(candidates.length)];
+
+    final all = [...picked, nonNeighbor]..shuffle(_rng);
+    return Question(
+      mode: GameMode.neighbor,
+      answer: answer,
+      options: all.map((c) => c.fa).toList(),
+      correctIndex: all.indexWhere((c) => c.code == nonNeighbor.code),
+    );
+  }
+
   /// Option label for a country in a given mode. For the capital mode the
   /// direction decides whether options are capitals or country names.
   String _label(GameMode mode, Country c, CapitalDirection direction) =>
       switch (mode) {
-        GameMode.flag || GameMode.map => c.fa,
+        GameMode.flag || GameMode.map || GameMode.neighbor => c.fa,
         GameMode.currency => c.currencyFa.isNotEmpty ? c.currencyFa : c.currencyName,
         GameMode.capital => direction == CapitalDirection.capitalToCountry
             ? c.fa

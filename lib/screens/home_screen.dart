@@ -4,7 +4,6 @@ import '../data/quiz_repository.dart';
 import '../state/game_controller.dart';
 import '../theme/app_theme.dart';
 import '../widgets/sticker_card.dart';
-import '../widgets/streak_badge.dart';
 import 'capital_direction_screen.dart';
 import 'quiz_screen.dart';
 import 'region_screen.dart';
@@ -47,18 +46,6 @@ class HomeScreen extends StatelessWidget {
               padding: const EdgeInsets.symmetric(horizontal: 18, vertical: 22),
               child: Column(
                 children: [
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.end,
-                    children: [
-                      ListenableBuilder(
-                        listenable: controller,
-                        builder: (context, _) => StreakBadge(
-                          label: 'رکورد',
-                          value: toPersianDigits(controller.bestRecord),
-                        ),
-                      ),
-                    ],
-                  ),
                   const SizedBox(height: 48),
                   Text('مارکوپولو', style: AppTheme.handSize(38)),
                   const SizedBox(height: 6),
@@ -76,9 +63,9 @@ class HomeScreen extends StatelessWidget {
                       listenable: controller,
                       builder: (context, _) => GridView.count(
                         crossAxisCount: 2,
-                        mainAxisSpacing: 14,
+                        mainAxisSpacing: 16,
                         crossAxisSpacing: 14,
-                        childAspectRatio: 1.05,
+                        childAspectRatio: 1.15,
                         physics: const NeverScrollableScrollPhysics(),
                         shrinkWrap: true,
                         children: [
@@ -118,31 +105,66 @@ class _ModeCard extends StatelessWidget {
     GameMode.currency => '💰',
     GameMode.map => '🗺️',
     GameMode.capital => '🏛️',
+    GameMode.neighbor => '🧭',
   };
 
   @override
   Widget build(BuildContext context) {
-    return StickerCard(
-      onTap: onTap,
-      padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 16),
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          Text(_emoji, style: const TextStyle(fontSize: 34)),
-          const SizedBox(height: 10),
-          Text(mode.titleFa, style: AppTheme.handSize(24)),
-          Padding(
-            padding: const EdgeInsets.only(top: 6),
-            child: Text(
-              'رکورد: ${toPersianDigits(record)}',
-              style: const TextStyle(
-                fontFamily: AppTheme.sans,
-                fontSize: 11,
-                color: AppColors.muted,
-              ),
+    // Post-it "page marker" tab pokes out the top-right, sitting *behind* the
+    // card so it reads like a bookmark stuck to the back of the sticker.
+    const tabHeight = 26.0;
+    return Stack(
+      clipBehavior: Clip.none,
+      fit: StackFit.expand,
+      children: [
+        // Tab — painted first so the card overlaps its lower edge.
+        Positioned(top: 0, right: 12, child: _RecordTab(record: record)),
+        // Card fills the grid cell below the tab.
+        Positioned.fill(
+          top: tabHeight - 6,
+          child: StickerCard(
+            onTap: onTap,
+            padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 12),
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Text(_emoji, style: const TextStyle(fontSize: 34)),
+                const SizedBox(height: 10),
+                Text(mode.titleFa, style: AppTheme.handSize(24)),
+              ],
             ),
           ),
-        ],
+        ),
+      ],
+    );
+  }
+}
+
+/// Small post-it tab showing the record number, tucked behind a [_ModeCard].
+class _RecordTab extends StatelessWidget {
+  const _RecordTab({required this.record});
+  final int record;
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      // extra bottom padding tucks under the card's top edge
+      padding: const EdgeInsets.fromLTRB(10, 3, 10, 12),
+      decoration: BoxDecoration(
+        color: AppColors.postit,
+        border: Border.all(color: AppColors.ink, width: 1.6),
+        borderRadius: const BorderRadius.only(
+          topLeft: Radius.circular(5),
+          topRight: Radius.circular(5),
+        ),
+      ),
+      child: Text(
+        toPersianDigits(record),
+        style: const TextStyle(
+          fontFamily: AppTheme.sans,
+          fontSize: 12,
+          color: AppColors.ink,
+        ),
       ),
     );
   }

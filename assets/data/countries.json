@@ -7,7 +7,15 @@
     "currencyName": "Afghan afghani",
     "currencySymbol": "؋",
     "region": "آسیا",
-    "currencyFa": "افغانی"
+    "currencyFa": "افغانی",
+    "borders": [
+      "ir",
+      "pk",
+      "tm",
+      "uz",
+      "tj",
+      "cn"
+    ]
   },
   {
     "code": "al",
@@ -17,7 +25,13 @@
     "currencyName": "Albanian lek",
     "currencySymbol": "L",
     "region": "اروپا",
-    "currencyFa": "لک"
+    "currencyFa": "لک",
+    "borders": [
+      "me",
+      "gr",
+      "mk",
+      "xk"
+    ]
   },
   {
     "code": "dz",
@@ -27,7 +41,16 @@
     "currencyName": "Algerian dinar",
     "currencySymbol": "د.ج",
     "region": "آفریقا",
-    "currencyFa": "دینار"
+    "currencyFa": "دینار",
+    "borders": [
+      "tn",
+      "ly",
+      "ne",
+      "eh",
+      "mr",
+      "ml",
+      "ma"
+    ]
   },
   {
     "code": "as",
@@ -37,7 +60,8 @@
     "currencyName": "United States dollar",
     "currencySymbol": "$",
     "region": "سایر",
-    "currencyFa": "دلار"
+    "currencyFa": "دلار",
+    "borders": []
   },
   {
     "code": "ad",
@@ -47,7 +71,11 @@
     "currencyName": "Euro",
     "currencySymbol": "€",
     "region": "اروپا",
-    "currencyFa": "یورو"
+    "currencyFa": "یورو",
+    "borders": [
+      "fr",
+      "es"
+    ]
   },
   {
     "code": "ao",
@@ -57,7 +85,13 @@
     "currencyName": "Angolan kwanza",
     "currencySymbol": "Kz",
     "region": "آفریقا",
-    "currencyFa": "کوانزا"
+    "currencyFa": "کوانزا",
+    "borders": [
+      "cg",
+      "cd",
+      "zm",
+      "na"
+    ]
   },
   {
     "code": "ai",
@@ -67,7 +101,8 @@
     "currencyName": "Eastern Caribbean dollar",
     "currencySymbol": "$",
     "region": "آمریکا",
-    "currencyFa": "دلار"
+    "currencyFa": "دلار",
+    "borders": []
   },
   {
     "code": "aq",
@@ -77,7 +112,8 @@
     "currencyName": "",
     "currencySymbol": "",
     "region": "سایر",
-    "currencyFa": ""
+    "currencyFa": "",
+    "borders": []
   },
   {
     "code": "ag",
@@ -87,7 +123,8 @@
     "currencyName": "Eastern Caribbean dollar",
     "currencySymbol": "$",
     "region": "آمریکا",
-    "currencyFa": "دلار"
+    "currencyFa": "دلار",
+    "borders": []
   },
   {
     "code": "ar",
@@ -97,7 +134,14 @@
     "currencyName": "Argentine peso",
     "currencySymbol": "$",
     "region": "آمریکا",
-    "currencyFa": "پزو"
+    "currencyFa": "پزو",
+    "borders": [
+      "bo",
+      "br",
+      "cl",
+      "py",
+      "uy"
+    ]
   },
   {
     "code": "am",
@@ -107,7 +151,13 @@
     "currencyName": "Armenian dram",
     "currencySymbol": "֏",
     "region": "آسیا",
-    "currencyFa": "درام"
+    "currencyFa": "درام",
+    "borders": [
+      "az",
+      "ge",
+      "ir",
+      "tr"
+    ]
   },
   {
     "code": "aw",
@@ -117,7 +167,8 @@
     "currencyName": "Aruban florin",
     "currencySymbol": "ƒ",
     "region": "آمریکا",
-    "currencyFa": "فلورین"
+    "currencyFa": "فلورین",
+    "borders": []
   },
   {
     "code": "au",
@@ -127,7 +178,8 @@
     "currencyName": "Australian dollar",
     "currencySymbol": "$",
     "region": "سایر",
-    "currencyFa": "دلار"
+    "currencyFa": "دلار",
+    "borders": []
   },
   {
     "code": "at",
@@ -137,7 +189,17 @@
     "currencyName": "Euro",
     "currencySymbol": "€",
     "region": "اروپا",
-    "currencyFa": "یورو"
+    "currencyFa": "یورو",
+    "borders": [
+      "cz",
+      "de",
+      "hu",
+      "it",
+      "li",
+      "sk",
+      "si",
+      "ch"
+    ]
   },
   {
     "code": "az",
@@ -147,7 +209,14 @@
     "currencyName": "Azerbaijani manat",
     "currencySymbol": "₼",
     "region": "آسیا",
-    "currencyFa": "منات"
+    "currencyFa": "منات",
+    "borders": [
+      "am",
+      "ge",
+      "ir",
+      "ru",
+      "tr"
+    ]
   },
   {
     "code": "bs",
@@ -157,7 +226,8 @@
     "currencyName": "Bahamian dollar",
     "currencySymbol": "$",
     "region": "آمریکا",
-    "currencyFa": "دلار"
+    "currencyFa": "دلار",
+    "borders": []
   },
   {
     "code": "bh",
@@ -167,7 +237,8 @@
     "currencyName": "Bahraini dinar",
     "currencySymbol": ".د.ب",
     "region": "آسیا",
-    "currencyFa": "دینار"
+    "currencyFa": "دینار",
+    "borders": []
   },
   {
     "code": "bd",
@@ -177,7 +248,11 @@
     "currencyName": "Bangladeshi taka",
     "currencySymbol": "৳",
     "region": "آسیا",
-    "currencyFa": "تاکا"
+    "currencyFa": "تاکا",
+    "borders": [
+      "mm",
+      "in"
+    ]
   },
   {
     "code": "bb",
@@ -187,7 +262,8 @@
     "currencyName": "Barbadian dollar",
     "currencySymbol": "$",
     "region": "آمریکا",
-    "currencyFa": "دلار"
+    "currencyFa": "دلار",
+    "borders": []
   },
   {
     "code": "by",
@@ -197,7 +273,14 @@
     "currencyName": "Belarusian ruble",
     "currencySymbol": "Br",
     "region": "اروپا",
-    "currencyFa": "روبل"
+    "currencyFa": "روبل",
+    "borders": [
+      "lv",
+      "lt",
+      "pl",
+      "ru",
+      "ua"
+    ]
   },
   {
     "code": "be",
@@ -207,7 +290,13 @@
     "currencyName": "Euro",
     "currencySymbol": "€",
     "region": "اروپا",
-    "currencyFa": "یورو"
+    "currencyFa": "یورو",
+    "borders": [
+      "fr",
+      "de",
+      "lu",
+      "nl"
+    ]
   },
   {
     "code": "bz",
@@ -217,7 +306,11 @@
     "currencyName": "Belize dollar",
     "currencySymbol": "$",
     "region": "آمریکا",
-    "currencyFa": "دلار"
+    "currencyFa": "دلار",
+    "borders": [
+      "gt",
+      "mx"
+    ]
   },
   {
     "code": "bj",
@@ -227,7 +320,13 @@
     "currencyName": "West African CFA franc",
     "currencySymbol": "Fr",
     "region": "آفریقا",
-    "currencyFa": "فرانک"
+    "currencyFa": "فرانک",
+    "borders": [
+      "bf",
+      "ne",
+      "ng",
+      "tg"
+    ]
   },
   {
     "code": "bm",
@@ -237,7 +336,8 @@
     "currencyName": "Bermudian dollar",
     "currencySymbol": "$",
     "region": "آمریکا",
-    "currencyFa": "دلار"
+    "currencyFa": "دلار",
+    "borders": []
   },
   {
     "code": "bt",
@@ -247,7 +347,11 @@
     "currencyName": "Bhutanese ngultrum",
     "currencySymbol": "Nu.",
     "region": "آسیا",
-    "currencyFa": "نگولتروم"
+    "currencyFa": "نگولتروم",
+    "borders": [
+      "cn",
+      "in"
+    ]
   },
   {
     "code": "bo",
@@ -257,7 +361,14 @@
     "currencyName": "Bolivian boliviano",
     "currencySymbol": "Bs.",
     "region": "آمریکا",
-    "currencyFa": "بولیویانو"
+    "currencyFa": "بولیویانو",
+    "borders": [
+      "ar",
+      "br",
+      "cl",
+      "py",
+      "pe"
+    ]
   },
   {
     "code": "ba",
@@ -267,7 +378,12 @@
     "currencyName": "Bosnia and Herzegovina convertible mark",
     "currencySymbol": "KM",
     "region": "اروپا",
-    "currencyFa": "مارک"
+    "currencyFa": "مارک",
+    "borders": [
+      "hr",
+      "me",
+      "rs"
+    ]
   },
   {
     "code": "bw",
@@ -277,7 +393,13 @@
     "currencyName": "Botswana pula",
     "currencySymbol": "P",
     "region": "آفریقا",
-    "currencyFa": "پولا"
+    "currencyFa": "پولا",
+    "borders": [
+      "na",
+      "za",
+      "zm",
+      "zw"
+    ]
   },
   {
     "code": "bv",
@@ -287,7 +409,8 @@
     "currencyName": "",
     "currencySymbol": "",
     "region": "سایر",
-    "currencyFa": ""
+    "currencyFa": "",
+    "borders": []
   },
   {
     "code": "br",
@@ -297,7 +420,19 @@
     "currencyName": "Brazilian real",
     "currencySymbol": "R$",
     "region": "آمریکا",
-    "currencyFa": "رئال"
+    "currencyFa": "رئال",
+    "borders": [
+      "ar",
+      "bo",
+      "co",
+      "gf",
+      "gy",
+      "py",
+      "pe",
+      "sr",
+      "uy",
+      "ve"
+    ]
   },
   {
     "code": "io",
@@ -307,7 +442,8 @@
     "currencyName": "United States dollar",
     "currencySymbol": "$",
     "region": "آفریقا",
-    "currencyFa": "دلار"
+    "currencyFa": "دلار",
+    "borders": []
   },
   {
     "code": "vg",
@@ -317,7 +453,8 @@
     "currencyName": "United States dollar",
     "currencySymbol": "$",
     "region": "آمریکا",
-    "currencyFa": "دلار"
+    "currencyFa": "دلار",
+    "borders": []
   },
   {
     "code": "bn",
@@ -327,7 +464,10 @@
     "currencyName": "Brunei dollar",
     "currencySymbol": "$",
     "region": "آسیا",
-    "currencyFa": "دلار"
+    "currencyFa": "دلار",
+    "borders": [
+      "my"
+    ]
   },
   {
     "code": "bg",
@@ -337,7 +477,14 @@
     "currencyName": "Bulgarian lev",
     "currencySymbol": "лв",
     "region": "اروپا",
-    "currencyFa": "لو"
+    "currencyFa": "لو",
+    "borders": [
+      "gr",
+      "mk",
+      "ro",
+      "rs",
+      "tr"
+    ]
   },
   {
     "code": "bf",
@@ -347,7 +494,15 @@
     "currencyName": "West African CFA franc",
     "currencySymbol": "Fr",
     "region": "آفریقا",
-    "currencyFa": "فرانک"
+    "currencyFa": "فرانک",
+    "borders": [
+      "bj",
+      "ci",
+      "gh",
+      "ml",
+      "ne",
+      "tg"
+    ]
   },
   {
     "code": "bi",
@@ -357,7 +512,12 @@
     "currencyName": "Burundian franc",
     "currencySymbol": "Fr",
     "region": "آفریقا",
-    "currencyFa": "فرانک"
+    "currencyFa": "فرانک",
+    "borders": [
+      "cd",
+      "rw",
+      "tz"
+    ]
   },
   {
     "code": "kh",
@@ -367,7 +527,12 @@
     "currencyName": "Cambodian riel",
     "currencySymbol": "៛",
     "region": "آسیا",
-    "currencyFa": "ریل"
+    "currencyFa": "ریل",
+    "borders": [
+      "la",
+      "th",
+      "vn"
+    ]
   },
   {
     "code": "cm",
@@ -377,7 +542,15 @@
     "currencyName": "Central African CFA franc",
     "currencySymbol": "Fr",
     "region": "آفریقا",
-    "currencyFa": "فرانک"
+    "currencyFa": "فرانک",
+    "borders": [
+      "cf",
+      "td",
+      "cg",
+      "gq",
+      "ga",
+      "ng"
+    ]
   },
   {
     "code": "ca",
@@ -387,7 +560,10 @@
     "currencyName": "Canadian dollar",
     "currencySymbol": "$",
     "region": "آمریکا",
-    "currencyFa": "دلار"
+    "currencyFa": "دلار",
+    "borders": [
+      "us"
+    ]
   },
   {
     "code": "cv",
@@ -397,7 +573,8 @@
     "currencyName": "Cape Verdean escudo",
     "currencySymbol": "Esc",
     "region": "آفریقا",
-    "currencyFa": "اسکودو"
+    "currencyFa": "اسکودو",
+    "borders": []
   },
   {
     "code": "bq",
@@ -407,7 +584,8 @@
     "currencyName": "United States dollar",
     "currencySymbol": "$",
     "region": "آمریکا",
-    "currencyFa": "دلار"
+    "currencyFa": "دلار",
+    "borders": []
   },
   {
     "code": "ky",
@@ -417,7 +595,8 @@
     "currencyName": "Cayman Islands dollar",
     "currencySymbol": "$",
     "region": "آمریکا",
-    "currencyFa": "دلار"
+    "currencyFa": "دلار",
+    "borders": []
   },
   {
     "code": "cf",
@@ -427,7 +606,15 @@
     "currencyName": "Central African CFA franc",
     "currencySymbol": "Fr",
     "region": "آفریقا",
-    "currencyFa": "فرانک"
+    "currencyFa": "فرانک",
+    "borders": [
+      "cm",
+      "td",
+      "cd",
+      "cg",
+      "ss",
+      "sd"
+    ]
   },
   {
     "code": "td",
@@ -437,7 +624,15 @@
     "currencyName": "Central African CFA franc",
     "currencySymbol": "Fr",
     "region": "آفریقا",
-    "currencyFa": "فرانک"
+    "currencyFa": "فرانک",
+    "borders": [
+      "cm",
+      "cf",
+      "ly",
+      "ne",
+      "ng",
+      "sd"
+    ]
   },
   {
     "code": "cl",
@@ -447,7 +642,12 @@
     "currencyName": "Chilean peso",
     "currencySymbol": "$",
     "region": "آمریکا",
-    "currencyFa": "پزو"
+    "currencyFa": "پزو",
+    "borders": [
+      "ar",
+      "bo",
+      "pe"
+    ]
   },
   {
     "code": "cn",
@@ -457,7 +657,25 @@
     "currencyName": "Chinese yuan",
     "currencySymbol": "¥",
     "region": "آسیا",
-    "currencyFa": "یوان"
+    "currencyFa": "یوان",
+    "borders": [
+      "af",
+      "bt",
+      "mm",
+      "hk",
+      "in",
+      "kz",
+      "np",
+      "kp",
+      "kg",
+      "la",
+      "mo",
+      "mn",
+      "pk",
+      "ru",
+      "tj",
+      "vn"
+    ]
   },
   {
     "code": "cx",
@@ -467,7 +685,8 @@
     "currencyName": "Australian dollar",
     "currencySymbol": "$",
     "region": "سایر",
-    "currencyFa": "دلار"
+    "currencyFa": "دلار",
+    "borders": []
   },
   {
     "code": "cc",
@@ -477,7 +696,8 @@
     "currencyName": "Australian dollar",
     "currencySymbol": "$",
     "region": "سایر",
-    "currencyFa": "دلار"
+    "currencyFa": "دلار",
+    "borders": []
   },
   {
     "code": "co",
@@ -487,7 +707,14 @@
     "currencyName": "Colombian peso",
     "currencySymbol": "$",
     "region": "آمریکا",
-    "currencyFa": "پزو"
+    "currencyFa": "پزو",
+    "borders": [
+      "br",
+      "ec",
+      "pa",
+      "pe",
+      "ve"
+    ]
   },
   {
     "code": "km",
@@ -497,7 +724,8 @@
     "currencyName": "Comorian franc",
     "currencySymbol": "Fr",
     "region": "آفریقا",
-    "currencyFa": "فرانک"
+    "currencyFa": "فرانک",
+    "borders": []
   },
   {
     "code": "cg",
@@ -507,7 +735,14 @@
     "currencyName": "Central African CFA franc",
     "currencySymbol": "Fr",
     "region": "آفریقا",
-    "currencyFa": "فرانک"
+    "currencyFa": "فرانک",
+    "borders": [
+      "ao",
+      "cm",
+      "cf",
+      "cd",
+      "ga"
+    ]
   },
   {
     "code": "ck",
@@ -517,7 +752,8 @@
     "currencyName": "Cook Islands dollar",
     "currencySymbol": "$",
     "region": "سایر",
-    "currencyFa": "دلار"
+    "currencyFa": "دلار",
+    "borders": []
   },
   {
     "code": "cr",
@@ -527,7 +763,11 @@
     "currencyName": "Costa Rican colón",
     "currencySymbol": "₡",
     "region": "آمریکا",
-    "currencyFa": "کولون"
+    "currencyFa": "کولون",
+    "borders": [
+      "ni",
+      "pa"
+    ]
   },
   {
     "code": "hr",
@@ -537,7 +777,14 @@
     "currencyName": "Euro",
     "currencySymbol": "€",
     "region": "اروپا",
-    "currencyFa": "یورو"
+    "currencyFa": "یورو",
+    "borders": [
+      "ba",
+      "hu",
+      "me",
+      "rs",
+      "si"
+    ]
   },
   {
     "code": "cu",
@@ -547,7 +794,8 @@
     "currencyName": "Cuban convertible peso",
     "currencySymbol": "$",
     "region": "آمریکا",
-    "currencyFa": "پزو"
+    "currencyFa": "پزو",
+    "borders": []
   },
   {
     "code": "cw",
@@ -557,7 +805,8 @@
     "currencyName": "Netherlands Antillean guilder",
     "currencySymbol": "ƒ",
     "region": "آمریکا",
-    "currencyFa": "گیلدر"
+    "currencyFa": "گیلدر",
+    "borders": []
   },
   {
     "code": "cy",
@@ -567,7 +816,8 @@
     "currencyName": "Euro",
     "currencySymbol": "€",
     "region": "اروپا",
-    "currencyFa": "یورو"
+    "currencyFa": "یورو",
+    "borders": []
   },
   {
     "code": "cz",
@@ -577,7 +827,13 @@
     "currencyName": "Czech koruna",
     "currencySymbol": "Kč",
     "region": "اروپا",
-    "currencyFa": "کرون"
+    "currencyFa": "کرون",
+    "borders": [
+      "at",
+      "de",
+      "pl",
+      "sk"
+    ]
   },
   {
     "code": "cd",
@@ -587,7 +843,18 @@
     "currencyName": "Congolese franc",
     "currencySymbol": "FC",
     "region": "آفریقا",
-    "currencyFa": "فرانک"
+    "currencyFa": "فرانک",
+    "borders": [
+      "ao",
+      "bi",
+      "cf",
+      "cg",
+      "rw",
+      "ss",
+      "tz",
+      "ug",
+      "zm"
+    ]
   },
   {
     "code": "dk",
@@ -597,7 +864,10 @@
     "currencyName": "Danish krone",
     "currencySymbol": "kr",
     "region": "اروپا",
-    "currencyFa": "کرون"
+    "currencyFa": "کرون",
+    "borders": [
+      "de"
+    ]
   },
   {
     "code": "dj",
@@ -607,7 +877,12 @@
     "currencyName": "Djiboutian franc",
     "currencySymbol": "Fr",
     "region": "آفریقا",
-    "currencyFa": "فرانک"
+    "currencyFa": "فرانک",
+    "borders": [
+      "er",
+      "et",
+      "so"
+    ]
   },
   {
     "code": "dm",
@@ -617,7 +892,8 @@
     "currencyName": "Eastern Caribbean dollar",
     "currencySymbol": "$",
     "region": "آمریکا",
-    "currencyFa": "دلار"
+    "currencyFa": "دلار",
+    "borders": []
   },
   {
     "code": "do",
@@ -627,7 +903,10 @@
     "currencyName": "Dominican peso",
     "currencySymbol": "$",
     "region": "آمریکا",
-    "currencyFa": "پزو"
+    "currencyFa": "پزو",
+    "borders": [
+      "ht"
+    ]
   },
   {
     "code": "ec",
@@ -637,7 +916,11 @@
     "currencyName": "United States dollar",
     "currencySymbol": "$",
     "region": "آمریکا",
-    "currencyFa": "دلار"
+    "currencyFa": "دلار",
+    "borders": [
+      "co",
+      "pe"
+    ]
   },
   {
     "code": "eg",
@@ -647,7 +930,13 @@
     "currencyName": "Egyptian pound",
     "currencySymbol": "£",
     "region": "آفریقا",
-    "currencyFa": "پوند"
+    "currencyFa": "پوند",
+    "borders": [
+      "il",
+      "ly",
+      "ps",
+      "sd"
+    ]
   },
   {
     "code": "sv",
@@ -657,7 +946,11 @@
     "currencyName": "United States dollar",
     "currencySymbol": "$",
     "region": "آمریکا",
-    "currencyFa": "دلار"
+    "currencyFa": "دلار",
+    "borders": [
+      "gt",
+      "hn"
+    ]
   },
   {
     "code": "gq",
@@ -667,7 +960,11 @@
     "currencyName": "Central African CFA franc",
     "currencySymbol": "Fr",
     "region": "آفریقا",
-    "currencyFa": "فرانک"
+    "currencyFa": "فرانک",
+    "borders": [
+      "cm",
+      "ga"
+    ]
   },
   {
     "code": "er",
@@ -677,7 +974,12 @@
     "currencyName": "Eritrean nakfa",
     "currencySymbol": "Nfk",
     "region": "آفریقا",
-    "currencyFa": "ناکفا"
+    "currencyFa": "ناکفا",
+    "borders": [
+      "dj",
+      "et",
+      "sd"
+    ]
   },
   {
     "code": "ee",
@@ -687,7 +989,11 @@
     "currencyName": "Euro",
     "currencySymbol": "€",
     "region": "اروپا",
-    "currencyFa": "یورو"
+    "currencyFa": "یورو",
+    "borders": [
+      "lv",
+      "ru"
+    ]
   },
   {
     "code": "sz",
@@ -697,7 +1003,11 @@
     "currencyName": "Swazi lilangeni",
     "currencySymbol": "L",
     "region": "آفریقا",
-    "currencyFa": "لیلانگنی"
+    "currencyFa": "لیلانگنی",
+    "borders": [
+      "mz",
+      "za"
+    ]
   },
   {
     "code": "et",
@@ -707,7 +1017,15 @@
     "currencyName": "Ethiopian birr",
     "currencySymbol": "Br",
     "region": "آفریقا",
-    "currencyFa": "بیر"
+    "currencyFa": "بیر",
+    "borders": [
+      "dj",
+      "er",
+      "ke",
+      "so",
+      "ss",
+      "sd"
+    ]
   },
   {
     "code": "fk",
@@ -717,7 +1035,8 @@
     "currencyName": "Falkland Islands pound",
     "currencySymbol": "£",
     "region": "آمریکا",
-    "currencyFa": "پوند"
+    "currencyFa": "پوند",
+    "borders": []
   },
   {
     "code": "fo",
@@ -727,7 +1046,8 @@
     "currencyName": "Danish krone",
     "currencySymbol": "kr",
     "region": "اروپا",
-    "currencyFa": "کرون"
+    "currencyFa": "کرون",
+    "borders": []
   },
   {
     "code": "fj",
@@ -737,7 +1057,8 @@
     "currencyName": "Fijian dollar",
     "currencySymbol": "$",
     "region": "سایر",
-    "currencyFa": "دلار"
+    "currencyFa": "دلار",
+    "borders": []
   },
   {
     "code": "fi",
@@ -747,7 +1068,12 @@
     "currencyName": "Euro",
     "currencySymbol": "€",
     "region": "اروپا",
-    "currencyFa": "یورو"
+    "currencyFa": "یورو",
+    "borders": [
+      "no",
+      "se",
+      "ru"
+    ]
   },
   {
     "code": "fr",
@@ -757,7 +1083,17 @@
     "currencyName": "Euro",
     "currencySymbol": "€",
     "region": "اروپا",
-    "currencyFa": "یورو"
+    "currencyFa": "یورو",
+    "borders": [
+      "ad",
+      "be",
+      "de",
+      "it",
+      "lu",
+      "mc",
+      "es",
+      "ch"
+    ]
   },
   {
     "code": "gf",
@@ -767,7 +1103,11 @@
     "currencyName": "Euro",
     "currencySymbol": "€",
     "region": "آمریکا",
-    "currencyFa": "یورو"
+    "currencyFa": "یورو",
+    "borders": [
+      "br",
+      "sr"
+    ]
   },
   {
     "code": "pf",
@@ -777,7 +1117,8 @@
     "currencyName": "CFP franc",
     "currencySymbol": "₣",
     "region": "سایر",
-    "currencyFa": "فرانک"
+    "currencyFa": "فرانک",
+    "borders": []
   },
   {
     "code": "tf",
@@ -787,7 +1128,8 @@
     "currencyName": "Euro",
     "currencySymbol": "€",
     "region": "سایر",
-    "currencyFa": "یورو"
+    "currencyFa": "یورو",
+    "borders": []
   },
   {
     "code": "ga",
@@ -797,7 +1139,12 @@
     "currencyName": "Central African CFA franc",
     "currencySymbol": "Fr",
     "region": "آفریقا",
-    "currencyFa": "فرانک"
+    "currencyFa": "فرانک",
+    "borders": [
+      "cm",
+      "cg",
+      "gq"
+    ]
   },
   {
     "code": "gm",
@@ -807,7 +1154,10 @@
     "currencyName": "dalasi",
     "currencySymbol": "D",
     "region": "آفریقا",
-    "currencyFa": "دالاسی"
+    "currencyFa": "دالاسی",
+    "borders": [
+      "sn"
+    ]
   },
   {
     "code": "ge",
@@ -817,7 +1167,13 @@
     "currencyName": "lari",
     "currencySymbol": "₾",
     "region": "آسیا",
-    "currencyFa": "لاری"
+    "currencyFa": "لاری",
+    "borders": [
+      "am",
+      "az",
+      "ru",
+      "tr"
+    ]
   },
   {
     "code": "de",
@@ -827,7 +1183,18 @@
     "currencyName": "Euro",
     "currencySymbol": "€",
     "region": "اروپا",
-    "currencyFa": "یورو"
+    "currencyFa": "یورو",
+    "borders": [
+      "at",
+      "be",
+      "cz",
+      "dk",
+      "fr",
+      "lu",
+      "nl",
+      "pl",
+      "ch"
+    ]
   },
   {
     "code": "gh",
@@ -837,7 +1204,12 @@
     "currencyName": "Ghanaian cedi",
     "currencySymbol": "₵",
     "region": "آفریقا",
-    "currencyFa": "سدی"
+    "currencyFa": "سدی",
+    "borders": [
+      "bf",
+      "ci",
+      "tg"
+    ]
   },
   {
     "code": "gi",
@@ -847,7 +1219,10 @@
     "currencyName": "Gibraltar pound",
     "currencySymbol": "£",
     "region": "اروپا",
-    "currencyFa": "پوند"
+    "currencyFa": "پوند",
+    "borders": [
+      "es"
+    ]
   },
   {
     "code": "gr",
@@ -857,7 +1232,13 @@
     "currencyName": "Euro",
     "currencySymbol": "€",
     "region": "اروپا",
-    "currencyFa": "یورو"
+    "currencyFa": "یورو",
+    "borders": [
+      "al",
+      "bg",
+      "tr",
+      "mk"
+    ]
   },
   {
     "code": "gl",
@@ -867,7 +1248,8 @@
     "currencyName": "krone",
     "currencySymbol": "kr.",
     "region": "آمریکا",
-    "currencyFa": "کرون"
+    "currencyFa": "کرون",
+    "borders": []
   },
   {
     "code": "gd",
@@ -877,7 +1259,8 @@
     "currencyName": "Eastern Caribbean dollar",
     "currencySymbol": "$",
     "region": "آمریکا",
-    "currencyFa": "دلار"
+    "currencyFa": "دلار",
+    "borders": []
   },
   {
     "code": "gp",
@@ -887,7 +1270,8 @@
     "currencyName": "Euro",
     "currencySymbol": "€",
     "region": "آمریکا",
-    "currencyFa": "یورو"
+    "currencyFa": "یورو",
+    "borders": []
   },
   {
     "code": "gu",
@@ -897,7 +1281,8 @@
     "currencyName": "United States dollar",
     "currencySymbol": "$",
     "region": "سایر",
-    "currencyFa": "دلار"
+    "currencyFa": "دلار",
+    "borders": []
   },
   {
     "code": "gt",
@@ -907,7 +1292,13 @@
     "currencyName": "Guatemalan quetzal",
     "currencySymbol": "Q",
     "region": "آمریکا",
-    "currencyFa": "کتزال"
+    "currencyFa": "کتزال",
+    "borders": [
+      "bz",
+      "sv",
+      "hn",
+      "mx"
+    ]
   },
   {
     "code": "gg",
@@ -917,7 +1308,8 @@
     "currencyName": "British pound",
     "currencySymbol": "£",
     "region": "اروپا",
-    "currencyFa": "پوند"
+    "currencyFa": "پوند",
+    "borders": []
   },
   {
     "code": "gn",
@@ -927,7 +1319,15 @@
     "currencyName": "Guinean franc",
     "currencySymbol": "Fr",
     "region": "آفریقا",
-    "currencyFa": "فرانک"
+    "currencyFa": "فرانک",
+    "borders": [
+      "ci",
+      "gw",
+      "lr",
+      "ml",
+      "sn",
+      "sl"
+    ]
   },
   {
     "code": "gw",
@@ -937,7 +1337,11 @@
     "currencyName": "West African CFA franc",
     "currencySymbol": "Fr",
     "region": "آفریقا",
-    "currencyFa": "فرانک"
+    "currencyFa": "فرانک",
+    "borders": [
+      "gn",
+      "sn"
+    ]
   },
   {
     "code": "gy",
@@ -947,7 +1351,12 @@
     "currencyName": "Guyanese dollar",
     "currencySymbol": "$",
     "region": "آمریکا",
-    "currencyFa": "دلار"
+    "currencyFa": "دلار",
+    "borders": [
+      "br",
+      "sr",
+      "ve"
+    ]
   },
   {
     "code": "ht",
@@ -957,7 +1366,10 @@
     "currencyName": "Haitian gourde",
     "currencySymbol": "G",
     "region": "آمریکا",
-    "currencyFa": "گورد"
+    "currencyFa": "گورد",
+    "borders": [
+      "do"
+    ]
   },
   {
     "code": "hm",
@@ -967,7 +1379,8 @@
     "currencyName": "",
     "currencySymbol": "",
     "region": "سایر",
-    "currencyFa": ""
+    "currencyFa": "",
+    "borders": []
   },
   {
     "code": "hn",
@@ -977,7 +1390,12 @@
     "currencyName": "Honduran lempira",
     "currencySymbol": "L",
     "region": "آمریکا",
-    "currencyFa": "لمپیرا"
+    "currencyFa": "لمپیرا",
+    "borders": [
+      "gt",
+      "sv",
+      "ni"
+    ]
   },
   {
     "code": "hk",
@@ -987,7 +1405,10 @@
     "currencyName": "Hong Kong dollar",
     "currencySymbol": "$",
     "region": "آسیا",
-    "currencyFa": "دلار"
+    "currencyFa": "دلار",
+    "borders": [
+      "cn"
+    ]
   },
   {
     "code": "hu",
@@ -997,7 +1418,16 @@
     "currencyName": "Hungarian forint",
     "currencySymbol": "Ft",
     "region": "اروپا",
-    "currencyFa": "فورینت"
+    "currencyFa": "فورینت",
+    "borders": [
+      "at",
+      "hr",
+      "ro",
+      "rs",
+      "sk",
+      "si",
+      "ua"
+    ]
   },
   {
     "code": "is",
@@ -1007,7 +1437,8 @@
     "currencyName": "Icelandic króna",
     "currencySymbol": "kr",
     "region": "اروپا",
-    "currencyFa": "کرون"
+    "currencyFa": "کرون",
+    "borders": []
   },
   {
     "code": "in",
@@ -1017,7 +1448,15 @@
     "currencyName": "Indian rupee",
     "currencySymbol": "₹",
     "region": "آسیا",
-    "currencyFa": "روپیه"
+    "currencyFa": "روپیه",
+    "borders": [
+      "bd",
+      "bt",
+      "mm",
+      "cn",
+      "np",
+      "pk"
+    ]
   },
   {
     "code": "id",
@@ -1027,7 +1466,12 @@
     "currencyName": "Indonesian rupiah",
     "currencySymbol": "Rp",
     "region": "آسیا",
-    "currencyFa": "روپیه"
+    "currencyFa": "روپیه",
+    "borders": [
+      "tl",
+      "my",
+      "pg"
+    ]
   },
   {
     "code": "ir",
@@ -1037,7 +1481,16 @@
     "currencyName": "Iranian rial",
     "currencySymbol": "﷼",
     "region": "آسیا",
-    "currencyFa": "ریال"
+    "currencyFa": "ریال",
+    "borders": [
+      "af",
+      "am",
+      "az",
+      "iq",
+      "pk",
+      "tr",
+      "tm"
+    ]
   },
   {
     "code": "iq",
@@ -1047,7 +1500,15 @@
     "currencyName": "Iraqi dinar",
     "currencySymbol": "ع.د",
     "region": "آسیا",
-    "currencyFa": "دینار"
+    "currencyFa": "دینار",
+    "borders": [
+      "ir",
+      "jo",
+      "kw",
+      "sa",
+      "sy",
+      "tr"
+    ]
   },
   {
     "code": "ie",
@@ -1057,7 +1518,10 @@
     "currencyName": "Euro",
     "currencySymbol": "€",
     "region": "اروپا",
-    "currencyFa": "یورو"
+    "currencyFa": "یورو",
+    "borders": [
+      "gb"
+    ]
   },
   {
     "code": "im",
@@ -1067,7 +1531,8 @@
     "currencyName": "British pound",
     "currencySymbol": "£",
     "region": "اروپا",
-    "currencyFa": "پوند"
+    "currencyFa": "پوند",
+    "borders": []
   },
   {
     "code": "il",
@@ -1077,7 +1542,14 @@
     "currencyName": "Israeli new shekel",
     "currencySymbol": "₪",
     "region": "آسیا",
-    "currencyFa": "شکل"
+    "currencyFa": "شکل",
+    "borders": [
+      "eg",
+      "jo",
+      "lb",
+      "ps",
+      "sy"
+    ]
   },
   {
     "code": "it",
@@ -1087,7 +1559,15 @@
     "currencyName": "Euro",
     "currencySymbol": "€",
     "region": "اروپا",
-    "currencyFa": "یورو"
+    "currencyFa": "یورو",
+    "borders": [
+      "at",
+      "fr",
+      "sm",
+      "si",
+      "ch",
+      "va"
+    ]
   },
   {
     "code": "ci",
@@ -1097,7 +1577,14 @@
     "currencyName": "West African CFA franc",
     "currencySymbol": "Fr",
     "region": "آفریقا",
-    "currencyFa": "فرانک"
+    "currencyFa": "فرانک",
+    "borders": [
+      "bf",
+      "gh",
+      "gn",
+      "lr",
+      "ml"
+    ]
   },
   {
     "code": "jm",
@@ -1107,7 +1594,8 @@
     "currencyName": "Jamaican dollar",
     "currencySymbol": "$",
     "region": "آمریکا",
-    "currencyFa": "دلار"
+    "currencyFa": "دلار",
+    "borders": []
   },
   {
     "code": "jp",
@@ -1117,7 +1605,8 @@
     "currencyName": "Japanese yen",
     "currencySymbol": "¥",
     "region": "آسیا",
-    "currencyFa": "ین"
+    "currencyFa": "ین",
+    "borders": []
   },
   {
     "code": "je",
@@ -1127,7 +1616,8 @@
     "currencyName": "British pound",
     "currencySymbol": "£",
     "region": "اروپا",
-    "currencyFa": "پوند"
+    "currencyFa": "پوند",
+    "borders": []
   },
   {
     "code": "jo",
@@ -1137,7 +1627,14 @@
     "currencyName": "Jordanian dinar",
     "currencySymbol": "د.ا",
     "region": "آسیا",
-    "currencyFa": "دینار"
+    "currencyFa": "دینار",
+    "borders": [
+      "iq",
+      "il",
+      "ps",
+      "sa",
+      "sy"
+    ]
   },
   {
     "code": "kz",
@@ -1147,7 +1644,14 @@
     "currencyName": "Kazakhstani tenge",
     "currencySymbol": "₸",
     "region": "آسیا",
-    "currencyFa": "تنگه"
+    "currencyFa": "تنگه",
+    "borders": [
+      "cn",
+      "kg",
+      "ru",
+      "tm",
+      "uz"
+    ]
   },
   {
     "code": "ke",
@@ -1157,7 +1661,14 @@
     "currencyName": "Kenyan shilling",
     "currencySymbol": "Sh",
     "region": "آفریقا",
-    "currencyFa": "شیلینگ"
+    "currencyFa": "شیلینگ",
+    "borders": [
+      "et",
+      "so",
+      "ss",
+      "tz",
+      "ug"
+    ]
   },
   {
     "code": "ki",
@@ -1167,7 +1678,8 @@
     "currencyName": "Australian dollar",
     "currencySymbol": "$",
     "region": "سایر",
-    "currencyFa": "دلار"
+    "currencyFa": "دلار",
+    "borders": []
   },
   {
     "code": "xk",
@@ -1177,7 +1689,13 @@
     "currencyName": "Euro",
     "currencySymbol": "€",
     "region": "اروپا",
-    "currencyFa": "یورو"
+    "currencyFa": "یورو",
+    "borders": [
+      "al",
+      "mk",
+      "me",
+      "rs"
+    ]
   },
   {
     "code": "kw",
@@ -1187,7 +1705,11 @@
     "currencyName": "Kuwaiti dinar",
     "currencySymbol": "د.ك",
     "region": "آسیا",
-    "currencyFa": "دینار"
+    "currencyFa": "دینار",
+    "borders": [
+      "iq",
+      "sa"
+    ]
   },
   {
     "code": "kg",
@@ -1197,7 +1719,13 @@
     "currencyName": "Kyrgyzstani som",
     "currencySymbol": "с",
     "region": "آسیا",
-    "currencyFa": "سوم"
+    "currencyFa": "سوم",
+    "borders": [
+      "cn",
+      "kz",
+      "tj",
+      "uz"
+    ]
   },
   {
     "code": "la",
@@ -1207,7 +1735,14 @@
     "currencyName": "Lao kip",
     "currencySymbol": "₭",
     "region": "آسیا",
-    "currencyFa": "کیپ"
+    "currencyFa": "کیپ",
+    "borders": [
+      "mm",
+      "kh",
+      "cn",
+      "th",
+      "vn"
+    ]
   },
   {
     "code": "lv",
@@ -1217,7 +1752,13 @@
     "currencyName": "Euro",
     "currencySymbol": "€",
     "region": "اروپا",
-    "currencyFa": "یورو"
+    "currencyFa": "یورو",
+    "borders": [
+      "by",
+      "ee",
+      "lt",
+      "ru"
+    ]
   },
   {
     "code": "lb",
@@ -1227,7 +1768,11 @@
     "currencyName": "Lebanese pound",
     "currencySymbol": "ل.ل",
     "region": "آسیا",
-    "currencyFa": "پوند"
+    "currencyFa": "پوند",
+    "borders": [
+      "il",
+      "sy"
+    ]
   },
   {
     "code": "ls",
@@ -1237,7 +1782,10 @@
     "currencyName": "Lesotho loti",
     "currencySymbol": "L",
     "region": "آفریقا",
-    "currencyFa": "لوتی"
+    "currencyFa": "لوتی",
+    "borders": [
+      "za"
+    ]
   },
   {
     "code": "lr",
@@ -1247,7 +1795,12 @@
     "currencyName": "Liberian dollar",
     "currencySymbol": "$",
     "region": "آفریقا",
-    "currencyFa": "دلار"
+    "currencyFa": "دلار",
+    "borders": [
+      "gn",
+      "ci",
+      "sl"
+    ]
   },
   {
     "code": "ly",
@@ -1257,7 +1810,15 @@
     "currencyName": "Libyan dinar",
     "currencySymbol": "ل.د",
     "region": "آفریقا",
-    "currencyFa": "دینار"
+    "currencyFa": "دینار",
+    "borders": [
+      "dz",
+      "td",
+      "eg",
+      "ne",
+      "sd",
+      "tn"
+    ]
   },
   {
     "code": "li",
@@ -1267,7 +1828,11 @@
     "currencyName": "Swiss franc",
     "currencySymbol": "Fr",
     "region": "اروپا",
-    "currencyFa": "فرانک"
+    "currencyFa": "فرانک",
+    "borders": [
+      "at",
+      "ch"
+    ]
   },
   {
     "code": "lt",
@@ -1277,7 +1842,13 @@
     "currencyName": "Euro",
     "currencySymbol": "€",
     "region": "اروپا",
-    "currencyFa": "یورو"
+    "currencyFa": "یورو",
+    "borders": [
+      "by",
+      "lv",
+      "pl",
+      "ru"
+    ]
   },
   {
     "code": "lu",
@@ -1287,7 +1858,12 @@
     "currencyName": "Euro",
     "currencySymbol": "€",
     "region": "اروپا",
-    "currencyFa": "یورو"
+    "currencyFa": "یورو",
+    "borders": [
+      "be",
+      "fr",
+      "de"
+    ]
   },
   {
     "code": "mo",
@@ -1297,7 +1873,10 @@
     "currencyName": "Macanese pataca",
     "currencySymbol": "P",
     "region": "آسیا",
-    "currencyFa": "پاتاکا"
+    "currencyFa": "پاتاکا",
+    "borders": [
+      "cn"
+    ]
   },
   {
     "code": "mg",
@@ -1307,7 +1886,8 @@
     "currencyName": "Malagasy ariary",
     "currencySymbol": "Ar",
     "region": "آفریقا",
-    "currencyFa": "آریاری"
+    "currencyFa": "آریاری",
+    "borders": []
   },
   {
     "code": "mw",
@@ -1317,7 +1897,12 @@
     "currencyName": "Malawian kwacha",
     "currencySymbol": "MK",
     "region": "آفریقا",
-    "currencyFa": "کواچا"
+    "currencyFa": "کواچا",
+    "borders": [
+      "mz",
+      "tz",
+      "zm"
+    ]
   },
   {
     "code": "my",
@@ -1327,7 +1912,12 @@
     "currencyName": "Malaysian ringgit",
     "currencySymbol": "RM",
     "region": "آسیا",
-    "currencyFa": "رینگیت"
+    "currencyFa": "رینگیت",
+    "borders": [
+      "bn",
+      "id",
+      "th"
+    ]
   },
   {
     "code": "mv",
@@ -1337,7 +1927,8 @@
     "currencyName": "Maldivian rufiyaa",
     "currencySymbol": ".ރ",
     "region": "آسیا",
-    "currencyFa": "روفیا"
+    "currencyFa": "روفیا",
+    "borders": []
   },
   {
     "code": "ml",
@@ -1347,7 +1938,16 @@
     "currencyName": "West African CFA franc",
     "currencySymbol": "Fr",
     "region": "آفریقا",
-    "currencyFa": "فرانک"
+    "currencyFa": "فرانک",
+    "borders": [
+      "dz",
+      "bf",
+      "gn",
+      "ci",
+      "mr",
+      "ne",
+      "sn"
+    ]
   },
   {
     "code": "mt",
@@ -1357,7 +1957,8 @@
     "currencyName": "Euro",
     "currencySymbol": "€",
     "region": "اروپا",
-    "currencyFa": "یورو"
+    "currencyFa": "یورو",
+    "borders": []
   },
   {
     "code": "mh",
@@ -1367,7 +1968,8 @@
     "currencyName": "United States dollar",
     "currencySymbol": "$",
     "region": "سایر",
-    "currencyFa": "دلار"
+    "currencyFa": "دلار",
+    "borders": []
   },
   {
     "code": "mq",
@@ -1377,7 +1979,8 @@
     "currencyName": "Euro",
     "currencySymbol": "€",
     "region": "آمریکا",
-    "currencyFa": "یورو"
+    "currencyFa": "یورو",
+    "borders": []
   },
   {
     "code": "mr",
@@ -1387,7 +1990,13 @@
     "currencyName": "Mauritanian ouguiya",
     "currencySymbol": "UM",
     "region": "آفریقا",
-    "currencyFa": "اوگویا"
+    "currencyFa": "اوگویا",
+    "borders": [
+      "dz",
+      "ml",
+      "sn",
+      "eh"
+    ]
   },
   {
     "code": "mu",
@@ -1397,7 +2006,8 @@
     "currencyName": "Mauritian rupee",
     "currencySymbol": "₨",
     "region": "آفریقا",
-    "currencyFa": "روپیه"
+    "currencyFa": "روپیه",
+    "borders": []
   },
   {
     "code": "yt",
@@ -1407,7 +2017,8 @@
     "currencyName": "Euro",
     "currencySymbol": "€",
     "region": "آفریقا",
-    "currencyFa": "یورو"
+    "currencyFa": "یورو",
+    "borders": []
   },
   {
     "code": "mx",
@@ -1417,7 +2028,12 @@
     "currencyName": "Mexican peso",
     "currencySymbol": "$",
     "region": "آمریکا",
-    "currencyFa": "پزو"
+    "currencyFa": "پزو",
+    "borders": [
+      "bz",
+      "gt",
+      "us"
+    ]
   },
   {
     "code": "fm",
@@ -1427,7 +2043,8 @@
     "currencyName": "",
     "currencySymbol": "",
     "region": "سایر",
-    "currencyFa": ""
+    "currencyFa": "",
+    "borders": []
   },
   {
     "code": "md",
@@ -1437,7 +2054,11 @@
     "currencyName": "Moldovan leu",
     "currencySymbol": "L",
     "region": "اروپا",
-    "currencyFa": "لئو"
+    "currencyFa": "لئو",
+    "borders": [
+      "ro",
+      "ua"
+    ]
   },
   {
     "code": "mc",
@@ -1447,7 +2068,10 @@
     "currencyName": "Euro",
     "currencySymbol": "€",
     "region": "اروپا",
-    "currencyFa": "یورو"
+    "currencyFa": "یورو",
+    "borders": [
+      "fr"
+    ]
   },
   {
     "code": "mn",
@@ -1457,7 +2081,11 @@
     "currencyName": "Mongolian tögrög",
     "currencySymbol": "₮",
     "region": "آسیا",
-    "currencyFa": "توگروگ"
+    "currencyFa": "توگروگ",
+    "borders": [
+      "cn",
+      "ru"
+    ]
   },
   {
     "code": "me",
@@ -1467,7 +2095,14 @@
     "currencyName": "Euro",
     "currencySymbol": "€",
     "region": "اروپا",
-    "currencyFa": "یورو"
+    "currencyFa": "یورو",
+    "borders": [
+      "al",
+      "ba",
+      "hr",
+      "xk",
+      "rs"
+    ]
   },
   {
     "code": "ms",
@@ -1477,7 +2112,8 @@
     "currencyName": "Eastern Caribbean dollar",
     "currencySymbol": "$",
     "region": "آمریکا",
-    "currencyFa": "دلار"
+    "currencyFa": "دلار",
+    "borders": []
   },
   {
     "code": "ma",
@@ -1487,7 +2123,12 @@
     "currencyName": "Moroccan dirham",
     "currencySymbol": "د.م.",
     "region": "آفریقا",
-    "currencyFa": "درهم"
+    "currencyFa": "درهم",
+    "borders": [
+      "dz",
+      "eh",
+      "es"
+    ]
   },
   {
     "code": "mz",
@@ -1497,7 +2138,15 @@
     "currencyName": "Mozambican metical",
     "currencySymbol": "MT",
     "region": "آفریقا",
-    "currencyFa": "متیکال"
+    "currencyFa": "متیکال",
+    "borders": [
+      "mw",
+      "za",
+      "sz",
+      "tz",
+      "zm",
+      "zw"
+    ]
   },
   {
     "code": "mm",
@@ -1507,7 +2156,14 @@
     "currencyName": "Burmese kyat",
     "currencySymbol": "Ks",
     "region": "آسیا",
-    "currencyFa": "کیات"
+    "currencyFa": "کیات",
+    "borders": [
+      "bd",
+      "cn",
+      "in",
+      "la",
+      "th"
+    ]
   },
   {
     "code": "na",
@@ -1517,7 +2173,13 @@
     "currencyName": "Namibian dollar",
     "currencySymbol": "$",
     "region": "آفریقا",
-    "currencyFa": "دلار"
+    "currencyFa": "دلار",
+    "borders": [
+      "ao",
+      "bw",
+      "za",
+      "zm"
+    ]
   },
   {
     "code": "nr",
@@ -1527,7 +2189,8 @@
     "currencyName": "Australian dollar",
     "currencySymbol": "$",
     "region": "سایر",
-    "currencyFa": "دلار"
+    "currencyFa": "دلار",
+    "borders": []
   },
   {
     "code": "np",
@@ -1537,7 +2200,11 @@
     "currencyName": "Nepalese rupee",
     "currencySymbol": "₨",
     "region": "آسیا",
-    "currencyFa": "روپیه"
+    "currencyFa": "روپیه",
+    "borders": [
+      "cn",
+      "in"
+    ]
   },
   {
     "code": "nl",
@@ -1547,7 +2214,11 @@
     "currencyName": "Euro",
     "currencySymbol": "€",
     "region": "اروپا",
-    "currencyFa": "یورو"
+    "currencyFa": "یورو",
+    "borders": [
+      "be",
+      "de"
+    ]
   },
   {
     "code": "nc",
@@ -1557,7 +2228,8 @@
     "currencyName": "CFP franc",
     "currencySymbol": "₣",
     "region": "سایر",
-    "currencyFa": "فرانک"
+    "currencyFa": "فرانک",
+    "borders": []
   },
   {
     "code": "nz",
@@ -1567,7 +2239,8 @@
     "currencyName": "New Zealand dollar",
     "currencySymbol": "$",
     "region": "سایر",
-    "currencyFa": "دلار"
+    "currencyFa": "دلار",
+    "borders": []
   },
   {
     "code": "ni",
@@ -1577,7 +2250,11 @@
     "currencyName": "Nicaraguan córdoba",
     "currencySymbol": "C$",
     "region": "آمریکا",
-    "currencyFa": "کوردوبا"
+    "currencyFa": "کوردوبا",
+    "borders": [
+      "cr",
+      "hn"
+    ]
   },
   {
     "code": "ne",
@@ -1587,7 +2264,16 @@
     "currencyName": "West African CFA franc",
     "currencySymbol": "Fr",
     "region": "آفریقا",
-    "currencyFa": "فرانک"
+    "currencyFa": "فرانک",
+    "borders": [
+      "dz",
+      "bj",
+      "bf",
+      "td",
+      "ly",
+      "ml",
+      "ng"
+    ]
   },
   {
     "code": "ng",
@@ -1597,7 +2283,13 @@
     "currencyName": "Nigerian naira",
     "currencySymbol": "₦",
     "region": "آفریقا",
-    "currencyFa": "نایرا"
+    "currencyFa": "نایرا",
+    "borders": [
+      "bj",
+      "cm",
+      "td",
+      "ne"
+    ]
   },
   {
     "code": "nu",
@@ -1607,7 +2299,8 @@
     "currencyName": "New Zealand dollar",
     "currencySymbol": "$",
     "region": "سایر",
-    "currencyFa": "دلار"
+    "currencyFa": "دلار",
+    "borders": []
   },
   {
     "code": "nf",
@@ -1617,7 +2310,8 @@
     "currencyName": "Australian dollar",
     "currencySymbol": "$",
     "region": "سایر",
-    "currencyFa": "دلار"
+    "currencyFa": "دلار",
+    "borders": []
   },
   {
     "code": "kp",
@@ -1627,7 +2321,12 @@
     "currencyName": "North Korean won",
     "currencySymbol": "₩",
     "region": "آسیا",
-    "currencyFa": "وون"
+    "currencyFa": "وون",
+    "borders": [
+      "cn",
+      "kr",
+      "ru"
+    ]
   },
   {
     "code": "mk",
@@ -1637,7 +2336,14 @@
     "currencyName": "denar",
     "currencySymbol": "den",
     "region": "اروپا",
-    "currencyFa": "دینار"
+    "currencyFa": "دینار",
+    "borders": [
+      "al",
+      "bg",
+      "gr",
+      "xk",
+      "rs"
+    ]
   },
   {
     "code": "mp",
@@ -1647,7 +2353,8 @@
     "currencyName": "United States dollar",
     "currencySymbol": "$",
     "region": "سایر",
-    "currencyFa": "دلار"
+    "currencyFa": "دلار",
+    "borders": []
   },
   {
     "code": "no",
@@ -1657,7 +2364,12 @@
     "currencyName": "Norwegian krone",
     "currencySymbol": "kr",
     "region": "اروپا",
-    "currencyFa": "کرون"
+    "currencyFa": "کرون",
+    "borders": [
+      "fi",
+      "se",
+      "ru"
+    ]
   },
   {
     "code": "om",
@@ -1667,7 +2379,12 @@
     "currencyName": "Omani rial",
     "currencySymbol": "ر.ع.",
     "region": "آسیا",
-    "currencyFa": "ریال"
+    "currencyFa": "ریال",
+    "borders": [
+      "sa",
+      "ae",
+      "ye"
+    ]
   },
   {
     "code": "pk",
@@ -1677,7 +2394,13 @@
     "currencyName": "Pakistani rupee",
     "currencySymbol": "₨",
     "region": "آسیا",
-    "currencyFa": "روپیه"
+    "currencyFa": "روپیه",
+    "borders": [
+      "af",
+      "cn",
+      "in",
+      "ir"
+    ]
   },
   {
     "code": "pw",
@@ -1687,7 +2410,8 @@
     "currencyName": "United States dollar",
     "currencySymbol": "$",
     "region": "سایر",
-    "currencyFa": "دلار"
+    "currencyFa": "دلار",
+    "borders": []
   },
   {
     "code": "ps",
@@ -1697,7 +2421,12 @@
     "currencyName": "Egyptian pound",
     "currencySymbol": "E£",
     "region": "آسیا",
-    "currencyFa": "پوند"
+    "currencyFa": "پوند",
+    "borders": [
+      "il",
+      "eg",
+      "jo"
+    ]
   },
   {
     "code": "pa",
@@ -1707,7 +2436,11 @@
     "currencyName": "Panamanian balboa",
     "currencySymbol": "B/.",
     "region": "آمریکا",
-    "currencyFa": "بالبوا"
+    "currencyFa": "بالبوا",
+    "borders": [
+      "co",
+      "cr"
+    ]
   },
   {
     "code": "pg",
@@ -1717,7 +2450,10 @@
     "currencyName": "Papua New Guinean kina",
     "currencySymbol": "K",
     "region": "سایر",
-    "currencyFa": "کینا"
+    "currencyFa": "کینا",
+    "borders": [
+      "id"
+    ]
   },
   {
     "code": "py",
@@ -1727,7 +2463,12 @@
     "currencyName": "Paraguayan guaraní",
     "currencySymbol": "₲",
     "region": "آمریکا",
-    "currencyFa": "گوارانی"
+    "currencyFa": "گوارانی",
+    "borders": [
+      "ar",
+      "bo",
+      "br"
+    ]
   },
   {
     "code": "pe",
@@ -1737,7 +2478,14 @@
     "currencyName": "Peruvian sol",
     "currencySymbol": "S/.",
     "region": "آمریکا",
-    "currencyFa": "سول"
+    "currencyFa": "سول",
+    "borders": [
+      "bo",
+      "br",
+      "cl",
+      "co",
+      "ec"
+    ]
   },
   {
     "code": "ph",
@@ -1747,7 +2495,8 @@
     "currencyName": "Philippine peso",
     "currencySymbol": "₱",
     "region": "آسیا",
-    "currencyFa": "پزو"
+    "currencyFa": "پزو",
+    "borders": []
   },
   {
     "code": "pn",
@@ -1757,7 +2506,8 @@
     "currencyName": "New Zealand dollar",
     "currencySymbol": "$",
     "region": "سایر",
-    "currencyFa": "دلار"
+    "currencyFa": "دلار",
+    "borders": []
   },
   {
     "code": "pl",
@@ -1767,7 +2517,16 @@
     "currencyName": "Polish złoty",
     "currencySymbol": "zł",
     "region": "اروپا",
-    "currencyFa": "زلوتی"
+    "currencyFa": "زلوتی",
+    "borders": [
+      "by",
+      "cz",
+      "de",
+      "lt",
+      "ru",
+      "sk",
+      "ua"
+    ]
   },
   {
     "code": "pt",
@@ -1777,7 +2536,10 @@
     "currencyName": "Euro",
     "currencySymbol": "€",
     "region": "اروپا",
-    "currencyFa": "یورو"
+    "currencyFa": "یورو",
+    "borders": [
+      "es"
+    ]
   },
   {
     "code": "pr",
@@ -1787,7 +2549,8 @@
     "currencyName": "United States dollar",
     "currencySymbol": "$",
     "region": "آمریکا",
-    "currencyFa": "دلار"
+    "currencyFa": "دلار",
+    "borders": []
   },
   {
     "code": "qa",
@@ -1797,7 +2560,10 @@
     "currencyName": "Qatari riyal",
     "currencySymbol": "ر.ق",
     "region": "آسیا",
-    "currencyFa": "ریال"
+    "currencyFa": "ریال",
+    "borders": [
+      "sa"
+    ]
   },
   {
     "code": "ro",
@@ -1807,7 +2573,14 @@
     "currencyName": "Romanian leu",
     "currencySymbol": "lei",
     "region": "اروپا",
-    "currencyFa": "لئو"
+    "currencyFa": "لئو",
+    "borders": [
+      "bg",
+      "hu",
+      "md",
+      "rs",
+      "ua"
+    ]
   },
   {
     "code": "ru",
@@ -1817,7 +2590,23 @@
     "currencyName": "Russian ruble",
     "currencySymbol": "₽",
     "region": "اروپا",
-    "currencyFa": "روبل"
+    "currencyFa": "روبل",
+    "borders": [
+      "az",
+      "by",
+      "cn",
+      "ee",
+      "fi",
+      "ge",
+      "kz",
+      "kp",
+      "lv",
+      "lt",
+      "mn",
+      "no",
+      "pl",
+      "ua"
+    ]
   },
   {
     "code": "rw",
@@ -1827,7 +2616,13 @@
     "currencyName": "Rwandan franc",
     "currencySymbol": "Fr",
     "region": "آفریقا",
-    "currencyFa": "فرانک"
+    "currencyFa": "فرانک",
+    "borders": [
+      "bi",
+      "cd",
+      "tz",
+      "ug"
+    ]
   },
   {
     "code": "re",
@@ -1837,7 +2632,8 @@
     "currencyName": "Euro",
     "currencySymbol": "€",
     "region": "آفریقا",
-    "currencyFa": "یورو"
+    "currencyFa": "یورو",
+    "borders": []
   },
   {
     "code": "bl",
@@ -1847,7 +2643,8 @@
     "currencyName": "Euro",
     "currencySymbol": "€",
     "region": "آمریکا",
-    "currencyFa": "یورو"
+    "currencyFa": "یورو",
+    "borders": []
   },
   {
     "code": "sh",
@@ -1857,7 +2654,8 @@
     "currencyName": "Pound sterling",
     "currencySymbol": "£",
     "region": "آفریقا",
-    "currencyFa": "پوند"
+    "currencyFa": "پوند",
+    "borders": []
   },
   {
     "code": "kn",
@@ -1867,7 +2665,8 @@
     "currencyName": "Eastern Caribbean dollar",
     "currencySymbol": "$",
     "region": "آمریکا",
-    "currencyFa": "دلار"
+    "currencyFa": "دلار",
+    "borders": []
   },
   {
     "code": "lc",
@@ -1877,7 +2676,8 @@
     "currencyName": "Eastern Caribbean dollar",
     "currencySymbol": "$",
     "region": "آمریکا",
-    "currencyFa": "دلار"
+    "currencyFa": "دلار",
+    "borders": []
   },
   {
     "code": "mf",
@@ -1887,7 +2687,10 @@
     "currencyName": "Euro",
     "currencySymbol": "€",
     "region": "آمریکا",
-    "currencyFa": "یورو"
+    "currencyFa": "یورو",
+    "borders": [
+      "sx"
+    ]
   },
   {
     "code": "pm",
@@ -1897,7 +2700,8 @@
     "currencyName": "Euro",
     "currencySymbol": "€",
     "region": "آمریکا",
-    "currencyFa": "یورو"
+    "currencyFa": "یورو",
+    "borders": []
   },
   {
     "code": "vc",
@@ -1907,7 +2711,8 @@
     "currencyName": "Eastern Caribbean dollar",
     "currencySymbol": "$",
     "region": "آمریکا",
-    "currencyFa": "دلار"
+    "currencyFa": "دلار",
+    "borders": []
   },
   {
     "code": "ws",
@@ -1917,7 +2722,8 @@
     "currencyName": "Samoan tālā",
     "currencySymbol": "T",
     "region": "سایر",
-    "currencyFa": "تالا"
+    "currencyFa": "تالا",
+    "borders": []
   },
   {
     "code": "sm",
@@ -1927,7 +2733,10 @@
     "currencyName": "Euro",
     "currencySymbol": "€",
     "region": "اروپا",
-    "currencyFa": "یورو"
+    "currencyFa": "یورو",
+    "borders": [
+      "it"
+    ]
   },
   {
     "code": "sa",
@@ -1937,7 +2746,16 @@
     "currencyName": "Saudi riyal",
     "currencySymbol": "ر.س",
     "region": "آسیا",
-    "currencyFa": "ریال"
+    "currencyFa": "ریال",
+    "borders": [
+      "iq",
+      "jo",
+      "kw",
+      "om",
+      "qa",
+      "ae",
+      "ye"
+    ]
   },
   {
     "code": "sn",
@@ -1947,7 +2765,14 @@
     "currencyName": "West African CFA franc",
     "currencySymbol": "Fr",
     "region": "آفریقا",
-    "currencyFa": "فرانک"
+    "currencyFa": "فرانک",
+    "borders": [
+      "gm",
+      "gn",
+      "gw",
+      "ml",
+      "mr"
+    ]
   },
   {
     "code": "rs",
@@ -1957,7 +2782,17 @@
     "currencyName": "Serbian dinar",
     "currencySymbol": "дин.",
     "region": "اروپا",
-    "currencyFa": "دینار"
+    "currencyFa": "دینار",
+    "borders": [
+      "ba",
+      "bg",
+      "hr",
+      "hu",
+      "xk",
+      "mk",
+      "me",
+      "ro"
+    ]
   },
   {
     "code": "sc",
@@ -1967,7 +2802,8 @@
     "currencyName": "Seychellois rupee",
     "currencySymbol": "₨",
     "region": "آفریقا",
-    "currencyFa": "روپیه"
+    "currencyFa": "روپیه",
+    "borders": []
   },
   {
     "code": "sl",
@@ -1977,7 +2813,11 @@
     "currencyName": "Sierra Leonean leone",
     "currencySymbol": "Le",
     "region": "آفریقا",
-    "currencyFa": "لئون"
+    "currencyFa": "لئون",
+    "borders": [
+      "gn",
+      "lr"
+    ]
   },
   {
     "code": "sg",
@@ -1987,7 +2827,8 @@
     "currencyName": "Singapore dollar",
     "currencySymbol": "$",
     "region": "آسیا",
-    "currencyFa": "دلار"
+    "currencyFa": "دلار",
+    "borders": []
   },
   {
     "code": "sx",
@@ -1997,7 +2838,10 @@
     "currencyName": "Netherlands Antillean guilder",
     "currencySymbol": "ƒ",
     "region": "آمریکا",
-    "currencyFa": "گیلدر"
+    "currencyFa": "گیلدر",
+    "borders": [
+      "mf"
+    ]
   },
   {
     "code": "sk",
@@ -2007,7 +2851,14 @@
     "currencyName": "Euro",
     "currencySymbol": "€",
     "region": "اروپا",
-    "currencyFa": "یورو"
+    "currencyFa": "یورو",
+    "borders": [
+      "at",
+      "cz",
+      "hu",
+      "pl",
+      "ua"
+    ]
   },
   {
     "code": "si",
@@ -2017,7 +2868,13 @@
     "currencyName": "Euro",
     "currencySymbol": "€",
     "region": "اروپا",
-    "currencyFa": "یورو"
+    "currencyFa": "یورو",
+    "borders": [
+      "at",
+      "hr",
+      "it",
+      "hu"
+    ]
   },
   {
     "code": "sb",
@@ -2027,7 +2884,8 @@
     "currencyName": "Solomon Islands dollar",
     "currencySymbol": "$",
     "region": "سایر",
-    "currencyFa": "دلار"
+    "currencyFa": "دلار",
+    "borders": []
   },
   {
     "code": "so",
@@ -2037,7 +2895,12 @@
     "currencyName": "Somali shilling",
     "currencySymbol": "Sh",
     "region": "آفریقا",
-    "currencyFa": "شیلینگ"
+    "currencyFa": "شیلینگ",
+    "borders": [
+      "dj",
+      "et",
+      "ke"
+    ]
   },
   {
     "code": "za",
@@ -2047,7 +2910,15 @@
     "currencyName": "South African rand",
     "currencySymbol": "R",
     "region": "آفریقا",
-    "currencyFa": "رند"
+    "currencyFa": "رند",
+    "borders": [
+      "bw",
+      "ls",
+      "mz",
+      "na",
+      "sz",
+      "zw"
+    ]
   },
   {
     "code": "gs",
@@ -2057,7 +2928,8 @@
     "currencyName": "Saint Helena pound",
     "currencySymbol": "£",
     "region": "سایر",
-    "currencyFa": "پوند"
+    "currencyFa": "پوند",
+    "borders": []
   },
   {
     "code": "kr",
@@ -2067,7 +2939,10 @@
     "currencyName": "South Korean won",
     "currencySymbol": "₩",
     "region": "آسیا",
-    "currencyFa": "وون"
+    "currencyFa": "وون",
+    "borders": [
+      "kp"
+    ]
   },
   {
     "code": "ss",
@@ -2077,7 +2952,15 @@
     "currencyName": "South Sudanese pound",
     "currencySymbol": "£",
     "region": "آفریقا",
-    "currencyFa": "پوند"
+    "currencyFa": "پوند",
+    "borders": [
+      "cf",
+      "cd",
+      "et",
+      "ke",
+      "sd",
+      "ug"
+    ]
   },
   {
     "code": "es",
@@ -2087,7 +2970,14 @@
     "currencyName": "Euro",
     "currencySymbol": "€",
     "region": "اروپا",
-    "currencyFa": "یورو"
+    "currencyFa": "یورو",
+    "borders": [
+      "ad",
+      "fr",
+      "gi",
+      "pt",
+      "ma"
+    ]
   },
   {
     "code": "lk",
@@ -2097,7 +2987,10 @@
     "currencyName": "Sri Lankan rupee",
     "currencySymbol": "Rs රු",
     "region": "آسیا",
-    "currencyFa": "روپیه"
+    "currencyFa": "روپیه",
+    "borders": [
+      "in"
+    ]
   },
   {
     "code": "sd",
@@ -2107,7 +3000,16 @@
     "currencyName": "Sudanese pound",
     "currencySymbol": "PT",
     "region": "آفریقا",
-    "currencyFa": "پوند"
+    "currencyFa": "پوند",
+    "borders": [
+      "cf",
+      "td",
+      "eg",
+      "er",
+      "et",
+      "ly",
+      "ss"
+    ]
   },
   {
     "code": "sr",
@@ -2117,7 +3019,12 @@
     "currencyName": "Surinamese dollar",
     "currencySymbol": "$",
     "region": "آمریکا",
-    "currencyFa": "دلار"
+    "currencyFa": "دلار",
+    "borders": [
+      "br",
+      "gf",
+      "gy"
+    ]
   },
   {
     "code": "sj",
@@ -2127,7 +3034,8 @@
     "currencyName": "krone",
     "currencySymbol": "kr",
     "region": "اروپا",
-    "currencyFa": "کرون"
+    "currencyFa": "کرون",
+    "borders": []
   },
   {
     "code": "se",
@@ -2137,7 +3045,11 @@
     "currencyName": "Swedish krona",
     "currencySymbol": "kr",
     "region": "اروپا",
-    "currencyFa": "کرون"
+    "currencyFa": "کرون",
+    "borders": [
+      "fi",
+      "no"
+    ]
   },
   {
     "code": "ch",
@@ -2147,7 +3059,14 @@
     "currencyName": "Swiss franc",
     "currencySymbol": "Fr.",
     "region": "اروپا",
-    "currencyFa": "فرانک"
+    "currencyFa": "فرانک",
+    "borders": [
+      "at",
+      "fr",
+      "it",
+      "li",
+      "de"
+    ]
   },
   {
     "code": "sy",
@@ -2157,7 +3076,14 @@
     "currencyName": "Syrian pound",
     "currencySymbol": "£",
     "region": "آسیا",
-    "currencyFa": "پوند"
+    "currencyFa": "پوند",
+    "borders": [
+      "iq",
+      "il",
+      "jo",
+      "lb",
+      "tr"
+    ]
   },
   {
     "code": "st",
@@ -2167,7 +3093,8 @@
     "currencyName": "São Tomé and Príncipe dobra",
     "currencySymbol": "Db",
     "region": "آفریقا",
-    "currencyFa": "دوبرا"
+    "currencyFa": "دوبرا",
+    "borders": []
   },
   {
     "code": "tw",
@@ -2177,7 +3104,8 @@
     "currencyName": "New Taiwan dollar",
     "currencySymbol": "$",
     "region": "آسیا",
-    "currencyFa": "دلار"
+    "currencyFa": "دلار",
+    "borders": []
   },
   {
     "code": "tj",
@@ -2187,7 +3115,13 @@
     "currencyName": "Tajikistani somoni",
     "currencySymbol": "ЅМ",
     "region": "آسیا",
-    "currencyFa": "سامانی"
+    "currencyFa": "سامانی",
+    "borders": [
+      "af",
+      "cn",
+      "kg",
+      "uz"
+    ]
   },
   {
     "code": "tz",
@@ -2197,7 +3131,17 @@
     "currencyName": "Tanzanian shilling",
     "currencySymbol": "Sh",
     "region": "آفریقا",
-    "currencyFa": "شیلینگ"
+    "currencyFa": "شیلینگ",
+    "borders": [
+      "bi",
+      "cd",
+      "ke",
+      "mw",
+      "mz",
+      "rw",
+      "ug",
+      "zm"
+    ]
   },
   {
     "code": "th",
@@ -2207,7 +3151,13 @@
     "currencyName": "Thai baht",
     "currencySymbol": "฿",
     "region": "آسیا",
-    "currencyFa": "بات"
+    "currencyFa": "بات",
+    "borders": [
+      "mm",
+      "kh",
+      "la",
+      "my"
+    ]
   },
   {
     "code": "tl",
@@ -2217,7 +3167,10 @@
     "currencyName": "United States dollar",
     "currencySymbol": "$",
     "region": "آسیا",
-    "currencyFa": "دلار"
+    "currencyFa": "دلار",
+    "borders": [
+      "id"
+    ]
   },
   {
     "code": "tg",
@@ -2227,7 +3180,12 @@
     "currencyName": "West African CFA franc",
     "currencySymbol": "Fr",
     "region": "آفریقا",
-    "currencyFa": "فرانک"
+    "currencyFa": "فرانک",
+    "borders": [
+      "bj",
+      "bf",
+      "gh"
+    ]
   },
   {
     "code": "tk",
@@ -2237,7 +3195,8 @@
     "currencyName": "New Zealand dollar",
     "currencySymbol": "$",
     "region": "سایر",
-    "currencyFa": "دلار"
+    "currencyFa": "دلار",
+    "borders": []
   },
   {
     "code": "to",
@@ -2247,7 +3206,8 @@
     "currencyName": "Tongan paʻanga",
     "currencySymbol": "T$",
     "region": "سایر",
-    "currencyFa": "پائانگا"
+    "currencyFa": "پائانگا",
+    "borders": []
   },
   {
     "code": "tt",
@@ -2257,7 +3217,8 @@
     "currencyName": "Trinidad and Tobago dollar",
     "currencySymbol": "$",
     "region": "آمریکا",
-    "currencyFa": "دلار"
+    "currencyFa": "دلار",
+    "borders": []
   },
   {
     "code": "tn",
@@ -2267,7 +3228,11 @@
     "currencyName": "Tunisian dinar",
     "currencySymbol": "د.ت",
     "region": "آفریقا",
-    "currencyFa": "دینار"
+    "currencyFa": "دینار",
+    "borders": [
+      "dz",
+      "ly"
+    ]
   },
   {
     "code": "tm",
@@ -2277,7 +3242,13 @@
     "currencyName": "Turkmenistan manat",
     "currencySymbol": "m",
     "region": "آسیا",
-    "currencyFa": "منات"
+    "currencyFa": "منات",
+    "borders": [
+      "af",
+      "ir",
+      "kz",
+      "uz"
+    ]
   },
   {
     "code": "tc",
@@ -2287,7 +3258,8 @@
     "currencyName": "United States dollar",
     "currencySymbol": "$",
     "region": "آمریکا",
-    "currencyFa": "دلار"
+    "currencyFa": "دلار",
+    "borders": []
   },
   {
     "code": "tv",
@@ -2297,7 +3269,8 @@
     "currencyName": "Australian dollar",
     "currencySymbol": "$",
     "region": "سایر",
-    "currencyFa": "دلار"
+    "currencyFa": "دلار",
+    "borders": []
   },
   {
     "code": "tr",
@@ -2307,7 +3280,17 @@
     "currencyName": "Turkish lira",
     "currencySymbol": "₺",
     "region": "آسیا",
-    "currencyFa": "لیر"
+    "currencyFa": "لیر",
+    "borders": [
+      "am",
+      "az",
+      "bg",
+      "ge",
+      "gr",
+      "ir",
+      "iq",
+      "sy"
+    ]
   },
   {
     "code": "ug",
@@ -2317,7 +3300,14 @@
     "currencyName": "Ugandan shilling",
     "currencySymbol": "Sh",
     "region": "آفریقا",
-    "currencyFa": "شیلینگ"
+    "currencyFa": "شیلینگ",
+    "borders": [
+      "cd",
+      "ke",
+      "rw",
+      "ss",
+      "tz"
+    ]
   },
   {
     "code": "ua",
@@ -2327,7 +3317,16 @@
     "currencyName": "Ukrainian hryvnia",
     "currencySymbol": "₴",
     "region": "اروپا",
-    "currencyFa": "هریونا"
+    "currencyFa": "هریونا",
+    "borders": [
+      "by",
+      "hu",
+      "md",
+      "pl",
+      "ro",
+      "ru",
+      "sk"
+    ]
   },
   {
     "code": "ae",
@@ -2337,7 +3336,11 @@
     "currencyName": "United Arab Emirates dirham",
     "currencySymbol": "د.إ",
     "region": "آسیا",
-    "currencyFa": "درهم"
+    "currencyFa": "درهم",
+    "borders": [
+      "om",
+      "sa"
+    ]
   },
   {
     "code": "gb",
@@ -2347,7 +3350,10 @@
     "currencyName": "British pound",
     "currencySymbol": "£",
     "region": "اروپا",
-    "currencyFa": "پوند"
+    "currencyFa": "پوند",
+    "borders": [
+      "ie"
+    ]
   },
   {
     "code": "us",
@@ -2357,7 +3363,11 @@
     "currencyName": "United States dollar",
     "currencySymbol": "$",
     "region": "آمریکا",
-    "currencyFa": "دلار"
+    "currencyFa": "دلار",
+    "borders": [
+      "ca",
+      "mx"
+    ]
   },
   {
     "code": "um",
@@ -2367,7 +3377,8 @@
     "currencyName": "United States dollar",
     "currencySymbol": "$",
     "region": "آمریکا",
-    "currencyFa": "دلار"
+    "currencyFa": "دلار",
+    "borders": []
   },
   {
     "code": "vi",
@@ -2377,7 +3388,8 @@
     "currencyName": "United States dollar",
     "currencySymbol": "$",
     "region": "آمریکا",
-    "currencyFa": "دلار"
+    "currencyFa": "دلار",
+    "borders": []
   },
   {
     "code": "uy",
@@ -2387,7 +3399,11 @@
     "currencyName": "Uruguayan peso",
     "currencySymbol": "$",
     "region": "آمریکا",
-    "currencyFa": "پزو"
+    "currencyFa": "پزو",
+    "borders": [
+      "ar",
+      "br"
+    ]
   },
   {
     "code": "uz",
@@ -2397,7 +3413,14 @@
     "currencyName": "Uzbekistani soʻm",
     "currencySymbol": "so'm",
     "region": "آسیا",
-    "currencyFa": "سوم"
+    "currencyFa": "سوم",
+    "borders": [
+      "af",
+      "kz",
+      "kg",
+      "tj",
+      "tm"
+    ]
   },
   {
     "code": "vu",
@@ -2407,7 +3430,8 @@
     "currencyName": "Vanuatu vatu",
     "currencySymbol": "Vt",
     "region": "سایر",
-    "currencyFa": "واتو"
+    "currencyFa": "واتو",
+    "borders": []
   },
   {
     "code": "va",
@@ -2417,7 +3441,10 @@
     "currencyName": "Euro",
     "currencySymbol": "€",
     "region": "اروپا",
-    "currencyFa": "یورو"
+    "currencyFa": "یورو",
+    "borders": [
+      "it"
+    ]
   },
   {
     "code": "ve",
@@ -2427,7 +3454,12 @@
     "currencyName": "Venezuelan bolívar soberano",
     "currencySymbol": "Bs.S.",
     "region": "آمریکا",
-    "currencyFa": "بولیوار"
+    "currencyFa": "بولیوار",
+    "borders": [
+      "br",
+      "co",
+      "gy"
+    ]
   },
   {
     "code": "vn",
@@ -2437,7 +3469,12 @@
     "currencyName": "Vietnamese đồng",
     "currencySymbol": "₫",
     "region": "آسیا",
-    "currencyFa": "دونگ"
+    "currencyFa": "دونگ",
+    "borders": [
+      "kh",
+      "cn",
+      "la"
+    ]
   },
   {
     "code": "wf",
@@ -2447,7 +3484,8 @@
     "currencyName": "CFP franc",
     "currencySymbol": "₣",
     "region": "سایر",
-    "currencyFa": "فرانک"
+    "currencyFa": "فرانک",
+    "borders": []
   },
   {
     "code": "eh",
@@ -2457,7 +3495,12 @@
     "currencyName": "Algerian dinar",
     "currencySymbol": "دج",
     "region": "آفریقا",
-    "currencyFa": "دینار"
+    "currencyFa": "دینار",
+    "borders": [
+      "dz",
+      "mr",
+      "ma"
+    ]
   },
   {
     "code": "ye",
@@ -2467,7 +3510,11 @@
     "currencyName": "Yemeni rial",
     "currencySymbol": "﷼",
     "region": "آسیا",
-    "currencyFa": "ریال"
+    "currencyFa": "ریال",
+    "borders": [
+      "om",
+      "sa"
+    ]
   },
   {
     "code": "zm",
@@ -2477,7 +3524,17 @@
     "currencyName": "Zambian kwacha",
     "currencySymbol": "ZK",
     "region": "آفریقا",
-    "currencyFa": "کواچا"
+    "currencyFa": "کواچا",
+    "borders": [
+      "ao",
+      "bw",
+      "cd",
+      "mw",
+      "mz",
+      "na",
+      "tz",
+      "zw"
+    ]
   },
   {
     "code": "zw",
@@ -2487,7 +3544,13 @@
     "currencyName": "Botswana pula",
     "currencySymbol": "P",
     "region": "آفریقا",
-    "currencyFa": "پولا"
+    "currencyFa": "پولا",
+    "borders": [
+      "bw",
+      "mz",
+      "za",
+      "zm"
+    ]
   },
   {
     "code": "ax",
@@ -2497,6 +3560,7 @@
     "currencyName": "Euro",
     "currencySymbol": "€",
     "region": "اروپا",
-    "currencyFa": "یورو"
+    "currencyFa": "یورو",
+    "borders": []
   }
 ]

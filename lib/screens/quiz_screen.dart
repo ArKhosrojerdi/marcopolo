@@ -63,42 +63,42 @@ class QuizScreen extends StatelessWidget {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.stretch,
                     children: [
-                      // header: exit button + subtitle, then live streak + record
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      // header: exit at start edge (right in RTL), subtitle at
+                      // end edge (left in RTL), current record absolute center
+                      Stack(
+                        alignment: Alignment.center,
                         children: [
-                          Row(
-                            children: [
-                              _ExitButton(
-                                onTap: () => Navigator.of(context).pop(),
-                              ),
-                              const SizedBox(width: 8),
-                              Text(
-                                _subtitle,
-                                style: const TextStyle(
-                                  fontFamily: AppTheme.sans,
-                                  fontSize: 12,
-                                  color: AppColors.muted,
-                                ),
-                              ),
-                            ],
+                          Align(
+                            alignment: AlignmentDirectional.centerStart,
+                            child: _ExitButton(
+                              onTap: () => Navigator.of(context).pop(),
+                            ),
                           ),
-                          Row(
-                            children: [
-                              StreakBadge(
-                                label: '',
-                                value: toPersianDigits(controller.streak),
-                                color: _badgeColor,
+                          Align(
+                            alignment: AlignmentDirectional.centerEnd,
+                            child: Text(
+                              _subtitle,
+                              style: const TextStyle(
+                                fontFamily: AppTheme.sans,
+                                fontSize: 12,
+                                color: AppColors.muted,
                               ),
-                              const SizedBox(width: 8),
-                              StreakBadge(
-                                label: 'رکورد',
-                                value: toPersianDigits(controller.record),
-                                color: AppColors.ink,
-                              ),
-                            ],
+                            ),
+                          ),
+                          _CurrentRecord(
+                            value: controller.record,
+                            beat: controller.justBeatRecord,
                           ),
                         ],
+                      ),
+                      const SizedBox(height: 10),
+                      // live streak under center
+                      Center(
+                        child: StreakBadge(
+                          label: '',
+                          value: toPersianDigits(controller.streak),
+                          color: _badgeColor,
+                        ),
                       ),
                       const SizedBox(height: 14),
                       // prompt block centered in the free space above the options
@@ -290,6 +290,30 @@ class _Prompt extends StatelessWidget {
             ),
           ],
         );
+      case GameMode.neighbor:
+        return _Panel(
+          children: [
+            const Text(
+              'کدام کشور همسایهٔ',
+              style: TextStyle(
+                fontFamily: AppTheme.sans,
+                fontSize: 12,
+                color: AppColors.muted,
+              ),
+            ),
+            const SizedBox(height: 4),
+            Text(question.answer.fa, style: AppTheme.handSize(40)),
+            const SizedBox(height: 4),
+            const Text(
+              'نیست؟',
+              style: TextStyle(
+                fontFamily: AppTheme.sans,
+                fontSize: 12,
+                color: AppColors.muted,
+              ),
+            ),
+          ],
+        );
       case GameMode.capital:
         final toCountry =
             question.direction == CapitalDirection.capitalToCountry;
@@ -400,7 +424,7 @@ class _PressSinkState extends State<_PressSink> {
   }
 }
 
-/// Sticker-style exit button in the header — pops back to the menu.
+/// Big round sticker exit button in the header — icon only, pops to the menu.
 class _ExitButton extends StatelessWidget {
   const _ExitButton({required this.onTap});
   final VoidCallback onTap;
@@ -409,29 +433,89 @@ class _ExitButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return _PressSink(
       onTap: onTap,
-      borderRadius: 20,
+      borderRadius: 24,
       child: Container(
-        padding: const EdgeInsets.symmetric(horizontal: 9, vertical: 4),
+        width: 44,
+        height: 44,
+        alignment: Alignment.center,
         decoration: BoxDecoration(
           color: AppColors.card,
-          border: Border.all(color: AppColors.ink, width: 1.5),
-          borderRadius: BorderRadius.circular(20),
+          border: Border.all(color: AppColors.ink, width: 1.8),
+          borderRadius: BorderRadius.circular(24),
         ),
-        child: const Row(
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            Icon(Icons.close, size: 14, color: AppColors.ink),
-            SizedBox(width: 3),
-            Text(
-              'خروج',
+        child: const Icon(Icons.close, size: 24, color: AppColors.ink),
+      ),
+    );
+  }
+}
+
+/// Current (per-mode) record, centered below the header. Pulses + flashes
+/// green for one beat when the player just set a new record.
+class _CurrentRecord extends StatefulWidget {
+  const _CurrentRecord({required this.value, required this.beat});
+  final int value;
+  final bool beat;
+
+  @override
+  State<_CurrentRecord> createState() => _CurrentRecordState();
+}
+
+class _CurrentRecordState extends State<_CurrentRecord>
+    with SingleTickerProviderStateMixin {
+  late final AnimationController _ctrl = AnimationController(
+    vsync: this,
+    duration: const Duration(milliseconds: 520),
+  );
+  late final Animation<double> _scale = TweenSequence<double>([
+    TweenSequenceItem(tween: Tween(begin: 1.0, end: 1.35), weight: 40),
+    TweenSequenceItem(tween: Tween(begin: 1.35, end: 1.0), weight: 60),
+  ]).animate(CurvedAnimation(parent: _ctrl, curve: Curves.easeOut));
+
+  @override
+  void initState() {
+    super.initState();
+    if (widget.beat) _ctrl.forward(from: 0);
+  }
+
+  @override
+  void didUpdateWidget(_CurrentRecord old) {
+    super.didUpdateWidget(old);
+    if (widget.beat && !old.beat) _ctrl.forward(from: 0);
+  }
+
+  @override
+  void dispose() {
+    _ctrl.dispose();
+    super.dispose();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return ScaleTransition(
+      scale: _scale,
+      child: AnimatedBuilder(
+        animation: _ctrl,
+        builder: (context, _) {
+          final active = widget.beat && _ctrl.isAnimating;
+          final color = active ? AppColors.correct : AppColors.ink;
+          final bg = active ? AppColors.correctBg : AppColors.postit;
+          return Container(
+            padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 6),
+            decoration: BoxDecoration(
+              color: bg,
+              border: Border.all(color: color, width: 1.6),
+              borderRadius: BorderRadius.circular(20),
+            ),
+            child: Text(
+              '🔥 رکورد ${toPersianDigits(widget.value)}',
               style: TextStyle(
                 fontFamily: AppTheme.sans,
                 fontSize: 12,
-                color: AppColors.ink,
+                color: color,
               ),
             ),
-          ],
-        ),
+          );
+        },
       ),
     );
   }
