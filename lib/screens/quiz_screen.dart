@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 
 import '../data/quiz_repository.dart';
 import '../state/game_controller.dart';
 import '../theme/app_theme.dart';
 import '../widgets/flag_image.dart';
+import '../widgets/map_image.dart';
 import '../widgets/option_button.dart';
 import '../widgets/streak_badge.dart';
 
@@ -24,10 +26,10 @@ class QuizScreen extends StatelessWidget {
   }
 
   Color get _badgeColor => switch (controller.state) {
-        AnswerState.correct => AppColors.correct,
-        AnswerState.wrong => AppColors.wrong,
-        AnswerState.unanswered => AppColors.ink,
-      };
+    AnswerState.correct => AppColors.correct,
+    AnswerState.wrong => AppColors.wrong,
+    AnswerState.unanswered => AppColors.ink,
+  };
 
   OptionVisual _visualFor(int index, Question q) {
     if (!controller.answered) return OptionVisual.idle;
@@ -46,10 +48,18 @@ class QuizScreen extends StatelessWidget {
             child: ListenableBuilder(
               listenable: controller,
               builder: (context, _) {
+                if (controller.finished) {
+                  return _Complete(
+                    controller: controller,
+                    onExit: () => Navigator.of(context).pop(),
+                  );
+                }
                 final q = controller.question!;
-                return SingleChildScrollView(
-                  padding:
-                      const EdgeInsets.symmetric(horizontal: 18, vertical: 20),
+                return Padding(
+                  padding: const EdgeInsets.symmetric(
+                    horizontal: 18,
+                    vertical: 20,
+                  ),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.stretch,
                     children: [
@@ -60,13 +70,17 @@ class QuizScreen extends StatelessWidget {
                           Row(
                             children: [
                               _ExitButton(
-                                  onTap: () => Navigator.of(context).pop()),
+                                onTap: () => Navigator.of(context).pop(),
+                              ),
                               const SizedBox(width: 8),
-                              Text(_subtitle,
-                                  style: const TextStyle(
-                                      fontFamily: AppTheme.sans,
-                                      fontSize: 12,
-                                      color: AppColors.muted)),
+                              Text(
+                                _subtitle,
+                                style: const TextStyle(
+                                  fontFamily: AppTheme.sans,
+                                  fontSize: 12,
+                                  color: AppColors.muted,
+                                ),
+                              ),
                             ],
                           ),
                           Row(
@@ -87,15 +101,35 @@ class QuizScreen extends StatelessWidget {
                         ],
                       ),
                       const SizedBox(height: 14),
-                      _Prompt(question: q),
-                      const SizedBox(height: 8),
-                      Text(q.promptFa,
-                          textAlign: TextAlign.center,
-                          style: const TextStyle(
-                              fontFamily: AppTheme.sans,
-                              fontSize: 14,
-                              color: AppColors.ink)),
-                      const SizedBox(height: 18),
+                      // prompt block centered in the free space above the options
+                      Expanded(
+                        child: LayoutBuilder(
+                          builder: (context, c) => SingleChildScrollView(
+                            child: ConstrainedBox(
+                              constraints:
+                                  BoxConstraints(minHeight: c.maxHeight),
+                              child: Center(
+                                child: Column(
+                                  mainAxisSize: MainAxisSize.min,
+                                  children: [
+                                    _Prompt(question: q),
+                                    const SizedBox(height: 8),
+                                    Text(
+                                      q.promptFa,
+                                      textAlign: TextAlign.center,
+                                      style: const TextStyle(
+                                        fontFamily: AppTheme.sans,
+                                        fontSize: 14,
+                                        color: AppColors.ink,
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            ),
+                          ),
+                        ),
+                      ),
                       for (var i = 0; i < q.options.length; i++) ...[
                         if (i > 0) const SizedBox(height: 12),
                         OptionButton(
@@ -127,6 +161,99 @@ class QuizScreen extends StatelessWidget {
   }
 }
 
+/// Round-complete screen: score summary + best record, then Play again
+/// (primary) and Exit. Shown once the whole pool has been walked.
+class _Complete extends StatelessWidget {
+  const _Complete({required this.controller, required this.onExit});
+  final GameController controller;
+  final VoidCallback onExit;
+
+  @override
+  Widget build(BuildContext context) {
+    final correct = toPersianDigits(controller.correct);
+    final total = toPersianDigits(controller.total);
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 18, vertical: 20),
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: [
+          Text(
+            'تمام شد!',
+            textAlign: TextAlign.center,
+            style: AppTheme.handSize(40),
+          ),
+          const SizedBox(height: 18),
+          _Panel(
+            children: [
+              Text(
+                '$correct از $total درست',
+                style: AppTheme.handSize(28, color: AppColors.correct),
+              ),
+              const SizedBox(height: 8),
+              Text(
+                'رکورد: ${toPersianDigits(controller.record)}',
+                style: const TextStyle(
+                  fontFamily: AppTheme.sans,
+                  fontSize: 13,
+                  color: AppColors.muted,
+                ),
+              ),
+            ],
+          ),
+          const SizedBox(height: 28),
+          _ActionButton(
+            label: 'شروع مجدد',
+            primary: true,
+            onTap: controller.playAgain,
+          ),
+          const SizedBox(height: 12),
+          _ActionButton(label: 'خروج', primary: false, onTap: onExit),
+        ],
+      ),
+    );
+  }
+}
+
+/// Full-width sticker button. [primary] fills with the ink color (Play again);
+/// otherwise it's an outline (Exit).
+class _ActionButton extends StatelessWidget {
+  const _ActionButton({
+    required this.label,
+    required this.primary,
+    required this.onTap,
+  });
+  final String label;
+  final bool primary;
+  final VoidCallback onTap;
+
+  @override
+  Widget build(BuildContext context) {
+    return _PressSink(
+      onTap: onTap,
+      borderRadius: 24,
+      child: Container(
+        width: double.infinity,
+        padding: const EdgeInsets.symmetric(vertical: 13),
+        decoration: BoxDecoration(
+          color: primary ? AppColors.ink : AppColors.card,
+          border: Border.all(color: AppColors.ink, width: 1.6),
+          borderRadius: BorderRadius.circular(24),
+        ),
+        child: Text(
+          label,
+          textAlign: TextAlign.center,
+          style: TextStyle(
+            fontFamily: AppTheme.sans,
+            fontSize: 15,
+            color: primary ? AppColors.card : AppColors.ink,
+          ),
+        ),
+      ),
+    );
+  }
+}
+
 /// The prompt block above the options — varies per mode.
 class _Prompt extends StatelessWidget {
   const _Prompt({required this.question});
@@ -136,43 +263,60 @@ class _Prompt extends StatelessWidget {
   Widget build(BuildContext context) {
     switch (question.mode) {
       case GameMode.flag:
-      case GameMode.map:
         return FlagImage(assetPath: question.answer.flagAsset);
+      case GameMode.map:
+        return MapImage(assetPath: question.answer.mapAsset);
       case GameMode.currency:
         return _Panel(
           children: [
-            Text(
-              question.answer.currencySymbol.isNotEmpty
-                  ? question.answer.currencySymbol
-                  : '¤',
-              style: AppTheme.handSize(46),
+            const Text(
+              'واحد پولِ',
+              style: TextStyle(
+                fontFamily: AppTheme.sans,
+                fontSize: 12,
+                color: AppColors.muted,
+              ),
             ),
-            const SizedBox(height: 6),
-            Text(question.answer.currencyName, style: AppTheme.handSize(24)),
-            const SizedBox(height: 6),
-            const Text('نماد در صورت وجود نمایش داده می‌شود',
-                style: TextStyle(
-                    fontFamily: AppTheme.sans,
-                    fontSize: 11,
-                    color: AppColors.faint)),
-          ],
-        );
-      case GameMode.capital:
-        return _Panel(
-          children: [
-            const Text('پایتختِ',
-                style: TextStyle(
-                    fontFamily: AppTheme.sans,
-                    fontSize: 12,
-                    color: AppColors.muted)),
             const SizedBox(height: 4),
             Text(question.answer.fa, style: AppTheme.handSize(40)),
             const SizedBox(height: 4),
-            const Text('کدام است؟',
-                style: TextStyle(
-                    fontFamily: AppTheme.sans,
-                    fontSize: 12,
-                    color: AppColors.muted)),
+            const Text(
+              'کدام است؟',
+              style: TextStyle(
+                fontFamily: AppTheme.sans,
+                fontSize: 12,
+                color: AppColors.muted,
+              ),
+            ),
+          ],
+        );
+      case GameMode.capital:
+        final toCountry =
+            question.direction == CapitalDirection.capitalToCountry;
+        return _Panel(
+          children: [
+            const Text(
+              'پایتختِ',
+              style: TextStyle(
+                fontFamily: AppTheme.sans,
+                fontSize: 12,
+                color: AppColors.muted,
+              ),
+            ),
+            const SizedBox(height: 4),
+            Text(
+              toCountry ? question.answer.capital : question.answer.fa,
+              style: AppTheme.handSize(40),
+            ),
+            const SizedBox(height: 4),
+            Text(
+              toCountry ? 'مربوط به کدام کشور است؟' : 'کدام است؟',
+              style: const TextStyle(
+                fontFamily: AppTheme.sans,
+                fontSize: 12,
+                color: AppColors.muted,
+              ),
+            ),
           ],
         );
     }
@@ -201,6 +345,61 @@ class _Panel extends StatelessWidget {
   }
 }
 
+/// Wraps a hard-shadow button so it sinks down on press (shadow collapses),
+/// matching the option cards' "stamp" feel. Used by every game button.
+class _PressSink extends StatefulWidget {
+  const _PressSink({
+    required this.onTap,
+    required this.borderRadius,
+    required this.child,
+  });
+
+  final VoidCallback onTap;
+  final double borderRadius;
+  final Widget child;
+
+  @override
+  State<_PressSink> createState() => _PressSinkState();
+}
+
+class _PressSinkState extends State<_PressSink> {
+  bool _pressed = false;
+
+  void _setPressed(bool value) {
+    if (_pressed == value) return;
+    setState(() => _pressed = value);
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return GestureDetector(
+      onTapDown: (_) => _setPressed(true),
+      onTapUp: (_) => _setPressed(false),
+      onTapCancel: () => _setPressed(false),
+      onTap: () {
+        HapticFeedback.lightImpact();
+        widget.onTap();
+      },
+      child: AnimatedContainer(
+        duration: const Duration(milliseconds: 70),
+        curve: Curves.easeOut,
+        transform: Matrix4.translationValues(0, _pressed ? 2 : 0, 0),
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(widget.borderRadius),
+          boxShadow: [
+            BoxShadow(
+              color: AppColors.ink,
+              offset: Offset(0, _pressed ? 0 : 2),
+              blurRadius: 0,
+            ),
+          ],
+        ),
+        child: widget.child,
+      ),
+    );
+  }
+}
+
 /// Sticker-style exit button in the header — pops back to the menu.
 class _ExitButton extends StatelessWidget {
   const _ExitButton({required this.onTap});
@@ -208,29 +407,29 @@ class _ExitButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return InkWell(
+    return _PressSink(
       onTap: onTap,
-      borderRadius: BorderRadius.circular(20),
+      borderRadius: 20,
       child: Container(
         padding: const EdgeInsets.symmetric(horizontal: 9, vertical: 4),
         decoration: BoxDecoration(
           color: AppColors.card,
           border: Border.all(color: AppColors.ink, width: 1.5),
           borderRadius: BorderRadius.circular(20),
-          boxShadow: const [
-            BoxShadow(color: AppColors.ink, offset: Offset(0, 2), blurRadius: 0),
-          ],
         ),
         child: const Row(
           mainAxisSize: MainAxisSize.min,
           children: [
             Icon(Icons.close, size: 14, color: AppColors.ink),
             SizedBox(width: 3),
-            Text('خروج',
-                style: TextStyle(
-                    fontFamily: AppTheme.sans,
-                    fontSize: 12,
-                    color: AppColors.ink)),
+            Text(
+              'خروج',
+              style: TextStyle(
+                fontFamily: AppTheme.sans,
+                fontSize: 12,
+                color: AppColors.ink,
+              ),
+            ),
           ],
         ),
       ),
@@ -256,29 +455,28 @@ class _Result extends StatelessWidget {
     return Column(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
-        Text(message,
-            textAlign: TextAlign.center,
-            maxLines: 1,
-            overflow: TextOverflow.ellipsis,
-            style: AppTheme.handSize(22, color: color)),
+        Text(
+          message,
+          textAlign: TextAlign.center,
+          maxLines: 1,
+          overflow: TextOverflow.ellipsis,
+          style: AppTheme.handSize(22, color: color),
+        ),
         const SizedBox(height: 8),
-        InkWell(
+        _PressSink(
           onTap: controller.next,
-          borderRadius: BorderRadius.circular(24),
+          borderRadius: 24,
           child: Container(
             padding: const EdgeInsets.symmetric(horizontal: 22, vertical: 9),
             decoration: BoxDecoration(
               color: AppColors.card,
               border: Border.all(color: AppColors.ink, width: 1.6),
               borderRadius: BorderRadius.circular(24),
-              boxShadow: const [
-                BoxShadow(
-                    color: AppColors.ink, offset: Offset(0, 2), blurRadius: 0),
-              ],
             ),
-            child: Text(buttonText,
-                style: const TextStyle(
-                    fontFamily: AppTheme.sans, fontSize: 14)),
+            child: Text(
+              buttonText,
+              style: const TextStyle(fontFamily: AppTheme.sans, fontSize: 14),
+            ),
           ),
         ),
       ],

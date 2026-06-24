@@ -1,2252 +1,2502 @@
 [
-{
-"code": "af",
-"fa": "افغانستان",
-"en": "Afghanistan",
-"capital": "Kabul",
-"currencyName": "Afghan afghani",
-"currencySymbol": "؋",
-"region": "آسیا"
-},
-{
-"code": "al",
-"fa": "آلبانی",
-"en": "Albania",
-"capital": "Tirana",
-"currencyName": "Albanian lek",
-"currencySymbol": "L",
-"region": "اروپا"
-},
-{
-"code": "dz",
-"fa": "الجزایر",
-"en": "Algeria",
-"capital": "Algiers",
-"currencyName": "Algerian dinar",
-"currencySymbol": "د.ج",
-"region": "آفریقا"
-},
-{
-"code": "as",
-"fa": "ساموآی آمریکا",
-"en": "American Samoa",
-"capital": "Pago Pago",
-"currencyName": "United States dollar",
-"currencySymbol": "$",
-"region": "سایر"
-},
-{
-"code": "ad",
-"fa": "آندورا",
-"en": "Andorra",
-"capital": "Andorra la Vella",
-"currencyName": "Euro",
-"currencySymbol": "€",
-"region": "اروپا"
-},
-{
-"code": "ao",
-"fa": "آنگولا",
-"en": "Angola",
-"capital": "Luanda",
-"currencyName": "Angolan kwanza",
-"currencySymbol": "Kz",
-"region": "آفریقا"
-},
-{
-"code": "ai",
-"fa": "آنگویلا",
-"en": "Anguilla",
-"capital": "The Valley",
-"currencyName": "Eastern Caribbean dollar",
-"currencySymbol": "$",
-"region": "آمریکا"
-},
-{
-"code": "aq",
-"fa": "جنوبگان",
-"en": "Antarctica",
-"capital": "",
-"currencyName": "",
-"currencySymbol": "",
-"region": "سایر"
-},
-{
-"code": "ag",
-"fa": "آنتیگوا و باربودا",
-"en": "Antigua and Barbuda",
-"capital": "Saint John's",
-"currencyName": "Eastern Caribbean dollar",
-"currencySymbol": "$",
-"region": "آمریکا"
-},
-{
-"code": "ar",
-"fa": "آرژانتین",
-"en": "Argentina",
-"capital": "Buenos Aires",
-"currencyName": "Argentine peso",
-"currencySymbol": "$",
-"region": "آمریکا"
-},
-{
-"code": "am",
-"fa": "ارمنستان",
-"en": "Armenia",
-"capital": "Yerevan",
-"currencyName": "Armenian dram",
-"currencySymbol": "֏",
-"region": "آسیا"
-},
-{
-"code": "aw",
-"fa": "آروبا",
-"en": "Aruba",
-"capital": "Oranjestad",
-"currencyName": "Aruban florin",
-"currencySymbol": "ƒ",
-"region": "آمریکا"
-},
-{
-"code": "au",
-"fa": "استرالیا",
-"en": "Australia",
-"capital": "Canberra",
-"currencyName": "Australian dollar",
-"currencySymbol": "$",
-"region": "سایر"
-},
-{
-"code": "at",
-"fa": "اتریش",
-"en": "Austria",
-"capital": "Vienna",
-"currencyName": "Euro",
-"currencySymbol": "€",
-"region": "اروپا"
-},
-{
-"code": "az",
-"fa": "جمهوری آذربایجان",
-"en": "Azerbaijan",
-"capital": "Baku",
-"currencyName": "Azerbaijani manat",
-"currencySymbol": "₼",
-"region": "آسیا"
-},
-{
-"code": "bs",
-"fa": "باهاما",
-"en": "Bahamas",
-"capital": "Nassau",
-"currencyName": "Bahamian dollar",
-"currencySymbol": "$",
-"region": "آمریکا"
-},
-{
-"code": "bh",
-"fa": "بحرین",
-"en": "Bahrain",
-"capital": "Manama",
-"currencyName": "Bahraini dinar",
-"currencySymbol": ".د.ب",
-"region": "آسیا"
-},
-{
-"code": "bd",
-"fa": "بنگلادش",
-"en": "Bangladesh",
-"capital": "Dhaka",
-"currencyName": "Bangladeshi taka",
-"currencySymbol": "৳",
-"region": "آسیا"
-},
-{
-"code": "bb",
-"fa": "باربادوس",
-"en": "Barbados",
-"capital": "Bridgetown",
-"currencyName": "Barbadian dollar",
-"currencySymbol": "$",
-"region": "آمریکا"
-},
-{
-"code": "by",
-"fa": "بلاروس",
-"en": "Belarus",
-"capital": "Minsk",
-"currencyName": "Belarusian ruble",
-"currencySymbol": "Br",
-"region": "اروپا"
-},
-{
-"code": "be",
-"fa": "بلژیک",
-"en": "Belgium",
-"capital": "Brussels",
-"currencyName": "Euro",
-"currencySymbol": "€",
-"region": "اروپا"
-},
-{
-"code": "bz",
-"fa": "بلیز",
-"en": "Belize",
-"capital": "Belmopan",
-"currencyName": "Belize dollar",
-"currencySymbol": "$",
-"region": "آمریکا"
-},
-{
-"code": "bj",
-"fa": "بنین",
-"en": "Benin",
-"capital": "Porto-Novo",
-"currencyName": "West African CFA franc",
-"currencySymbol": "Fr",
-"region": "آفریقا"
-},
-{
-"code": "bm",
-"fa": "برمودا",
-"en": "Bermuda",
-"capital": "Hamilton",
-"currencyName": "Bermudian dollar",
-"currencySymbol": "$",
-"region": "آمریکا"
-},
-{
-"code": "bt",
-"fa": "بوتان",
-"en": "Bhutan",
-"capital": "Thimphu",
-"currencyName": "Bhutanese ngultrum",
-"currencySymbol": "Nu.",
-"region": "آسیا"
-},
-{
-"code": "bo",
-"fa": "بولیوی",
-"en": "Bolivia",
-"capital": "Sucre",
-"currencyName": "Bolivian boliviano",
-"currencySymbol": "Bs.",
-"region": "آمریکا"
-},
-{
-"code": "ba",
-"fa": "بوسنی و هرزگوین",
-"en": "Bosnia and Herzegovina",
-"capital": "Sarajevo",
-"currencyName": "Bosnia and Herzegovina convertible mark",
-"currencySymbol": "KM",
-"region": "اروپا"
-},
-{
-"code": "bw",
-"fa": "بوتسوانا",
-"en": "Botswana",
-"capital": "Gaborone",
-"currencyName": "Botswana pula",
-"currencySymbol": "P",
-"region": "آفریقا"
-},
-{
-"code": "bv",
-"fa": "جزیرهٔ بووه",
-"en": "Bouvet Island",
-"capital": "",
-"currencyName": "",
-"currencySymbol": "",
-"region": "سایر"
-},
-{
-"code": "br",
-"fa": "برزیل",
-"en": "Brazil",
-"capital": "Brasília",
-"currencyName": "Brazilian real",
-"currencySymbol": "R$",
-"region": "آمریکا"
-},
-{
-"code": "io",
-"fa": "قلمرو بریتانیا در اقیانوس هند",
-"en": "British Indian Ocean Territory",
-"capital": "Diego Garcia",
-"currencyName": "United States dollar",
-"currencySymbol": "$",
-"region": "آفریقا"
-},
-{
-"code": "vg",
-"fa": "جزایر ویرجین بریتانیا",
-"en": "British Virgin Islands",
-"capital": "Road Town",
-"currencyName": "United States dollar",
-"currencySymbol": "$",
-"region": "آمریکا"
-},
-{
-"code": "bn",
-"fa": "برونئی",
-"en": "Brunei",
-"capital": "Bandar Seri Begawan",
-"currencyName": "Brunei dollar",
-"currencySymbol": "$",
-"region": "آسیا"
-},
-{
-"code": "bg",
-"fa": "بلغارستان",
-"en": "Bulgaria",
-"capital": "Sofia",
-"currencyName": "Bulgarian lev",
-"currencySymbol": "лв",
-"region": "اروپا"
-},
-{
-"code": "bf",
-"fa": "بورکینافاسو",
-"en": "Burkina Faso",
-"capital": "Ouagadougou",
-"currencyName": "West African CFA franc",
-"currencySymbol": "Fr",
-"region": "آفریقا"
-},
-{
-"code": "bi",
-"fa": "بوروندی",
-"en": "Burundi",
-"capital": "Gitega",
-"currencyName": "Burundian franc",
-"currencySymbol": "Fr",
-"region": "آفریقا"
-},
-{
-"code": "kh",
-"fa": "کامبوج",
-"en": "Cambodia",
-"capital": "Phnom Penh",
-"currencyName": "Cambodian riel",
-"currencySymbol": "៛",
-"region": "آسیا"
-},
-{
-"code": "cm",
-"fa": "کامِرون",
-"en": "Cameroon",
-"capital": "Yaoundé",
-"currencyName": "Central African CFA franc",
-"currencySymbol": "Fr",
-"region": "آفریقا"
-},
-{
-"code": "ca",
-"fa": "کانادا",
-"en": "Canada",
-"capital": "Ottawa",
-"currencyName": "Canadian dollar",
-"currencySymbol": "$",
-"region": "آمریکا"
-},
-{
-"code": "cv",
-"fa": "دماغهٔ سبز",
-"en": "Cape Verde",
-"capital": "Praia",
-"currencyName": "Cape Verdean escudo",
-"currencySymbol": "Esc",
-"region": "آفریقا"
-},
-{
-"code": "bq",
-"fa": "جزایر کارائیب هلند",
-"en": "Caribbean Netherlands",
-"capital": "Kralendijk",
-"currencyName": "United States dollar",
-"currencySymbol": "$",
-"region": "آمریکا"
-},
-{
-"code": "ky",
-"fa": "جزایر کیمن",
-"en": "Cayman Islands",
-"capital": "George Town",
-"currencyName": "Cayman Islands dollar",
-"currencySymbol": "$",
-"region": "آمریکا"
-},
-{
-"code": "cf",
-"fa": "جمهوری آفریقای مرکزی",
-"en": "Central African Republic",
-"capital": "Bangui",
-"currencyName": "Central African CFA franc",
-"currencySymbol": "Fr",
-"region": "آفریقا"
-},
-{
-"code": "td",
-"fa": "چاد",
-"en": "Chad",
-"capital": "N'Djamena",
-"currencyName": "Central African CFA franc",
-"currencySymbol": "Fr",
-"region": "آفریقا"
-},
-{
-"code": "cl",
-"fa": "شیلی",
-"en": "Chile",
-"capital": "Santiago",
-"currencyName": "Chilean peso",
-"currencySymbol": "$",
-"region": "آمریکا"
-},
-{
-"code": "cn",
-"fa": "چین",
-"en": "China",
-"capital": "Beijing",
-"currencyName": "Chinese yuan",
-"currencySymbol": "¥",
-"region": "آسیا"
-},
-{
-"code": "cx",
-"fa": "جزیرهٔ کریسمس",
-"en": "Christmas Island",
-"capital": "Flying Fish Cove",
-"currencyName": "Australian dollar",
-"currencySymbol": "$",
-"region": "سایر"
-},
-{
-"code": "cc",
-"fa": "جزایر کوکوس",
-"en": "Cocos (Keeling) Islands",
-"capital": "West Island",
-"currencyName": "Australian dollar",
-"currencySymbol": "$",
-"region": "سایر"
-},
-{
-"code": "co",
-"fa": "کلمبیا",
-"en": "Colombia",
-"capital": "Bogotá",
-"currencyName": "Colombian peso",
-"currencySymbol": "$",
-"region": "آمریکا"
-},
-{
-"code": "km",
-"fa": "اتحاد قُمُر",
-"en": "Comoros",
-"capital": "Moroni",
-"currencyName": "Comorian franc",
-"currencySymbol": "Fr",
-"region": "آفریقا"
-},
-{
-"code": "cg",
-"fa": "جمهوری کُنگو",
-"en": "Congo",
-"capital": "Brazzaville",
-"currencyName": "Central African CFA franc",
-"currencySymbol": "Fr",
-"region": "آفریقا"
-},
-{
-"code": "ck",
-"fa": "جزایر کوک",
-"en": "Cook Islands",
-"capital": "Avarua",
-"currencyName": "Cook Islands dollar",
-"currencySymbol": "$",
-"region": "سایر"
-},
-{
-"code": "cr",
-"fa": "کاستاریکا",
-"en": "Costa Rica",
-"capital": "San José",
-"currencyName": "Costa Rican colón",
-"currencySymbol": "₡",
-"region": "آمریکا"
-},
-{
-"code": "hr",
-"fa": "کرُواسی",
-"en": "Croatia",
-"capital": "Zagreb",
-"currencyName": "Euro",
-"currencySymbol": "€",
-"region": "اروپا"
-},
-{
-"code": "cu",
-"fa": "کوبا",
-"en": "Cuba",
-"capital": "Havana",
-"currencyName": "Cuban convertible peso",
-"currencySymbol": "$",
-"region": "آمریکا"
-},
-{
-"code": "cw",
-"fa": "کوراسائو",
-"en": "Curaçao",
-"capital": "Willemstad",
-"currencyName": "Netherlands Antillean guilder",
-"currencySymbol": "ƒ",
-"region": "آمریکا"
-},
-{
-"code": "cy",
-"fa": "قِبرِس",
-"en": "Cyprus",
-"capital": "Nicosia",
-"currencyName": "Euro",
-"currencySymbol": "€",
-"region": "اروپا"
-},
-{
-"code": "cz",
-"fa": "جمهوری چک",
-"en": "Czechia",
-"capital": "Prague",
-"currencyName": "Czech koruna",
-"currencySymbol": "Kč",
-"region": "اروپا"
-},
-{
-"code": "cd",
-"fa": "کنگو دموکراتیک",
-"en": "DR Congo",
-"capital": "Kinshasa",
-"currencyName": "Congolese franc",
-"currencySymbol": "FC",
-"region": "آفریقا"
-},
-{
-"code": "dk",
-"fa": "دانمارک",
-"en": "Denmark",
-"capital": "Copenhagen",
-"currencyName": "Danish krone",
-"currencySymbol": "kr",
-"region": "اروپا"
-},
-{
-"code": "dj",
-"fa": "جیبوتی",
-"en": "Djibouti",
-"capital": "Djibouti",
-"currencyName": "Djiboutian franc",
-"currencySymbol": "Fr",
-"region": "آفریقا"
-},
-{
-"code": "dm",
-"fa": "دومینیکا",
-"en": "Dominica",
-"capital": "Roseau",
-"currencyName": "Eastern Caribbean dollar",
-"currencySymbol": "$",
-"region": "آمریکا"
-},
-{
-"code": "do",
-"fa": "جمهوری دومینیکن",
-"en": "Dominican Republic",
-"capital": "Santo Domingo",
-"currencyName": "Dominican peso",
-"currencySymbol": "$",
-"region": "آمریکا"
-},
-{
-"code": "ec",
-"fa": "اکوادور",
-"en": "Ecuador",
-"capital": "Quito",
-"currencyName": "United States dollar",
-"currencySymbol": "$",
-"region": "آمریکا"
-},
-{
-"code": "eg",
-"fa": "مصر",
-"en": "Egypt",
-"capital": "Cairo",
-"currencyName": "Egyptian pound",
-"currencySymbol": "£",
-"region": "آفریقا"
-},
-{
-"code": "sv",
-"fa": "السالوادور",
-"en": "El Salvador",
-"capital": "San Salvador",
-"currencyName": "United States dollar",
-"currencySymbol": "$",
-"region": "آمریکا"
-},
-{
-"code": "gq",
-"fa": "گینه استوایی",
-"en": "Equatorial Guinea",
-"capital": "Malabo",
-"currencyName": "Central African CFA franc",
-"currencySymbol": "Fr",
-"region": "آفریقا"
-},
-{
-"code": "er",
-"fa": "اریتره",
-"en": "Eritrea",
-"capital": "Asmara",
-"currencyName": "Eritrean nakfa",
-"currencySymbol": "Nfk",
-"region": "آفریقا"
-},
-{
-"code": "ee",
-"fa": "اِستونی",
-"en": "Estonia",
-"capital": "Tallinn",
-"currencyName": "Euro",
-"currencySymbol": "€",
-"region": "اروپا"
-},
-{
-"code": "sz",
-"fa": "اسواتینی",
-"en": "Eswatini",
-"capital": "Lobamba",
-"currencyName": "Swazi lilangeni",
-"currencySymbol": "L",
-"region": "آفریقا"
-},
-{
-"code": "et",
-"fa": "اِتیوپی",
-"en": "Ethiopia",
-"capital": "Addis Ababa",
-"currencyName": "Ethiopian birr",
-"currencySymbol": "Br",
-"region": "آفریقا"
-},
-{
-"code": "fk",
-"fa": "جزایر فالکلند",
-"en": "Falkland Islands",
-"capital": "Stanley",
-"currencyName": "Falkland Islands pound",
-"currencySymbol": "£",
-"region": "آمریکا"
-},
-{
-"code": "fo",
-"fa": "جزایر فاروئه",
-"en": "Faroe Islands",
-"capital": "Tórshavn",
-"currencyName": "Danish krone",
-"currencySymbol": "kr",
-"region": "اروپا"
-},
-{
-"code": "fj",
-"fa": "فیجی",
-"en": "Fiji",
-"capital": "Suva",
-"currencyName": "Fijian dollar",
-"currencySymbol": "$",
-"region": "سایر"
-},
-{
-"code": "fi",
-"fa": "فنلاند",
-"en": "Finland",
-"capital": "Helsinki",
-"currencyName": "Euro",
-"currencySymbol": "€",
-"region": "اروپا"
-},
-{
-"code": "fr",
-"fa": "فرانسه",
-"en": "France",
-"capital": "Paris",
-"currencyName": "Euro",
-"currencySymbol": "€",
-"region": "اروپا"
-},
-{
-"code": "gf",
-"fa": "گویان فرانسه",
-"en": "French Guiana",
-"capital": "Cayenne",
-"currencyName": "Euro",
-"currencySymbol": "€",
-"region": "آمریکا"
-},
-{
-"code": "pf",
-"fa": "پُلی‌نِزی فرانسه",
-"en": "French Polynesia",
-"capital": "Papeetē",
-"currencyName": "CFP franc",
-"currencySymbol": "₣",
-"region": "سایر"
-},
-{
-"code": "tf",
-"fa": "سرزمین‌های جنوبی و جنوبگانی فرانسه",
-"en": "French Southern and Antarctic Lands",
-"capital": "Port-aux-Français",
-"currencyName": "Euro",
-"currencySymbol": "€",
-"region": "سایر"
-},
-{
-"code": "ga",
-"fa": "گابن",
-"en": "Gabon",
-"capital": "Libreville",
-"currencyName": "Central African CFA franc",
-"currencySymbol": "Fr",
-"region": "آفریقا"
-},
-{
-"code": "gm",
-"fa": "گامبیا",
-"en": "Gambia",
-"capital": "Banjul",
-"currencyName": "dalasi",
-"currencySymbol": "D",
-"region": "آفریقا"
-},
-{
-"code": "ge",
-"fa": "گرجستان",
-"en": "Georgia",
-"capital": "Tbilisi",
-"currencyName": "lari",
-"currencySymbol": "₾",
-"region": "آسیا"
-},
-{
-"code": "de",
-"fa": "آلمان",
-"en": "Germany",
-"capital": "Berlin",
-"currencyName": "Euro",
-"currencySymbol": "€",
-"region": "اروپا"
-},
-{
-"code": "gh",
-"fa": "غنا",
-"en": "Ghana",
-"capital": "Accra",
-"currencyName": "Ghanaian cedi",
-"currencySymbol": "₵",
-"region": "آفریقا"
-},
-{
-"code": "gi",
-"fa": "جبل طارق",
-"en": "Gibraltar",
-"capital": "Gibraltar",
-"currencyName": "Gibraltar pound",
-"currencySymbol": "£",
-"region": "اروپا"
-},
-{
-"code": "gr",
-"fa": "یونان",
-"en": "Greece",
-"capital": "Athens",
-"currencyName": "Euro",
-"currencySymbol": "€",
-"region": "اروپا"
-},
-{
-"code": "gl",
-"fa": "گرینلند",
-"en": "Greenland",
-"capital": "Nuuk",
-"currencyName": "krone",
-"currencySymbol": "kr.",
-"region": "آمریکا"
-},
-{
-"code": "gd",
-"fa": "گرنادا",
-"en": "Grenada",
-"capital": "St. George's",
-"currencyName": "Eastern Caribbean dollar",
-"currencySymbol": "$",
-"region": "آمریکا"
-},
-{
-"code": "gp",
-"fa": "گوادلوپ",
-"en": "Guadeloupe",
-"capital": "Basse-Terre",
-"currencyName": "Euro",
-"currencySymbol": "€",
-"region": "آمریکا"
-},
-{
-"code": "gu",
-"fa": "گوآم",
-"en": "Guam",
-"capital": "Hagåtña",
-"currencyName": "United States dollar",
-"currencySymbol": "$",
-"region": "سایر"
-},
-{
-"code": "gt",
-"fa": "گواتِمالا",
-"en": "Guatemala",
-"capital": "Guatemala City",
-"currencyName": "Guatemalan quetzal",
-"currencySymbol": "Q",
-"region": "آمریکا"
-},
-{
-"code": "gg",
-"fa": "گرنزی",
-"en": "Guernsey",
-"capital": "St. Peter Port",
-"currencyName": "British pound",
-"currencySymbol": "£",
-"region": "اروپا"
-},
-{
-"code": "gn",
-"fa": "پاپوآ گینه نو",
-"en": "Guinea",
-"capital": "Conakry",
-"currencyName": "Guinean franc",
-"currencySymbol": "Fr",
-"region": "آفریقا"
-},
-{
-"code": "gw",
-"fa": "گینه بیسائو",
-"en": "Guinea-Bissau",
-"capital": "Bissau",
-"currencyName": "West African CFA franc",
-"currencySymbol": "Fr",
-"region": "آفریقا"
-},
-{
-"code": "gy",
-"fa": "گویان",
-"en": "Guyana",
-"capital": "Georgetown",
-"currencyName": "Guyanese dollar",
-"currencySymbol": "$",
-"region": "آمریکا"
-},
-{
-"code": "ht",
-"fa": "هائیتی",
-"en": "Haiti",
-"capital": "Port-au-Prince",
-"currencyName": "Haitian gourde",
-"currencySymbol": "G",
-"region": "آمریکا"
-},
-{
-"code": "hm",
-"fa": "جزیره هرد و جزایر مک‌دونالد",
-"en": "Heard Island and McDonald Islands",
-"capital": "",
-"currencyName": "",
-"currencySymbol": "",
-"region": "سایر"
-},
-{
-"code": "hn",
-"fa": "هُندوراس",
-"en": "Honduras",
-"capital": "Tegucigalpa",
-"currencyName": "Honduran lempira",
-"currencySymbol": "L",
-"region": "آمریکا"
-},
-{
-"code": "hk",
-"fa": "هُنگ کُنگ",
-"en": "Hong Kong",
-"capital": "City of Victoria",
-"currencyName": "Hong Kong dollar",
-"currencySymbol": "$",
-"region": "آسیا"
-},
-{
-"code": "hu",
-"fa": "مجارستان",
-"en": "Hungary",
-"capital": "Budapest",
-"currencyName": "Hungarian forint",
-"currencySymbol": "Ft",
-"region": "اروپا"
-},
-{
-"code": "is",
-"fa": "ایسلند",
-"en": "Iceland",
-"capital": "Reykjavik",
-"currencyName": "Icelandic króna",
-"currencySymbol": "kr",
-"region": "اروپا"
-},
-{
-"code": "in",
-"fa": "هند",
-"en": "India",
-"capital": "New Delhi",
-"currencyName": "Indian rupee",
-"currencySymbol": "₹",
-"region": "آسیا"
-},
-{
-"code": "id",
-"fa": "اندونزی",
-"en": "Indonesia",
-"capital": "Jakarta",
-"currencyName": "Indonesian rupiah",
-"currencySymbol": "Rp",
-"region": "آسیا"
-},
-{
-"code": "ir",
-"fa": "ایران",
-"en": "Iran",
-"capital": "Tehran",
-"currencyName": "Iranian rial",
-"currencySymbol": "﷼",
-"region": "آسیا"
-},
-{
-"code": "iq",
-"fa": "عراق",
-"en": "Iraq",
-"capital": "Baghdad",
-"currencyName": "Iraqi dinar",
-"currencySymbol": "ع.د",
-"region": "آسیا"
-},
-{
-"code": "ie",
-"fa": "ایرلند",
-"en": "Ireland",
-"capital": "Dublin",
-"currencyName": "Euro",
-"currencySymbol": "€",
-"region": "اروپا"
-},
-{
-"code": "im",
-"fa": "جزیرهٔ مَن",
-"en": "Isle of Man",
-"capital": "Douglas",
-"currencyName": "British pound",
-"currencySymbol": "£",
-"region": "اروپا"
-},
-{
-"code": "il",
-"fa": "فلسطين اشغالی",
-"en": "Israel",
-"capital": "Jerusalem",
-"currencyName": "Israeli new shekel",
-"currencySymbol": "₪",
-"region": "آسیا"
-},
-{
-"code": "it",
-"fa": "ایتالیا",
-"en": "Italy",
-"capital": "Rome",
-"currencyName": "Euro",
-"currencySymbol": "€",
-"region": "اروپا"
-},
-{
-"code": "ci",
-"fa": "ساحل عاج",
-"en": "Ivory Coast",
-"capital": "Yamoussoukro",
-"currencyName": "West African CFA franc",
-"currencySymbol": "Fr",
-"region": "آفریقا"
-},
-{
-"code": "jm",
-"fa": "جامائیکا",
-"en": "Jamaica",
-"capital": "Kingston",
-"currencyName": "Jamaican dollar",
-"currencySymbol": "$",
-"region": "آمریکا"
-},
-{
-"code": "jp",
-"fa": "ژاپن",
-"en": "Japan",
-"capital": "Tokyo",
-"currencyName": "Japanese yen",
-"currencySymbol": "¥",
-"region": "آسیا"
-},
-{
-"code": "je",
-"fa": "جرزی",
-"en": "Jersey",
-"capital": "Saint Helier",
-"currencyName": "British pound",
-"currencySymbol": "£",
-"region": "اروپا"
-},
-{
-"code": "jo",
-"fa": "اردن",
-"en": "Jordan",
-"capital": "Amman",
-"currencyName": "Jordanian dinar",
-"currencySymbol": "د.ا",
-"region": "آسیا"
-},
-{
-"code": "kz",
-"fa": "قزاقستان",
-"en": "Kazakhstan",
-"capital": "Astana",
-"currencyName": "Kazakhstani tenge",
-"currencySymbol": "₸",
-"region": "آسیا"
-},
-{
-"code": "ke",
-"fa": "کنیا",
-"en": "Kenya",
-"capital": "Nairobi",
-"currencyName": "Kenyan shilling",
-"currencySymbol": "Sh",
-"region": "آفریقا"
-},
-{
-"code": "ki",
-"fa": "کیریباتی",
-"en": "Kiribati",
-"capital": "South Tarawa",
-"currencyName": "Australian dollar",
-"currencySymbol": "$",
-"region": "سایر"
-},
-{
-"code": "xk",
-"fa": "کوزوو",
-"en": "Kosovo",
-"capital": "Pristina",
-"currencyName": "Euro",
-"currencySymbol": "€",
-"region": "اروپا"
-},
-{
-"code": "kw",
-"fa": "کُویت",
-"en": "Kuwait",
-"capital": "Kuwait City",
-"currencyName": "Kuwaiti dinar",
-"currencySymbol": "د.ك",
-"region": "آسیا"
-},
-{
-"code": "kg",
-"fa": "قرقیزستان",
-"en": "Kyrgyzstan",
-"capital": "Bishkek",
-"currencyName": "Kyrgyzstani som",
-"currencySymbol": "с",
-"region": "آسیا"
-},
-{
-"code": "la",
-"fa": "لائوس",
-"en": "Laos",
-"capital": "Vientiane",
-"currencyName": "Lao kip",
-"currencySymbol": "₭",
-"region": "آسیا"
-},
-{
-"code": "lv",
-"fa": "لتونی",
-"en": "Latvia",
-"capital": "Riga",
-"currencyName": "Euro",
-"currencySymbol": "€",
-"region": "اروپا"
-},
-{
-"code": "lb",
-"fa": "لبنان",
-"en": "Lebanon",
-"capital": "Beirut",
-"currencyName": "Lebanese pound",
-"currencySymbol": "ل.ل",
-"region": "آسیا"
-},
-{
-"code": "ls",
-"fa": "لسوتو",
-"en": "Lesotho",
-"capital": "Maseru",
-"currencyName": "Lesotho loti",
-"currencySymbol": "L",
-"region": "آفریقا"
-},
-{
-"code": "lr",
-"fa": "لیبـِریا",
-"en": "Liberia",
-"capital": "Monrovia",
-"currencyName": "Liberian dollar",
-"currencySymbol": "$",
-"region": "آفریقا"
-},
-{
-"code": "ly",
-"fa": "لیبی",
-"en": "Libya",
-"capital": "Tripoli",
-"currencyName": "Libyan dinar",
-"currencySymbol": "ل.د",
-"region": "آفریقا"
-},
-{
-"code": "li",
-"fa": "لیختن‌اشتاین",
-"en": "Liechtenstein",
-"capital": "Vaduz",
-"currencyName": "Swiss franc",
-"currencySymbol": "Fr",
-"region": "اروپا"
-},
-{
-"code": "lt",
-"fa": "لیتوانیایی‌ها",
-"en": "Lithuania",
-"capital": "Vilnius",
-"currencyName": "Euro",
-"currencySymbol": "€",
-"region": "اروپا"
-},
-{
-"code": "lu",
-"fa": "لوکزامبورگ",
-"en": "Luxembourg",
-"capital": "Luxembourg",
-"currencyName": "Euro",
-"currencySymbol": "€",
-"region": "اروپا"
-},
-{
-"code": "mo",
-"fa": "ماکائو",
-"en": "Macau",
-"capital": "",
-"currencyName": "Macanese pataca",
-"currencySymbol": "P",
-"region": "آسیا"
-},
-{
-"code": "mg",
-"fa": "ماداگاسکار",
-"en": "Madagascar",
-"capital": "Antananarivo",
-"currencyName": "Malagasy ariary",
-"currencySymbol": "Ar",
-"region": "آفریقا"
-},
-{
-"code": "mw",
-"fa": "مالاوی",
-"en": "Malawi",
-"capital": "Lilongwe",
-"currencyName": "Malawian kwacha",
-"currencySymbol": "MK",
-"region": "آفریقا"
-},
-{
-"code": "my",
-"fa": "مالزی",
-"en": "Malaysia",
-"capital": "Kuala Lumpur",
-"currencyName": "Malaysian ringgit",
-"currencySymbol": "RM",
-"region": "آسیا"
-},
-{
-"code": "mv",
-"fa": "مالدیو",
-"en": "Maldives",
-"capital": "Malé",
-"currencyName": "Maldivian rufiyaa",
-"currencySymbol": ".ރ",
-"region": "آسیا"
-},
-{
-"code": "ml",
-"fa": "مالی",
-"en": "Mali",
-"capital": "Bamako",
-"currencyName": "West African CFA franc",
-"currencySymbol": "Fr",
-"region": "آفریقا"
-},
-{
-"code": "mt",
-"fa": "مالت",
-"en": "Malta",
-"capital": "Valletta",
-"currencyName": "Euro",
-"currencySymbol": "€",
-"region": "اروپا"
-},
-{
-"code": "mh",
-"fa": "جزایر مارشال",
-"en": "Marshall Islands",
-"capital": "Majuro",
-"currencyName": "United States dollar",
-"currencySymbol": "$",
-"region": "سایر"
-},
-{
-"code": "mq",
-"fa": "مارتینیک",
-"en": "Martinique",
-"capital": "Fort-de-France",
-"currencyName": "Euro",
-"currencySymbol": "€",
-"region": "آمریکا"
-},
-{
-"code": "mr",
-"fa": "موریتانی",
-"en": "Mauritania",
-"capital": "Nouakchott",
-"currencyName": "Mauritanian ouguiya",
-"currencySymbol": "UM",
-"region": "آفریقا"
-},
-{
-"code": "mu",
-"fa": "موریس",
-"en": "Mauritius",
-"capital": "Port Louis",
-"currencyName": "Mauritian rupee",
-"currencySymbol": "₨",
-"region": "آفریقا"
-},
-{
-"code": "yt",
-"fa": "مایوت",
-"en": "Mayotte",
-"capital": "Mamoudzou",
-"currencyName": "Euro",
-"currencySymbol": "€",
-"region": "آفریقا"
-},
-{
-"code": "mx",
-"fa": "مکزیک",
-"en": "Mexico",
-"capital": "Mexico City",
-"currencyName": "Mexican peso",
-"currencySymbol": "$",
-"region": "آمریکا"
-},
-{
-"code": "fm",
-"fa": "میکرونزی",
-"en": "Micronesia",
-"capital": "Palikir",
-"currencyName": "",
-"currencySymbol": "",
-"region": "سایر"
-},
-{
-"code": "md",
-"fa": "مولداوی",
-"en": "Moldova",
-"capital": "Chișinău",
-"currencyName": "Moldovan leu",
-"currencySymbol": "L",
-"region": "اروپا"
-},
-{
-"code": "mc",
-"fa": "موناکو",
-"en": "Monaco",
-"capital": "Monaco",
-"currencyName": "Euro",
-"currencySymbol": "€",
-"region": "اروپا"
-},
-{
-"code": "mn",
-"fa": "مغولستان",
-"en": "Mongolia",
-"capital": "Ulan Bator",
-"currencyName": "Mongolian tögrög",
-"currencySymbol": "₮",
-"region": "آسیا"
-},
-{
-"code": "me",
-"fa": "مونته‌نگرو",
-"en": "Montenegro",
-"capital": "Podgorica",
-"currencyName": "Euro",
-"currencySymbol": "€",
-"region": "اروپا"
-},
-{
-"code": "ms",
-"fa": "مونتسرات",
-"en": "Montserrat",
-"capital": "Plymouth",
-"currencyName": "Eastern Caribbean dollar",
-"currencySymbol": "$",
-"region": "آمریکا"
-},
-{
-"code": "ma",
-"fa": "مراکش",
-"en": "Morocco",
-"capital": "Rabat",
-"currencyName": "Moroccan dirham",
-"currencySymbol": "د.م.",
-"region": "آفریقا"
-},
-{
-"code": "mz",
-"fa": "موزامبیک",
-"en": "Mozambique",
-"capital": "Maputo",
-"currencyName": "Mozambican metical",
-"currencySymbol": "MT",
-"region": "آفریقا"
-},
-{
-"code": "mm",
-"fa": "میانمار",
-"en": "Myanmar",
-"capital": "Naypyidaw",
-"currencyName": "Burmese kyat",
-"currencySymbol": "Ks",
-"region": "آسیا"
-},
-{
-"code": "na",
-"fa": "نامیبیا",
-"en": "Namibia",
-"capital": "Windhoek",
-"currencyName": "Namibian dollar",
-"currencySymbol": "$",
-"region": "آفریقا"
-},
-{
-"code": "nr",
-"fa": "نائورو",
-"en": "Nauru",
-"capital": "Yaren",
-"currencyName": "Australian dollar",
-"currencySymbol": "$",
-"region": "سایر"
-},
-{
-"code": "np",
-"fa": "نپال",
-"en": "Nepal",
-"capital": "Kathmandu",
-"currencyName": "Nepalese rupee",
-"currencySymbol": "₨",
-"region": "آسیا"
-},
-{
-"code": "nl",
-"fa": "هلند",
-"en": "Netherlands",
-"capital": "Amsterdam",
-"currencyName": "Euro",
-"currencySymbol": "€",
-"region": "اروپا"
-},
-{
-"code": "nc",
-"fa": "کالدونیای جدید",
-"en": "New Caledonia",
-"capital": "Nouméa",
-"currencyName": "CFP franc",
-"currencySymbol": "₣",
-"region": "سایر"
-},
-{
-"code": "nz",
-"fa": "نیوزیلند",
-"en": "New Zealand",
-"capital": "Wellington",
-"currencyName": "New Zealand dollar",
-"currencySymbol": "$",
-"region": "سایر"
-},
-{
-"code": "ni",
-"fa": "نیکاراگوئه",
-"en": "Nicaragua",
-"capital": "Managua",
-"currencyName": "Nicaraguan córdoba",
-"currencySymbol": "C$",
-"region": "آمریکا"
-},
-{
-"code": "ne",
-"fa": "نیجر",
-"en": "Niger",
-"capital": "Niamey",
-"currencyName": "West African CFA franc",
-"currencySymbol": "Fr",
-"region": "آفریقا"
-},
-{
-"code": "ng",
-"fa": "نیجریه",
-"en": "Nigeria",
-"capital": "Abuja",
-"currencyName": "Nigerian naira",
-"currencySymbol": "₦",
-"region": "آفریقا"
-},
-{
-"code": "nu",
-"fa": "نیووی",
-"en": "Niue",
-"capital": "Alofi",
-"currencyName": "New Zealand dollar",
-"currencySymbol": "$",
-"region": "سایر"
-},
-{
-"code": "nf",
-"fa": "جزیره نورفک",
-"en": "Norfolk Island",
-"capital": "Kingston",
-"currencyName": "Australian dollar",
-"currencySymbol": "$",
-"region": "سایر"
-},
-{
-"code": "kp",
-"fa": "کُره شمالی",
-"en": "North Korea",
-"capital": "Pyongyang",
-"currencyName": "North Korean won",
-"currencySymbol": "₩",
-"region": "آسیا"
-},
-{
-"code": "mk",
-"fa": "مقدونیه شمالی",
-"en": "North Macedonia",
-"capital": "Skopje",
-"currencyName": "denar",
-"currencySymbol": "den",
-"region": "اروپا"
-},
-{
-"code": "mp",
-"fa": "جزایر ماریانای شمالی",
-"en": "Northern Mariana Islands",
-"capital": "Saipan",
-"currencyName": "United States dollar",
-"currencySymbol": "$",
-"region": "سایر"
-},
-{
-"code": "no",
-"fa": "نروژ",
-"en": "Norway",
-"capital": "Oslo",
-"currencyName": "Norwegian krone",
-"currencySymbol": "kr",
-"region": "اروپا"
-},
-{
-"code": "om",
-"fa": "عمان",
-"en": "Oman",
-"capital": "Muscat",
-"currencyName": "Omani rial",
-"currencySymbol": "ر.ع.",
-"region": "آسیا"
-},
-{
-"code": "pk",
-"fa": "پاکستان",
-"en": "Pakistan",
-"capital": "Islamabad",
-"currencyName": "Pakistani rupee",
-"currencySymbol": "₨",
-"region": "آسیا"
-},
-{
-"code": "pw",
-"fa": "پالائو",
-"en": "Palau",
-"capital": "Ngerulmud",
-"currencyName": "United States dollar",
-"currencySymbol": "$",
-"region": "سایر"
-},
-{
-"code": "ps",
-"fa": "فلسطین",
-"en": "Palestine",
-"capital": "Ramallah",
-"currencyName": "Egyptian pound",
-"currencySymbol": "E£",
-"region": "آسیا"
-},
-{
-"code": "pa",
-"fa": "پاناما",
-"en": "Panama",
-"capital": "Panama City",
-"currencyName": "Panamanian balboa",
-"currencySymbol": "B/.",
-"region": "آمریکا"
-},
-{
-"code": "pg",
-"fa": "پاپوآ گینه نو",
-"en": "Papua New Guinea",
-"capital": "Port Moresby",
-"currencyName": "Papua New Guinean kina",
-"currencySymbol": "K",
-"region": "سایر"
-},
-{
-"code": "py",
-"fa": "پاراگوئه",
-"en": "Paraguay",
-"capital": "Asunción",
-"currencyName": "Paraguayan guaraní",
-"currencySymbol": "₲",
-"region": "آمریکا"
-},
-{
-"code": "pe",
-"fa": "پرو",
-"en": "Peru",
-"capital": "Lima",
-"currencyName": "Peruvian sol",
-"currencySymbol": "S/.",
-"region": "آمریکا"
-},
-{
-"code": "ph",
-"fa": "فیلیپین",
-"en": "Philippines",
-"capital": "Manila",
-"currencyName": "Philippine peso",
-"currencySymbol": "₱",
-"region": "آسیا"
-},
-{
-"code": "pn",
-"fa": "جزایر پیت‌کرن",
-"en": "Pitcairn Islands",
-"capital": "Adamstown",
-"currencyName": "New Zealand dollar",
-"currencySymbol": "$",
-"region": "سایر"
-},
-{
-"code": "pl",
-"fa": "لهستان",
-"en": "Poland",
-"capital": "Warsaw",
-"currencyName": "Polish złoty",
-"currencySymbol": "zł",
-"region": "اروپا"
-},
-{
-"code": "pt",
-"fa": "پرتغال",
-"en": "Portugal",
-"capital": "Lisbon",
-"currencyName": "Euro",
-"currencySymbol": "€",
-"region": "اروپا"
-},
-{
-"code": "pr",
-"fa": "پورتوریکو",
-"en": "Puerto Rico",
-"capital": "San Juan",
-"currencyName": "United States dollar",
-"currencySymbol": "$",
-"region": "آمریکا"
-},
-{
-"code": "qa",
-"fa": "قطر",
-"en": "Qatar",
-"capital": "Doha",
-"currencyName": "Qatari riyal",
-"currencySymbol": "ر.ق",
-"region": "آسیا"
-},
-{
-"code": "ro",
-"fa": "رومانی",
-"en": "Romania",
-"capital": "Bucharest",
-"currencyName": "Romanian leu",
-"currencySymbol": "lei",
-"region": "اروپا"
-},
-{
-"code": "ru",
-"fa": "روسیه",
-"en": "Russia",
-"capital": "Moscow",
-"currencyName": "Russian ruble",
-"currencySymbol": "₽",
-"region": "اروپا"
-},
-{
-"code": "rw",
-"fa": "رواندا",
-"en": "Rwanda",
-"capital": "Kigali",
-"currencyName": "Rwandan franc",
-"currencySymbol": "Fr",
-"region": "آفریقا"
-},
-{
-"code": "re",
-"fa": "رئونیون",
-"en": "Réunion",
-"capital": "Saint-Denis",
-"currencyName": "Euro",
-"currencySymbol": "€",
-"region": "آفریقا"
-},
-{
-"code": "bl",
-"fa": "سن بارتلمی",
-"en": "Saint Barthélemy",
-"capital": "Gustavia",
-"currencyName": "Euro",
-"currencySymbol": "€",
-"region": "آمریکا"
-},
-{
-"code": "sh",
-"fa": "سنت هلن",
-"en": "Saint Helena, Ascension and Tristan da Cunha",
-"capital": "Jamestown",
-"currencyName": "Pound sterling",
-"currencySymbol": "£",
-"region": "آفریقا"
-},
-{
-"code": "kn",
-"fa": "سنت کیتس و نویس",
-"en": "Saint Kitts and Nevis",
-"capital": "Basseterre",
-"currencyName": "Eastern Caribbean dollar",
-"currencySymbol": "$",
-"region": "آمریکا"
-},
-{
-"code": "lc",
-"fa": "سنت لوسیا",
-"en": "Saint Lucia",
-"capital": "Castries",
-"currencyName": "Eastern Caribbean dollar",
-"currencySymbol": "$",
-"region": "آمریکا"
-},
-{
-"code": "mf",
-"fa": "سن مارتن",
-"en": "Saint Martin",
-"capital": "Marigot",
-"currencyName": "Euro",
-"currencySymbol": "€",
-"region": "آمریکا"
-},
-{
-"code": "pm",
-"fa": "سن-پیِر و میکلُن",
-"en": "Saint Pierre and Miquelon",
-"capital": "Saint-Pierre",
-"currencyName": "Euro",
-"currencySymbol": "€",
-"region": "آمریکا"
-},
-{
-"code": "vc",
-"fa": "سنت وینسنت و گرنادین‌ها",
-"en": "Saint Vincent and the Grenadines",
-"capital": "Kingstown",
-"currencyName": "Eastern Caribbean dollar",
-"currencySymbol": "$",
-"region": "آمریکا"
-},
-{
-"code": "ws",
-"fa": "ساموآ",
-"en": "Samoa",
-"capital": "Apia",
-"currencyName": "Samoan tālā",
-"currencySymbol": "T",
-"region": "سایر"
-},
-{
-"code": "sm",
-"fa": "سان مارینو",
-"en": "San Marino",
-"capital": "City of San Marino",
-"currencyName": "Euro",
-"currencySymbol": "€",
-"region": "اروپا"
-},
-{
-"code": "sa",
-"fa": "عربستان سعودی",
-"en": "Saudi Arabia",
-"capital": "Riyadh",
-"currencyName": "Saudi riyal",
-"currencySymbol": "ر.س",
-"region": "آسیا"
-},
-{
-"code": "sn",
-"fa": "سنگال",
-"en": "Senegal",
-"capital": "Dakar",
-"currencyName": "West African CFA franc",
-"currencySymbol": "Fr",
-"region": "آفریقا"
-},
-{
-"code": "rs",
-"fa": "صربستان",
-"en": "Serbia",
-"capital": "Belgrade",
-"currencyName": "Serbian dinar",
-"currencySymbol": "дин.",
-"region": "اروپا"
-},
-{
-"code": "sc",
-"fa": "سیشل",
-"en": "Seychelles",
-"capital": "Victoria",
-"currencyName": "Seychellois rupee",
-"currencySymbol": "₨",
-"region": "آفریقا"
-},
-{
-"code": "sl",
-"fa": "سیرالئون",
-"en": "Sierra Leone",
-"capital": "Freetown",
-"currencyName": "Sierra Leonean leone",
-"currencySymbol": "Le",
-"region": "آفریقا"
-},
-{
-"code": "sg",
-"fa": "سنگاپور",
-"en": "Singapore",
-"capital": "Singapore",
-"currencyName": "Singapore dollar",
-"currencySymbol": "$",
-"region": "آسیا"
-},
-{
-"code": "sx",
-"fa": "سن مارتن",
-"en": "Sint Maarten",
-"capital": "Philipsburg",
-"currencyName": "Netherlands Antillean guilder",
-"currencySymbol": "ƒ",
-"region": "آمریکا"
-},
-{
-"code": "sk",
-"fa": "اِسلُواکی",
-"en": "Slovakia",
-"capital": "Bratislava",
-"currencyName": "Euro",
-"currencySymbol": "€",
-"region": "اروپا"
-},
-{
-"code": "si",
-"fa": "اسلوونی",
-"en": "Slovenia",
-"capital": "Ljubljana",
-"currencyName": "Euro",
-"currencySymbol": "€",
-"region": "اروپا"
-},
-{
-"code": "sb",
-"fa": "جزایر سلیمان",
-"en": "Solomon Islands",
-"capital": "Honiara",
-"currencyName": "Solomon Islands dollar",
-"currencySymbol": "$",
-"region": "سایر"
-},
-{
-"code": "so",
-"fa": "سومالی",
-"en": "Somalia",
-"capital": "Mogadishu",
-"currencyName": "Somali shilling",
-"currencySymbol": "Sh",
-"region": "آفریقا"
-},
-{
-"code": "za",
-"fa": "آفریقای جنوبی",
-"en": "South Africa",
-"capital": "Pretoria",
-"currencyName": "South African rand",
-"currencySymbol": "R",
-"region": "آفریقا"
-},
-{
-"code": "gs",
-"fa": "جزایر جورجیای جنوبی و ساندویچ جنوبی",
-"en": "South Georgia",
-"capital": "King Edward Point",
-"currencyName": "Saint Helena pound",
-"currencySymbol": "£",
-"region": "سایر"
-},
-{
-"code": "kr",
-"fa": "کرهٔ جنوبی",
-"en": "South Korea",
-"capital": "Seoul",
-"currencyName": "South Korean won",
-"currencySymbol": "₩",
-"region": "آسیا"
-},
-{
-"code": "ss",
-"fa": "سودان جنوبی",
-"en": "South Sudan",
-"capital": "Juba",
-"currencyName": "South Sudanese pound",
-"currencySymbol": "£",
-"region": "آفریقا"
-},
-{
-"code": "es",
-"fa": "اسپانیا",
-"en": "Spain",
-"capital": "Madrid",
-"currencyName": "Euro",
-"currencySymbol": "€",
-"region": "اروپا"
-},
-{
-"code": "lk",
-"fa": "سری‌لانکا",
-"en": "Sri Lanka",
-"capital": "Colombo",
-"currencyName": "Sri Lankan rupee",
-"currencySymbol": "Rs රු",
-"region": "آسیا"
-},
-{
-"code": "sd",
-"fa": "سودان",
-"en": "Sudan",
-"capital": "Khartoum",
-"currencyName": "Sudanese pound",
-"currencySymbol": "PT",
-"region": "آفریقا"
-},
-{
-"code": "sr",
-"fa": "سورینام",
-"en": "Suriname",
-"capital": "Paramaribo",
-"currencyName": "Surinamese dollar",
-"currencySymbol": "$",
-"region": "آمریکا"
-},
-{
-"code": "sj",
-"fa": "سوالبارد و یان ماین",
-"en": "Svalbard and Jan Mayen",
-"capital": "Longyearbyen",
-"currencyName": "krone",
-"currencySymbol": "kr",
-"region": "اروپا"
-},
-{
-"code": "se",
-"fa": "سوئد",
-"en": "Sweden",
-"capital": "Stockholm",
-"currencyName": "Swedish krona",
-"currencySymbol": "kr",
-"region": "اروپا"
-},
-{
-"code": "ch",
-"fa": "سوئیس",
-"en": "Switzerland",
-"capital": "Bern",
-"currencyName": "Swiss franc",
-"currencySymbol": "Fr.",
-"region": "اروپا"
-},
-{
-"code": "sy",
-"fa": "سوریه",
-"en": "Syria",
-"capital": "Damascus",
-"currencyName": "Syrian pound",
-"currencySymbol": "£",
-"region": "آسیا"
-},
-{
-"code": "st",
-"fa": "سائوتومه و پرنسیپ",
-"en": "São Tomé and Príncipe",
-"capital": "São Tomé",
-"currencyName": "São Tomé and Príncipe dobra",
-"currencySymbol": "Db",
-"region": "آفریقا"
-},
-{
-"code": "tw",
-"fa": "تایوان",
-"en": "Taiwan",
-"capital": "Taipei",
-"currencyName": "New Taiwan dollar",
-"currencySymbol": "$",
-"region": "آسیا"
-},
-{
-"code": "tj",
-"fa": "تاجیکِستان",
-"en": "Tajikistan",
-"capital": "Dushanbe",
-"currencyName": "Tajikistani somoni",
-"currencySymbol": "ЅМ",
-"region": "آسیا"
-},
-{
-"code": "tz",
-"fa": "تانزانیا",
-"en": "Tanzania",
-"capital": "Dodoma",
-"currencyName": "Tanzanian shilling",
-"currencySymbol": "Sh",
-"region": "آفریقا"
-},
-{
-"code": "th",
-"fa": "تایلند",
-"en": "Thailand",
-"capital": "Bangkok",
-"currencyName": "Thai baht",
-"currencySymbol": "฿",
-"region": "آسیا"
-},
-{
-"code": "tl",
-"fa": "تیمور شرقی",
-"en": "Timor-Leste",
-"capital": "Dili",
-"currencyName": "United States dollar",
-"currencySymbol": "$",
-"region": "آسیا"
-},
-{
-"code": "tg",
-"fa": "توگو",
-"en": "Togo",
-"capital": "Lomé",
-"currencyName": "West African CFA franc",
-"currencySymbol": "Fr",
-"region": "آفریقا"
-},
-{
-"code": "tk",
-"fa": "توکلائو",
-"en": "Tokelau",
-"capital": "Fakaofo",
-"currencyName": "New Zealand dollar",
-"currencySymbol": "$",
-"region": "سایر"
-},
-{
-"code": "to",
-"fa": "تونگا",
-"en": "Tonga",
-"capital": "Nuku'alofa",
-"currencyName": "Tongan paʻanga",
-"currencySymbol": "T$",
-"region": "سایر"
-},
-{
-"code": "tt",
-"fa": "ترینیداد و توباگو",
-"en": "Trinidad and Tobago",
-"capital": "Port of Spain",
-"currencyName": "Trinidad and Tobago dollar",
-"currencySymbol": "$",
-"region": "آمریکا"
-},
-{
-"code": "tn",
-"fa": "تونس",
-"en": "Tunisia",
-"capital": "Tunis",
-"currencyName": "Tunisian dinar",
-"currencySymbol": "د.ت",
-"region": "آفریقا"
-},
-{
-"code": "tm",
-"fa": "ترکمنستان",
-"en": "Turkmenistan",
-"capital": "Ashgabat",
-"currencyName": "Turkmenistan manat",
-"currencySymbol": "m",
-"region": "آسیا"
-},
-{
-"code": "tc",
-"fa": "جزایر تورکس و کایکوس",
-"en": "Turks and Caicos Islands",
-"capital": "Cockburn Town",
-"currencyName": "United States dollar",
-"currencySymbol": "$",
-"region": "آمریکا"
-},
-{
-"code": "tv",
-"fa": "تووالو",
-"en": "Tuvalu",
-"capital": "Funafuti",
-"currencyName": "Australian dollar",
-"currencySymbol": "$",
-"region": "سایر"
-},
-{
-"code": "tr",
-"fa": "ترکیه",
-"en": "Türkiye",
-"capital": "Ankara",
-"currencyName": "Turkish lira",
-"currencySymbol": "₺",
-"region": "آسیا"
-},
-{
-"code": "ug",
-"fa": "اوگاندا",
-"en": "Uganda",
-"capital": "Kampala",
-"currencyName": "Ugandan shilling",
-"currencySymbol": "Sh",
-"region": "آفریقا"
-},
-{
-"code": "ua",
-"fa": "اوکراین",
-"en": "Ukraine",
-"capital": "Kyiv",
-"currencyName": "Ukrainian hryvnia",
-"currencySymbol": "₴",
-"region": "اروپا"
-},
-{
-"code": "ae",
-"fa": "امارات",
-"en": "United Arab Emirates",
-"capital": "Abu Dhabi",
-"currencyName": "United Arab Emirates dirham",
-"currencySymbol": "د.إ",
-"region": "آسیا"
-},
-{
-"code": "gb",
-"fa": "انگلیس",
-"en": "United Kingdom",
-"capital": "London",
-"currencyName": "British pound",
-"currencySymbol": "£",
-"region": "اروپا"
-},
-{
-"code": "us",
-"fa": "ایالات متحده آمریکا",
-"en": "United States",
-"capital": "Washington D.C.",
-"currencyName": "United States dollar",
-"currencySymbol": "$",
-"region": "آمریکا"
-},
-{
-"code": "um",
-"fa": "جزایر کوچک حاشیه‌ای ایالات متحده آمریکا",
-"en": "United States Minor Outlying Islands",
-"capital": "",
-"currencyName": "United States dollar",
-"currencySymbol": "$",
-"region": "آمریکا"
-},
-{
-"code": "vi",
-"fa": "جزایر ویرجین ایالات متحده آمریکا",
-"en": "United States Virgin Islands",
-"capital": "Charlotte Amalie",
-"currencyName": "United States dollar",
-"currencySymbol": "$",
-"region": "آمریکا"
-},
-{
-"code": "uy",
-"fa": "اروگوئه",
-"en": "Uruguay",
-"capital": "Montevideo",
-"currencyName": "Uruguayan peso",
-"currencySymbol": "$",
-"region": "آمریکا"
-},
-{
-"code": "uz",
-"fa": "ازبکستان",
-"en": "Uzbekistan",
-"capital": "Tashkent",
-"currencyName": "Uzbekistani soʻm",
-"currencySymbol": "so'm",
-"region": "آسیا"
-},
-{
-"code": "vu",
-"fa": "وانواتو",
-"en": "Vanuatu",
-"capital": "Port Vila",
-"currencyName": "Vanuatu vatu",
-"currencySymbol": "Vt",
-"region": "سایر"
-},
-{
-"code": "va",
-"fa": "واتیکان",
-"en": "Vatican City",
-"capital": "Vatican City",
-"currencyName": "Euro",
-"currencySymbol": "€",
-"region": "اروپا"
-},
-{
-"code": "ve",
-"fa": "ونزوئلا",
-"en": "Venezuela",
-"capital": "Caracas",
-"currencyName": "Venezuelan bolívar soberano",
-"currencySymbol": "Bs.S.",
-"region": "آمریکا"
-},
-{
-"code": "vn",
-"fa": "ویتنام",
-"en": "Vietnam",
-"capital": "Hanoi",
-"currencyName": "Vietnamese đồng",
-"currencySymbol": "₫",
-"region": "آسیا"
-},
-{
-"code": "wf",
-"fa": "والیس و فوتونا",
-"en": "Wallis and Futuna",
-"capital": "Mata-Utu",
-"currencyName": "CFP franc",
-"currencySymbol": "₣",
-"region": "سایر"
-},
-{
-"code": "eh",
-"fa": "صحرای غربی",
-"en": "Western Sahara",
-"capital": "El Aaiún",
-"currencyName": "Algerian dinar",
-"currencySymbol": "دج",
-"region": "آفریقا"
-},
-{
-"code": "ye",
-"fa": "یمن",
-"en": "Yemen",
-"capital": "Sana'a",
-"currencyName": "Yemeni rial",
-"currencySymbol": "﷼",
-"region": "آسیا"
-},
-{
-"code": "zm",
-"fa": "زامبیا",
-"en": "Zambia",
-"capital": "Lusaka",
-"currencyName": "Zambian kwacha",
-"currencySymbol": "ZK",
-"region": "آفریقا"
-},
-{
-"code": "zw",
-"fa": "زیمبابوه",
-"en": "Zimbabwe",
-"capital": "Harare",
-"currencyName": "Botswana pula",
-"currencySymbol": "P",
-"region": "آفریقا"
-},
-{
-"code": "ax",
-"fa": "جزایر الند",
-"en": "Åland Islands",
-"capital": "Mariehamn",
-"currencyName": "Euro",
-"currencySymbol": "€",
-"region": "اروپا"
-}
+  {
+    "code": "af",
+    "fa": "افغانستان",
+    "en": "Afghanistan",
+    "capital": "Kabul",
+    "currencyName": "Afghan afghani",
+    "currencySymbol": "؋",
+    "region": "آسیا",
+    "currencyFa": "افغانی"
+  },
+  {
+    "code": "al",
+    "fa": "آلبانی",
+    "en": "Albania",
+    "capital": "Tirana",
+    "currencyName": "Albanian lek",
+    "currencySymbol": "L",
+    "region": "اروپا",
+    "currencyFa": "لک"
+  },
+  {
+    "code": "dz",
+    "fa": "الجزایر",
+    "en": "Algeria",
+    "capital": "Algiers",
+    "currencyName": "Algerian dinar",
+    "currencySymbol": "د.ج",
+    "region": "آفریقا",
+    "currencyFa": "دینار"
+  },
+  {
+    "code": "as",
+    "fa": "ساموآی آمریکا",
+    "en": "American Samoa",
+    "capital": "Pago Pago",
+    "currencyName": "United States dollar",
+    "currencySymbol": "$",
+    "region": "سایر",
+    "currencyFa": "دلار"
+  },
+  {
+    "code": "ad",
+    "fa": "آندورا",
+    "en": "Andorra",
+    "capital": "Andorra la Vella",
+    "currencyName": "Euro",
+    "currencySymbol": "€",
+    "region": "اروپا",
+    "currencyFa": "یورو"
+  },
+  {
+    "code": "ao",
+    "fa": "آنگولا",
+    "en": "Angola",
+    "capital": "Luanda",
+    "currencyName": "Angolan kwanza",
+    "currencySymbol": "Kz",
+    "region": "آفریقا",
+    "currencyFa": "کوانزا"
+  },
+  {
+    "code": "ai",
+    "fa": "آنگویلا",
+    "en": "Anguilla",
+    "capital": "The Valley",
+    "currencyName": "Eastern Caribbean dollar",
+    "currencySymbol": "$",
+    "region": "آمریکا",
+    "currencyFa": "دلار"
+  },
+  {
+    "code": "aq",
+    "fa": "جنوبگان",
+    "en": "Antarctica",
+    "capital": "",
+    "currencyName": "",
+    "currencySymbol": "",
+    "region": "سایر",
+    "currencyFa": ""
+  },
+  {
+    "code": "ag",
+    "fa": "آنتیگوا و باربودا",
+    "en": "Antigua and Barbuda",
+    "capital": "Saint John's",
+    "currencyName": "Eastern Caribbean dollar",
+    "currencySymbol": "$",
+    "region": "آمریکا",
+    "currencyFa": "دلار"
+  },
+  {
+    "code": "ar",
+    "fa": "آرژانتین",
+    "en": "Argentina",
+    "capital": "Buenos Aires",
+    "currencyName": "Argentine peso",
+    "currencySymbol": "$",
+    "region": "آمریکا",
+    "currencyFa": "پزو"
+  },
+  {
+    "code": "am",
+    "fa": "ارمنستان",
+    "en": "Armenia",
+    "capital": "Yerevan",
+    "currencyName": "Armenian dram",
+    "currencySymbol": "֏",
+    "region": "آسیا",
+    "currencyFa": "درام"
+  },
+  {
+    "code": "aw",
+    "fa": "آروبا",
+    "en": "Aruba",
+    "capital": "Oranjestad",
+    "currencyName": "Aruban florin",
+    "currencySymbol": "ƒ",
+    "region": "آمریکا",
+    "currencyFa": "فلورین"
+  },
+  {
+    "code": "au",
+    "fa": "استرالیا",
+    "en": "Australia",
+    "capital": "Canberra",
+    "currencyName": "Australian dollar",
+    "currencySymbol": "$",
+    "region": "سایر",
+    "currencyFa": "دلار"
+  },
+  {
+    "code": "at",
+    "fa": "اتریش",
+    "en": "Austria",
+    "capital": "Vienna",
+    "currencyName": "Euro",
+    "currencySymbol": "€",
+    "region": "اروپا",
+    "currencyFa": "یورو"
+  },
+  {
+    "code": "az",
+    "fa": "جمهوری آذربایجان",
+    "en": "Azerbaijan",
+    "capital": "Baku",
+    "currencyName": "Azerbaijani manat",
+    "currencySymbol": "₼",
+    "region": "آسیا",
+    "currencyFa": "منات"
+  },
+  {
+    "code": "bs",
+    "fa": "باهاما",
+    "en": "Bahamas",
+    "capital": "Nassau",
+    "currencyName": "Bahamian dollar",
+    "currencySymbol": "$",
+    "region": "آمریکا",
+    "currencyFa": "دلار"
+  },
+  {
+    "code": "bh",
+    "fa": "بحرین",
+    "en": "Bahrain",
+    "capital": "Manama",
+    "currencyName": "Bahraini dinar",
+    "currencySymbol": ".د.ب",
+    "region": "آسیا",
+    "currencyFa": "دینار"
+  },
+  {
+    "code": "bd",
+    "fa": "بنگلادش",
+    "en": "Bangladesh",
+    "capital": "Dhaka",
+    "currencyName": "Bangladeshi taka",
+    "currencySymbol": "৳",
+    "region": "آسیا",
+    "currencyFa": "تاکا"
+  },
+  {
+    "code": "bb",
+    "fa": "باربادوس",
+    "en": "Barbados",
+    "capital": "Bridgetown",
+    "currencyName": "Barbadian dollar",
+    "currencySymbol": "$",
+    "region": "آمریکا",
+    "currencyFa": "دلار"
+  },
+  {
+    "code": "by",
+    "fa": "بلاروس",
+    "en": "Belarus",
+    "capital": "Minsk",
+    "currencyName": "Belarusian ruble",
+    "currencySymbol": "Br",
+    "region": "اروپا",
+    "currencyFa": "روبل"
+  },
+  {
+    "code": "be",
+    "fa": "بلژیک",
+    "en": "Belgium",
+    "capital": "Brussels",
+    "currencyName": "Euro",
+    "currencySymbol": "€",
+    "region": "اروپا",
+    "currencyFa": "یورو"
+  },
+  {
+    "code": "bz",
+    "fa": "بلیز",
+    "en": "Belize",
+    "capital": "Belmopan",
+    "currencyName": "Belize dollar",
+    "currencySymbol": "$",
+    "region": "آمریکا",
+    "currencyFa": "دلار"
+  },
+  {
+    "code": "bj",
+    "fa": "بنین",
+    "en": "Benin",
+    "capital": "Porto-Novo",
+    "currencyName": "West African CFA franc",
+    "currencySymbol": "Fr",
+    "region": "آفریقا",
+    "currencyFa": "فرانک"
+  },
+  {
+    "code": "bm",
+    "fa": "برمودا",
+    "en": "Bermuda",
+    "capital": "Hamilton",
+    "currencyName": "Bermudian dollar",
+    "currencySymbol": "$",
+    "region": "آمریکا",
+    "currencyFa": "دلار"
+  },
+  {
+    "code": "bt",
+    "fa": "بوتان",
+    "en": "Bhutan",
+    "capital": "Thimphu",
+    "currencyName": "Bhutanese ngultrum",
+    "currencySymbol": "Nu.",
+    "region": "آسیا",
+    "currencyFa": "نگولتروم"
+  },
+  {
+    "code": "bo",
+    "fa": "بولیوی",
+    "en": "Bolivia",
+    "capital": "Sucre",
+    "currencyName": "Bolivian boliviano",
+    "currencySymbol": "Bs.",
+    "region": "آمریکا",
+    "currencyFa": "بولیویانو"
+  },
+  {
+    "code": "ba",
+    "fa": "بوسنی و هرزگوین",
+    "en": "Bosnia and Herzegovina",
+    "capital": "Sarajevo",
+    "currencyName": "Bosnia and Herzegovina convertible mark",
+    "currencySymbol": "KM",
+    "region": "اروپا",
+    "currencyFa": "مارک"
+  },
+  {
+    "code": "bw",
+    "fa": "بوتسوانا",
+    "en": "Botswana",
+    "capital": "Gaborone",
+    "currencyName": "Botswana pula",
+    "currencySymbol": "P",
+    "region": "آفریقا",
+    "currencyFa": "پولا"
+  },
+  {
+    "code": "bv",
+    "fa": "جزیرهٔ بووه",
+    "en": "Bouvet Island",
+    "capital": "",
+    "currencyName": "",
+    "currencySymbol": "",
+    "region": "سایر",
+    "currencyFa": ""
+  },
+  {
+    "code": "br",
+    "fa": "برزیل",
+    "en": "Brazil",
+    "capital": "Brasília",
+    "currencyName": "Brazilian real",
+    "currencySymbol": "R$",
+    "region": "آمریکا",
+    "currencyFa": "رئال"
+  },
+  {
+    "code": "io",
+    "fa": "قلمرو بریتانیا در اقیانوس هند",
+    "en": "British Indian Ocean Territory",
+    "capital": "Diego Garcia",
+    "currencyName": "United States dollar",
+    "currencySymbol": "$",
+    "region": "آفریقا",
+    "currencyFa": "دلار"
+  },
+  {
+    "code": "vg",
+    "fa": "جزایر ویرجین بریتانیا",
+    "en": "British Virgin Islands",
+    "capital": "Road Town",
+    "currencyName": "United States dollar",
+    "currencySymbol": "$",
+    "region": "آمریکا",
+    "currencyFa": "دلار"
+  },
+  {
+    "code": "bn",
+    "fa": "برونئی",
+    "en": "Brunei",
+    "capital": "Bandar Seri Begawan",
+    "currencyName": "Brunei dollar",
+    "currencySymbol": "$",
+    "region": "آسیا",
+    "currencyFa": "دلار"
+  },
+  {
+    "code": "bg",
+    "fa": "بلغارستان",
+    "en": "Bulgaria",
+    "capital": "Sofia",
+    "currencyName": "Bulgarian lev",
+    "currencySymbol": "лв",
+    "region": "اروپا",
+    "currencyFa": "لو"
+  },
+  {
+    "code": "bf",
+    "fa": "بورکینافاسو",
+    "en": "Burkina Faso",
+    "capital": "Ouagadougou",
+    "currencyName": "West African CFA franc",
+    "currencySymbol": "Fr",
+    "region": "آفریقا",
+    "currencyFa": "فرانک"
+  },
+  {
+    "code": "bi",
+    "fa": "بوروندی",
+    "en": "Burundi",
+    "capital": "Gitega",
+    "currencyName": "Burundian franc",
+    "currencySymbol": "Fr",
+    "region": "آفریقا",
+    "currencyFa": "فرانک"
+  },
+  {
+    "code": "kh",
+    "fa": "کامبوج",
+    "en": "Cambodia",
+    "capital": "Phnom Penh",
+    "currencyName": "Cambodian riel",
+    "currencySymbol": "៛",
+    "region": "آسیا",
+    "currencyFa": "ریل"
+  },
+  {
+    "code": "cm",
+    "fa": "کامِرون",
+    "en": "Cameroon",
+    "capital": "Yaoundé",
+    "currencyName": "Central African CFA franc",
+    "currencySymbol": "Fr",
+    "region": "آفریقا",
+    "currencyFa": "فرانک"
+  },
+  {
+    "code": "ca",
+    "fa": "کانادا",
+    "en": "Canada",
+    "capital": "Ottawa",
+    "currencyName": "Canadian dollar",
+    "currencySymbol": "$",
+    "region": "آمریکا",
+    "currencyFa": "دلار"
+  },
+  {
+    "code": "cv",
+    "fa": "دماغهٔ سبز",
+    "en": "Cape Verde",
+    "capital": "Praia",
+    "currencyName": "Cape Verdean escudo",
+    "currencySymbol": "Esc",
+    "region": "آفریقا",
+    "currencyFa": "اسکودو"
+  },
+  {
+    "code": "bq",
+    "fa": "جزایر کارائیب هلند",
+    "en": "Caribbean Netherlands",
+    "capital": "Kralendijk",
+    "currencyName": "United States dollar",
+    "currencySymbol": "$",
+    "region": "آمریکا",
+    "currencyFa": "دلار"
+  },
+  {
+    "code": "ky",
+    "fa": "جزایر کیمن",
+    "en": "Cayman Islands",
+    "capital": "George Town",
+    "currencyName": "Cayman Islands dollar",
+    "currencySymbol": "$",
+    "region": "آمریکا",
+    "currencyFa": "دلار"
+  },
+  {
+    "code": "cf",
+    "fa": "جمهوری آفریقای مرکزی",
+    "en": "Central African Republic",
+    "capital": "Bangui",
+    "currencyName": "Central African CFA franc",
+    "currencySymbol": "Fr",
+    "region": "آفریقا",
+    "currencyFa": "فرانک"
+  },
+  {
+    "code": "td",
+    "fa": "چاد",
+    "en": "Chad",
+    "capital": "N'Djamena",
+    "currencyName": "Central African CFA franc",
+    "currencySymbol": "Fr",
+    "region": "آفریقا",
+    "currencyFa": "فرانک"
+  },
+  {
+    "code": "cl",
+    "fa": "شیلی",
+    "en": "Chile",
+    "capital": "Santiago",
+    "currencyName": "Chilean peso",
+    "currencySymbol": "$",
+    "region": "آمریکا",
+    "currencyFa": "پزو"
+  },
+  {
+    "code": "cn",
+    "fa": "چین",
+    "en": "China",
+    "capital": "Beijing",
+    "currencyName": "Chinese yuan",
+    "currencySymbol": "¥",
+    "region": "آسیا",
+    "currencyFa": "یوان"
+  },
+  {
+    "code": "cx",
+    "fa": "جزیرهٔ کریسمس",
+    "en": "Christmas Island",
+    "capital": "Flying Fish Cove",
+    "currencyName": "Australian dollar",
+    "currencySymbol": "$",
+    "region": "سایر",
+    "currencyFa": "دلار"
+  },
+  {
+    "code": "cc",
+    "fa": "جزایر کوکوس",
+    "en": "Cocos (Keeling) Islands",
+    "capital": "West Island",
+    "currencyName": "Australian dollar",
+    "currencySymbol": "$",
+    "region": "سایر",
+    "currencyFa": "دلار"
+  },
+  {
+    "code": "co",
+    "fa": "کلمبیا",
+    "en": "Colombia",
+    "capital": "Bogotá",
+    "currencyName": "Colombian peso",
+    "currencySymbol": "$",
+    "region": "آمریکا",
+    "currencyFa": "پزو"
+  },
+  {
+    "code": "km",
+    "fa": "اتحاد قُمُر",
+    "en": "Comoros",
+    "capital": "Moroni",
+    "currencyName": "Comorian franc",
+    "currencySymbol": "Fr",
+    "region": "آفریقا",
+    "currencyFa": "فرانک"
+  },
+  {
+    "code": "cg",
+    "fa": "جمهوری کُنگو",
+    "en": "Congo",
+    "capital": "Brazzaville",
+    "currencyName": "Central African CFA franc",
+    "currencySymbol": "Fr",
+    "region": "آفریقا",
+    "currencyFa": "فرانک"
+  },
+  {
+    "code": "ck",
+    "fa": "جزایر کوک",
+    "en": "Cook Islands",
+    "capital": "Avarua",
+    "currencyName": "Cook Islands dollar",
+    "currencySymbol": "$",
+    "region": "سایر",
+    "currencyFa": "دلار"
+  },
+  {
+    "code": "cr",
+    "fa": "کاستاریکا",
+    "en": "Costa Rica",
+    "capital": "San José",
+    "currencyName": "Costa Rican colón",
+    "currencySymbol": "₡",
+    "region": "آمریکا",
+    "currencyFa": "کولون"
+  },
+  {
+    "code": "hr",
+    "fa": "کرُواسی",
+    "en": "Croatia",
+    "capital": "Zagreb",
+    "currencyName": "Euro",
+    "currencySymbol": "€",
+    "region": "اروپا",
+    "currencyFa": "یورو"
+  },
+  {
+    "code": "cu",
+    "fa": "کوبا",
+    "en": "Cuba",
+    "capital": "Havana",
+    "currencyName": "Cuban convertible peso",
+    "currencySymbol": "$",
+    "region": "آمریکا",
+    "currencyFa": "پزو"
+  },
+  {
+    "code": "cw",
+    "fa": "کوراسائو",
+    "en": "Curaçao",
+    "capital": "Willemstad",
+    "currencyName": "Netherlands Antillean guilder",
+    "currencySymbol": "ƒ",
+    "region": "آمریکا",
+    "currencyFa": "گیلدر"
+  },
+  {
+    "code": "cy",
+    "fa": "قِبرِس",
+    "en": "Cyprus",
+    "capital": "Nicosia",
+    "currencyName": "Euro",
+    "currencySymbol": "€",
+    "region": "اروپا",
+    "currencyFa": "یورو"
+  },
+  {
+    "code": "cz",
+    "fa": "جمهوری چک",
+    "en": "Czechia",
+    "capital": "Prague",
+    "currencyName": "Czech koruna",
+    "currencySymbol": "Kč",
+    "region": "اروپا",
+    "currencyFa": "کرون"
+  },
+  {
+    "code": "cd",
+    "fa": "کنگو دموکراتیک",
+    "en": "DR Congo",
+    "capital": "Kinshasa",
+    "currencyName": "Congolese franc",
+    "currencySymbol": "FC",
+    "region": "آفریقا",
+    "currencyFa": "فرانک"
+  },
+  {
+    "code": "dk",
+    "fa": "دانمارک",
+    "en": "Denmark",
+    "capital": "Copenhagen",
+    "currencyName": "Danish krone",
+    "currencySymbol": "kr",
+    "region": "اروپا",
+    "currencyFa": "کرون"
+  },
+  {
+    "code": "dj",
+    "fa": "جیبوتی",
+    "en": "Djibouti",
+    "capital": "Djibouti",
+    "currencyName": "Djiboutian franc",
+    "currencySymbol": "Fr",
+    "region": "آفریقا",
+    "currencyFa": "فرانک"
+  },
+  {
+    "code": "dm",
+    "fa": "دومینیکا",
+    "en": "Dominica",
+    "capital": "Roseau",
+    "currencyName": "Eastern Caribbean dollar",
+    "currencySymbol": "$",
+    "region": "آمریکا",
+    "currencyFa": "دلار"
+  },
+  {
+    "code": "do",
+    "fa": "جمهوری دومینیکن",
+    "en": "Dominican Republic",
+    "capital": "Santo Domingo",
+    "currencyName": "Dominican peso",
+    "currencySymbol": "$",
+    "region": "آمریکا",
+    "currencyFa": "پزو"
+  },
+  {
+    "code": "ec",
+    "fa": "اکوادور",
+    "en": "Ecuador",
+    "capital": "Quito",
+    "currencyName": "United States dollar",
+    "currencySymbol": "$",
+    "region": "آمریکا",
+    "currencyFa": "دلار"
+  },
+  {
+    "code": "eg",
+    "fa": "مصر",
+    "en": "Egypt",
+    "capital": "Cairo",
+    "currencyName": "Egyptian pound",
+    "currencySymbol": "£",
+    "region": "آفریقا",
+    "currencyFa": "پوند"
+  },
+  {
+    "code": "sv",
+    "fa": "السالوادور",
+    "en": "El Salvador",
+    "capital": "San Salvador",
+    "currencyName": "United States dollar",
+    "currencySymbol": "$",
+    "region": "آمریکا",
+    "currencyFa": "دلار"
+  },
+  {
+    "code": "gq",
+    "fa": "گینه استوایی",
+    "en": "Equatorial Guinea",
+    "capital": "Malabo",
+    "currencyName": "Central African CFA franc",
+    "currencySymbol": "Fr",
+    "region": "آفریقا",
+    "currencyFa": "فرانک"
+  },
+  {
+    "code": "er",
+    "fa": "اریتره",
+    "en": "Eritrea",
+    "capital": "Asmara",
+    "currencyName": "Eritrean nakfa",
+    "currencySymbol": "Nfk",
+    "region": "آفریقا",
+    "currencyFa": "ناکفا"
+  },
+  {
+    "code": "ee",
+    "fa": "اِستونی",
+    "en": "Estonia",
+    "capital": "Tallinn",
+    "currencyName": "Euro",
+    "currencySymbol": "€",
+    "region": "اروپا",
+    "currencyFa": "یورو"
+  },
+  {
+    "code": "sz",
+    "fa": "اسواتینی",
+    "en": "Eswatini",
+    "capital": "Lobamba",
+    "currencyName": "Swazi lilangeni",
+    "currencySymbol": "L",
+    "region": "آفریقا",
+    "currencyFa": "لیلانگنی"
+  },
+  {
+    "code": "et",
+    "fa": "اِتیوپی",
+    "en": "Ethiopia",
+    "capital": "Addis Ababa",
+    "currencyName": "Ethiopian birr",
+    "currencySymbol": "Br",
+    "region": "آفریقا",
+    "currencyFa": "بیر"
+  },
+  {
+    "code": "fk",
+    "fa": "جزایر فالکلند",
+    "en": "Falkland Islands",
+    "capital": "Stanley",
+    "currencyName": "Falkland Islands pound",
+    "currencySymbol": "£",
+    "region": "آمریکا",
+    "currencyFa": "پوند"
+  },
+  {
+    "code": "fo",
+    "fa": "جزایر فاروئه",
+    "en": "Faroe Islands",
+    "capital": "Tórshavn",
+    "currencyName": "Danish krone",
+    "currencySymbol": "kr",
+    "region": "اروپا",
+    "currencyFa": "کرون"
+  },
+  {
+    "code": "fj",
+    "fa": "فیجی",
+    "en": "Fiji",
+    "capital": "Suva",
+    "currencyName": "Fijian dollar",
+    "currencySymbol": "$",
+    "region": "سایر",
+    "currencyFa": "دلار"
+  },
+  {
+    "code": "fi",
+    "fa": "فنلاند",
+    "en": "Finland",
+    "capital": "Helsinki",
+    "currencyName": "Euro",
+    "currencySymbol": "€",
+    "region": "اروپا",
+    "currencyFa": "یورو"
+  },
+  {
+    "code": "fr",
+    "fa": "فرانسه",
+    "en": "France",
+    "capital": "Paris",
+    "currencyName": "Euro",
+    "currencySymbol": "€",
+    "region": "اروپا",
+    "currencyFa": "یورو"
+  },
+  {
+    "code": "gf",
+    "fa": "گویان فرانسه",
+    "en": "French Guiana",
+    "capital": "Cayenne",
+    "currencyName": "Euro",
+    "currencySymbol": "€",
+    "region": "آمریکا",
+    "currencyFa": "یورو"
+  },
+  {
+    "code": "pf",
+    "fa": "پُلی‌نِزی فرانسه",
+    "en": "French Polynesia",
+    "capital": "Papeetē",
+    "currencyName": "CFP franc",
+    "currencySymbol": "₣",
+    "region": "سایر",
+    "currencyFa": "فرانک"
+  },
+  {
+    "code": "tf",
+    "fa": "سرزمین‌های جنوبی و جنوبگانی فرانسه",
+    "en": "French Southern and Antarctic Lands",
+    "capital": "Port-aux-Français",
+    "currencyName": "Euro",
+    "currencySymbol": "€",
+    "region": "سایر",
+    "currencyFa": "یورو"
+  },
+  {
+    "code": "ga",
+    "fa": "گابن",
+    "en": "Gabon",
+    "capital": "Libreville",
+    "currencyName": "Central African CFA franc",
+    "currencySymbol": "Fr",
+    "region": "آفریقا",
+    "currencyFa": "فرانک"
+  },
+  {
+    "code": "gm",
+    "fa": "گامبیا",
+    "en": "Gambia",
+    "capital": "Banjul",
+    "currencyName": "dalasi",
+    "currencySymbol": "D",
+    "region": "آفریقا",
+    "currencyFa": "دالاسی"
+  },
+  {
+    "code": "ge",
+    "fa": "گرجستان",
+    "en": "Georgia",
+    "capital": "Tbilisi",
+    "currencyName": "lari",
+    "currencySymbol": "₾",
+    "region": "آسیا",
+    "currencyFa": "لاری"
+  },
+  {
+    "code": "de",
+    "fa": "آلمان",
+    "en": "Germany",
+    "capital": "Berlin",
+    "currencyName": "Euro",
+    "currencySymbol": "€",
+    "region": "اروپا",
+    "currencyFa": "یورو"
+  },
+  {
+    "code": "gh",
+    "fa": "غنا",
+    "en": "Ghana",
+    "capital": "Accra",
+    "currencyName": "Ghanaian cedi",
+    "currencySymbol": "₵",
+    "region": "آفریقا",
+    "currencyFa": "سدی"
+  },
+  {
+    "code": "gi",
+    "fa": "جبل طارق",
+    "en": "Gibraltar",
+    "capital": "Gibraltar",
+    "currencyName": "Gibraltar pound",
+    "currencySymbol": "£",
+    "region": "اروپا",
+    "currencyFa": "پوند"
+  },
+  {
+    "code": "gr",
+    "fa": "یونان",
+    "en": "Greece",
+    "capital": "Athens",
+    "currencyName": "Euro",
+    "currencySymbol": "€",
+    "region": "اروپا",
+    "currencyFa": "یورو"
+  },
+  {
+    "code": "gl",
+    "fa": "گرینلند",
+    "en": "Greenland",
+    "capital": "Nuuk",
+    "currencyName": "krone",
+    "currencySymbol": "kr.",
+    "region": "آمریکا",
+    "currencyFa": "کرون"
+  },
+  {
+    "code": "gd",
+    "fa": "گرنادا",
+    "en": "Grenada",
+    "capital": "St. George's",
+    "currencyName": "Eastern Caribbean dollar",
+    "currencySymbol": "$",
+    "region": "آمریکا",
+    "currencyFa": "دلار"
+  },
+  {
+    "code": "gp",
+    "fa": "گوادلوپ",
+    "en": "Guadeloupe",
+    "capital": "Basse-Terre",
+    "currencyName": "Euro",
+    "currencySymbol": "€",
+    "region": "آمریکا",
+    "currencyFa": "یورو"
+  },
+  {
+    "code": "gu",
+    "fa": "گوآم",
+    "en": "Guam",
+    "capital": "Hagåtña",
+    "currencyName": "United States dollar",
+    "currencySymbol": "$",
+    "region": "سایر",
+    "currencyFa": "دلار"
+  },
+  {
+    "code": "gt",
+    "fa": "گواتِمالا",
+    "en": "Guatemala",
+    "capital": "Guatemala City",
+    "currencyName": "Guatemalan quetzal",
+    "currencySymbol": "Q",
+    "region": "آمریکا",
+    "currencyFa": "کتزال"
+  },
+  {
+    "code": "gg",
+    "fa": "گرنزی",
+    "en": "Guernsey",
+    "capital": "St. Peter Port",
+    "currencyName": "British pound",
+    "currencySymbol": "£",
+    "region": "اروپا",
+    "currencyFa": "پوند"
+  },
+  {
+    "code": "gn",
+    "fa": "پاپوآ گینه نو",
+    "en": "Guinea",
+    "capital": "Conakry",
+    "currencyName": "Guinean franc",
+    "currencySymbol": "Fr",
+    "region": "آفریقا",
+    "currencyFa": "فرانک"
+  },
+  {
+    "code": "gw",
+    "fa": "گینه بیسائو",
+    "en": "Guinea-Bissau",
+    "capital": "Bissau",
+    "currencyName": "West African CFA franc",
+    "currencySymbol": "Fr",
+    "region": "آفریقا",
+    "currencyFa": "فرانک"
+  },
+  {
+    "code": "gy",
+    "fa": "گویان",
+    "en": "Guyana",
+    "capital": "Georgetown",
+    "currencyName": "Guyanese dollar",
+    "currencySymbol": "$",
+    "region": "آمریکا",
+    "currencyFa": "دلار"
+  },
+  {
+    "code": "ht",
+    "fa": "هائیتی",
+    "en": "Haiti",
+    "capital": "Port-au-Prince",
+    "currencyName": "Haitian gourde",
+    "currencySymbol": "G",
+    "region": "آمریکا",
+    "currencyFa": "گورد"
+  },
+  {
+    "code": "hm",
+    "fa": "جزیره هرد و جزایر مک‌دونالد",
+    "en": "Heard Island and McDonald Islands",
+    "capital": "",
+    "currencyName": "",
+    "currencySymbol": "",
+    "region": "سایر",
+    "currencyFa": ""
+  },
+  {
+    "code": "hn",
+    "fa": "هُندوراس",
+    "en": "Honduras",
+    "capital": "Tegucigalpa",
+    "currencyName": "Honduran lempira",
+    "currencySymbol": "L",
+    "region": "آمریکا",
+    "currencyFa": "لمپیرا"
+  },
+  {
+    "code": "hk",
+    "fa": "هُنگ کُنگ",
+    "en": "Hong Kong",
+    "capital": "City of Victoria",
+    "currencyName": "Hong Kong dollar",
+    "currencySymbol": "$",
+    "region": "آسیا",
+    "currencyFa": "دلار"
+  },
+  {
+    "code": "hu",
+    "fa": "مجارستان",
+    "en": "Hungary",
+    "capital": "Budapest",
+    "currencyName": "Hungarian forint",
+    "currencySymbol": "Ft",
+    "region": "اروپا",
+    "currencyFa": "فورینت"
+  },
+  {
+    "code": "is",
+    "fa": "ایسلند",
+    "en": "Iceland",
+    "capital": "Reykjavik",
+    "currencyName": "Icelandic króna",
+    "currencySymbol": "kr",
+    "region": "اروپا",
+    "currencyFa": "کرون"
+  },
+  {
+    "code": "in",
+    "fa": "هند",
+    "en": "India",
+    "capital": "New Delhi",
+    "currencyName": "Indian rupee",
+    "currencySymbol": "₹",
+    "region": "آسیا",
+    "currencyFa": "روپیه"
+  },
+  {
+    "code": "id",
+    "fa": "اندونزی",
+    "en": "Indonesia",
+    "capital": "Jakarta",
+    "currencyName": "Indonesian rupiah",
+    "currencySymbol": "Rp",
+    "region": "آسیا",
+    "currencyFa": "روپیه"
+  },
+  {
+    "code": "ir",
+    "fa": "ایران",
+    "en": "Iran",
+    "capital": "Tehran",
+    "currencyName": "Iranian rial",
+    "currencySymbol": "﷼",
+    "region": "آسیا",
+    "currencyFa": "ریال"
+  },
+  {
+    "code": "iq",
+    "fa": "عراق",
+    "en": "Iraq",
+    "capital": "Baghdad",
+    "currencyName": "Iraqi dinar",
+    "currencySymbol": "ع.د",
+    "region": "آسیا",
+    "currencyFa": "دینار"
+  },
+  {
+    "code": "ie",
+    "fa": "ایرلند",
+    "en": "Ireland",
+    "capital": "Dublin",
+    "currencyName": "Euro",
+    "currencySymbol": "€",
+    "region": "اروپا",
+    "currencyFa": "یورو"
+  },
+  {
+    "code": "im",
+    "fa": "جزیرهٔ مَن",
+    "en": "Isle of Man",
+    "capital": "Douglas",
+    "currencyName": "British pound",
+    "currencySymbol": "£",
+    "region": "اروپا",
+    "currencyFa": "پوند"
+  },
+  {
+    "code": "il",
+    "fa": "فلسطين اشغالی",
+    "en": "Israel",
+    "capital": "Jerusalem",
+    "currencyName": "Israeli new shekel",
+    "currencySymbol": "₪",
+    "region": "آسیا",
+    "currencyFa": "شکل"
+  },
+  {
+    "code": "it",
+    "fa": "ایتالیا",
+    "en": "Italy",
+    "capital": "Rome",
+    "currencyName": "Euro",
+    "currencySymbol": "€",
+    "region": "اروپا",
+    "currencyFa": "یورو"
+  },
+  {
+    "code": "ci",
+    "fa": "ساحل عاج",
+    "en": "Ivory Coast",
+    "capital": "Yamoussoukro",
+    "currencyName": "West African CFA franc",
+    "currencySymbol": "Fr",
+    "region": "آفریقا",
+    "currencyFa": "فرانک"
+  },
+  {
+    "code": "jm",
+    "fa": "جامائیکا",
+    "en": "Jamaica",
+    "capital": "Kingston",
+    "currencyName": "Jamaican dollar",
+    "currencySymbol": "$",
+    "region": "آمریکا",
+    "currencyFa": "دلار"
+  },
+  {
+    "code": "jp",
+    "fa": "ژاپن",
+    "en": "Japan",
+    "capital": "Tokyo",
+    "currencyName": "Japanese yen",
+    "currencySymbol": "¥",
+    "region": "آسیا",
+    "currencyFa": "ین"
+  },
+  {
+    "code": "je",
+    "fa": "جرزی",
+    "en": "Jersey",
+    "capital": "Saint Helier",
+    "currencyName": "British pound",
+    "currencySymbol": "£",
+    "region": "اروپا",
+    "currencyFa": "پوند"
+  },
+  {
+    "code": "jo",
+    "fa": "اردن",
+    "en": "Jordan",
+    "capital": "Amman",
+    "currencyName": "Jordanian dinar",
+    "currencySymbol": "د.ا",
+    "region": "آسیا",
+    "currencyFa": "دینار"
+  },
+  {
+    "code": "kz",
+    "fa": "قزاقستان",
+    "en": "Kazakhstan",
+    "capital": "Astana",
+    "currencyName": "Kazakhstani tenge",
+    "currencySymbol": "₸",
+    "region": "آسیا",
+    "currencyFa": "تنگه"
+  },
+  {
+    "code": "ke",
+    "fa": "کنیا",
+    "en": "Kenya",
+    "capital": "Nairobi",
+    "currencyName": "Kenyan shilling",
+    "currencySymbol": "Sh",
+    "region": "آفریقا",
+    "currencyFa": "شیلینگ"
+  },
+  {
+    "code": "ki",
+    "fa": "کیریباتی",
+    "en": "Kiribati",
+    "capital": "South Tarawa",
+    "currencyName": "Australian dollar",
+    "currencySymbol": "$",
+    "region": "سایر",
+    "currencyFa": "دلار"
+  },
+  {
+    "code": "xk",
+    "fa": "کوزوو",
+    "en": "Kosovo",
+    "capital": "Pristina",
+    "currencyName": "Euro",
+    "currencySymbol": "€",
+    "region": "اروپا",
+    "currencyFa": "یورو"
+  },
+  {
+    "code": "kw",
+    "fa": "کُویت",
+    "en": "Kuwait",
+    "capital": "Kuwait City",
+    "currencyName": "Kuwaiti dinar",
+    "currencySymbol": "د.ك",
+    "region": "آسیا",
+    "currencyFa": "دینار"
+  },
+  {
+    "code": "kg",
+    "fa": "قرقیزستان",
+    "en": "Kyrgyzstan",
+    "capital": "Bishkek",
+    "currencyName": "Kyrgyzstani som",
+    "currencySymbol": "с",
+    "region": "آسیا",
+    "currencyFa": "سوم"
+  },
+  {
+    "code": "la",
+    "fa": "لائوس",
+    "en": "Laos",
+    "capital": "Vientiane",
+    "currencyName": "Lao kip",
+    "currencySymbol": "₭",
+    "region": "آسیا",
+    "currencyFa": "کیپ"
+  },
+  {
+    "code": "lv",
+    "fa": "لتونی",
+    "en": "Latvia",
+    "capital": "Riga",
+    "currencyName": "Euro",
+    "currencySymbol": "€",
+    "region": "اروپا",
+    "currencyFa": "یورو"
+  },
+  {
+    "code": "lb",
+    "fa": "لبنان",
+    "en": "Lebanon",
+    "capital": "Beirut",
+    "currencyName": "Lebanese pound",
+    "currencySymbol": "ل.ل",
+    "region": "آسیا",
+    "currencyFa": "پوند"
+  },
+  {
+    "code": "ls",
+    "fa": "لسوتو",
+    "en": "Lesotho",
+    "capital": "Maseru",
+    "currencyName": "Lesotho loti",
+    "currencySymbol": "L",
+    "region": "آفریقا",
+    "currencyFa": "لوتی"
+  },
+  {
+    "code": "lr",
+    "fa": "لیبـِریا",
+    "en": "Liberia",
+    "capital": "Monrovia",
+    "currencyName": "Liberian dollar",
+    "currencySymbol": "$",
+    "region": "آفریقا",
+    "currencyFa": "دلار"
+  },
+  {
+    "code": "ly",
+    "fa": "لیبی",
+    "en": "Libya",
+    "capital": "Tripoli",
+    "currencyName": "Libyan dinar",
+    "currencySymbol": "ل.د",
+    "region": "آفریقا",
+    "currencyFa": "دینار"
+  },
+  {
+    "code": "li",
+    "fa": "لیختن‌اشتاین",
+    "en": "Liechtenstein",
+    "capital": "Vaduz",
+    "currencyName": "Swiss franc",
+    "currencySymbol": "Fr",
+    "region": "اروپا",
+    "currencyFa": "فرانک"
+  },
+  {
+    "code": "lt",
+    "fa": "لیتوانیایی‌ها",
+    "en": "Lithuania",
+    "capital": "Vilnius",
+    "currencyName": "Euro",
+    "currencySymbol": "€",
+    "region": "اروپا",
+    "currencyFa": "یورو"
+  },
+  {
+    "code": "lu",
+    "fa": "لوکزامبورگ",
+    "en": "Luxembourg",
+    "capital": "Luxembourg",
+    "currencyName": "Euro",
+    "currencySymbol": "€",
+    "region": "اروپا",
+    "currencyFa": "یورو"
+  },
+  {
+    "code": "mo",
+    "fa": "ماکائو",
+    "en": "Macau",
+    "capital": "",
+    "currencyName": "Macanese pataca",
+    "currencySymbol": "P",
+    "region": "آسیا",
+    "currencyFa": "پاتاکا"
+  },
+  {
+    "code": "mg",
+    "fa": "ماداگاسکار",
+    "en": "Madagascar",
+    "capital": "Antananarivo",
+    "currencyName": "Malagasy ariary",
+    "currencySymbol": "Ar",
+    "region": "آفریقا",
+    "currencyFa": "آریاری"
+  },
+  {
+    "code": "mw",
+    "fa": "مالاوی",
+    "en": "Malawi",
+    "capital": "Lilongwe",
+    "currencyName": "Malawian kwacha",
+    "currencySymbol": "MK",
+    "region": "آفریقا",
+    "currencyFa": "کواچا"
+  },
+  {
+    "code": "my",
+    "fa": "مالزی",
+    "en": "Malaysia",
+    "capital": "Kuala Lumpur",
+    "currencyName": "Malaysian ringgit",
+    "currencySymbol": "RM",
+    "region": "آسیا",
+    "currencyFa": "رینگیت"
+  },
+  {
+    "code": "mv",
+    "fa": "مالدیو",
+    "en": "Maldives",
+    "capital": "Malé",
+    "currencyName": "Maldivian rufiyaa",
+    "currencySymbol": ".ރ",
+    "region": "آسیا",
+    "currencyFa": "روفیا"
+  },
+  {
+    "code": "ml",
+    "fa": "مالی",
+    "en": "Mali",
+    "capital": "Bamako",
+    "currencyName": "West African CFA franc",
+    "currencySymbol": "Fr",
+    "region": "آفریقا",
+    "currencyFa": "فرانک"
+  },
+  {
+    "code": "mt",
+    "fa": "مالت",
+    "en": "Malta",
+    "capital": "Valletta",
+    "currencyName": "Euro",
+    "currencySymbol": "€",
+    "region": "اروپا",
+    "currencyFa": "یورو"
+  },
+  {
+    "code": "mh",
+    "fa": "جزایر مارشال",
+    "en": "Marshall Islands",
+    "capital": "Majuro",
+    "currencyName": "United States dollar",
+    "currencySymbol": "$",
+    "region": "سایر",
+    "currencyFa": "دلار"
+  },
+  {
+    "code": "mq",
+    "fa": "مارتینیک",
+    "en": "Martinique",
+    "capital": "Fort-de-France",
+    "currencyName": "Euro",
+    "currencySymbol": "€",
+    "region": "آمریکا",
+    "currencyFa": "یورو"
+  },
+  {
+    "code": "mr",
+    "fa": "موریتانی",
+    "en": "Mauritania",
+    "capital": "Nouakchott",
+    "currencyName": "Mauritanian ouguiya",
+    "currencySymbol": "UM",
+    "region": "آفریقا",
+    "currencyFa": "اوگویا"
+  },
+  {
+    "code": "mu",
+    "fa": "موریس",
+    "en": "Mauritius",
+    "capital": "Port Louis",
+    "currencyName": "Mauritian rupee",
+    "currencySymbol": "₨",
+    "region": "آفریقا",
+    "currencyFa": "روپیه"
+  },
+  {
+    "code": "yt",
+    "fa": "مایوت",
+    "en": "Mayotte",
+    "capital": "Mamoudzou",
+    "currencyName": "Euro",
+    "currencySymbol": "€",
+    "region": "آفریقا",
+    "currencyFa": "یورو"
+  },
+  {
+    "code": "mx",
+    "fa": "مکزیک",
+    "en": "Mexico",
+    "capital": "Mexico City",
+    "currencyName": "Mexican peso",
+    "currencySymbol": "$",
+    "region": "آمریکا",
+    "currencyFa": "پزو"
+  },
+  {
+    "code": "fm",
+    "fa": "میکرونزی",
+    "en": "Micronesia",
+    "capital": "Palikir",
+    "currencyName": "",
+    "currencySymbol": "",
+    "region": "سایر",
+    "currencyFa": ""
+  },
+  {
+    "code": "md",
+    "fa": "مولداوی",
+    "en": "Moldova",
+    "capital": "Chișinău",
+    "currencyName": "Moldovan leu",
+    "currencySymbol": "L",
+    "region": "اروپا",
+    "currencyFa": "لئو"
+  },
+  {
+    "code": "mc",
+    "fa": "موناکو",
+    "en": "Monaco",
+    "capital": "Monaco",
+    "currencyName": "Euro",
+    "currencySymbol": "€",
+    "region": "اروپا",
+    "currencyFa": "یورو"
+  },
+  {
+    "code": "mn",
+    "fa": "مغولستان",
+    "en": "Mongolia",
+    "capital": "Ulan Bator",
+    "currencyName": "Mongolian tögrög",
+    "currencySymbol": "₮",
+    "region": "آسیا",
+    "currencyFa": "توگروگ"
+  },
+  {
+    "code": "me",
+    "fa": "مونته‌نگرو",
+    "en": "Montenegro",
+    "capital": "Podgorica",
+    "currencyName": "Euro",
+    "currencySymbol": "€",
+    "region": "اروپا",
+    "currencyFa": "یورو"
+  },
+  {
+    "code": "ms",
+    "fa": "مونتسرات",
+    "en": "Montserrat",
+    "capital": "Plymouth",
+    "currencyName": "Eastern Caribbean dollar",
+    "currencySymbol": "$",
+    "region": "آمریکا",
+    "currencyFa": "دلار"
+  },
+  {
+    "code": "ma",
+    "fa": "مراکش",
+    "en": "Morocco",
+    "capital": "Rabat",
+    "currencyName": "Moroccan dirham",
+    "currencySymbol": "د.م.",
+    "region": "آفریقا",
+    "currencyFa": "درهم"
+  },
+  {
+    "code": "mz",
+    "fa": "موزامبیک",
+    "en": "Mozambique",
+    "capital": "Maputo",
+    "currencyName": "Mozambican metical",
+    "currencySymbol": "MT",
+    "region": "آفریقا",
+    "currencyFa": "متیکال"
+  },
+  {
+    "code": "mm",
+    "fa": "میانمار",
+    "en": "Myanmar",
+    "capital": "Naypyidaw",
+    "currencyName": "Burmese kyat",
+    "currencySymbol": "Ks",
+    "region": "آسیا",
+    "currencyFa": "کیات"
+  },
+  {
+    "code": "na",
+    "fa": "نامیبیا",
+    "en": "Namibia",
+    "capital": "Windhoek",
+    "currencyName": "Namibian dollar",
+    "currencySymbol": "$",
+    "region": "آفریقا",
+    "currencyFa": "دلار"
+  },
+  {
+    "code": "nr",
+    "fa": "نائورو",
+    "en": "Nauru",
+    "capital": "Yaren",
+    "currencyName": "Australian dollar",
+    "currencySymbol": "$",
+    "region": "سایر",
+    "currencyFa": "دلار"
+  },
+  {
+    "code": "np",
+    "fa": "نپال",
+    "en": "Nepal",
+    "capital": "Kathmandu",
+    "currencyName": "Nepalese rupee",
+    "currencySymbol": "₨",
+    "region": "آسیا",
+    "currencyFa": "روپیه"
+  },
+  {
+    "code": "nl",
+    "fa": "هلند",
+    "en": "Netherlands",
+    "capital": "Amsterdam",
+    "currencyName": "Euro",
+    "currencySymbol": "€",
+    "region": "اروپا",
+    "currencyFa": "یورو"
+  },
+  {
+    "code": "nc",
+    "fa": "کالدونیای جدید",
+    "en": "New Caledonia",
+    "capital": "Nouméa",
+    "currencyName": "CFP franc",
+    "currencySymbol": "₣",
+    "region": "سایر",
+    "currencyFa": "فرانک"
+  },
+  {
+    "code": "nz",
+    "fa": "نیوزیلند",
+    "en": "New Zealand",
+    "capital": "Wellington",
+    "currencyName": "New Zealand dollar",
+    "currencySymbol": "$",
+    "region": "سایر",
+    "currencyFa": "دلار"
+  },
+  {
+    "code": "ni",
+    "fa": "نیکاراگوئه",
+    "en": "Nicaragua",
+    "capital": "Managua",
+    "currencyName": "Nicaraguan córdoba",
+    "currencySymbol": "C$",
+    "region": "آمریکا",
+    "currencyFa": "کوردوبا"
+  },
+  {
+    "code": "ne",
+    "fa": "نیجر",
+    "en": "Niger",
+    "capital": "Niamey",
+    "currencyName": "West African CFA franc",
+    "currencySymbol": "Fr",
+    "region": "آفریقا",
+    "currencyFa": "فرانک"
+  },
+  {
+    "code": "ng",
+    "fa": "نیجریه",
+    "en": "Nigeria",
+    "capital": "Abuja",
+    "currencyName": "Nigerian naira",
+    "currencySymbol": "₦",
+    "region": "آفریقا",
+    "currencyFa": "نایرا"
+  },
+  {
+    "code": "nu",
+    "fa": "نیووی",
+    "en": "Niue",
+    "capital": "Alofi",
+    "currencyName": "New Zealand dollar",
+    "currencySymbol": "$",
+    "region": "سایر",
+    "currencyFa": "دلار"
+  },
+  {
+    "code": "nf",
+    "fa": "جزیره نورفک",
+    "en": "Norfolk Island",
+    "capital": "Kingston",
+    "currencyName": "Australian dollar",
+    "currencySymbol": "$",
+    "region": "سایر",
+    "currencyFa": "دلار"
+  },
+  {
+    "code": "kp",
+    "fa": "کُره شمالی",
+    "en": "North Korea",
+    "capital": "Pyongyang",
+    "currencyName": "North Korean won",
+    "currencySymbol": "₩",
+    "region": "آسیا",
+    "currencyFa": "وون"
+  },
+  {
+    "code": "mk",
+    "fa": "مقدونیه شمالی",
+    "en": "North Macedonia",
+    "capital": "Skopje",
+    "currencyName": "denar",
+    "currencySymbol": "den",
+    "region": "اروپا",
+    "currencyFa": "دینار"
+  },
+  {
+    "code": "mp",
+    "fa": "جزایر ماریانای شمالی",
+    "en": "Northern Mariana Islands",
+    "capital": "Saipan",
+    "currencyName": "United States dollar",
+    "currencySymbol": "$",
+    "region": "سایر",
+    "currencyFa": "دلار"
+  },
+  {
+    "code": "no",
+    "fa": "نروژ",
+    "en": "Norway",
+    "capital": "Oslo",
+    "currencyName": "Norwegian krone",
+    "currencySymbol": "kr",
+    "region": "اروپا",
+    "currencyFa": "کرون"
+  },
+  {
+    "code": "om",
+    "fa": "عمان",
+    "en": "Oman",
+    "capital": "Muscat",
+    "currencyName": "Omani rial",
+    "currencySymbol": "ر.ع.",
+    "region": "آسیا",
+    "currencyFa": "ریال"
+  },
+  {
+    "code": "pk",
+    "fa": "پاکستان",
+    "en": "Pakistan",
+    "capital": "Islamabad",
+    "currencyName": "Pakistani rupee",
+    "currencySymbol": "₨",
+    "region": "آسیا",
+    "currencyFa": "روپیه"
+  },
+  {
+    "code": "pw",
+    "fa": "پالائو",
+    "en": "Palau",
+    "capital": "Ngerulmud",
+    "currencyName": "United States dollar",
+    "currencySymbol": "$",
+    "region": "سایر",
+    "currencyFa": "دلار"
+  },
+  {
+    "code": "ps",
+    "fa": "فلسطین",
+    "en": "Palestine",
+    "capital": "Ramallah",
+    "currencyName": "Egyptian pound",
+    "currencySymbol": "E£",
+    "region": "آسیا",
+    "currencyFa": "پوند"
+  },
+  {
+    "code": "pa",
+    "fa": "پاناما",
+    "en": "Panama",
+    "capital": "Panama City",
+    "currencyName": "Panamanian balboa",
+    "currencySymbol": "B/.",
+    "region": "آمریکا",
+    "currencyFa": "بالبوا"
+  },
+  {
+    "code": "pg",
+    "fa": "پاپوآ گینه نو",
+    "en": "Papua New Guinea",
+    "capital": "Port Moresby",
+    "currencyName": "Papua New Guinean kina",
+    "currencySymbol": "K",
+    "region": "سایر",
+    "currencyFa": "کینا"
+  },
+  {
+    "code": "py",
+    "fa": "پاراگوئه",
+    "en": "Paraguay",
+    "capital": "Asunción",
+    "currencyName": "Paraguayan guaraní",
+    "currencySymbol": "₲",
+    "region": "آمریکا",
+    "currencyFa": "گوارانی"
+  },
+  {
+    "code": "pe",
+    "fa": "پرو",
+    "en": "Peru",
+    "capital": "Lima",
+    "currencyName": "Peruvian sol",
+    "currencySymbol": "S/.",
+    "region": "آمریکا",
+    "currencyFa": "سول"
+  },
+  {
+    "code": "ph",
+    "fa": "فیلیپین",
+    "en": "Philippines",
+    "capital": "Manila",
+    "currencyName": "Philippine peso",
+    "currencySymbol": "₱",
+    "region": "آسیا",
+    "currencyFa": "پزو"
+  },
+  {
+    "code": "pn",
+    "fa": "جزایر پیت‌کرن",
+    "en": "Pitcairn Islands",
+    "capital": "Adamstown",
+    "currencyName": "New Zealand dollar",
+    "currencySymbol": "$",
+    "region": "سایر",
+    "currencyFa": "دلار"
+  },
+  {
+    "code": "pl",
+    "fa": "لهستان",
+    "en": "Poland",
+    "capital": "Warsaw",
+    "currencyName": "Polish złoty",
+    "currencySymbol": "zł",
+    "region": "اروپا",
+    "currencyFa": "زلوتی"
+  },
+  {
+    "code": "pt",
+    "fa": "پرتغال",
+    "en": "Portugal",
+    "capital": "Lisbon",
+    "currencyName": "Euro",
+    "currencySymbol": "€",
+    "region": "اروپا",
+    "currencyFa": "یورو"
+  },
+  {
+    "code": "pr",
+    "fa": "پورتوریکو",
+    "en": "Puerto Rico",
+    "capital": "San Juan",
+    "currencyName": "United States dollar",
+    "currencySymbol": "$",
+    "region": "آمریکا",
+    "currencyFa": "دلار"
+  },
+  {
+    "code": "qa",
+    "fa": "قطر",
+    "en": "Qatar",
+    "capital": "Doha",
+    "currencyName": "Qatari riyal",
+    "currencySymbol": "ر.ق",
+    "region": "آسیا",
+    "currencyFa": "ریال"
+  },
+  {
+    "code": "ro",
+    "fa": "رومانی",
+    "en": "Romania",
+    "capital": "Bucharest",
+    "currencyName": "Romanian leu",
+    "currencySymbol": "lei",
+    "region": "اروپا",
+    "currencyFa": "لئو"
+  },
+  {
+    "code": "ru",
+    "fa": "روسیه",
+    "en": "Russia",
+    "capital": "Moscow",
+    "currencyName": "Russian ruble",
+    "currencySymbol": "₽",
+    "region": "اروپا",
+    "currencyFa": "روبل"
+  },
+  {
+    "code": "rw",
+    "fa": "رواندا",
+    "en": "Rwanda",
+    "capital": "Kigali",
+    "currencyName": "Rwandan franc",
+    "currencySymbol": "Fr",
+    "region": "آفریقا",
+    "currencyFa": "فرانک"
+  },
+  {
+    "code": "re",
+    "fa": "رئونیون",
+    "en": "Réunion",
+    "capital": "Saint-Denis",
+    "currencyName": "Euro",
+    "currencySymbol": "€",
+    "region": "آفریقا",
+    "currencyFa": "یورو"
+  },
+  {
+    "code": "bl",
+    "fa": "سن بارتلمی",
+    "en": "Saint Barthélemy",
+    "capital": "Gustavia",
+    "currencyName": "Euro",
+    "currencySymbol": "€",
+    "region": "آمریکا",
+    "currencyFa": "یورو"
+  },
+  {
+    "code": "sh",
+    "fa": "سنت هلن",
+    "en": "Saint Helena, Ascension and Tristan da Cunha",
+    "capital": "Jamestown",
+    "currencyName": "Pound sterling",
+    "currencySymbol": "£",
+    "region": "آفریقا",
+    "currencyFa": "پوند"
+  },
+  {
+    "code": "kn",
+    "fa": "سنت کیتس و نویس",
+    "en": "Saint Kitts and Nevis",
+    "capital": "Basseterre",
+    "currencyName": "Eastern Caribbean dollar",
+    "currencySymbol": "$",
+    "region": "آمریکا",
+    "currencyFa": "دلار"
+  },
+  {
+    "code": "lc",
+    "fa": "سنت لوسیا",
+    "en": "Saint Lucia",
+    "capital": "Castries",
+    "currencyName": "Eastern Caribbean dollar",
+    "currencySymbol": "$",
+    "region": "آمریکا",
+    "currencyFa": "دلار"
+  },
+  {
+    "code": "mf",
+    "fa": "سن مارتن",
+    "en": "Saint Martin",
+    "capital": "Marigot",
+    "currencyName": "Euro",
+    "currencySymbol": "€",
+    "region": "آمریکا",
+    "currencyFa": "یورو"
+  },
+  {
+    "code": "pm",
+    "fa": "سن-پیِر و میکلُن",
+    "en": "Saint Pierre and Miquelon",
+    "capital": "Saint-Pierre",
+    "currencyName": "Euro",
+    "currencySymbol": "€",
+    "region": "آمریکا",
+    "currencyFa": "یورو"
+  },
+  {
+    "code": "vc",
+    "fa": "سنت وینسنت و گرنادین‌ها",
+    "en": "Saint Vincent and the Grenadines",
+    "capital": "Kingstown",
+    "currencyName": "Eastern Caribbean dollar",
+    "currencySymbol": "$",
+    "region": "آمریکا",
+    "currencyFa": "دلار"
+  },
+  {
+    "code": "ws",
+    "fa": "ساموآ",
+    "en": "Samoa",
+    "capital": "Apia",
+    "currencyName": "Samoan tālā",
+    "currencySymbol": "T",
+    "region": "سایر",
+    "currencyFa": "تالا"
+  },
+  {
+    "code": "sm",
+    "fa": "سان مارینو",
+    "en": "San Marino",
+    "capital": "City of San Marino",
+    "currencyName": "Euro",
+    "currencySymbol": "€",
+    "region": "اروپا",
+    "currencyFa": "یورو"
+  },
+  {
+    "code": "sa",
+    "fa": "عربستان سعودی",
+    "en": "Saudi Arabia",
+    "capital": "Riyadh",
+    "currencyName": "Saudi riyal",
+    "currencySymbol": "ر.س",
+    "region": "آسیا",
+    "currencyFa": "ریال"
+  },
+  {
+    "code": "sn",
+    "fa": "سنگال",
+    "en": "Senegal",
+    "capital": "Dakar",
+    "currencyName": "West African CFA franc",
+    "currencySymbol": "Fr",
+    "region": "آفریقا",
+    "currencyFa": "فرانک"
+  },
+  {
+    "code": "rs",
+    "fa": "صربستان",
+    "en": "Serbia",
+    "capital": "Belgrade",
+    "currencyName": "Serbian dinar",
+    "currencySymbol": "дин.",
+    "region": "اروپا",
+    "currencyFa": "دینار"
+  },
+  {
+    "code": "sc",
+    "fa": "سیشل",
+    "en": "Seychelles",
+    "capital": "Victoria",
+    "currencyName": "Seychellois rupee",
+    "currencySymbol": "₨",
+    "region": "آفریقا",
+    "currencyFa": "روپیه"
+  },
+  {
+    "code": "sl",
+    "fa": "سیرالئون",
+    "en": "Sierra Leone",
+    "capital": "Freetown",
+    "currencyName": "Sierra Leonean leone",
+    "currencySymbol": "Le",
+    "region": "آفریقا",
+    "currencyFa": "لئون"
+  },
+  {
+    "code": "sg",
+    "fa": "سنگاپور",
+    "en": "Singapore",
+    "capital": "Singapore",
+    "currencyName": "Singapore dollar",
+    "currencySymbol": "$",
+    "region": "آسیا",
+    "currencyFa": "دلار"
+  },
+  {
+    "code": "sx",
+    "fa": "سن مارتن",
+    "en": "Sint Maarten",
+    "capital": "Philipsburg",
+    "currencyName": "Netherlands Antillean guilder",
+    "currencySymbol": "ƒ",
+    "region": "آمریکا",
+    "currencyFa": "گیلدر"
+  },
+  {
+    "code": "sk",
+    "fa": "اِسلُواکی",
+    "en": "Slovakia",
+    "capital": "Bratislava",
+    "currencyName": "Euro",
+    "currencySymbol": "€",
+    "region": "اروپا",
+    "currencyFa": "یورو"
+  },
+  {
+    "code": "si",
+    "fa": "اسلوونی",
+    "en": "Slovenia",
+    "capital": "Ljubljana",
+    "currencyName": "Euro",
+    "currencySymbol": "€",
+    "region": "اروپا",
+    "currencyFa": "یورو"
+  },
+  {
+    "code": "sb",
+    "fa": "جزایر سلیمان",
+    "en": "Solomon Islands",
+    "capital": "Honiara",
+    "currencyName": "Solomon Islands dollar",
+    "currencySymbol": "$",
+    "region": "سایر",
+    "currencyFa": "دلار"
+  },
+  {
+    "code": "so",
+    "fa": "سومالی",
+    "en": "Somalia",
+    "capital": "Mogadishu",
+    "currencyName": "Somali shilling",
+    "currencySymbol": "Sh",
+    "region": "آفریقا",
+    "currencyFa": "شیلینگ"
+  },
+  {
+    "code": "za",
+    "fa": "آفریقای جنوبی",
+    "en": "South Africa",
+    "capital": "Pretoria",
+    "currencyName": "South African rand",
+    "currencySymbol": "R",
+    "region": "آفریقا",
+    "currencyFa": "رند"
+  },
+  {
+    "code": "gs",
+    "fa": "جزایر جورجیای جنوبی و ساندویچ جنوبی",
+    "en": "South Georgia",
+    "capital": "King Edward Point",
+    "currencyName": "Saint Helena pound",
+    "currencySymbol": "£",
+    "region": "سایر",
+    "currencyFa": "پوند"
+  },
+  {
+    "code": "kr",
+    "fa": "کرهٔ جنوبی",
+    "en": "South Korea",
+    "capital": "Seoul",
+    "currencyName": "South Korean won",
+    "currencySymbol": "₩",
+    "region": "آسیا",
+    "currencyFa": "وون"
+  },
+  {
+    "code": "ss",
+    "fa": "سودان جنوبی",
+    "en": "South Sudan",
+    "capital": "Juba",
+    "currencyName": "South Sudanese pound",
+    "currencySymbol": "£",
+    "region": "آفریقا",
+    "currencyFa": "پوند"
+  },
+  {
+    "code": "es",
+    "fa": "اسپانیا",
+    "en": "Spain",
+    "capital": "Madrid",
+    "currencyName": "Euro",
+    "currencySymbol": "€",
+    "region": "اروپا",
+    "currencyFa": "یورو"
+  },
+  {
+    "code": "lk",
+    "fa": "سری‌لانکا",
+    "en": "Sri Lanka",
+    "capital": "Colombo",
+    "currencyName": "Sri Lankan rupee",
+    "currencySymbol": "Rs රු",
+    "region": "آسیا",
+    "currencyFa": "روپیه"
+  },
+  {
+    "code": "sd",
+    "fa": "سودان",
+    "en": "Sudan",
+    "capital": "Khartoum",
+    "currencyName": "Sudanese pound",
+    "currencySymbol": "PT",
+    "region": "آفریقا",
+    "currencyFa": "پوند"
+  },
+  {
+    "code": "sr",
+    "fa": "سورینام",
+    "en": "Suriname",
+    "capital": "Paramaribo",
+    "currencyName": "Surinamese dollar",
+    "currencySymbol": "$",
+    "region": "آمریکا",
+    "currencyFa": "دلار"
+  },
+  {
+    "code": "sj",
+    "fa": "سوالبارد و یان ماین",
+    "en": "Svalbard and Jan Mayen",
+    "capital": "Longyearbyen",
+    "currencyName": "krone",
+    "currencySymbol": "kr",
+    "region": "اروپا",
+    "currencyFa": "کرون"
+  },
+  {
+    "code": "se",
+    "fa": "سوئد",
+    "en": "Sweden",
+    "capital": "Stockholm",
+    "currencyName": "Swedish krona",
+    "currencySymbol": "kr",
+    "region": "اروپا",
+    "currencyFa": "کرون"
+  },
+  {
+    "code": "ch",
+    "fa": "سوئیس",
+    "en": "Switzerland",
+    "capital": "Bern",
+    "currencyName": "Swiss franc",
+    "currencySymbol": "Fr.",
+    "region": "اروپا",
+    "currencyFa": "فرانک"
+  },
+  {
+    "code": "sy",
+    "fa": "سوریه",
+    "en": "Syria",
+    "capital": "Damascus",
+    "currencyName": "Syrian pound",
+    "currencySymbol": "£",
+    "region": "آسیا",
+    "currencyFa": "پوند"
+  },
+  {
+    "code": "st",
+    "fa": "سائوتومه و پرنسیپ",
+    "en": "São Tomé and Príncipe",
+    "capital": "São Tomé",
+    "currencyName": "São Tomé and Príncipe dobra",
+    "currencySymbol": "Db",
+    "region": "آفریقا",
+    "currencyFa": "دوبرا"
+  },
+  {
+    "code": "tw",
+    "fa": "تایوان",
+    "en": "Taiwan",
+    "capital": "Taipei",
+    "currencyName": "New Taiwan dollar",
+    "currencySymbol": "$",
+    "region": "آسیا",
+    "currencyFa": "دلار"
+  },
+  {
+    "code": "tj",
+    "fa": "تاجیکِستان",
+    "en": "Tajikistan",
+    "capital": "Dushanbe",
+    "currencyName": "Tajikistani somoni",
+    "currencySymbol": "ЅМ",
+    "region": "آسیا",
+    "currencyFa": "سامانی"
+  },
+  {
+    "code": "tz",
+    "fa": "تانزانیا",
+    "en": "Tanzania",
+    "capital": "Dodoma",
+    "currencyName": "Tanzanian shilling",
+    "currencySymbol": "Sh",
+    "region": "آفریقا",
+    "currencyFa": "شیلینگ"
+  },
+  {
+    "code": "th",
+    "fa": "تایلند",
+    "en": "Thailand",
+    "capital": "Bangkok",
+    "currencyName": "Thai baht",
+    "currencySymbol": "฿",
+    "region": "آسیا",
+    "currencyFa": "بات"
+  },
+  {
+    "code": "tl",
+    "fa": "تیمور شرقی",
+    "en": "Timor-Leste",
+    "capital": "Dili",
+    "currencyName": "United States dollar",
+    "currencySymbol": "$",
+    "region": "آسیا",
+    "currencyFa": "دلار"
+  },
+  {
+    "code": "tg",
+    "fa": "توگو",
+    "en": "Togo",
+    "capital": "Lomé",
+    "currencyName": "West African CFA franc",
+    "currencySymbol": "Fr",
+    "region": "آفریقا",
+    "currencyFa": "فرانک"
+  },
+  {
+    "code": "tk",
+    "fa": "توکلائو",
+    "en": "Tokelau",
+    "capital": "Fakaofo",
+    "currencyName": "New Zealand dollar",
+    "currencySymbol": "$",
+    "region": "سایر",
+    "currencyFa": "دلار"
+  },
+  {
+    "code": "to",
+    "fa": "تونگا",
+    "en": "Tonga",
+    "capital": "Nuku'alofa",
+    "currencyName": "Tongan paʻanga",
+    "currencySymbol": "T$",
+    "region": "سایر",
+    "currencyFa": "پائانگا"
+  },
+  {
+    "code": "tt",
+    "fa": "ترینیداد و توباگو",
+    "en": "Trinidad and Tobago",
+    "capital": "Port of Spain",
+    "currencyName": "Trinidad and Tobago dollar",
+    "currencySymbol": "$",
+    "region": "آمریکا",
+    "currencyFa": "دلار"
+  },
+  {
+    "code": "tn",
+    "fa": "تونس",
+    "en": "Tunisia",
+    "capital": "Tunis",
+    "currencyName": "Tunisian dinar",
+    "currencySymbol": "د.ت",
+    "region": "آفریقا",
+    "currencyFa": "دینار"
+  },
+  {
+    "code": "tm",
+    "fa": "ترکمنستان",
+    "en": "Turkmenistan",
+    "capital": "Ashgabat",
+    "currencyName": "Turkmenistan manat",
+    "currencySymbol": "m",
+    "region": "آسیا",
+    "currencyFa": "منات"
+  },
+  {
+    "code": "tc",
+    "fa": "جزایر تورکس و کایکوس",
+    "en": "Turks and Caicos Islands",
+    "capital": "Cockburn Town",
+    "currencyName": "United States dollar",
+    "currencySymbol": "$",
+    "region": "آمریکا",
+    "currencyFa": "دلار"
+  },
+  {
+    "code": "tv",
+    "fa": "تووالو",
+    "en": "Tuvalu",
+    "capital": "Funafuti",
+    "currencyName": "Australian dollar",
+    "currencySymbol": "$",
+    "region": "سایر",
+    "currencyFa": "دلار"
+  },
+  {
+    "code": "tr",
+    "fa": "ترکیه",
+    "en": "Türkiye",
+    "capital": "Ankara",
+    "currencyName": "Turkish lira",
+    "currencySymbol": "₺",
+    "region": "آسیا",
+    "currencyFa": "لیر"
+  },
+  {
+    "code": "ug",
+    "fa": "اوگاندا",
+    "en": "Uganda",
+    "capital": "Kampala",
+    "currencyName": "Ugandan shilling",
+    "currencySymbol": "Sh",
+    "region": "آفریقا",
+    "currencyFa": "شیلینگ"
+  },
+  {
+    "code": "ua",
+    "fa": "اوکراین",
+    "en": "Ukraine",
+    "capital": "Kyiv",
+    "currencyName": "Ukrainian hryvnia",
+    "currencySymbol": "₴",
+    "region": "اروپا",
+    "currencyFa": "هریونا"
+  },
+  {
+    "code": "ae",
+    "fa": "امارات",
+    "en": "United Arab Emirates",
+    "capital": "Abu Dhabi",
+    "currencyName": "United Arab Emirates dirham",
+    "currencySymbol": "د.إ",
+    "region": "آسیا",
+    "currencyFa": "درهم"
+  },
+  {
+    "code": "gb",
+    "fa": "انگلیس",
+    "en": "United Kingdom",
+    "capital": "London",
+    "currencyName": "British pound",
+    "currencySymbol": "£",
+    "region": "اروپا",
+    "currencyFa": "پوند"
+  },
+  {
+    "code": "us",
+    "fa": "ایالات متحده آمریکا",
+    "en": "United States",
+    "capital": "Washington D.C.",
+    "currencyName": "United States dollar",
+    "currencySymbol": "$",
+    "region": "آمریکا",
+    "currencyFa": "دلار"
+  },
+  {
+    "code": "um",
+    "fa": "جزایر کوچک حاشیه‌ای ایالات متحده آمریکا",
+    "en": "United States Minor Outlying Islands",
+    "capital": "",
+    "currencyName": "United States dollar",
+    "currencySymbol": "$",
+    "region": "آمریکا",
+    "currencyFa": "دلار"
+  },
+  {
+    "code": "vi",
+    "fa": "جزایر ویرجین ایالات متحده آمریکا",
+    "en": "United States Virgin Islands",
+    "capital": "Charlotte Amalie",
+    "currencyName": "United States dollar",
+    "currencySymbol": "$",
+    "region": "آمریکا",
+    "currencyFa": "دلار"
+  },
+  {
+    "code": "uy",
+    "fa": "اروگوئه",
+    "en": "Uruguay",
+    "capital": "Montevideo",
+    "currencyName": "Uruguayan peso",
+    "currencySymbol": "$",
+    "region": "آمریکا",
+    "currencyFa": "پزو"
+  },
+  {
+    "code": "uz",
+    "fa": "ازبکستان",
+    "en": "Uzbekistan",
+    "capital": "Tashkent",
+    "currencyName": "Uzbekistani soʻm",
+    "currencySymbol": "so'm",
+    "region": "آسیا",
+    "currencyFa": "سوم"
+  },
+  {
+    "code": "vu",
+    "fa": "وانواتو",
+    "en": "Vanuatu",
+    "capital": "Port Vila",
+    "currencyName": "Vanuatu vatu",
+    "currencySymbol": "Vt",
+    "region": "سایر",
+    "currencyFa": "واتو"
+  },
+  {
+    "code": "va",
+    "fa": "واتیکان",
+    "en": "Vatican City",
+    "capital": "Vatican City",
+    "currencyName": "Euro",
+    "currencySymbol": "€",
+    "region": "اروپا",
+    "currencyFa": "یورو"
+  },
+  {
+    "code": "ve",
+    "fa": "ونزوئلا",
+    "en": "Venezuela",
+    "capital": "Caracas",
+    "currencyName": "Venezuelan bolívar soberano",
+    "currencySymbol": "Bs.S.",
+    "region": "آمریکا",
+    "currencyFa": "بولیوار"
+  },
+  {
+    "code": "vn",
+    "fa": "ویتنام",
+    "en": "Vietnam",
+    "capital": "Hanoi",
+    "currencyName": "Vietnamese đồng",
+    "currencySymbol": "₫",
+    "region": "آسیا",
+    "currencyFa": "دونگ"
+  },
+  {
+    "code": "wf",
+    "fa": "والیس و فوتونا",
+    "en": "Wallis and Futuna",
+    "capital": "Mata-Utu",
+    "currencyName": "CFP franc",
+    "currencySymbol": "₣",
+    "region": "سایر",
+    "currencyFa": "فرانک"
+  },
+  {
+    "code": "eh",
+    "fa": "صحرای غربی",
+    "en": "Western Sahara",
+    "capital": "El Aaiún",
+    "currencyName": "Algerian dinar",
+    "currencySymbol": "دج",
+    "region": "آفریقا",
+    "currencyFa": "دینار"
+  },
+  {
+    "code": "ye",
+    "fa": "یمن",
+    "en": "Yemen",
+    "capital": "Sana'a",
+    "currencyName": "Yemeni rial",
+    "currencySymbol": "﷼",
+    "region": "آسیا",
+    "currencyFa": "ریال"
+  },
+  {
+    "code": "zm",
+    "fa": "زامبیا",
+    "en": "Zambia",
+    "capital": "Lusaka",
+    "currencyName": "Zambian kwacha",
+    "currencySymbol": "ZK",
+    "region": "آفریقا",
+    "currencyFa": "کواچا"
+  },
+  {
+    "code": "zw",
+    "fa": "زیمبابوه",
+    "en": "Zimbabwe",
+    "capital": "Harare",
+    "currencyName": "Botswana pula",
+    "currencySymbol": "P",
+    "region": "آفریقا",
+    "currencyFa": "پولا"
+  },
+  {
+    "code": "ax",
+    "fa": "جزایر الند",
+    "en": "Åland Islands",
+    "capital": "Mariehamn",
+    "currencyName": "Euro",
+    "currencySymbol": "€",
+    "region": "اروپا",
+    "currencyFa": "یورو"
+  }
 ]

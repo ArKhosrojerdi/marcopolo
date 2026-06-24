@@ -93,24 +93,30 @@ class _OptionButtonState extends State<OptionButton> {
               ]
             : null,
       ),
-      child: Stack(
-        alignment: Alignment.center,
-        children: [
-          Text(
-            widget.label,
-            textAlign: TextAlign.center,
-            style: TextStyle(
-              fontFamily: AppTheme.sans,
-              fontSize: 15,
-              color: textColor,
-            ),
-          ),
-          if (mark != null) Positioned(left: 4, top: -2, child: mark),
-        ],
+      child: Text(
+        widget.label,
+        textAlign: TextAlign.center,
+        style: TextStyle(
+          fontFamily: AppTheme.sans,
+          fontSize: 15,
+          color: textColor,
+        ),
       ),
     );
 
-    if (!enabled) return card;
+    // Badge sits in an outer Stack (not clipped by the card's border radius),
+    // overlapping the top-left corner above the card.
+    final marked = mark == null
+        ? card
+        : Stack(
+            clipBehavior: Clip.none,
+            children: [
+              card,
+              Positioned(left: -8, top: -8, child: mark),
+            ],
+          );
+
+    if (!enabled) return marked;
     return GestureDetector(
       onTapDown: (_) => _setPressed(true),
       onTapUp: (_) => _setPressed(false),
@@ -119,12 +125,26 @@ class _OptionButtonState extends State<OptionButton> {
         HapticFeedback.lightImpact();
         widget.onTap!.call();
       },
-      child: card,
+      child: marked,
     );
   }
 
-  Widget _mark(String glyph, Color color) => Text(
-        glyph,
-        style: TextStyle(fontFamily: AppTheme.hand, fontSize: 26, color: color),
+  Widget _mark(String glyph, Color color) => Container(
+        width: 24,
+        height: 24,
+        alignment: Alignment.center,
+        decoration: BoxDecoration(
+          color: color,
+          shape: BoxShape.circle,
+        ),
+        child: Text(
+          glyph,
+          style: const TextStyle(
+            fontFamily: AppTheme.hand,
+            fontSize: 16,
+            height: 1,
+            color: Colors.white,
+          ),
+        ),
       );
 }

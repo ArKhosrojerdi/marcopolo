@@ -3,6 +3,10 @@ import 'country.dart';
 
 enum GameMode { flag, currency, map, capital }
 
+/// Direction for the capital mode: show the country and ask its capital, or
+/// show the capital and ask which country it belongs to.
+enum CapitalDirection { countryToCapital, capitalToCountry }
+
 extension GameModeInfo on GameMode {
   String get titleFa => switch (this) {
         GameMode.flag => 'پرچم',
@@ -11,9 +15,11 @@ extension GameModeInfo on GameMode {
         GameMode.capital => 'پایتخت',
       };
 
-  /// Whether this mode has a region (continent) selection step. Only flag.
-  bool get hasRegionStep => this == GameMode.flag;
-  bool get isAvailable => this != GameMode.map;
+  /// Whether this mode has a region (continent) selection step. Flag + map.
+  bool get hasRegionStep => this == GameMode.flag || this == GameMode.map;
+
+  /// Whether this mode has a direction selection step. Capital only.
+  bool get hasDirectionStep => this == GameMode.capital;
 }
 
 /// A single generated quiz question.
@@ -23,18 +29,24 @@ class Question {
   final List<String> options; // option labels (shuffled)
   final int correctIndex;
 
+  /// Direction for capital questions; null for other modes.
+  final CapitalDirection? direction;
+
   const Question({
     required this.mode,
     required this.answer,
     required this.options,
     required this.correctIndex,
+    this.direction,
   });
 
   /// Prompt line shown above the options.
   String get promptFa => switch (mode) {
         GameMode.flag => 'این پرچم برای کدام کشور است؟',
-        GameMode.currency => 'واحد پولِ کدام کشور است؟',
-        GameMode.capital => 'پایتختِ ${answer.fa} کدام است؟',
+        GameMode.currency => 'واحد پولِ ${answer.fa} کدام است؟',
+        GameMode.capital => direction == CapitalDirection.capitalToCountry
+            ? 'پایتختِ ${answer.capital} مربوط به کدام کشور است؟'
+            : 'پایتختِ ${answer.fa} کدام است؟',
         GameMode.map => 'این کدام کشور است؟',
       };
 }
@@ -55,6 +67,8 @@ class QuizRepository {
       pool = pool.where((c) => c.hasCurrency).toList();
     } else if (mode == GameMode.capital) {
       pool = pool.where((c) => c.hasCapital).toList();
+    } else if (mode == GameMode.map) {
+      pool = pool.where((c) => c.hasMap).toList();
     }
     if (region != null && regions.contains(region)) {
       final filtered = pool.where((c) => c.region == region).toList();
@@ -64,40 +78,59 @@ class QuizRepository {
     return pool;
   }
 
-  Question next(GameMode mode, {String? region, Country? avoid}) {
+  /// Number of distinct countries available for a mode/region — the length of
+  /// one full no-repeat round.
+  int poolSize(GameMode mode, String? region) => _pool(mode, region).length;
+
+  /// Builds the next question, drawing the answer from countries whose code is
+  /// not in [exclude]. Returns null when every country has been used (round
+  /// over). [exclude] holds the codes already asked this round.
+  Question? next(
+    GameMode mode, {
+    String? region,
+    Set<String>? exclude,
+    CapitalDirection direction = CapitalDirection.countryToCapital,
+  }) {
     final pool = _pool(mode, region);
-    Country answer;
-    do {
-      answer = pool[_rng.nextInt(pool.length)];
-    } while (avoid != null && answer.code == avoid.code && pool.length > 1);
+    final remaining = exclude == null
+        ? pool
+        : pool.where((c) => !exclude.contains(c.code)).toList();
+    if (remaining.isEmpty) return null;
+    final answer = remaining[_rng.nextInt(remaining.length)];
 
     // distractors: 3 other countries from same pool, distinct labels
-    final correctLabel = _label(mode, answer);
+    final correctLabel = _label(mode, answer, direction);
     final used = <String>{correctLabel};
     final distractors = <Country>[];
     final shuffled = [...pool]..shuffle(_rng);
     for (final c in shuffled) {
       if (distractors.length == 3) break;
       if (c.code == answer.code) continue;
-      final l = _label(mode, c);
+      final l = _label(mode, c, direction);
       if (used.contains(l)) continue;
       used.add(l);
       distractors.add(c);
     }
 
     final all = [answer, ...distractors]..shuffle(_rng);
-    final options = all.map((c) => _label(mode, c)).toList();
+    final options = all.map((c) => _label(mode, c, direction)).toList();
     return Question(
       mode: mode,
       answer: answer,
       options: options,
       correctIndex: all.indexWhere((c) => c.code == answer.code),
+      direction: mode == GameMode.capital ? direction : null,
     );
   }
 
-  /// Option label for a country in a given mode.
-  String _label(GameMode mode, Country c) => switch (mode) {
-        GameMode.flag || GameMode.currency || GameMode.map => c.fa,
-        GameMode.capital => c.capital,
+  /// Option label for a country in a given mode. For the capital mode the
+  /// direction decides whether options are capitals or country names.
+  String _label(GameMode mode, Country c, CapitalDirection direction) =>
+      switch (mode) {
+        GameMode.flag || GameMode.map => c.fa,
+        GameMode.currency => c.currencyFa.isNotEmpty ? c.currencyFa : c.currencyName,
+        GameMode.capital => direction == CapitalDirection.capitalToCountry
+            ? c.fa
+            : c.capital,
       };
 }

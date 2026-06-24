@@ -6,7 +6,8 @@ import '../data/quiz_repository.dart';
 enum AnswerState { unanswered, correct, wrong }
 
 /// Holds the live quiz session: current question, streak, persisted record,
-/// and the selected/answer state. Endless mode — never ends.
+/// and the selected/answer state. A round walks the whole pool with no
+/// repeats; once every country has been asked the round is [finished].
 class GameController extends ChangeNotifier {
   GameController(this._repo, this._prefs) {
     for (final m in GameMode.values) {
@@ -22,16 +23,30 @@ class GameController extends ChangeNotifier {
 
   late GameMode _mode;
   String? _region;
+  CapitalDirection _direction = CapitalDirection.countryToCapital;
   Question? _question;
   int _streak = 0;
   final Map<GameMode, int> _records = {};
   AnswerState _state = AnswerState.unanswered;
   int? _selectedIndex;
 
+  /// Country codes already asked this round (never repeated within a round).
+  final Set<String> _seen = {};
+  int _correct = 0;
+  int _total = 0;
+  bool _finished = false;
+
   GameMode get mode => _mode;
   String? get region => _region;
+  CapitalDirection get direction => _direction;
   Question? get question => _question;
   int get streak => _streak;
+
+  /// Round progress — correct answers, total answered, and whether the whole
+  /// pool has been walked (round over).
+  int get correct => _correct;
+  int get total => _total;
+  bool get finished => _finished;
 
   /// Best streak for the active mode.
   int get record => _records[_mode] ?? 0;
@@ -47,23 +62,45 @@ class GameController extends ChangeNotifier {
   bool get answered => _state != AnswerState.unanswered;
 
   /// Start a fresh session. Streak resets to 0; record persists.
-  void start(GameMode mode, {String? region}) {
+  void start(
+    GameMode mode, {
+    String? region,
+    CapitalDirection direction = CapitalDirection.countryToCapital,
+  }) {
     _mode = mode;
     _region = region;
+    _direction = direction;
+    _reset();
+    _question =
+        _repo.next(mode, region: region, exclude: _seen, direction: direction);
+    _seen.add(_question!.answer.code);
+    notifyListeners();
+  }
+
+  /// Replay the same mode/region from scratch (from the completion screen).
+  /// Streak resets to 0; record persists.
+  void playAgain() => start(_mode, region: _region, direction: _direction);
+
+  /// Clears per-round session state (seen pool, score, streak).
+  void _reset() {
     _streak = 0;
+    _correct = 0;
+    _total = 0;
+    _finished = false;
+    _seen.clear();
     _state = AnswerState.unanswered;
     _selectedIndex = null;
-    _question = _repo.next(mode, region: region);
-    notifyListeners();
   }
 
   /// User taps an option. Evaluates and updates streak/record.
   void answer(int index) {
     if (answered) return;
     _selectedIndex = index;
+    _total += 1;
     final q = _question!;
     if (index == q.correctIndex) {
       _state = AnswerState.correct;
+      _correct += 1;
       _streak += 1;
       if (_streak > record) {
         _records[_mode] = _streak;
@@ -76,12 +113,24 @@ class GameController extends ChangeNotifier {
     notifyListeners();
   }
 
-  /// Advance to the next question (after answering).
+  /// Advance to the next question (after answering). When the pool is
+  /// exhausted the round is [finished] and the question is left in place.
   void next() {
-    final prev = _question?.answer;
+    final q = _repo.next(
+      _mode,
+      region: _region,
+      exclude: _seen,
+      direction: _direction,
+    );
+    if (q == null) {
+      _finished = true;
+      notifyListeners();
+      return;
+    }
     _state = AnswerState.unanswered;
     _selectedIndex = null;
-    _question = _repo.next(_mode, region: _region, avoid: prev);
+    _question = q;
+    _seen.add(q.answer.code);
     notifyListeners();
   }
 }

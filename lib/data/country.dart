@@ -2,6 +2,8 @@ import 'dart:convert';
 import 'package:flutter/foundation.dart' show visibleForTesting;
 import 'package:flutter/services.dart' show rootBundle;
 
+import 'map_codes.dart';
+
 /// One country row, loaded from assets/data/countries.json.
 class Country {
   final String code; // lowercase ISO alpha-2 (matches flag svg filename)
@@ -9,6 +11,7 @@ class Country {
   final String en; // English common name
   final String capital; // English (Persian unavailable in source)
   final String currencyName;
+  final String currencyFa;
   final String currencySymbol;
   final String region; // Persian bucket: آسیا/اروپا/آفریقا/آمریکا/سایر
 
@@ -18,6 +21,7 @@ class Country {
     required this.en,
     required this.capital,
     required this.currencyName,
+    required this.currencyFa,
     required this.currencySymbol,
     required this.region,
   });
@@ -28,13 +32,16 @@ class Country {
         en: j['en'] as String,
         capital: j['capital'] as String? ?? '',
         currencyName: j['currencyName'] as String? ?? '',
+        currencyFa: j['currencyFa'] as String? ?? '',
         currencySymbol: j['currencySymbol'] as String? ?? '',
         region: j['region'] as String? ?? 'سایر',
       );
 
   String get flagAsset => 'assets/flags/4x3/$code.svg';
+  String get mapAsset => 'assets/maps/$code.svg';
   bool get hasCurrency => currencyName.isNotEmpty;
   bool get hasCapital => capital.isNotEmpty;
+  bool get hasMap => kMapCodes.contains(code);
 }
 
 /// Loads and caches the bundled country dataset.

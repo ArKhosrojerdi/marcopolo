@@ -15,6 +15,7 @@ CountryData _fakeData() {
         en: code,
         capital: '$fa-cap',
         currencyName: '$fa-cur',
+        currencyFa: '$fa-cur-fa',
         currencySymbol: '¤',
         region: region,
       );
@@ -56,7 +57,7 @@ void main() {
     expect(prefs.getInt('streak_record_capital'), 1);
 
     // advance
-    await tester.tap(find.text('سوال بعدی ‹'));
+    await tester.tap(find.text('سوال بعدی ›'));
     await tester.pumpAndSettle();
     expect(c.answered, false);
   });
@@ -76,6 +77,6 @@ void main() {
     expect(c.state, AnswerState.wrong);
     expect(c.streak, 0);
     expect(find.textContaining('اشتباه شد'), findsOneWidget);
-    expect(find.text('ادامه ‹'), findsOneWidget);
+    expect(find.text('ادامه ›'), findsOneWidget);
   });
 }

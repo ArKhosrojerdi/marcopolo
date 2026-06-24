@@ -24,6 +24,7 @@ flutter:
   assets:
     - assets/data/countries.json
     - assets/flags/4x3/
+    - assets/maps/
 
   fonts:
     - family: Vazirmatn
