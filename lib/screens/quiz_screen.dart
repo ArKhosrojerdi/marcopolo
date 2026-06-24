@@ -135,6 +135,11 @@ class QuizScreen extends StatelessWidget {
                         OptionButton(
                           label: q.options[i],
                           visual: _visualFor(i, q),
+                          // Pop the correct card only when the player picked
+                          // it; on a wrong answer the revealed correct card
+                          // stays still and only the wrong card shakes.
+                          celebrate:
+                              controller.selectedIndex == q.correctIndex,
                           onTap: controller.answered
                               ? null
                               : () => controller.answer(i),
@@ -329,7 +334,11 @@ class _Prompt extends StatelessWidget {
             ),
             const SizedBox(height: 4),
             Text(
-              toCountry ? question.answer.capital : question.answer.fa,
+              toCountry
+                  ? (question.answer.capitalFa.isNotEmpty
+                      ? question.answer.capitalFa
+                      : question.answer.capital)
+                  : question.answer.fa,
               style: AppTheme.handSize(40),
             ),
             const SizedBox(height: 4),
@@ -499,11 +508,12 @@ class _CurrentRecordState extends State<_CurrentRecord>
           final active = widget.beat && _ctrl.isAnimating;
           final color = active ? AppColors.correct : AppColors.ink;
           final bg = active ? AppColors.correctBg : AppColors.postit;
+          final borderColor = active ? AppColors.correct : AppColors.postitBorder;
           return Container(
             padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 6),
             decoration: BoxDecoration(
               color: bg,
-              border: Border.all(color: color, width: 1.6),
+              border: Border.all(color: borderColor, width: 1.6),
               borderRadius: BorderRadius.circular(20),
             ),
             child: Text(
@@ -522,12 +532,56 @@ class _CurrentRecordState extends State<_CurrentRecord>
 }
 
 /// Result line + next button (correct => green/«سوال بعدی», wrong => red/«ادامه»).
-class _Result extends StatelessWidget {
+///
+/// Mounts fresh on each answer, so it plays an entrance every time: the
+/// message fades + drops in, then the next button springs up a beat later.
+class _Result extends StatefulWidget {
   const _Result({required this.controller});
   final GameController controller;
 
   @override
+  State<_Result> createState() => _ResultState();
+}
+
+class _ResultState extends State<_Result> with SingleTickerProviderStateMixin {
+  late final AnimationController _ctrl = AnimationController(
+    vsync: this,
+    duration: const Duration(milliseconds: 480),
+  );
+
+  // Message: first half of the timeline. Button: staggered second half.
+  late final Animation<double> _msgFade = CurvedAnimation(
+    parent: _ctrl,
+    curve: const Interval(0.0, 0.55, curve: Curves.easeOut),
+  );
+  late final Animation<Offset> _msgSlide = Tween(
+    begin: const Offset(0, 0.4),
+    end: Offset.zero,
+  ).animate(_msgFade);
+  late final Animation<double> _btnScale = CurvedAnimation(
+    parent: _ctrl,
+    curve: const Interval(0.45, 1.0, curve: Curves.elasticOut),
+  );
+  late final Animation<double> _btnFade = CurvedAnimation(
+    parent: _ctrl,
+    curve: const Interval(0.45, 0.75, curve: Curves.easeOut),
+  );
+
+  @override
+  void initState() {
+    super.initState();
+    _ctrl.forward();
+  }
+
+  @override
+  void dispose() {
+    _ctrl.dispose();
+    super.dispose();
+  }
+
+  @override
   Widget build(BuildContext context) {
+    final controller = widget.controller;
     final correct = controller.state == AnswerState.correct;
     final q = controller.question!;
     final message = correct
@@ -539,27 +593,43 @@ class _Result extends StatelessWidget {
     return Column(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
-        Text(
-          message,
-          textAlign: TextAlign.center,
-          maxLines: 1,
-          overflow: TextOverflow.ellipsis,
-          style: AppTheme.handSize(22, color: color),
+        FadeTransition(
+          opacity: _msgFade,
+          child: SlideTransition(
+            position: _msgSlide,
+            child: Text(
+              message,
+              textAlign: TextAlign.center,
+              maxLines: 1,
+              overflow: TextOverflow.ellipsis,
+              style: AppTheme.handSize(22, color: color),
+            ),
+          ),
         ),
         const SizedBox(height: 8),
-        _PressSink(
-          onTap: controller.next,
-          borderRadius: 24,
-          child: Container(
-            padding: const EdgeInsets.symmetric(horizontal: 22, vertical: 9),
-            decoration: BoxDecoration(
-              color: AppColors.card,
-              border: Border.all(color: AppColors.ink, width: 1.6),
-              borderRadius: BorderRadius.circular(24),
-            ),
-            child: Text(
-              buttonText,
-              style: const TextStyle(fontFamily: AppTheme.sans, fontSize: 14),
+        FadeTransition(
+          opacity: _btnFade,
+          child: ScaleTransition(
+            scale: _btnScale,
+            child: _PressSink(
+              onTap: controller.next,
+              borderRadius: 24,
+              child: Container(
+                padding:
+                    const EdgeInsets.symmetric(horizontal: 22, vertical: 9),
+                decoration: BoxDecoration(
+                  color: AppColors.card,
+                  border: Border.all(color: AppColors.ink, width: 1.6),
+                  borderRadius: BorderRadius.circular(24),
+                ),
+                child: Text(
+                  buttonText,
+                  style: const TextStyle(
+                    fontFamily: AppTheme.sans,
+                    fontSize: 14,
+                  ),
+                ),
+              ),
             ),
           ),
         ),

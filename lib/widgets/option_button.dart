@@ -16,23 +16,77 @@ class OptionButton extends StatefulWidget {
     super.key,
     required this.label,
     required this.visual,
+    this.celebrate = false,
     this.onTap,
   });
 
   final String label;
   final OptionVisual visual;
+
+  /// Whether a `correct` card should pop. False on a wrong answer so the
+  /// revealed correct option stays still and only the wrong card animates.
+  final bool celebrate;
   final VoidCallback? onTap;
 
   @override
   State<OptionButton> createState() => _OptionButtonState();
 }
 
-class _OptionButtonState extends State<OptionButton> {
+class _OptionButtonState extends State<OptionButton>
+    with TickerProviderStateMixin {
   bool _pressed = false;
+
+  // Pop for the correct answer (quick scale-up then settle).
+  late final AnimationController _popCtrl = AnimationController(
+    vsync: this,
+    duration: const Duration(milliseconds: 360),
+  );
+  late final Animation<double> _pop = TweenSequence<double>([
+    TweenSequenceItem(tween: Tween(begin: 1.0, end: 1.08), weight: 40),
+    TweenSequenceItem(
+      tween: Tween(begin: 1.08, end: 1.0)
+          .chain(CurveTween(curve: Curves.easeOut)),
+      weight: 60,
+    ),
+  ]).animate(_popCtrl);
+
+  // Horizontal shake for the wrong answer.
+  late final AnimationController _shakeCtrl = AnimationController(
+    vsync: this,
+    duration: const Duration(milliseconds: 380),
+  );
+  late final Animation<double> _shake = TweenSequence<double>([
+    TweenSequenceItem(tween: Tween(begin: 0.0, end: -8.0), weight: 1),
+    TweenSequenceItem(tween: Tween(begin: -8.0, end: 8.0), weight: 2),
+    TweenSequenceItem(tween: Tween(begin: 8.0, end: -6.0), weight: 2),
+    TweenSequenceItem(tween: Tween(begin: -6.0, end: 4.0), weight: 2),
+    TweenSequenceItem(tween: Tween(begin: 4.0, end: 0.0), weight: 1),
+  ]).animate(CurvedAnimation(parent: _shakeCtrl, curve: Curves.easeInOut));
 
   void _setPressed(bool value) {
     if (_pressed == value) return;
     setState(() => _pressed = value);
+  }
+
+  void _runForVisual(OptionVisual v) {
+    // The correct card always plays its badge reveal; the card-pop scale is
+    // gated on `celebrate` (see build) so it only bounces when the player
+    // actually picked the right answer.
+    if (v == OptionVisual.correct) _popCtrl.forward(from: 0);
+    if (v == OptionVisual.wrong) _shakeCtrl.forward(from: 0);
+  }
+
+  @override
+  void didUpdateWidget(OptionButton old) {
+    super.didUpdateWidget(old);
+    if (widget.visual != old.visual) _runForVisual(widget.visual);
+  }
+
+  @override
+  void dispose() {
+    _popCtrl.dispose();
+    _shakeCtrl.dispose();
+    super.dispose();
   }
 
   @override
@@ -72,7 +126,7 @@ class _OptionButtonState extends State<OptionButton> {
     final hasShadow = shadow != Colors.transparent;
 
     final card = AnimatedContainer(
-      duration: const Duration(milliseconds: 70),
+      duration: Duration(milliseconds: pressed ? 70 : 220),
       curve: Curves.easeOut,
       // sink the card down by the shadow's height when pressed
       transform: Matrix4.translationValues(0, pressed ? 2 : 0, 0),
@@ -105,18 +159,47 @@ class _OptionButtonState extends State<OptionButton> {
     );
 
     // Badge sits in an outer Stack (not clipped by the card's border radius),
-    // overlapping the top-left corner above the card.
+    // overlapping the top-left corner above the card. It pops in with the card.
     final marked = mark == null
         ? card
         : Stack(
             clipBehavior: Clip.none,
             children: [
               card,
-              Positioned(left: -8, top: -8, child: mark),
+              Positioned(
+                left: -8,
+                top: -8,
+                child: ScaleTransition(
+                  scale: widget.visual == OptionVisual.correct
+                      ? _pop
+                      : CurvedAnimation(
+                          parent: _shakeCtrl,
+                          curve: Curves.elasticOut,
+                        ),
+                  child: mark,
+                ),
+              ),
             ],
           );
 
-    if (!enabled) return marked;
+    // Correct => pop scale; wrong => horizontal shake.
+    final animated = AnimatedBuilder(
+      animation: Listenable.merge([_popCtrl, _shakeCtrl]),
+      builder: (context, child) {
+        final scale =
+            widget.visual == OptionVisual.correct && widget.celebrate
+                ? _pop.value
+                : 1.0;
+        final dx = widget.visual == OptionVisual.wrong ? _shake.value : 0.0;
+        return Transform.translate(
+          offset: Offset(dx, 0),
+          child: Transform.scale(scale: scale, child: child),
+        );
+      },
+      child: marked,
+    );
+
+    if (!enabled) return animated;
     return GestureDetector(
       onTapDown: (_) => _setPressed(true),
       onTapUp: (_) => _setPressed(false),
@@ -125,7 +208,7 @@ class _OptionButtonState extends State<OptionButton> {
         HapticFeedback.lightImpact();
         widget.onTap!.call();
       },
-      child: marked,
+      child: animated,
     );
   }
 

@@ -2,7 +2,9 @@ import 'package:flutter/material.dart';
 
 import '../data/quiz_repository.dart';
 import '../state/game_controller.dart';
+import '../state/sound_service.dart';
 import '../theme/app_theme.dart';
+import '../widgets/mute_button.dart';
 import '../widgets/sticker_card.dart';
 import 'capital_direction_screen.dart';
 import 'quiz_screen.dart';
@@ -46,7 +48,17 @@ class HomeScreen extends StatelessWidget {
               padding: const EdgeInsets.symmetric(horizontal: 18, vertical: 22),
               child: Column(
                 children: [
-                  const SizedBox(height: 48),
+                  Align(
+                    alignment: Alignment.centerLeft,
+                    child: ListenableBuilder(
+                      listenable: SoundService.instance,
+                      builder: (context, _) => MuteStickerButton(
+                        muted: SoundService.instance.muted,
+                        onTap: SoundService.instance.toggleMute,
+                      ),
+                    ),
+                  ),
+                  const SizedBox(height: 4),
                   Text('مارکوپولو', style: AppTheme.handSize(38)),
                   const SizedBox(height: 6),
                   const Text(
@@ -152,7 +164,7 @@ class _RecordTab extends StatelessWidget {
       padding: const EdgeInsets.fromLTRB(10, 3, 10, 12),
       decoration: BoxDecoration(
         color: AppColors.postit,
-        border: Border.all(color: AppColors.ink, width: 1.6),
+        border: Border.all(color: AppColors.postitBorder, width: 1.6),
         borderRadius: const BorderRadius.only(
           topLeft: Radius.circular(5),
           topRight: Radius.circular(5),

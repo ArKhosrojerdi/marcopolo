@@ -50,7 +50,7 @@ class Question {
         GameMode.flag => 'این پرچم برای کدام کشور است؟',
         GameMode.currency => 'واحد پولِ ${answer.fa} کدام است؟',
         GameMode.capital => direction == CapitalDirection.capitalToCountry
-            ? 'پایتختِ ${answer.capital} مربوط به کدام کشور است؟'
+            ? 'پایتختِ ${answer.capitalFa.isNotEmpty ? answer.capitalFa : answer.capital} مربوط به کدام کشور است؟'
             : 'پایتختِ ${answer.fa} کدام است؟',
         GameMode.map => 'این کدام کشور است؟',
         GameMode.neighbor => 'کدام کشور همسایهٔ ${answer.fa} نیست؟',
@@ -184,6 +184,6 @@ class QuizRepository {
         GameMode.currency => c.currencyFa.isNotEmpty ? c.currencyFa : c.currencyName,
         GameMode.capital => direction == CapitalDirection.capitalToCountry
             ? c.fa
-            : c.capital,
+            : (c.capitalFa.isNotEmpty ? c.capitalFa : c.capital),
       };
 }

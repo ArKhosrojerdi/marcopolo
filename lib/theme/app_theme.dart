@@ -9,6 +9,7 @@ class AppColors {
   static const faint = Color(0xFF9A8F78);
   static const highlight = Color(0xFFFFFBE9);
   static const postit = Color(0xFFFEF4A8);
+  static const postitBorder = Color(0xFFE0B400);
   static const card = Colors.white;
 
   static const correct = Color(0xFF2F7D4F);

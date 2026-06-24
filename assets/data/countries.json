@@ -8,7 +8,8 @@
     "currencySymbol": "؋",
     "region": "آسیا",
     "currencyFa": "افغانی",
-    "borders": ["ir", "pk", "tm", "uz", "tj", "cn"]
+    "borders": ["ir", "pk", "tm", "uz", "tj", "cn"],
+    "capitalFa": "کابل"
   },
   {
     "code": "al",
@@ -19,7 +20,8 @@
     "currencySymbol": "L",
     "region": "اروپا",
     "currencyFa": "لک",
-    "borders": ["me", "gr", "mk", "xk"]
+    "borders": ["me", "gr", "mk", "xk"],
+    "capitalFa": "تیرانا"
   },
   {
     "code": "dz",
@@ -30,7 +32,8 @@
     "currencySymbol": "د.ج",
     "region": "آفریقا",
     "currencyFa": "دینار",
-    "borders": ["tn", "ly", "ne", "mr", "ml", "ma"]
+    "borders": ["tn", "ly", "ne", "mr", "ml", "ma"],
+    "capitalFa": "الجزایر"
   },
   {
     "code": "ad",
@@ -41,7 +44,8 @@
     "currencySymbol": "€",
     "region": "اروپا",
     "currencyFa": "یورو",
-    "borders": ["fr", "es"]
+    "borders": ["fr", "es"],
+    "capitalFa": "آندورا لا ولا"
   },
   {
     "code": "ao",
@@ -52,7 +56,8 @@
     "currencySymbol": "Kz",
     "region": "آفریقا",
     "currencyFa": "کوانزا",
-    "borders": ["cg", "cd", "zm", "na"]
+    "borders": ["cg", "cd", "zm", "na"],
+    "capitalFa": "لوآندا"
   },
   {
     "code": "ag",
@@ -63,7 +68,8 @@
     "currencySymbol": "$",
     "region": "آمریکا",
     "currencyFa": "دلار",
-    "borders": []
+    "borders": [],
+    "capitalFa": "سنت جانز"
   },
   {
     "code": "ar",
@@ -74,7 +80,8 @@
     "currencySymbol": "$",
     "region": "آمریکا",
     "currencyFa": "پزو",
-    "borders": ["bo", "br", "cl", "py", "uy"]
+    "borders": ["bo", "br", "cl", "py", "uy"],
+    "capitalFa": "بوئنوس‌آیرس"
   },
   {
     "code": "am",
@@ -85,7 +92,8 @@
     "currencySymbol": "֏",
     "region": "آسیا",
     "currencyFa": "درام",
-    "borders": ["az", "ge", "ir", "tr"]
+    "borders": ["az", "ge", "ir", "tr"],
+    "capitalFa": "ایروان"
   },
   {
     "code": "au",
@@ -96,7 +104,8 @@
     "currencySymbol": "$",
     "region": "سایر",
     "currencyFa": "دلار",
-    "borders": []
+    "borders": [],
+    "capitalFa": "کانبرا"
   },
   {
     "code": "at",
@@ -107,7 +116,8 @@
     "currencySymbol": "€",
     "region": "اروپا",
     "currencyFa": "یورو",
-    "borders": ["cz", "de", "hu", "it", "li", "sk", "si", "ch"]
+    "borders": ["cz", "de", "hu", "it", "li", "sk", "si", "ch"],
+    "capitalFa": "وین"
   },
   {
     "code": "az",
@@ -118,7 +128,8 @@
     "currencySymbol": "₼",
     "region": "آسیا",
     "currencyFa": "منات",
-    "borders": ["am", "ge", "ir", "ru", "tr"]
+    "borders": ["am", "ge", "ir", "ru", "tr"],
+    "capitalFa": "باکو"
   },
   {
     "code": "bs",
@@ -129,7 +140,8 @@
     "currencySymbol": "$",
     "region": "آمریکا",
     "currencyFa": "دلار",
-    "borders": []
+    "borders": [],
+    "capitalFa": "ناسائو"
   },
   {
     "code": "bh",
@@ -140,7 +152,8 @@
     "currencySymbol": ".د.ب",
     "region": "آسیا",
     "currencyFa": "دینار",
-    "borders": []
+    "borders": [],
+    "capitalFa": "منامه"
   },
   {
     "code": "bd",
@@ -151,7 +164,8 @@
     "currencySymbol": "৳",
     "region": "آسیا",
     "currencyFa": "تاکا",
-    "borders": ["mm", "in"]
+    "borders": ["mm", "in"],
+    "capitalFa": "داکا"
   },
   {
     "code": "bb",
@@ -162,7 +176,8 @@
     "currencySymbol": "$",
     "region": "آمریکا",
     "currencyFa": "دلار",
-    "borders": []
+    "borders": [],
+    "capitalFa": "بریجتاون"
   },
   {
     "code": "by",
@@ -173,7 +188,8 @@
     "currencySymbol": "Br",
     "region": "اروپا",
     "currencyFa": "روبل",
-    "borders": ["lv", "lt", "pl", "ru", "ua"]
+    "borders": ["lv", "lt", "pl", "ru", "ua"],
+    "capitalFa": "مینسک"
   },
   {
     "code": "be",
@@ -184,7 +200,8 @@
     "currencySymbol": "€",
     "region": "اروپا",
     "currencyFa": "یورو",
-    "borders": ["fr", "de", "lu", "nl"]
+    "borders": ["fr", "de", "lu", "nl"],
+    "capitalFa": "بروکسل"
   },
   {
     "code": "bz",
@@ -195,7 +212,8 @@
     "currencySymbol": "$",
     "region": "آمریکا",
     "currencyFa": "دلار",
-    "borders": ["gt", "mx"]
+    "borders": ["gt", "mx"],
+    "capitalFa": "بلموپان"
   },
   {
     "code": "bj",
@@ -206,7 +224,8 @@
     "currencySymbol": "Fr",
     "region": "آفریقا",
     "currencyFa": "فرانک",
-    "borders": ["bf", "ne", "ng", "tg"]
+    "borders": ["bf", "ne", "ng", "tg"],
+    "capitalFa": "پورتو نووو"
   },
   {
     "code": "bt",
@@ -217,7 +236,8 @@
     "currencySymbol": "Nu.",
     "region": "آسیا",
     "currencyFa": "نگولتروم",
-    "borders": ["cn", "in"]
+    "borders": ["cn", "in"],
+    "capitalFa": "تیمفو"
   },
   {
     "code": "bo",
@@ -228,7 +248,8 @@
     "currencySymbol": "Bs.",
     "region": "آمریکا",
     "currencyFa": "بولیویانو",
-    "borders": ["ar", "br", "cl", "py", "pe"]
+    "borders": ["ar", "br", "cl", "py", "pe"],
+    "capitalFa": "سوکره"
   },
   {
     "code": "ba",
@@ -239,7 +260,8 @@
     "currencySymbol": "KM",
     "region": "اروپا",
     "currencyFa": "مارک",
-    "borders": ["hr", "me", "rs"]
+    "borders": ["hr", "me", "rs"],
+    "capitalFa": "سارایوو"
   },
   {
     "code": "bw",
@@ -250,7 +272,8 @@
     "currencySymbol": "P",
     "region": "آفریقا",
     "currencyFa": "پولا",
-    "borders": ["na", "za", "zm", "zw"]
+    "borders": ["na", "za", "zm", "zw"],
+    "capitalFa": "گابورونه"
   },
   {
     "code": "br",
@@ -261,7 +284,8 @@
     "currencySymbol": "R$",
     "region": "آمریکا",
     "currencyFa": "رئال",
-    "borders": ["ar", "bo", "co", "gy", "py", "pe", "sr", "uy", "ve"]
+    "borders": ["ar", "bo", "co", "gy", "py", "pe", "sr", "uy", "ve"],
+    "capitalFa": "برازیلیا"
   },
   {
     "code": "bn",
@@ -272,7 +296,8 @@
     "currencySymbol": "$",
     "region": "آسیا",
     "currencyFa": "دلار",
-    "borders": ["my"]
+    "borders": ["my"],
+    "capitalFa": "بندر سری بگاوان"
   },
   {
     "code": "bg",
@@ -283,7 +308,8 @@
     "currencySymbol": "лв",
     "region": "اروپا",
     "currencyFa": "لو",
-    "borders": ["gr", "mk", "ro", "rs", "tr"]
+    "borders": ["gr", "mk", "ro", "rs", "tr"],
+    "capitalFa": "صوفیه"
   },
   {
     "code": "bf",
@@ -294,7 +320,8 @@
     "currencySymbol": "Fr",
     "region": "آفریقا",
     "currencyFa": "فرانک",
-    "borders": ["bj", "ci", "gh", "ml", "ne", "tg"]
+    "borders": ["bj", "ci", "gh", "ml", "ne", "tg"],
+    "capitalFa": "واگادوگو"
   },
   {
     "code": "bi",
@@ -305,7 +332,8 @@
     "currencySymbol": "Fr",
     "region": "آفریقا",
     "currencyFa": "فرانک",
-    "borders": ["cd", "rw", "tz"]
+    "borders": ["cd", "rw", "tz"],
+    "capitalFa": "گیتگا"
   },
   {
     "code": "kh",
@@ -316,7 +344,8 @@
     "currencySymbol": "៛",
     "region": "آسیا",
     "currencyFa": "ریل",
-    "borders": ["la", "th", "vn"]
+    "borders": ["la", "th", "vn"],
+    "capitalFa": "پنوم‌پن"
   },
   {
     "code": "cm",
@@ -327,7 +356,8 @@
     "currencySymbol": "Fr",
     "region": "آفریقا",
     "currencyFa": "فرانک",
-    "borders": ["cf", "td", "cg", "gq", "ga", "ng"]
+    "borders": ["cf", "td", "cg", "gq", "ga", "ng"],
+    "capitalFa": "یائونده"
   },
   {
     "code": "ca",
@@ -338,7 +368,8 @@
     "currencySymbol": "$",
     "region": "آمریکا",
     "currencyFa": "دلار",
-    "borders": ["us"]
+    "borders": ["us"],
+    "capitalFa": "اوتاوا"
   },
   {
     "code": "cv",
@@ -349,7 +380,8 @@
     "currencySymbol": "Esc",
     "region": "آفریقا",
     "currencyFa": "اسکودو",
-    "borders": []
+    "borders": [],
+    "capitalFa": "پرایا"
   },
   {
     "code": "cf",
@@ -360,7 +392,8 @@
     "currencySymbol": "Fr",
     "region": "آفریقا",
     "currencyFa": "فرانک",
-    "borders": ["cm", "td", "cd", "cg", "ss", "sd"]
+    "borders": ["cm", "td", "cd", "cg", "ss", "sd"],
+    "capitalFa": "بانگی"
   },
   {
     "code": "td",
@@ -371,7 +404,8 @@
     "currencySymbol": "Fr",
     "region": "آفریقا",
     "currencyFa": "فرانک",
-    "borders": ["cm", "cf", "ly", "ne", "ng", "sd"]
+    "borders": ["cm", "cf", "ly", "ne", "ng", "sd"],
+    "capitalFa": "انجامنا"
   },
   {
     "code": "cl",
@@ -382,7 +416,8 @@
     "currencySymbol": "$",
     "region": "آمریکا",
     "currencyFa": "پزو",
-    "borders": ["ar", "bo", "pe"]
+    "borders": ["ar", "bo", "pe"],
+    "capitalFa": "سانتیاگو"
   },
   {
     "code": "cn",
@@ -408,7 +443,8 @@
       "ru",
       "tj",
       "vn"
-    ]
+    ],
+    "capitalFa": "پکن"
   },
   {
     "code": "co",
@@ -419,7 +455,8 @@
     "currencySymbol": "$",
     "region": "آمریکا",
     "currencyFa": "پزو",
-    "borders": ["br", "ec", "pa", "pe", "ve"]
+    "borders": ["br", "ec", "pa", "pe", "ve"],
+    "capitalFa": "بوگوتا"
   },
   {
     "code": "km",
@@ -430,7 +467,8 @@
     "currencySymbol": "Fr",
     "region": "آفریقا",
     "currencyFa": "فرانک",
-    "borders": []
+    "borders": [],
+    "capitalFa": "مورونی"
   },
   {
     "code": "cg",
@@ -441,7 +479,8 @@
     "currencySymbol": "Fr",
     "region": "آفریقا",
     "currencyFa": "فرانک",
-    "borders": ["ao", "cm", "cf", "cd", "ga"]
+    "borders": ["ao", "cm", "cf", "cd", "ga"],
+    "capitalFa": "برازاویل"
   },
   {
     "code": "ck",
@@ -452,7 +491,8 @@
     "currencySymbol": "$",
     "region": "سایر",
     "currencyFa": "دلار",
-    "borders": []
+    "borders": [],
+    "capitalFa": "آوارووا"
   },
   {
     "code": "cr",
@@ -463,7 +503,8 @@
     "currencySymbol": "₡",
     "region": "آمریکا",
     "currencyFa": "کولون",
-    "borders": ["ni", "pa"]
+    "borders": ["ni", "pa"],
+    "capitalFa": "سن‌خوزه"
   },
   {
     "code": "hr",
@@ -474,7 +515,8 @@
     "currencySymbol": "€",
     "region": "اروپا",
     "currencyFa": "یورو",
-    "borders": ["ba", "hu", "me", "rs", "si"]
+    "borders": ["ba", "hu", "me", "rs", "si"],
+    "capitalFa": "زاگرب"
   },
   {
     "code": "cu",
@@ -485,7 +527,8 @@
     "currencySymbol": "$",
     "region": "آمریکا",
     "currencyFa": "پزو",
-    "borders": []
+    "borders": [],
+    "capitalFa": "هاوانا"
   },
   {
     "code": "cw",
@@ -496,7 +539,8 @@
     "currencySymbol": "ƒ",
     "region": "آمریکا",
     "currencyFa": "گیلدر",
-    "borders": []
+    "borders": [],
+    "capitalFa": "ویلمستاد"
   },
   {
     "code": "cy",
@@ -507,7 +551,8 @@
     "currencySymbol": "€",
     "region": "اروپا",
     "currencyFa": "یورو",
-    "borders": []
+    "borders": [],
+    "capitalFa": "نیکوزیا"
   },
   {
     "code": "cz",
@@ -518,7 +563,8 @@
     "currencySymbol": "Kč",
     "region": "اروپا",
     "currencyFa": "کرون",
-    "borders": ["at", "de", "pl", "sk"]
+    "borders": ["at", "de", "pl", "sk"],
+    "capitalFa": "پراگ"
   },
   {
     "code": "cd",
@@ -529,7 +575,8 @@
     "currencySymbol": "FC",
     "region": "آفریقا",
     "currencyFa": "فرانک",
-    "borders": ["ao", "bi", "cf", "cg", "rw", "ss", "tz", "ug", "zm"]
+    "borders": ["ao", "bi", "cf", "cg", "rw", "ss", "tz", "ug", "zm"],
+    "capitalFa": "کینشاسا"
   },
   {
     "code": "dk",
@@ -540,7 +587,8 @@
     "currencySymbol": "kr",
     "region": "اروپا",
     "currencyFa": "کرون",
-    "borders": ["de"]
+    "borders": ["de"],
+    "capitalFa": "کپنهاگ"
   },
   {
     "code": "dj",
@@ -551,7 +599,8 @@
     "currencySymbol": "Fr",
     "region": "آفریقا",
     "currencyFa": "فرانک",
-    "borders": ["er", "et", "so"]
+    "borders": ["er", "et", "so"],
+    "capitalFa": "جیبوتی"
   },
   {
     "code": "dm",
@@ -562,7 +611,8 @@
     "currencySymbol": "$",
     "region": "آمریکا",
     "currencyFa": "دلار",
-    "borders": []
+    "borders": [],
+    "capitalFa": "روزو"
   },
   {
     "code": "do",
@@ -573,7 +623,8 @@
     "currencySymbol": "$",
     "region": "آمریکا",
     "currencyFa": "پزو",
-    "borders": ["ht"]
+    "borders": ["ht"],
+    "capitalFa": "سانتو دومینگو"
   },
   {
     "code": "ec",
@@ -584,7 +635,8 @@
     "currencySymbol": "$",
     "region": "آمریکا",
     "currencyFa": "دلار",
-    "borders": ["co", "pe"]
+    "borders": ["co", "pe"],
+    "capitalFa": "کیتو"
   },
   {
     "code": "eg",
@@ -595,7 +647,8 @@
     "currencySymbol": "£",
     "region": "آفریقا",
     "currencyFa": "پوند",
-    "borders": ["il", "ly", "ps", "sd"]
+    "borders": ["il", "ly", "ps", "sd"],
+    "capitalFa": "قاهره"
   },
   {
     "code": "sv",
@@ -606,7 +659,8 @@
     "currencySymbol": "$",
     "region": "آمریکا",
     "currencyFa": "دلار",
-    "borders": ["gt", "hn"]
+    "borders": ["gt", "hn"],
+    "capitalFa": "سان سالوادور"
   },
   {
     "code": "gq",
@@ -617,7 +671,8 @@
     "currencySymbol": "Fr",
     "region": "آفریقا",
     "currencyFa": "فرانک",
-    "borders": ["cm", "ga"]
+    "borders": ["cm", "ga"],
+    "capitalFa": "مالابو"
   },
   {
     "code": "er",
@@ -628,7 +683,8 @@
     "currencySymbol": "Nfk",
     "region": "آفریقا",
     "currencyFa": "ناکفا",
-    "borders": ["dj", "et", "sd"]
+    "borders": ["dj", "et", "sd"],
+    "capitalFa": "اسمره"
   },
   {
     "code": "ee",
@@ -639,7 +695,8 @@
     "currencySymbol": "€",
     "region": "اروپا",
     "currencyFa": "یورو",
-    "borders": ["lv", "ru"]
+    "borders": ["lv", "ru"],
+    "capitalFa": "تالین"
   },
   {
     "code": "sz",
@@ -650,7 +707,8 @@
     "currencySymbol": "L",
     "region": "آفریقا",
     "currencyFa": "لیلانگنی",
-    "borders": ["mz", "za"]
+    "borders": ["mz", "za"],
+    "capitalFa": "لوبامبا"
   },
   {
     "code": "et",
@@ -661,7 +719,8 @@
     "currencySymbol": "Br",
     "region": "آفریقا",
     "currencyFa": "بیر",
-    "borders": ["dj", "er", "ke", "so", "ss", "sd"]
+    "borders": ["dj", "er", "ke", "so", "ss", "sd"],
+    "capitalFa": "آدیس‌آبابا"
   },
   {
     "code": "fj",
@@ -672,7 +731,8 @@
     "currencySymbol": "$",
     "region": "سایر",
     "currencyFa": "دلار",
-    "borders": []
+    "borders": [],
+    "capitalFa": "سووا"
   },
   {
     "code": "fi",
@@ -683,7 +743,8 @@
     "currencySymbol": "€",
     "region": "اروپا",
     "currencyFa": "یورو",
-    "borders": ["no", "se", "ru"]
+    "borders": ["no", "se", "ru"],
+    "capitalFa": "هلسینکی"
   },
   {
     "code": "fr",
@@ -694,7 +755,8 @@
     "currencySymbol": "€",
     "region": "اروپا",
     "currencyFa": "یورو",
-    "borders": ["ad", "be", "de", "it", "lu", "mc", "es", "ch"]
+    "borders": ["ad", "be", "de", "it", "lu", "mc", "es", "ch"],
+    "capitalFa": "پاریس"
   },
   {
     "code": "ga",
@@ -705,7 +767,8 @@
     "currencySymbol": "Fr",
     "region": "آفریقا",
     "currencyFa": "فرانک",
-    "borders": ["cm", "cg", "gq"]
+    "borders": ["cm", "cg", "gq"],
+    "capitalFa": "لیبرویل"
   },
   {
     "code": "gm",
@@ -716,7 +779,8 @@
     "currencySymbol": "D",
     "region": "آفریقا",
     "currencyFa": "دالاسی",
-    "borders": ["sn"]
+    "borders": ["sn"],
+    "capitalFa": "بانجول"
   },
   {
     "code": "ge",
@@ -727,7 +791,8 @@
     "currencySymbol": "₾",
     "region": "آسیا",
     "currencyFa": "لاری",
-    "borders": ["am", "az", "ru", "tr"]
+    "borders": ["am", "az", "ru", "tr"],
+    "capitalFa": "تفلیس"
   },
   {
     "code": "de",
@@ -738,7 +803,8 @@
     "currencySymbol": "€",
     "region": "اروپا",
     "currencyFa": "یورو",
-    "borders": ["at", "be", "cz", "dk", "fr", "lu", "nl", "pl", "ch"]
+    "borders": ["at", "be", "cz", "dk", "fr", "lu", "nl", "pl", "ch"],
+    "capitalFa": "برلین"
   },
   {
     "code": "gh",
@@ -749,7 +815,8 @@
     "currencySymbol": "₵",
     "region": "آفریقا",
     "currencyFa": "سدی",
-    "borders": ["bf", "ci", "tg"]
+    "borders": ["bf", "ci", "tg"],
+    "capitalFa": "آکرا"
   },
   {
     "code": "gr",
@@ -760,7 +827,8 @@
     "currencySymbol": "€",
     "region": "اروپا",
     "currencyFa": "یورو",
-    "borders": ["al", "bg", "tr", "mk"]
+    "borders": ["al", "bg", "tr", "mk"],
+    "capitalFa": "آتن"
   },
   {
     "code": "gd",
@@ -771,7 +839,8 @@
     "currencySymbol": "$",
     "region": "آمریکا",
     "currencyFa": "دلار",
-    "borders": []
+    "borders": [],
+    "capitalFa": "سنت جورج"
   },
   {
     "code": "gt",
@@ -782,7 +851,8 @@
     "currencySymbol": "Q",
     "region": "آمریکا",
     "currencyFa": "کتزال",
-    "borders": ["bz", "sv", "hn", "mx"]
+    "borders": ["bz", "sv", "hn", "mx"],
+    "capitalFa": "گواتمالا سیتی"
   },
   {
     "code": "gn",
@@ -793,7 +863,8 @@
     "currencySymbol": "Fr",
     "region": "آفریقا",
     "currencyFa": "فرانک",
-    "borders": ["ci", "gw", "lr", "ml", "sn", "sl"]
+    "borders": ["ci", "gw", "lr", "ml", "sn", "sl"],
+    "capitalFa": "کوناکری"
   },
   {
     "code": "gw",
@@ -804,7 +875,8 @@
     "currencySymbol": "Fr",
     "region": "آفریقا",
     "currencyFa": "فرانک",
-    "borders": ["gn", "sn"]
+    "borders": ["gn", "sn"],
+    "capitalFa": "بیسائو"
   },
   {
     "code": "gy",
@@ -815,7 +887,8 @@
     "currencySymbol": "$",
     "region": "آمریکا",
     "currencyFa": "دلار",
-    "borders": ["br", "sr", "ve"]
+    "borders": ["br", "sr", "ve"],
+    "capitalFa": "جرج‌تاون"
   },
   {
     "code": "ht",
@@ -826,7 +899,8 @@
     "currencySymbol": "G",
     "region": "آمریکا",
     "currencyFa": "گورد",
-    "borders": ["do"]
+    "borders": ["do"],
+    "capitalFa": "پورتوپرنس"
   },
   {
     "code": "hn",
@@ -837,7 +911,8 @@
     "currencySymbol": "L",
     "region": "آمریکا",
     "currencyFa": "لمپیرا",
-    "borders": ["gt", "sv", "ni"]
+    "borders": ["gt", "sv", "ni"],
+    "capitalFa": "تگوسیگالپا"
   },
   {
     "code": "hu",
@@ -848,7 +923,8 @@
     "currencySymbol": "Ft",
     "region": "اروپا",
     "currencyFa": "فورینت",
-    "borders": ["at", "hr", "ro", "rs", "sk", "si", "ua"]
+    "borders": ["at", "hr", "ro", "rs", "sk", "si", "ua"],
+    "capitalFa": "بوداپست"
   },
   {
     "code": "is",
@@ -859,7 +935,8 @@
     "currencySymbol": "kr",
     "region": "اروپا",
     "currencyFa": "کرون",
-    "borders": []
+    "borders": [],
+    "capitalFa": "ریکیاویک"
   },
   {
     "code": "in",
@@ -870,7 +947,8 @@
     "currencySymbol": "₹",
     "region": "آسیا",
     "currencyFa": "روپیه",
-    "borders": ["bd", "bt", "mm", "cn", "np", "pk"]
+    "borders": ["bd", "bt", "mm", "cn", "np", "pk"],
+    "capitalFa": "دهلی نو"
   },
   {
     "code": "id",
@@ -881,7 +959,8 @@
     "currencySymbol": "Rp",
     "region": "آسیا",
     "currencyFa": "روپیه",
-    "borders": ["tl", "my", "pg"]
+    "borders": ["tl", "my", "pg"],
+    "capitalFa": "جاکارتا"
   },
   {
     "code": "ir",
@@ -892,7 +971,8 @@
     "currencySymbol": "﷼",
     "region": "آسیا",
     "currencyFa": "ریال",
-    "borders": ["af", "am", "az", "iq", "pk", "tr", "tm"]
+    "borders": ["af", "am", "az", "iq", "pk", "tr", "tm"],
+    "capitalFa": "تهران"
   },
   {
     "code": "iq",
@@ -903,7 +983,8 @@
     "currencySymbol": "ع.د",
     "region": "آسیا",
     "currencyFa": "دینار",
-    "borders": ["ir", "jo", "kw", "sa", "sy", "tr"]
+    "borders": ["ir", "jo", "kw", "sa", "sy", "tr"],
+    "capitalFa": "بغداد"
   },
   {
     "code": "ie",
@@ -914,18 +995,20 @@
     "currencySymbol": "€",
     "region": "اروپا",
     "currencyFa": "یورو",
-    "borders": ["gb"]
+    "borders": ["gb"],
+    "capitalFa": "دوبلین"
   },
   {
     "code": "il",
-    "fa": "فلسطين اشغالی",
+    "fa": "اسرائیل",
     "en": "Israel",
     "capital": "Jerusalem",
     "currencyName": "Israeli new shekel",
     "currencySymbol": "₪",
     "region": "آسیا",
     "currencyFa": "شکل",
-    "borders": ["eg", "jo", "lb", "ps", "sy"]
+    "borders": ["eg", "jo", "lb", "ps", "sy"],
+    "capitalFa": "اورشلیم"
   },
   {
     "code": "it",
@@ -936,7 +1019,8 @@
     "currencySymbol": "€",
     "region": "اروپا",
     "currencyFa": "یورو",
-    "borders": ["at", "fr", "sm", "si", "ch", "va"]
+    "borders": ["at", "fr", "sm", "si", "ch", "va"],
+    "capitalFa": "رم"
   },
   {
     "code": "ci",
@@ -947,7 +1031,8 @@
     "currencySymbol": "Fr",
     "region": "آفریقا",
     "currencyFa": "فرانک",
-    "borders": ["bf", "gh", "gn", "lr", "ml"]
+    "borders": ["bf", "gh", "gn", "lr", "ml"],
+    "capitalFa": "یاموسوکرو"
   },
   {
     "code": "jm",
@@ -958,7 +1043,8 @@
     "currencySymbol": "$",
     "region": "آمریکا",
     "currencyFa": "دلار",
-    "borders": []
+    "borders": [],
+    "capitalFa": "کینگستون"
   },
   {
     "code": "jp",
@@ -969,7 +1055,8 @@
     "currencySymbol": "¥",
     "region": "آسیا",
     "currencyFa": "ین",
-    "borders": []
+    "borders": [],
+    "capitalFa": "توکیو"
   },
   {
     "code": "jo",
@@ -980,7 +1067,8 @@
     "currencySymbol": "د.ا",
     "region": "آسیا",
     "currencyFa": "دینار",
-    "borders": ["iq", "il", "ps", "sa", "sy"]
+    "borders": ["iq", "il", "ps", "sa", "sy"],
+    "capitalFa": "عمان"
   },
   {
     "code": "kz",
@@ -991,7 +1079,8 @@
     "currencySymbol": "₸",
     "region": "آسیا",
     "currencyFa": "تنگه",
-    "borders": ["cn", "kg", "ru", "tm", "uz"]
+    "borders": ["cn", "kg", "ru", "tm", "uz"],
+    "capitalFa": "آستانه"
   },
   {
     "code": "ke",
@@ -1002,7 +1091,8 @@
     "currencySymbol": "Sh",
     "region": "آفریقا",
     "currencyFa": "شیلینگ",
-    "borders": ["et", "so", "ss", "tz", "ug"]
+    "borders": ["et", "so", "ss", "tz", "ug"],
+    "capitalFa": "نایروبی"
   },
   {
     "code": "ki",
@@ -1013,7 +1103,8 @@
     "currencySymbol": "$",
     "region": "سایر",
     "currencyFa": "دلار",
-    "borders": []
+    "borders": [],
+    "capitalFa": "تاراوای جنوبی"
   },
   {
     "code": "xk",
@@ -1024,7 +1115,8 @@
     "currencySymbol": "€",
     "region": "اروپا",
     "currencyFa": "یورو",
-    "borders": ["al", "mk", "me", "rs"]
+    "borders": ["al", "mk", "me", "rs"],
+    "capitalFa": "پریشتینا"
   },
   {
     "code": "kw",
@@ -1035,7 +1127,8 @@
     "currencySymbol": "د.ك",
     "region": "آسیا",
     "currencyFa": "دینار",
-    "borders": ["iq", "sa"]
+    "borders": ["iq", "sa"],
+    "capitalFa": "کویت سیتی"
   },
   {
     "code": "kg",
@@ -1046,7 +1139,8 @@
     "currencySymbol": "с",
     "region": "آسیا",
     "currencyFa": "سوم",
-    "borders": ["cn", "kz", "tj", "uz"]
+    "borders": ["cn", "kz", "tj", "uz"],
+    "capitalFa": "بیشکک"
   },
   {
     "code": "la",
@@ -1057,7 +1151,8 @@
     "currencySymbol": "₭",
     "region": "آسیا",
     "currencyFa": "کیپ",
-    "borders": ["mm", "kh", "cn", "th", "vn"]
+    "borders": ["mm", "kh", "cn", "th", "vn"],
+    "capitalFa": "ویانتیان"
   },
   {
     "code": "lv",
@@ -1068,7 +1163,8 @@
     "currencySymbol": "€",
     "region": "اروپا",
     "currencyFa": "یورو",
-    "borders": ["by", "ee", "lt", "ru"]
+    "borders": ["by", "ee", "lt", "ru"],
+    "capitalFa": "ریگا"
   },
   {
     "code": "lb",
@@ -1079,7 +1175,8 @@
     "currencySymbol": "ل.ل",
     "region": "آسیا",
     "currencyFa": "پوند",
-    "borders": ["il", "sy"]
+    "borders": ["il", "sy"],
+    "capitalFa": "بیروت"
   },
   {
     "code": "ls",
@@ -1090,7 +1187,8 @@
     "currencySymbol": "L",
     "region": "آفریقا",
     "currencyFa": "لوتی",
-    "borders": ["za"]
+    "borders": ["za"],
+    "capitalFa": "ماسرو"
   },
   {
     "code": "lr",
@@ -1101,7 +1199,8 @@
     "currencySymbol": "$",
     "region": "آفریقا",
     "currencyFa": "دلار",
-    "borders": ["gn", "ci", "sl"]
+    "borders": ["gn", "ci", "sl"],
+    "capitalFa": "مونرویا"
   },
   {
     "code": "ly",
@@ -1112,7 +1211,8 @@
     "currencySymbol": "ل.د",
     "region": "آفریقا",
     "currencyFa": "دینار",
-    "borders": ["dz", "td", "eg", "ne", "sd", "tn"]
+    "borders": ["dz", "td", "eg", "ne", "sd", "tn"],
+    "capitalFa": "طرابلس"
   },
   {
     "code": "li",
@@ -1123,7 +1223,8 @@
     "currencySymbol": "Fr",
     "region": "اروپا",
     "currencyFa": "فرانک",
-    "borders": ["at", "ch"]
+    "borders": ["at", "ch"],
+    "capitalFa": "فادوتز"
   },
   {
     "code": "lt",
@@ -1134,7 +1235,8 @@
     "currencySymbol": "€",
     "region": "اروپا",
     "currencyFa": "یورو",
-    "borders": ["by", "lv", "pl", "ru"]
+    "borders": ["by", "lv", "pl", "ru"],
+    "capitalFa": "ویلنیوس"
   },
   {
     "code": "lu",
@@ -1145,7 +1247,8 @@
     "currencySymbol": "€",
     "region": "اروپا",
     "currencyFa": "یورو",
-    "borders": ["be", "fr", "de"]
+    "borders": ["be", "fr", "de"],
+    "capitalFa": "لوکزامبورگ"
   },
   {
     "code": "mg",
@@ -1156,7 +1259,8 @@
     "currencySymbol": "Ar",
     "region": "آفریقا",
     "currencyFa": "آریاری",
-    "borders": []
+    "borders": [],
+    "capitalFa": "آنتاناناریوو"
   },
   {
     "code": "mw",
@@ -1167,7 +1271,8 @@
     "currencySymbol": "MK",
     "region": "آفریقا",
     "currencyFa": "کواچا",
-    "borders": ["mz", "tz", "zm"]
+    "borders": ["mz", "tz", "zm"],
+    "capitalFa": "لیلونگوه"
   },
   {
     "code": "my",
@@ -1178,7 +1283,8 @@
     "currencySymbol": "RM",
     "region": "آسیا",
     "currencyFa": "رینگیت",
-    "borders": ["bn", "id", "th"]
+    "borders": ["bn", "id", "th"],
+    "capitalFa": "کوالالامپور"
   },
   {
     "code": "mv",
@@ -1189,7 +1295,8 @@
     "currencySymbol": ".ރ",
     "region": "آسیا",
     "currencyFa": "روفیا",
-    "borders": []
+    "borders": [],
+    "capitalFa": "ماله"
   },
   {
     "code": "ml",
@@ -1200,7 +1307,8 @@
     "currencySymbol": "Fr",
     "region": "آفریقا",
     "currencyFa": "فرانک",
-    "borders": ["dz", "bf", "gn", "ci", "mr", "ne", "sn"]
+    "borders": ["dz", "bf", "gn", "ci", "mr", "ne", "sn"],
+    "capitalFa": "باماکو"
   },
   {
     "code": "mt",
@@ -1211,7 +1319,8 @@
     "currencySymbol": "€",
     "region": "اروپا",
     "currencyFa": "یورو",
-    "borders": []
+    "borders": [],
+    "capitalFa": "والتا"
   },
   {
     "code": "mh",
@@ -1222,7 +1331,8 @@
     "currencySymbol": "$",
     "region": "سایر",
     "currencyFa": "دلار",
-    "borders": []
+    "borders": [],
+    "capitalFa": "ماجورو"
   },
   {
     "code": "mr",
@@ -1233,7 +1343,8 @@
     "currencySymbol": "UM",
     "region": "آفریقا",
     "currencyFa": "اوگویا",
-    "borders": ["dz", "ml", "sn"]
+    "borders": ["dz", "ml", "sn"],
+    "capitalFa": "نواکشوت"
   },
   {
     "code": "mu",
@@ -1244,7 +1355,8 @@
     "currencySymbol": "₨",
     "region": "آفریقا",
     "currencyFa": "روپیه",
-    "borders": []
+    "borders": [],
+    "capitalFa": "پورت لوئیس"
   },
   {
     "code": "mx",
@@ -1255,7 +1367,8 @@
     "currencySymbol": "$",
     "region": "آمریکا",
     "currencyFa": "پزو",
-    "borders": ["bz", "gt", "us"]
+    "borders": ["bz", "gt", "us"],
+    "capitalFa": "مکزیکوسیتی"
   },
   {
     "code": "fm",
@@ -1266,7 +1379,8 @@
     "currencySymbol": "",
     "region": "سایر",
     "currencyFa": "",
-    "borders": []
+    "borders": [],
+    "capitalFa": "پالیکیر"
   },
   {
     "code": "md",
@@ -1277,7 +1391,8 @@
     "currencySymbol": "L",
     "region": "اروپا",
     "currencyFa": "لئو",
-    "borders": ["ro", "ua"]
+    "borders": ["ro", "ua"],
+    "capitalFa": "کیشینائو"
   },
   {
     "code": "mc",
@@ -1288,7 +1403,8 @@
     "currencySymbol": "€",
     "region": "اروپا",
     "currencyFa": "یورو",
-    "borders": ["fr"]
+    "borders": ["fr"],
+    "capitalFa": "موناکو"
   },
   {
     "code": "mn",
@@ -1299,7 +1415,8 @@
     "currencySymbol": "₮",
     "region": "آسیا",
     "currencyFa": "توگروگ",
-    "borders": ["cn", "ru"]
+    "borders": ["cn", "ru"],
+    "capitalFa": "اولان‌باتور"
   },
   {
     "code": "me",
@@ -1310,7 +1427,8 @@
     "currencySymbol": "€",
     "region": "اروپا",
     "currencyFa": "یورو",
-    "borders": ["al", "ba", "hr", "xk", "rs"]
+    "borders": ["al", "ba", "hr", "xk", "rs"],
+    "capitalFa": "پودگوریتسا"
   },
   {
     "code": "ma",
@@ -1321,7 +1439,8 @@
     "currencySymbol": "د.م.",
     "region": "آفریقا",
     "currencyFa": "درهم",
-    "borders": ["dz", "es"]
+    "borders": ["dz", "es"],
+    "capitalFa": "رباط"
   },
   {
     "code": "mz",
@@ -1332,7 +1451,8 @@
     "currencySymbol": "MT",
     "region": "آفریقا",
     "currencyFa": "متیکال",
-    "borders": ["mw", "za", "sz", "tz", "zm", "zw"]
+    "borders": ["mw", "za", "sz", "tz", "zm", "zw"],
+    "capitalFa": "ماپوتو"
   },
   {
     "code": "mm",
@@ -1343,7 +1463,8 @@
     "currencySymbol": "Ks",
     "region": "آسیا",
     "currencyFa": "کیات",
-    "borders": ["bd", "cn", "in", "la", "th"]
+    "borders": ["bd", "cn", "in", "la", "th"],
+    "capitalFa": "نایپیداو"
   },
   {
     "code": "na",
@@ -1354,7 +1475,8 @@
     "currencySymbol": "$",
     "region": "آفریقا",
     "currencyFa": "دلار",
-    "borders": ["ao", "bw", "za", "zm"]
+    "borders": ["ao", "bw", "za", "zm"],
+    "capitalFa": "ویندهوک"
   },
   {
     "code": "nr",
@@ -1365,7 +1487,8 @@
     "currencySymbol": "$",
     "region": "سایر",
     "currencyFa": "دلار",
-    "borders": []
+    "borders": [],
+    "capitalFa": "یارن"
   },
   {
     "code": "np",
@@ -1376,7 +1499,8 @@
     "currencySymbol": "₨",
     "region": "آسیا",
     "currencyFa": "روپیه",
-    "borders": ["cn", "in"]
+    "borders": ["cn", "in"],
+    "capitalFa": "کاتماندو"
   },
   {
     "code": "nl",
@@ -1387,7 +1511,8 @@
     "currencySymbol": "€",
     "region": "اروپا",
     "currencyFa": "یورو",
-    "borders": ["be", "de"]
+    "borders": ["be", "de"],
+    "capitalFa": "آمستردام"
   },
   {
     "code": "nz",
@@ -1398,7 +1523,8 @@
     "currencySymbol": "$",
     "region": "سایر",
     "currencyFa": "دلار",
-    "borders": []
+    "borders": [],
+    "capitalFa": "ولینگتون"
   },
   {
     "code": "ni",
@@ -1409,7 +1535,8 @@
     "currencySymbol": "C$",
     "region": "آمریکا",
     "currencyFa": "کوردوبا",
-    "borders": ["cr", "hn"]
+    "borders": ["cr", "hn"],
+    "capitalFa": "ماناگوا"
   },
   {
     "code": "ne",
@@ -1420,7 +1547,8 @@
     "currencySymbol": "Fr",
     "region": "آفریقا",
     "currencyFa": "فرانک",
-    "borders": ["dz", "bj", "bf", "td", "ly", "ml", "ng"]
+    "borders": ["dz", "bj", "bf", "td", "ly", "ml", "ng"],
+    "capitalFa": "نیامی"
   },
   {
     "code": "ng",
@@ -1431,7 +1559,8 @@
     "currencySymbol": "₦",
     "region": "آفریقا",
     "currencyFa": "نایرا",
-    "borders": ["bj", "cm", "td", "ne"]
+    "borders": ["bj", "cm", "td", "ne"],
+    "capitalFa": "آبوجا"
   },
   {
     "code": "kp",
@@ -1442,7 +1571,8 @@
     "currencySymbol": "₩",
     "region": "آسیا",
     "currencyFa": "وون",
-    "borders": ["cn", "kr", "ru"]
+    "borders": ["cn", "kr", "ru"],
+    "capitalFa": "پیونگ‌یانگ"
   },
   {
     "code": "mk",
@@ -1453,7 +1583,8 @@
     "currencySymbol": "den",
     "region": "اروپا",
     "currencyFa": "دینار",
-    "borders": ["al", "bg", "gr", "xk", "rs"]
+    "borders": ["al", "bg", "gr", "xk", "rs"],
+    "capitalFa": "اسکوپیه"
   },
   {
     "code": "no",
@@ -1464,7 +1595,8 @@
     "currencySymbol": "kr",
     "region": "اروپا",
     "currencyFa": "کرون",
-    "borders": ["fi", "se", "ru"]
+    "borders": ["fi", "se", "ru"],
+    "capitalFa": "اسلو"
   },
   {
     "code": "om",
@@ -1475,7 +1607,8 @@
     "currencySymbol": "ر.ع.",
     "region": "آسیا",
     "currencyFa": "ریال",
-    "borders": ["sa", "ae", "ye"]
+    "borders": ["sa", "ae", "ye"],
+    "capitalFa": "مسقط"
   },
   {
     "code": "pk",
@@ -1486,7 +1619,8 @@
     "currencySymbol": "₨",
     "region": "آسیا",
     "currencyFa": "روپیه",
-    "borders": ["af", "cn", "in", "ir"]
+    "borders": ["af", "cn", "in", "ir"],
+    "capitalFa": "اسلام‌آباد"
   },
   {
     "code": "pw",
@@ -1497,7 +1631,8 @@
     "currencySymbol": "$",
     "region": "سایر",
     "currencyFa": "دلار",
-    "borders": []
+    "borders": [],
+    "capitalFa": "نگرولمود"
   },
   {
     "code": "ps",
@@ -1508,7 +1643,8 @@
     "currencySymbol": "E£",
     "region": "آسیا",
     "currencyFa": "پوند",
-    "borders": ["il", "eg", "jo"]
+    "borders": ["il", "eg", "jo"],
+    "capitalFa": "رام‌الله"
   },
   {
     "code": "pa",
@@ -1519,7 +1655,8 @@
     "currencySymbol": "B/.",
     "region": "آمریکا",
     "currencyFa": "بالبوا",
-    "borders": ["co", "cr"]
+    "borders": ["co", "cr"],
+    "capitalFa": "پاناما سیتی"
   },
   {
     "code": "pg",
@@ -1530,7 +1667,8 @@
     "currencySymbol": "K",
     "region": "سایر",
     "currencyFa": "کینا",
-    "borders": ["id"]
+    "borders": ["id"],
+    "capitalFa": "پورت مورسبی"
   },
   {
     "code": "py",
@@ -1541,7 +1679,8 @@
     "currencySymbol": "₲",
     "region": "آمریکا",
     "currencyFa": "گوارانی",
-    "borders": ["ar", "bo", "br"]
+    "borders": ["ar", "bo", "br"],
+    "capitalFa": "آسونسیون"
   },
   {
     "code": "pe",
@@ -1552,7 +1691,8 @@
     "currencySymbol": "S/.",
     "region": "آمریکا",
     "currencyFa": "سول",
-    "borders": ["bo", "br", "cl", "co", "ec"]
+    "borders": ["bo", "br", "cl", "co", "ec"],
+    "capitalFa": "لیما"
   },
   {
     "code": "ph",
@@ -1563,7 +1703,8 @@
     "currencySymbol": "₱",
     "region": "آسیا",
     "currencyFa": "پزو",
-    "borders": []
+    "borders": [],
+    "capitalFa": "مانیل"
   },
   {
     "code": "pl",
@@ -1574,7 +1715,8 @@
     "currencySymbol": "zł",
     "region": "اروپا",
     "currencyFa": "زلوتی",
-    "borders": ["by", "cz", "de", "lt", "ru", "sk", "ua"]
+    "borders": ["by", "cz", "de", "lt", "ru", "sk", "ua"],
+    "capitalFa": "ورشو"
   },
   {
     "code": "pt",
@@ -1585,7 +1727,8 @@
     "currencySymbol": "€",
     "region": "اروپا",
     "currencyFa": "یورو",
-    "borders": ["es"]
+    "borders": ["es"],
+    "capitalFa": "لیسبون"
   },
   {
     "code": "qa",
@@ -1596,7 +1739,8 @@
     "currencySymbol": "ر.ق",
     "region": "آسیا",
     "currencyFa": "ریال",
-    "borders": ["sa"]
+    "borders": ["sa"],
+    "capitalFa": "دوحه"
   },
   {
     "code": "ro",
@@ -1607,7 +1751,8 @@
     "currencySymbol": "lei",
     "region": "اروپا",
     "currencyFa": "لئو",
-    "borders": ["bg", "hu", "md", "rs", "ua"]
+    "borders": ["bg", "hu", "md", "rs", "ua"],
+    "capitalFa": "بخارست"
   },
   {
     "code": "ru",
@@ -1633,7 +1778,8 @@
       "no",
       "pl",
       "ua"
-    ]
+    ],
+    "capitalFa": "مسکو"
   },
   {
     "code": "rw",
@@ -1644,7 +1790,8 @@
     "currencySymbol": "Fr",
     "region": "آفریقا",
     "currencyFa": "فرانک",
-    "borders": ["bi", "cd", "tz", "ug"]
+    "borders": ["bi", "cd", "tz", "ug"],
+    "capitalFa": "کیگالی"
   },
   {
     "code": "kn",
@@ -1655,7 +1802,8 @@
     "currencySymbol": "$",
     "region": "آمریکا",
     "currencyFa": "دلار",
-    "borders": []
+    "borders": [],
+    "capitalFa": "باستر"
   },
   {
     "code": "lc",
@@ -1666,7 +1814,8 @@
     "currencySymbol": "$",
     "region": "آمریکا",
     "currencyFa": "دلار",
-    "borders": []
+    "borders": [],
+    "capitalFa": "کاستریز"
   },
   {
     "code": "vc",
@@ -1677,7 +1826,8 @@
     "currencySymbol": "$",
     "region": "آمریکا",
     "currencyFa": "دلار",
-    "borders": []
+    "borders": [],
+    "capitalFa": "کینگزتاون"
   },
   {
     "code": "ws",
@@ -1688,7 +1838,8 @@
     "currencySymbol": "T",
     "region": "سایر",
     "currencyFa": "تالا",
-    "borders": []
+    "borders": [],
+    "capitalFa": "آپیا"
   },
   {
     "code": "sm",
@@ -1699,7 +1850,8 @@
     "currencySymbol": "€",
     "region": "اروپا",
     "currencyFa": "یورو",
-    "borders": ["it"]
+    "borders": ["it"],
+    "capitalFa": "سان مارینو"
   },
   {
     "code": "sa",
@@ -1710,7 +1862,8 @@
     "currencySymbol": "ر.س",
     "region": "آسیا",
     "currencyFa": "ریال",
-    "borders": ["iq", "jo", "kw", "om", "qa", "ae", "ye"]
+    "borders": ["iq", "jo", "kw", "om", "qa", "ae", "ye"],
+    "capitalFa": "ریاض"
   },
   {
     "code": "sn",
@@ -1721,7 +1874,8 @@
     "currencySymbol": "Fr",
     "region": "آفریقا",
     "currencyFa": "فرانک",
-    "borders": ["gm", "gn", "gw", "ml", "mr"]
+    "borders": ["gm", "gn", "gw", "ml", "mr"],
+    "capitalFa": "داکار"
   },
   {
     "code": "rs",
@@ -1732,7 +1886,8 @@
     "currencySymbol": "дин.",
     "region": "اروپا",
     "currencyFa": "دینار",
-    "borders": ["ba", "bg", "hr", "hu", "xk", "mk", "me", "ro"]
+    "borders": ["ba", "bg", "hr", "hu", "xk", "mk", "me", "ro"],
+    "capitalFa": "بلگراد"
   },
   {
     "code": "sc",
@@ -1743,7 +1898,8 @@
     "currencySymbol": "₨",
     "region": "آفریقا",
     "currencyFa": "روپیه",
-    "borders": []
+    "borders": [],
+    "capitalFa": "ویکتوریا"
   },
   {
     "code": "sl",
@@ -1754,7 +1910,8 @@
     "currencySymbol": "Le",
     "region": "آفریقا",
     "currencyFa": "لئون",
-    "borders": ["gn", "lr"]
+    "borders": ["gn", "lr"],
+    "capitalFa": "فری‌تاون"
   },
   {
     "code": "sg",
@@ -1765,7 +1922,8 @@
     "currencySymbol": "$",
     "region": "آسیا",
     "currencyFa": "دلار",
-    "borders": []
+    "borders": [],
+    "capitalFa": "سنگاپور"
   },
   {
     "code": "sk",
@@ -1776,7 +1934,8 @@
     "currencySymbol": "€",
     "region": "اروپا",
     "currencyFa": "یورو",
-    "borders": ["at", "cz", "hu", "pl", "ua"]
+    "borders": ["at", "cz", "hu", "pl", "ua"],
+    "capitalFa": "براتیسلاوا"
   },
   {
     "code": "si",
@@ -1787,7 +1946,8 @@
     "currencySymbol": "€",
     "region": "اروپا",
     "currencyFa": "یورو",
-    "borders": ["at", "hr", "it", "hu"]
+    "borders": ["at", "hr", "it", "hu"],
+    "capitalFa": "لیوبلیانا"
   },
   {
     "code": "sb",
@@ -1798,7 +1958,8 @@
     "currencySymbol": "$",
     "region": "سایر",
     "currencyFa": "دلار",
-    "borders": []
+    "borders": [],
+    "capitalFa": "هونیارا"
   },
   {
     "code": "so",
@@ -1809,7 +1970,8 @@
     "currencySymbol": "Sh",
     "region": "آفریقا",
     "currencyFa": "شیلینگ",
-    "borders": ["dj", "et", "ke"]
+    "borders": ["dj", "et", "ke"],
+    "capitalFa": "موگادیشو"
   },
   {
     "code": "za",
@@ -1820,7 +1982,8 @@
     "currencySymbol": "R",
     "region": "آفریقا",
     "currencyFa": "رند",
-    "borders": ["bw", "ls", "mz", "na", "sz", "zw"]
+    "borders": ["bw", "ls", "mz", "na", "sz", "zw"],
+    "capitalFa": "پرتوریا"
   },
   {
     "code": "kr",
@@ -1831,7 +1994,8 @@
     "currencySymbol": "₩",
     "region": "آسیا",
     "currencyFa": "وون",
-    "borders": ["kp"]
+    "borders": ["kp"],
+    "capitalFa": "سئول"
   },
   {
     "code": "ss",
@@ -1842,7 +2006,8 @@
     "currencySymbol": "£",
     "region": "آفریقا",
     "currencyFa": "پوند",
-    "borders": ["cf", "cd", "et", "ke", "sd", "ug"]
+    "borders": ["cf", "cd", "et", "ke", "sd", "ug"],
+    "capitalFa": "جوبا"
   },
   {
     "code": "es",
@@ -1853,7 +2018,8 @@
     "currencySymbol": "€",
     "region": "اروپا",
     "currencyFa": "یورو",
-    "borders": ["ad", "fr", "pt", "ma"]
+    "borders": ["ad", "fr", "pt", "ma"],
+    "capitalFa": "مادرید"
   },
   {
     "code": "lk",
@@ -1864,7 +2030,8 @@
     "currencySymbol": "Rs රු",
     "region": "آسیا",
     "currencyFa": "روپیه",
-    "borders": ["in"]
+    "borders": ["in"],
+    "capitalFa": "کلمبو"
   },
   {
     "code": "sd",
@@ -1875,7 +2042,8 @@
     "currencySymbol": "PT",
     "region": "آفریقا",
     "currencyFa": "پوند",
-    "borders": ["cf", "td", "eg", "er", "et", "ly", "ss"]
+    "borders": ["cf", "td", "eg", "er", "et", "ly", "ss"],
+    "capitalFa": "خارطوم"
   },
   {
     "code": "sr",
@@ -1886,7 +2054,8 @@
     "currencySymbol": "$",
     "region": "آمریکا",
     "currencyFa": "دلار",
-    "borders": ["br", "gy"]
+    "borders": ["br", "gy"],
+    "capitalFa": "پاراماریبو"
   },
   {
     "code": "se",
@@ -1897,7 +2066,8 @@
     "currencySymbol": "kr",
     "region": "اروپا",
     "currencyFa": "کرون",
-    "borders": ["fi", "no"]
+    "borders": ["fi", "no"],
+    "capitalFa": "استکهلم"
   },
   {
     "code": "ch",
@@ -1908,7 +2078,8 @@
     "currencySymbol": "Fr.",
     "region": "اروپا",
     "currencyFa": "فرانک",
-    "borders": ["at", "fr", "it", "li", "de"]
+    "borders": ["at", "fr", "it", "li", "de"],
+    "capitalFa": "برن"
   },
   {
     "code": "sy",
@@ -1919,7 +2090,8 @@
     "currencySymbol": "£",
     "region": "آسیا",
     "currencyFa": "پوند",
-    "borders": ["iq", "il", "jo", "lb", "tr"]
+    "borders": ["iq", "il", "jo", "lb", "tr"],
+    "capitalFa": "دمشق"
   },
   {
     "code": "st",
@@ -1930,7 +2102,8 @@
     "currencySymbol": "Db",
     "region": "آفریقا",
     "currencyFa": "دوبرا",
-    "borders": []
+    "borders": [],
+    "capitalFa": "سائوتومه"
   },
   {
     "code": "tw",
@@ -1941,7 +2114,8 @@
     "currencySymbol": "$",
     "region": "آسیا",
     "currencyFa": "دلار",
-    "borders": []
+    "borders": [],
+    "capitalFa": "تایپه"
   },
   {
     "code": "tj",
@@ -1952,7 +2126,8 @@
     "currencySymbol": "ЅМ",
     "region": "آسیا",
     "currencyFa": "سامانی",
-    "borders": ["af", "cn", "kg", "uz"]
+    "borders": ["af", "cn", "kg", "uz"],
+    "capitalFa": "دوشنبه"
   },
   {
     "code": "tz",
@@ -1963,7 +2138,8 @@
     "currencySymbol": "Sh",
     "region": "آفریقا",
     "currencyFa": "شیلینگ",
-    "borders": ["bi", "cd", "ke", "mw", "mz", "rw", "ug", "zm"]
+    "borders": ["bi", "cd", "ke", "mw", "mz", "rw", "ug", "zm"],
+    "capitalFa": "دودوما"
   },
   {
     "code": "th",
@@ -1974,7 +2150,8 @@
     "currencySymbol": "฿",
     "region": "آسیا",
     "currencyFa": "بات",
-    "borders": ["mm", "kh", "la", "my"]
+    "borders": ["mm", "kh", "la", "my"],
+    "capitalFa": "بانکوک"
   },
   {
     "code": "tl",
@@ -1985,7 +2162,8 @@
     "currencySymbol": "$",
     "region": "آسیا",
     "currencyFa": "دلار",
-    "borders": ["id"]
+    "borders": ["id"],
+    "capitalFa": "دیلی"
   },
   {
     "code": "tg",
@@ -1996,7 +2174,8 @@
     "currencySymbol": "Fr",
     "region": "آفریقا",
     "currencyFa": "فرانک",
-    "borders": ["bj", "bf", "gh"]
+    "borders": ["bj", "bf", "gh"],
+    "capitalFa": "لومه"
   },
   {
     "code": "to",
@@ -2007,7 +2186,8 @@
     "currencySymbol": "T$",
     "region": "سایر",
     "currencyFa": "پائانگا",
-    "borders": []
+    "borders": [],
+    "capitalFa": "نوکوآلوفا"
   },
   {
     "code": "tt",
@@ -2018,7 +2198,8 @@
     "currencySymbol": "$",
     "region": "آمریکا",
     "currencyFa": "دلار",
-    "borders": []
+    "borders": [],
+    "capitalFa": "پورت آو اسپین"
   },
   {
     "code": "tn",
@@ -2029,7 +2210,8 @@
     "currencySymbol": "د.ت",
     "region": "آفریقا",
     "currencyFa": "دینار",
-    "borders": ["dz", "ly"]
+    "borders": ["dz", "ly"],
+    "capitalFa": "تونس"
   },
   {
     "code": "tm",
@@ -2040,7 +2222,8 @@
     "currencySymbol": "m",
     "region": "آسیا",
     "currencyFa": "منات",
-    "borders": ["af", "ir", "kz", "uz"]
+    "borders": ["af", "ir", "kz", "uz"],
+    "capitalFa": "عشق‌آباد"
   },
   {
     "code": "tv",
@@ -2051,7 +2234,8 @@
     "currencySymbol": "$",
     "region": "سایر",
     "currencyFa": "دلار",
-    "borders": []
+    "borders": [],
+    "capitalFa": "فونافوتی"
   },
   {
     "code": "tr",
@@ -2062,7 +2246,8 @@
     "currencySymbol": "₺",
     "region": "آسیا",
     "currencyFa": "لیر",
-    "borders": ["am", "az", "bg", "ge", "gr", "ir", "iq", "sy"]
+    "borders": ["am", "az", "bg", "ge", "gr", "ir", "iq", "sy"],
+    "capitalFa": "آنکارا"
   },
   {
     "code": "ug",
@@ -2073,7 +2258,8 @@
     "currencySymbol": "Sh",
     "region": "آفریقا",
     "currencyFa": "شیلینگ",
-    "borders": ["cd", "ke", "rw", "ss", "tz"]
+    "borders": ["cd", "ke", "rw", "ss", "tz"],
+    "capitalFa": "کامپالا"
   },
   {
     "code": "ua",
@@ -2084,7 +2270,8 @@
     "currencySymbol": "₴",
     "region": "اروپا",
     "currencyFa": "هریونا",
-    "borders": ["by", "hu", "md", "pl", "ro", "ru", "sk"]
+    "borders": ["by", "hu", "md", "pl", "ro", "ru", "sk"],
+    "capitalFa": "کی‌یف"
   },
   {
     "code": "ae",
@@ -2095,7 +2282,8 @@
     "currencySymbol": "د.إ",
     "region": "آسیا",
     "currencyFa": "درهم",
-    "borders": ["om", "sa"]
+    "borders": ["om", "sa"],
+    "capitalFa": "ابوظبی"
   },
   {
     "code": "gb",
@@ -2106,7 +2294,8 @@
     "currencySymbol": "£",
     "region": "اروپا",
     "currencyFa": "پوند",
-    "borders": ["ie"]
+    "borders": ["ie"],
+    "capitalFa": "لندن"
   },
   {
     "code": "us",
@@ -2117,7 +2306,8 @@
     "currencySymbol": "$",
     "region": "آمریکا",
     "currencyFa": "دلار",
-    "borders": ["ca", "mx"]
+    "borders": ["ca", "mx"],
+    "capitalFa": "واشینگتن دی‌سی"
   },
   {
     "code": "uy",
@@ -2128,7 +2318,8 @@
     "currencySymbol": "$",
     "region": "آمریکا",
     "currencyFa": "پزو",
-    "borders": ["ar", "br"]
+    "borders": ["ar", "br"],
+    "capitalFa": "مونتویدئو"
   },
   {
     "code": "uz",
@@ -2139,7 +2330,8 @@
     "currencySymbol": "so'm",
     "region": "آسیا",
     "currencyFa": "سوم",
-    "borders": ["af", "kz", "kg", "tj", "tm"]
+    "borders": ["af", "kz", "kg", "tj", "tm"],
+    "capitalFa": "تاشکند"
   },
   {
     "code": "vu",
@@ -2150,7 +2342,8 @@
     "currencySymbol": "Vt",
     "region": "سایر",
     "currencyFa": "واتو",
-    "borders": []
+    "borders": [],
+    "capitalFa": "پورت ویلا"
   },
   {
     "code": "va",
@@ -2161,7 +2354,8 @@
     "currencySymbol": "€",
     "region": "اروپا",
     "currencyFa": "یورو",
-    "borders": ["it"]
+    "borders": ["it"],
+    "capitalFa": "شهر واتیکان"
   },
   {
     "code": "ve",
@@ -2172,7 +2366,8 @@
     "currencySymbol": "Bs.S.",
     "region": "آمریکا",
     "currencyFa": "بولیوار",
-    "borders": ["br", "co", "gy"]
+    "borders": ["br", "co", "gy"],
+    "capitalFa": "کاراکاس"
   },
   {
     "code": "vn",
@@ -2183,7 +2378,8 @@
     "currencySymbol": "₫",
     "region": "آسیا",
     "currencyFa": "دونگ",
-    "borders": ["kh", "cn", "la"]
+    "borders": ["kh", "cn", "la"],
+    "capitalFa": "هانوی"
   },
   {
     "code": "ye",
@@ -2194,7 +2390,8 @@
     "currencySymbol": "﷼",
     "region": "آسیا",
     "currencyFa": "ریال",
-    "borders": ["om", "sa"]
+    "borders": ["om", "sa"],
+    "capitalFa": "صنعا"
   },
   {
     "code": "zm",
@@ -2205,7 +2402,8 @@
     "currencySymbol": "ZK",
     "region": "آفریقا",
     "currencyFa": "کواچا",
-    "borders": ["ao", "bw", "cd", "mw", "mz", "na", "tz", "zw"]
+    "borders": ["ao", "bw", "cd", "mw", "mz", "na", "tz", "zw"],
+    "capitalFa": "لوساکا"
   },
   {
     "code": "zw",
@@ -2216,6 +2414,7 @@
     "currencySymbol": "P",
     "region": "آفریقا",
     "currencyFa": "پولا",
-    "borders": ["bw", "mz", "za", "zm"]
+    "borders": ["bw", "mz", "za", "zm"],
+    "capitalFa": "هراره"
   }
 ]

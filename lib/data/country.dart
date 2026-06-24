@@ -9,7 +9,8 @@ class Country {
   final String code; // lowercase ISO alpha-2 (matches flag svg filename)
   final String fa; // Persian common name
   final String en; // English common name
-  final String capital; // English (Persian unavailable in source)
+  final String capital; // English
+  final String capitalFa; // Persian
   final String currencyName;
   final String currencyFa;
   final String currencySymbol;
@@ -21,6 +22,7 @@ class Country {
     required this.fa,
     required this.en,
     required this.capital,
+    required this.capitalFa,
     required this.currencyName,
     required this.currencyFa,
     required this.currencySymbol,
@@ -33,6 +35,7 @@ class Country {
         fa: j['fa'] as String,
         en: j['en'] as String,
         capital: j['capital'] as String? ?? '',
+        capitalFa: j['capitalFa'] as String? ?? '',
         currencyName: j['currencyName'] as String? ?? '',
         currencyFa: j['currencyFa'] as String? ?? '',
         currencySymbol: j['currencySymbol'] as String? ?? '',

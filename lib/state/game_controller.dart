@@ -2,6 +2,7 @@ import 'package:flutter/foundation.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 import '../data/quiz_repository.dart';
+import 'sound_service.dart';
 
 enum AnswerState { unanswered, correct, wrong }
 
@@ -108,6 +109,7 @@ class GameController extends ChangeNotifier {
       _state = AnswerState.correct;
       _correct += 1;
       _streak += 1;
+      SoundService.instance.playCorrect();
       if (_streak > record) {
         _records[_mode] = _streak;
         _prefs.setInt(_recordKey(_mode), _streak);
@@ -116,6 +118,7 @@ class GameController extends ChangeNotifier {
     } else {
       _state = AnswerState.wrong;
       _streak = 0;
+      SoundService.instance.playWrong();
     }
     notifyListeners();
   }
