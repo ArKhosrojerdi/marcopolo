@@ -3,6 +3,7 @@ import 'package:flutter/services.dart';
 
 import '../data/quiz_repository.dart';
 import '../state/game_controller.dart';
+import '../state/sound_service.dart';
 import '../theme/app_theme.dart';
 import '../widgets/flag_image.dart';
 import '../widgets/map_image.dart';
@@ -411,6 +412,7 @@ class _PressSinkState extends State<_PressSink> {
       onTapCancel: () => _setPressed(false),
       onTap: () {
         HapticFeedback.lightImpact();
+        SoundService.instance.playTap();
         widget.onTap();
       },
       child: AnimatedContainer(

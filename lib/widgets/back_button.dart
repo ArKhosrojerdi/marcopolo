@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
+import '../state/sound_service.dart';
 import '../theme/app_theme.dart';
 
 /// Circular back button — sinks down on press (shadow collapses), matching the
@@ -29,6 +30,7 @@ class _BackStickerButtonState extends State<BackStickerButton> {
       onTapCancel: () => _setPressed(false),
       onTap: () {
         HapticFeedback.lightImpact();
+        SoundService.instance.playTap();
         widget.onTap();
       },
       child: AnimatedContainer(

@@ -13,9 +13,17 @@ class SoundService extends ChangeNotifier {
 
   static const _correctAsset = 'sounds/correct.mp3';
   static const _wrongAsset = 'sounds/wrong.mp3';
+  static const _tapAsset = 'sounds/tap.wav';
 
   final AudioPlayer _correct = AudioPlayer()..setPlayerMode(PlayerMode.lowLatency);
   final AudioPlayer _wrong = AudioPlayer()..setPlayerMode(PlayerMode.lowLatency);
+  // Tap cue is quieter than the feedback sounds — see _tapVolume.
+  final AudioPlayer _tap = AudioPlayer()
+    ..setPlayerMode(PlayerMode.lowLatency)
+    ..setVolume(_tapVolume);
+
+  /// Tap is a subtle UI click, kept well below the correct/wrong cues.
+  static const _tapVolume = 0.35;
 
   bool _muted = false;
   bool get muted => _muted;
@@ -27,6 +35,9 @@ class SoundService extends ChangeNotifier {
 
   void playCorrect() => _play(_correct, _correctAsset);
   void playWrong() => _play(_wrong, _wrongAsset);
+
+  /// Tap cue for buttons and cards (not quiz answer options).
+  void playTap() => _play(_tap, _tapAsset);
 
   void _play(AudioPlayer player, String asset) {
     if (muted) return;
@@ -40,6 +51,7 @@ class SoundService extends ChangeNotifier {
   void dispose() {
     _correct.dispose();
     _wrong.dispose();
+    _tap.dispose();
     super.dispose();
   }
 }

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
+import '../state/sound_service.dart';
 import '../theme/app_theme.dart';
 
 /// Circular mute/unmute toggle — same sticker look & size as [BackStickerButton].
@@ -30,6 +31,7 @@ class _MuteStickerButtonState extends State<MuteStickerButton> {
       onTapCancel: () => _setPressed(false),
       onTap: () {
         HapticFeedback.lightImpact();
+        SoundService.instance.playTap();
         widget.onTap();
       },
       child: AnimatedContainer(
