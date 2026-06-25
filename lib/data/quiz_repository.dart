@@ -3,6 +3,19 @@ import 'country.dart';
 
 enum GameMode { flag, currency, map, capital, neighbor }
 
+enum GameDifficulty { normal, hard }
+
+/// Strip spaces, half-spaces (U+200C), and Arabic diacritics (U+064B–U+065F)
+/// — used for blank-cell counting and answer comparison in hard mode.
+String stripSpaces(String s) => s.replaceAll(RegExp(r'[‌ ً-ٟ]'), '');
+
+/// Normalize Persian letter variants before comparison:
+/// آ→ا  ئ→ی  ؤ→و
+String normalizeAnswer(String s) => s
+    .replaceAll('آ', 'ا')
+    .replaceAll('ئ', 'ی')
+    .replaceAll('ؤ', 'و');
+
 /// Direction for the capital mode: show the country and ask its capital, or
 /// show the capital and ask which country it belongs to.
 enum CapitalDirection { countryToCapital, capitalToCountry }
@@ -37,11 +50,15 @@ class Question {
   /// Direction for capital questions; null for other modes.
   final CapitalDirection? direction;
 
+  /// The exact label the player must type in hard mode.
+  final String correctAnswer;
+
   const Question({
     required this.mode,
     required this.answer,
     required this.options,
     required this.correctIndex,
+    required this.correctAnswer,
     this.direction,
   });
 
@@ -64,7 +81,7 @@ class QuizRepository {
   final Random _rng;
 
   /// Regions selectable in the flag mode (per wireframe).
-  static const regions = <String>['آسیا', 'اروپا', 'آفریقا', 'آمریکا'];
+  static const regions = <String>['آسیا', 'اروپا', 'آفریقا', 'آمریکا', 'سایر'];
 
   /// Pool for a region. null/"کل جهان" => whole world.
   List<Country> _pool(GameMode mode, String? region) {
@@ -131,6 +148,7 @@ class QuizRepository {
       answer: answer,
       options: options,
       correctIndex: all.indexWhere((c) => c.code == answer.code),
+      correctAnswer: correctLabel,
       direction: mode == GameMode.capital ? direction : null,
     );
   }
@@ -173,6 +191,7 @@ class QuizRepository {
       answer: answer,
       options: all.map((c) => c.fa).toList(),
       correctIndex: all.indexWhere((c) => c.code == nonNeighbor.code),
+      correctAnswer: nonNeighbor.fa,
     );
   }
 

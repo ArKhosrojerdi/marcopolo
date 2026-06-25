@@ -5,7 +5,7 @@ import '../state/game_controller.dart';
 import '../theme/app_theme.dart';
 import '../widgets/back_button.dart';
 import '../widgets/sticker_card.dart';
-import 'quiz_screen.dart';
+import 'difficulty_screen.dart';
 
 /// Region (continent) selection — only for the flag mode (wireframe).
 class RegionScreen extends StatelessWidget {
@@ -14,9 +14,14 @@ class RegionScreen extends StatelessWidget {
   final GameMode mode;
 
   void _start(BuildContext context, String? region) {
-    controller.start(mode, region: region);
     Navigator.of(context).push(
-      MaterialPageRoute(builder: (_) => QuizScreen(controller: controller)),
+      MaterialPageRoute(
+        builder: (_) => DifficultyScreen(
+          controller: controller,
+          mode: mode,
+          region: region,
+        ),
+      ),
     );
   }
 

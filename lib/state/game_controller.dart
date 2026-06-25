@@ -25,6 +25,7 @@ class GameController extends ChangeNotifier {
   late GameMode _mode;
   String? _region;
   CapitalDirection _direction = CapitalDirection.countryToCapital;
+  GameDifficulty _difficulty = GameDifficulty.normal;
   Question? _question;
   int _streak = 0;
   final Map<GameMode, int> _records = {};
@@ -44,6 +45,7 @@ class GameController extends ChangeNotifier {
   GameMode get mode => _mode;
   String? get region => _region;
   CapitalDirection get direction => _direction;
+  GameDifficulty get difficulty => _difficulty;
   Question? get question => _question;
   int get streak => _streak;
   bool get justBeatRecord => _justBeatRecord;
@@ -72,10 +74,12 @@ class GameController extends ChangeNotifier {
     GameMode mode, {
     String? region,
     CapitalDirection direction = CapitalDirection.countryToCapital,
+    GameDifficulty difficulty = GameDifficulty.normal,
   }) {
     _mode = mode;
     _region = region;
     _direction = direction;
+    _difficulty = difficulty;
     _reset();
     _question =
         _repo.next(mode, region: region, exclude: _seen, direction: direction);
@@ -85,7 +89,35 @@ class GameController extends ChangeNotifier {
 
   /// Replay the same mode/region from scratch (from the completion screen).
   /// Streak resets to 0; record persists.
-  void playAgain() => start(_mode, region: _region, direction: _direction);
+  void playAgain() =>
+      start(_mode, region: _region, direction: _direction, difficulty: _difficulty);
+
+  /// Hard mode: evaluate a typed answer against the correct label.
+  void answerText(String input) {
+    if (answered) return;
+    _total += 1;
+    final q = _question!;
+    final match = normalizeAnswer(stripSpaces(input)) ==
+        normalizeAnswer(stripSpaces(q.correctAnswer));
+    if (match) {
+      _selectedIndex = q.correctIndex;
+      _state = AnswerState.correct;
+      _correct += 1;
+      _streak += 1;
+      SoundService.instance.playCorrect();
+      if (_streak > record) {
+        _records[_mode] = _streak;
+        _prefs.setInt(_recordKey(_mode), _streak);
+        _justBeatRecord = true;
+      }
+    } else {
+      _selectedIndex = -1;
+      _state = AnswerState.wrong;
+      _streak = 0;
+      SoundService.instance.playWrong();
+    }
+    notifyListeners();
+  }
 
   /// Clears per-round session state (seen pool, score, streak).
   void _reset() {

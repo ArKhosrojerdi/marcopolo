@@ -7,7 +7,7 @@ import '../theme/app_theme.dart';
 import '../widgets/mute_button.dart';
 import '../widgets/sticker_card.dart';
 import 'capital_direction_screen.dart';
-import 'quiz_screen.dart';
+import 'difficulty_screen.dart';
 import 'region_screen.dart';
 
 /// Home — 2x2 mode grid (wireframe Variant A).
@@ -30,9 +30,10 @@ class HomeScreen extends StatelessWidget {
         ),
       );
     } else {
-      controller.start(mode);
       Navigator.of(context).push(
-        MaterialPageRoute(builder: (_) => QuizScreen(controller: controller)),
+        MaterialPageRoute(
+          builder: (_) => DifficultyScreen(controller: controller, mode: mode),
+        ),
       );
     }
   }

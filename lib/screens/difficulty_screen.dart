@@ -5,29 +5,27 @@ import '../state/game_controller.dart';
 import '../theme/app_theme.dart';
 import '../widgets/back_button.dart';
 import '../widgets/sticker_card.dart';
-import 'difficulty_screen.dart';
+import 'quiz_screen.dart';
 
-/// Direction selection — only for the capital mode. Lets the player choose
-/// whether they're shown the country (and pick the capital) or shown the
-/// capital (and pick the country).
-class CapitalDirectionScreen extends StatelessWidget {
-  const CapitalDirectionScreen({
+/// Difficulty selection — always the final step before the quiz starts.
+class DifficultyScreen extends StatelessWidget {
+  const DifficultyScreen({
     super.key,
     required this.controller,
     required this.mode,
+    this.region,
+    this.direction = CapitalDirection.countryToCapital,
   });
+
   final GameController controller;
   final GameMode mode;
+  final String? region;
+  final CapitalDirection direction;
 
-  void _start(BuildContext context, CapitalDirection direction) {
+  void _start(BuildContext context, GameDifficulty difficulty) {
+    controller.start(mode, region: region, direction: direction, difficulty: difficulty);
     Navigator.of(context).push(
-      MaterialPageRoute(
-        builder: (_) => DifficultyScreen(
-          controller: controller,
-          mode: mode,
-          direction: direction,
-        ),
-      ),
+      MaterialPageRoute(builder: (_) => QuizScreen(controller: controller)),
     );
   }
 
@@ -55,7 +53,7 @@ class CapitalDirectionScreen extends StatelessWidget {
                   ),
                   const SizedBox(height: 18),
                   const Text(
-                    'حالت بازی را انتخاب کن:',
+                    'سطح دشواری را انتخاب کن:',
                     style: TextStyle(
                       fontFamily: AppTheme.sans,
                       fontSize: 13,
@@ -63,21 +61,19 @@ class CapitalDirectionScreen extends StatelessWidget {
                     ),
                   ),
                   const SizedBox(height: 18),
-                  _DirectionRow(
-                    emoji: '🏳️',
-                    title: 'کشور ← پایتخت',
-                    subtitle: 'کشور را می‌بینی، پایتختش را پیدا کن',
+                  _DifficultyRow(
+                    emoji: '🟢',
+                    title: 'معمولی',
+                    subtitle: 'چهار گزینه داری — یکی را انتخاب کن',
                     highlight: true,
-                    onTap: () =>
-                        _start(context, CapitalDirection.countryToCapital),
+                    onTap: () => _start(context, GameDifficulty.normal),
                   ),
                   const SizedBox(height: 13),
-                  _DirectionRow(
-                    emoji: '🏛️',
-                    title: 'پایتخت ← کشور',
-                    subtitle: 'پایتخت را می‌بینی، کشورش را پیدا کن',
-                    onTap: () =>
-                        _start(context, CapitalDirection.capitalToCountry),
+                  _DifficultyRow(
+                    emoji: '🔴',
+                    title: 'سخت',
+                    subtitle: 'جواب را خودت تایپ کن — بدون گزینه',
+                    onTap: () => _start(context, GameDifficulty.hard),
                   ),
                 ],
               ),
@@ -89,14 +85,15 @@ class CapitalDirectionScreen extends StatelessWidget {
   }
 }
 
-class _DirectionRow extends StatelessWidget {
-  const _DirectionRow({
+class _DifficultyRow extends StatelessWidget {
+  const _DifficultyRow({
     required this.emoji,
     required this.title,
     required this.subtitle,
     required this.onTap,
     this.highlight = false,
   });
+
   final String emoji;
   final String title;
   final String subtitle;
