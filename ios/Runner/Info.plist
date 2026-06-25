@@ -45,5 +45,12 @@
 	<true/>
 	<key>UIApplicationSupportsIndirectInputEvents</key>
 	<true/>
+	<!-- Adivery / ads: ATT prompt shown before tracking. Reword as you like. -->
+	<key>NSUserTrackingUsageDescription</key>
+	<string>برای نمایش تبلیغات مرتبط‌تر از شناسه تبلیغاتی استفاده می‌شود.</string>
+	<!-- TODO(adivery): Adivery iOS wraps GAM. If your Adivery version requires it,
+	     set the GADApplicationIdentifier from the Adivery dashboard. Remove if not needed. -->
+	<key>GADApplicationIdentifier</key>
+	<string>YOUR_IOS_GAD_APP_ID</string>
 </dict>
 </plist>

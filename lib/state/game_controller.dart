@@ -2,6 +2,7 @@ import 'package:flutter/foundation.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 import '../data/quiz_repository.dart';
+import 'ad_service.dart';
 import 'sound_service.dart';
 import 'svg_prefetch.dart';
 
@@ -173,6 +174,8 @@ class GameController extends ChangeNotifier {
       _state = AnswerState.wrong;
       _streak = 0;
       SoundService.instance.playWrong();
+      // Cooldown-gated inside the service; safe to call on every wrong answer.
+      AdService.instance.onWrongAnswer();
     }
     notifyListeners();
   }
