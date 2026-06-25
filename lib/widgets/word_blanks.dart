@@ -5,20 +5,17 @@ import '../theme/app_theme.dart';
 /// [length] = total cells (correct answer length).
 /// [typed] = characters typed so far.
 /// [state] = null (unanswered), true (correct), false (wrong).
-/// [revealAnswer] shown below cells when wrong.
 class WordBlanks extends StatefulWidget {
   const WordBlanks({
     super.key,
     required this.length,
     required this.typed,
     this.state,
-    this.revealAnswer,
   });
 
   final int length;
   final String typed;
   final bool? state;
-  final String? revealAnswer;
 
   @override
   State<WordBlanks> createState() => _WordBlanksState();
@@ -45,17 +42,26 @@ class _WordBlanksState extends State<WordBlanks> with TickerProviderStateMixin {
   void _initControllers(int length) {
     _typeCtrl = List.generate(
       length,
-      (_) => AnimationController(vsync: this, duration: const Duration(milliseconds: 220)),
+      (_) => AnimationController(
+        vsync: this,
+        duration: const Duration(milliseconds: 220),
+      ),
     );
     _typeScale = _typeCtrl.map((c) {
       return TweenSequence<double>([
         TweenSequenceItem(tween: Tween(begin: 1.5, end: 1.0), weight: 60),
         TweenSequenceItem(
-          tween: Tween(begin: 1.0, end: 1.05).chain(CurveTween(curve: Curves.easeOut)),
+          tween: Tween(
+            begin: 1.0,
+            end: 1.05,
+          ).chain(CurveTween(curve: Curves.easeOut)),
           weight: 20,
         ),
         TweenSequenceItem(
-          tween: Tween(begin: 1.05, end: 1.0).chain(CurveTween(curve: Curves.easeIn)),
+          tween: Tween(
+            begin: 1.05,
+            end: 1.0,
+          ).chain(CurveTween(curve: Curves.easeIn)),
           weight: 20,
         ),
       ]).animate(c);
@@ -63,13 +69,19 @@ class _WordBlanksState extends State<WordBlanks> with TickerProviderStateMixin {
 
     _resultCtrl = List.generate(
       length,
-      (_) => AnimationController(vsync: this, duration: const Duration(milliseconds: 380)),
+      (_) => AnimationController(
+        vsync: this,
+        duration: const Duration(milliseconds: 380),
+      ),
     );
     _resultPop = _resultCtrl.map((c) {
       return TweenSequence<double>([
         TweenSequenceItem(tween: Tween(begin: 1.0, end: 1.15), weight: 40),
         TweenSequenceItem(
-          tween: Tween(begin: 1.15, end: 1.0).chain(CurveTween(curve: Curves.easeOut)),
+          tween: Tween(
+            begin: 1.15,
+            end: 1.0,
+          ).chain(CurveTween(curve: Curves.easeOut)),
           weight: 60,
         ),
       ]).animate(CurvedAnimation(parent: c, curve: Curves.easeOut));
@@ -99,8 +111,12 @@ class _WordBlanksState extends State<WordBlanks> with TickerProviderStateMixin {
     super.didUpdateWidget(old);
 
     if (widget.length != old.length) {
-      for (final c in _typeCtrl) { c.dispose(); }
-      for (final c in _resultCtrl) { c.dispose(); }
+      for (final c in _typeCtrl) {
+        c.dispose();
+      }
+      for (final c in _resultCtrl) {
+        c.dispose();
+      }
       _initControllers(widget.length);
       return;
     }
@@ -120,8 +136,12 @@ class _WordBlanksState extends State<WordBlanks> with TickerProviderStateMixin {
 
   @override
   void dispose() {
-    for (final c in _typeCtrl) { c.dispose(); }
-    for (final c in _resultCtrl) { c.dispose(); }
+    for (final c in _typeCtrl) {
+      c.dispose();
+    }
+    for (final c in _resultCtrl) {
+      c.dispose();
+    }
     super.dispose();
   }
 
@@ -139,7 +159,18 @@ class _WordBlanksState extends State<WordBlanks> with TickerProviderStateMixin {
       return widget.state! ? AppColors.correctBg : AppColors.wrongBg;
     }
 
-    final cells = List.generate(widget.length, (i) {
+    // Cell metrics. Cells shrink on narrow screens (width fit, below) and on
+    // short screens (height scale, here) so the 3-row reserve stays compact
+    // when vertical space is tight — e.g. small phones with the keyboard open.
+    const double aspect = 42 / 36, spacing = 4;
+    const int reservedRows = 3;
+
+    // Scale the max cell down on shorter screens. 840 ≈ reference height.
+    final screenH = MediaQuery.sizeOf(context).height;
+    final heightScale = (screenH / 840).clamp(0.6, 1.0);
+    final maxCellW = 36 * heightScale;
+
+    Widget buildCell(int i, double cellW, double cellH, double fontSize) {
       final char = i < widget.typed.length ? widget.typed[i] : '';
       final correct = widget.state == true;
       final wrong = widget.state == false;
@@ -151,16 +182,13 @@ class _WordBlanksState extends State<WordBlanks> with TickerProviderStateMixin {
           final dx = wrong ? _resultShake[i].value : 0.0;
           return Transform.translate(
             offset: Offset(dx, 0),
-            child: Transform.scale(
-              scale: scale,
-              child: child,
-            ),
+            child: Transform.scale(scale: scale, child: child),
           );
         },
         child: AnimatedContainer(
           duration: const Duration(milliseconds: 200),
-          width: 36,
-          height: 42,
+          width: cellW,
+          height: cellH,
           alignment: Alignment.center,
           decoration: BoxDecoration(
             color: cellBg(i),
@@ -173,7 +201,7 @@ class _WordBlanksState extends State<WordBlanks> with TickerProviderStateMixin {
               char,
               style: TextStyle(
                 fontFamily: AppTheme.sans,
-                fontSize: 18,
+                fontSize: fontSize,
                 fontWeight: FontWeight.bold,
                 color: AppColors.ink,
                 height: 1,
@@ -182,29 +210,46 @@ class _WordBlanksState extends State<WordBlanks> with TickerProviderStateMixin {
           ),
         ),
       );
-    });
+    }
 
-    return Column(
-      mainAxisSize: MainAxisSize.min,
-      children: [
-        Wrap(
-          spacing: 6,
-          runSpacing: 6,
-          alignment: WrapAlignment.center,
-          children: cells,
-        ),
-        if (widget.state == false && widget.revealAnswer != null) ...[
-          const SizedBox(height: 8),
-          Text(
-            widget.revealAnswer!,
-            style: const TextStyle(
-              fontFamily: AppTheme.sans,
-              fontSize: 13,
-              color: AppColors.muted,
+    return LayoutBuilder(
+      builder: (context, constraints) {
+        final availW = constraints.maxWidth;
+
+        // Target cells-per-row to fit the whole word in `reservedRows`,
+        // then shrink cell width so that many fit the available width.
+        final perRow = availW.isFinite && availW > 0
+            ? (widget.length / reservedRows).ceil().clamp(1, widget.length)
+            : widget.length;
+        final fitW = availW.isFinite && availW > 0
+            ? (availW - (perRow - 1) * spacing) / perRow
+            : maxCellW;
+        final cellW = fitW.clamp(0.0, maxCellW);
+        final cellH = cellW * aspect;
+        final fontSize = cellW * (18 / maxCellW);
+
+        // Reserve fixed 3-row height so the flag container never shifts,
+        // regardless of how many rows the cells actually wrap to.
+        final wrapHeight = reservedRows * cellH + (reservedRows - 1) * spacing;
+
+        final cells = List.generate(
+          widget.length,
+          (i) => buildCell(i, cellW, cellH, fontSize),
+        );
+
+        return SizedBox(
+          height: wrapHeight,
+          // Center the rows vertically within the reserved 3-row box.
+          child: Center(
+            child: Wrap(
+              spacing: spacing,
+              runSpacing: spacing,
+              alignment: WrapAlignment.center,
+              children: cells,
             ),
           ),
-        ],
-      ],
+        );
+      },
     );
   }
 }

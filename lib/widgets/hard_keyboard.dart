@@ -11,6 +11,8 @@ class HardKeyboard extends StatelessWidget {
     required this.onBackspace,
     required this.onSubmit,
     required this.onSkip,
+    required this.onNext,
+    this.correctAnswer = '',
     this.submitEnabled = false,
     this.disabled = false,
   });
@@ -19,6 +21,8 @@ class HardKeyboard extends StatelessWidget {
   final VoidCallback onBackspace;
   final VoidCallback onSubmit;
   final VoidCallback onSkip;
+  final VoidCallback onNext;
+  final String correctAnswer;
   final bool submitEnabled;
   final bool disabled;
 
@@ -32,15 +36,12 @@ class HardKeyboard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ConstrainedBox(
-      constraints: const BoxConstraints(maxWidth: 480),
-      child: LayoutBuilder(
-        builder: (context, constraints) {
-          final keyWidth =
-              (constraints.maxWidth - _gap * (_maxKeys - 1)) / _maxKeys;
-          return _buildContent(keyWidth);
-        },
-      ),
+    return LayoutBuilder(
+      builder: (context, constraints) {
+        final keyWidth =
+            (constraints.maxWidth - _gap * (_maxKeys - 1)) / _maxKeys;
+        return _buildContent(keyWidth);
+      },
     );
   }
 
@@ -48,13 +49,47 @@ class HardKeyboard extends StatelessWidget {
     return Column(
       mainAxisSize: MainAxisSize.min,
       children: [
+        if (disabled) ...[
+          Row(
+            children: [
+              Expanded(child: _AnswerChip(label: correctAnswer)),
+              const SizedBox(width: 6),
+              Expanded(
+                child: _ActionKey(
+                  label: 'بعدی ›',
+                  onTap: onNext,
+                  highlight: true,
+                  enter: true,
+                ),
+              ),
+            ],
+          ),
+        ] else ...[
+          Row(
+            children: [
+              Expanded(
+                child: _ActionKey(label: 'رد کردن', onTap: onSkip, error: true),
+              ),
+              const SizedBox(width: 6),
+              Expanded(
+                flex: 3,
+                child: _ActionKey(
+                  label: 'تأیید',
+                  onTap: submitEnabled ? onSubmit : null,
+                  highlight: submitEnabled,
+                  enter: true,
+                ),
+              ),
+            ],
+          ),
+        ],
+        const SizedBox(height: 18),
         for (int r = 0; r < _rows.length; r++) ...[
           _KeyRow(
             keys: _rows[r],
             keyWidth: keyWidth,
             maxKeys: _maxKeys,
             onTap: disabled ? null : onChar,
-            // Backspace sits inline at the end of the last row, next to 'پ'.
             onBackspace: r == _rows.length - 1
                 ? (disabled ? () {} : onBackspace)
                 : null,
@@ -62,28 +97,6 @@ class HardKeyboard extends StatelessWidget {
           ),
           const SizedBox(height: 6),
         ],
-        const SizedBox(height: 6),
-        Row(
-          children: [
-            Expanded(
-              child: _ActionKey(
-                label: 'بعدی',
-                onTap: disabled ? null : onSkip,
-                error: true,
-              ),
-            ),
-            const SizedBox(width: 6),
-            Expanded(
-              flex: 3,
-              child: _ActionKey(
-                label: 'تأیید',
-                onTap: (disabled || !submitEnabled) ? null : onSubmit,
-                highlight: submitEnabled && !disabled,
-                enter: true,
-              ),
-            ),
-          ],
-        ),
       ],
     );
   }
@@ -203,6 +216,33 @@ class _CharKeyState extends State<_CharKey> {
               height: 1,
             ),
           ),
+        ),
+      ),
+    );
+  }
+}
+
+class _AnswerChip extends StatelessWidget {
+  const _AnswerChip({required this.label});
+  final String label;
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      height: 46,
+      alignment: Alignment.center,
+      decoration: BoxDecoration(
+        color: AppColors.correct.withValues(alpha: 0.12),
+        border: Border.all(color: AppColors.correct, width: 1.4),
+        borderRadius: BorderRadius.circular(4),
+      ),
+      child: Text(
+        label,
+        style: TextStyle(
+          fontFamily: AppTheme.sans,
+          fontSize: 15,
+          color: AppColors.correct,
+          height: 1,
         ),
       ),
     );

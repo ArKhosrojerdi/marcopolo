@@ -11,13 +11,19 @@ class MapImage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    // Shrink the map on shorter screens so it fits alongside the keyboard.
+    // 840 ≈ reference height; matches FlagImage / WordBlanks scaling.
+    final screenH = MediaQuery.sizeOf(context).height;
+    final heightScale = (screenH / 840).clamp(0.6, 1.0);
+    final scaled = size * heightScale;
+
     return Center(
       child: Padding(
         padding: const EdgeInsets.all(16),
         child: SvgPicture.asset(
           assetPath,
-          height: size,
-          width: size,
+          height: scaled,
+          width: scaled,
           fit: BoxFit.contain,
           placeholderBuilder: (_) =>
               const Center(child: CircularProgressIndicator(strokeWidth: 2)),
