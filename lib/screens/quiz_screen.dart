@@ -109,37 +109,40 @@ class _QuizScreenState extends State<QuizScreen> {
                 final isHard = _ctrl.difficulty == GameDifficulty.hard;
                 return Padding(
                   padding: const EdgeInsets.symmetric(
-                    horizontal: 18,
+                    horizontal: 8,
                     vertical: 20,
                   ),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.stretch,
                     children: [
-                      Stack(
-                        alignment: Alignment.center,
-                        children: [
-                          Align(
-                            alignment: AlignmentDirectional.centerStart,
-                            child: QuizExitButton(
-                              onTap: () => Navigator.of(context).pop(),
-                            ),
-                          ),
-                          Align(
-                            alignment: AlignmentDirectional.centerEnd,
-                            child: Text(
-                              _subtitle,
-                              style: const TextStyle(
-                                fontFamily: AppTheme.sans,
-                                fontSize: 12,
-                                color: AppColors.muted,
+                      Padding(
+                        padding: const EdgeInsets.symmetric(horizontal: 10),
+                        child: Stack(
+                          alignment: Alignment.center,
+                          children: [
+                            Align(
+                              alignment: AlignmentDirectional.centerStart,
+                              child: QuizExitButton(
+                                onTap: () => Navigator.of(context).pop(),
                               ),
                             ),
-                          ),
-                          CurrentRecord(
-                            value: _ctrl.record,
-                            beat: _ctrl.justBeatRecord,
-                          ),
-                        ],
+                            Align(
+                              alignment: AlignmentDirectional.centerEnd,
+                              child: Text(
+                                _subtitle,
+                                style: const TextStyle(
+                                  fontFamily: AppTheme.sans,
+                                  fontSize: 12,
+                                  color: AppColors.muted,
+                                ),
+                              ),
+                            ),
+                            CurrentRecord(
+                              value: _ctrl.record,
+                              beat: _ctrl.justBeatRecord,
+                            ),
+                          ],
+                        ),
                       ),
                       const SizedBox(height: 10),
                       Center(
@@ -151,16 +154,19 @@ class _QuizScreenState extends State<QuizScreen> {
                       ),
                       const SizedBox(height: 14),
                       Expanded(
-                        child: LayoutBuilder(
-                          builder: (context, c) => SingleChildScrollView(
-                            child: ConstrainedBox(
-                              constraints: BoxConstraints(
-                                minHeight: c.maxHeight,
-                              ),
-                              child: Center(
-                                child: Column(
-                                  mainAxisSize: MainAxisSize.min,
-                                  children: [QuizPrompt(question: q)],
+                        child: Padding(
+                          padding: const EdgeInsets.symmetric(horizontal: 10),
+                          child: LayoutBuilder(
+                            builder: (context, c) => SingleChildScrollView(
+                              child: ConstrainedBox(
+                                constraints: BoxConstraints(
+                                  minHeight: c.maxHeight,
+                                ),
+                                child: Center(
+                                  child: Column(
+                                    mainAxisSize: MainAxisSize.min,
+                                    children: [QuizPrompt(question: q)],
+                                  ),
                                 ),
                               ),
                             ),
@@ -182,17 +188,26 @@ class _QuizScreenState extends State<QuizScreen> {
                         ),
                         const SizedBox(height: 12),
                       ] else ...[
-                        for (var i = 0; i < q.options.length; i++) ...[
-                          if (i > 0) const SizedBox(height: 12),
-                          OptionButton(
-                            label: q.options[i],
-                            visual: _visualFor(i, q),
-                            celebrate: _ctrl.selectedIndex == q.correctIndex,
-                            onTap: _ctrl.answered
-                                ? null
-                                : () => _ctrl.answer(i),
+                        Padding(
+                          padding: const EdgeInsets.symmetric(horizontal: 10),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.stretch,
+                            children: [
+                              for (var i = 0; i < q.options.length; i++) ...[
+                                if (i > 0) const SizedBox(height: 12),
+                                OptionButton(
+                                  label: q.options[i],
+                                  visual: _visualFor(i, q),
+                                  celebrate:
+                                      _ctrl.selectedIndex == q.correctIndex,
+                                  onTap: _ctrl.answered
+                                      ? null
+                                      : () => _ctrl.answer(i),
+                                ),
+                              ],
+                            ],
                           ),
-                        ],
+                        ),
                       ],
                       if (isHard) ...[
                         HardKeyboard(
@@ -206,11 +221,14 @@ class _QuizScreenState extends State<QuizScreen> {
                         ),
                         const SizedBox(height: 4),
                       ],
-                      SizedBox(
-                        height: _resultSlotHeight,
-                        child: _ctrl.answered
-                            ? QuizResult(controller: _ctrl)
-                            : null,
+                      Padding(
+                        padding: const EdgeInsets.symmetric(horizontal: 10),
+                        child: SizedBox(
+                          height: _resultSlotHeight,
+                          child: _ctrl.answered
+                              ? QuizResult(controller: _ctrl)
+                              : null,
+                        ),
                       ),
                     ],
                   ),
