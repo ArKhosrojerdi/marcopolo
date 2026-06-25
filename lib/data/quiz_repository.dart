@@ -87,6 +87,12 @@ class QuizRepository {
   final CountryData _data;
   final Random _rng;
 
+  /// Code → country index, built once. Neighbor questions resolve border codes
+  /// to countries on every draw; rebuilding this per question was O(n) churn.
+  late final Map<String, Country> _byCode = {
+    for (final c in _data.all) c.code: c,
+  };
+
   /// Regions selectable in the flag mode (per wireframe).
   static const regions = <String>['آسیا', 'اروپا', 'آفریقا', 'آمریکا', 'سایر'];
 
@@ -168,11 +174,9 @@ class QuizRepository {
   /// correct choice. Non-neighbor is drawn from the same region when possible so
   /// it stays plausible, falling back to the whole world otherwise.
   Question _nextNeighbor(Country answer) {
-    final byCode = {for (final c in _data.all) c.code: c};
-
     // three real neighbors, distinct labels
     final neighbors = answer.borders
-        .map((code) => byCode[code])
+        .map((code) => _byCode[code])
         .whereType<Country>()
         .toList()
       ..shuffle(_rng);
@@ -209,10 +213,8 @@ class QuizRepository {
   /// player picks which country they border. Options are [answer] plus three
   /// distractor countries (preferring the same region for plausibility).
   Question _nextNeighborHard(Country answer) {
-    final byCode = {for (final c in _data.all) c.code: c};
-
     final neighborLabels = answer.borders
-        .map((code) => byCode[code])
+        .map((code) => _byCode[code])
         .whereType<Country>()
         .map((c) => c.fa)
         .toList();

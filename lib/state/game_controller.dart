@@ -3,6 +3,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 
 import '../data/quiz_repository.dart';
 import 'sound_service.dart';
+import 'svg_prefetch.dart';
 
 enum AnswerState { unanswered, correct, wrong }
 
@@ -89,7 +90,23 @@ class GameController extends ChangeNotifier {
       difficulty: difficulty,
     );
     _seen.add(_question!.answer.code);
+    _warmQuestionAsset(_question!);
     notifyListeners();
+  }
+
+  /// Primes the SVG cache for an image-backed question (flag/map) so the
+  /// picture is ready when the widget mounts — no placeholder flash.
+  void _warmQuestionAsset(Question q) {
+    switch (q.mode) {
+      case GameMode.flag:
+        SvgPrefetch.warm(q.answer.flagAsset);
+      case GameMode.map:
+        SvgPrefetch.warm(q.answer.mapAsset);
+      case GameMode.currency:
+      case GameMode.capital:
+      case GameMode.neighbor:
+        break;
+    }
   }
 
   /// Replay the same mode/region from scratch (from the completion screen).
@@ -180,6 +197,7 @@ class GameController extends ChangeNotifier {
     _justBeatRecord = false;
     _question = q;
     _seen.add(q.answer.code);
+    _warmQuestionAsset(q);
     notifyListeners();
   }
 }

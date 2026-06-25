@@ -30,6 +30,21 @@ class _QuizScreenState extends State<QuizScreen> {
 
   String _typed = '';
 
+  /// The prompt block (flag/map SVG or text panel) depends only on the current
+  /// [Question], not on [_typed] or answer state. Cache it by question identity
+  /// so per-keystroke `setState`s don't rebuild — and crucially don't re-mount —
+  /// the SVG widget.
+  Question? _promptQuestion;
+  Widget? _promptCache;
+
+  Widget _promptFor(Question q) {
+    if (!identical(q, _promptQuestion)) {
+      _promptQuestion = q;
+      _promptCache = RepaintBoundary(child: QuizPrompt(question: q));
+    }
+    return _promptCache!;
+  }
+
   GameController get _ctrl => widget.controller;
 
   @override
@@ -197,7 +212,7 @@ class _QuizScreenState extends State<QuizScreen> {
               child: Center(
                 child: Column(
                   mainAxisSize: MainAxisSize.min,
-                  children: [QuizPrompt(question: q)],
+                  children: [_promptFor(q)],
                 ),
               ),
             ),
@@ -261,16 +276,18 @@ class _QuizScreenState extends State<QuizScreen> {
       bottom: 0,
       child: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 12),
-        child: HardKeyboard(
-          onChar: _onChar,
-          onBackspace: _onBackspace,
-          onSubmit: _onSubmit,
-          onSkip: _onSkip,
-          onNext: _ctrl.next,
-          correctAnswer: q.correctAnswer,
-          submitEnabled:
-              _typed.length == stripSpaces(q.correctAnswer).length,
-          disabled: _ctrl.answered,
+        child: RepaintBoundary(
+          child: HardKeyboard(
+            onChar: _onChar,
+            onBackspace: _onBackspace,
+            onSubmit: _onSubmit,
+            onSkip: _onSkip,
+            onNext: _ctrl.next,
+            correctAnswer: q.correctAnswer,
+            submitEnabled:
+                _typed.length == stripSpaces(q.correctAnswer).length,
+            disabled: _ctrl.answered,
+          ),
         ),
       ),
     );
