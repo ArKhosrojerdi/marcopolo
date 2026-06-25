@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../state/sound_service.dart';
 import '../theme/app_theme.dart';
 
 /// Custom Persian keyboard for hard mode. No native keyboard involved.
@@ -78,6 +79,7 @@ class HardKeyboard extends StatelessWidget {
                 label: 'تأیید',
                 onTap: (disabled || !submitEnabled) ? null : onSubmit,
                 highlight: submitEnabled && !disabled,
+                enter: true,
               ),
             ),
           ],
@@ -120,6 +122,7 @@ class _KeyRow extends StatelessWidget {
             child: _ActionKey(
               label: '⌫',
               onTap: backspaceEnabled ? onBackspace : null,
+              backspace: true,
             ),
           ),
           const SizedBox(width: _gap),
@@ -160,6 +163,7 @@ class _CharKeyState extends State<_CharKey> {
       onTapUp: enabled
           ? (_) {
               setState(() => _pressed = false);
+              SoundService.instance.playLetter();
               widget.onTap!(widget.char);
             }
           : null,
@@ -211,11 +215,15 @@ class _ActionKey extends StatefulWidget {
     this.onTap,
     this.highlight = false,
     this.error = false,
+    this.backspace = false,
+    this.enter = false,
   });
   final String label;
   final VoidCallback? onTap;
   final bool highlight;
   final bool error;
+  final bool backspace;
+  final bool enter;
 
   @override
   State<_ActionKey> createState() => _ActionKeyState();
@@ -233,6 +241,8 @@ class _ActionKeyState extends State<_ActionKey> {
       onTapUp: enabled
           ? (_) {
               setState(() => _pressed = false);
+              if (widget.backspace) SoundService.instance.playBackspace();
+              if (widget.enter) SoundService.instance.playEnter();
               widget.onTap!();
             }
           : null,

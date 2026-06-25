@@ -109,11 +109,12 @@ class _QuizScreenState extends State<QuizScreen> {
                 // Neighbor mode is always option-based — its hard variant asks
                 // the player to pick the country, not type it. So the typing
                 // keyboard only appears for the other hard modes.
-                final useKeyboard = _ctrl.difficulty == GameDifficulty.hard &&
+                final useKeyboard =
+                    _ctrl.difficulty == GameDifficulty.hard &&
                     q.mode != GameMode.neighbor;
                 return Padding(
                   padding: const EdgeInsets.symmetric(
-                    horizontal: 0,
+                    horizontal: 18,
                     vertical: 12,
                   ),
                   child: Column(
@@ -224,7 +225,6 @@ class _QuizScreenState extends State<QuizScreen> {
                               stripSpaces(q.correctAnswer).length,
                           disabled: _ctrl.answered,
                         ),
-                        const SizedBox(height: 4),
                       ],
                       Padding(
                         padding: const EdgeInsets.symmetric(horizontal: 10),

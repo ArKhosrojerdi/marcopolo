@@ -39,7 +39,9 @@ class RegionScreen extends StatelessWidget {
                 children: [
                   Row(
                     children: [
-                      BackStickerButton(onTap: () => Navigator.of(context).pop()),
+                      BackStickerButton(
+                        onTap: () => Navigator.of(context).pop(),
+                      ),
                       const SizedBox(width: 10),
                       Text(
                         'بازی ${mode.titleFa}',
