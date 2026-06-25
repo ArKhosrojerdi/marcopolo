@@ -44,6 +44,41 @@ class QuizPrompt extends StatelessWidget {
           ],
         );
       case GameMode.neighbor:
+        if (question.neighborLabels.isNotEmpty) {
+          return Panel(
+            children: [
+              const Text(
+                'این‌ها همسایه‌های کدام کشورند؟',
+                style: TextStyle(
+                  fontFamily: AppTheme.sans,
+                  fontSize: 12,
+                  color: AppColors.muted,
+                ),
+              ),
+              const SizedBox(height: 10),
+              Wrap(
+                alignment: WrapAlignment.center,
+                spacing: 8,
+                runSpacing: 8,
+                children: [
+                  for (final n in question.neighborLabels)
+                    Container(
+                      padding: const EdgeInsets.symmetric(
+                        horizontal: 10,
+                        vertical: 4,
+                      ),
+                      decoration: BoxDecoration(
+                        color: AppColors.card,
+                        borderRadius: BorderRadius.circular(10),
+                        border: Border.all(color: AppColors.ink, width: 1.4),
+                      ),
+                      child: Text(n, style: AppTheme.handSize(20)),
+                    ),
+                ],
+              ),
+            ],
+          );
+        }
         return Panel(
           children: [
             const Text(

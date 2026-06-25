@@ -349,7 +349,7 @@
   },
   {
     "code": "cm",
-    "fa": "کامِرون",
+    "fa": "کامرون",
     "en": "Cameroon",
     "capital": "Yaoundé",
     "currencyName": "Central African CFA franc",
@@ -373,7 +373,7 @@
   },
   {
     "code": "cv",
-    "fa": "دماغهٔ سبز",
+    "fa": "کیپ ورد",
     "en": "Cape Verde",
     "capital": "Praia",
     "currencyName": "Cape Verdean escudo",
@@ -460,7 +460,7 @@
   },
   {
     "code": "km",
-    "fa": "اتحاد قُمُر",
+    "fa": "کومور",
     "en": "Comoros",
     "capital": "Moroni",
     "currencyName": "Comorian franc",
@@ -472,7 +472,7 @@
   },
   {
     "code": "cg",
-    "fa": "جمهوری کُنگو",
+    "fa": "جمهوری کنگو",
     "en": "Congo",
     "capital": "Brazzaville",
     "currencyName": "Central African CFA franc",
@@ -508,7 +508,7 @@
   },
   {
     "code": "hr",
-    "fa": "کرُواسی",
+    "fa": "کرواسی",
     "en": "Croatia",
     "capital": "Zagreb",
     "currencyName": "Euro",
@@ -544,7 +544,7 @@
   },
   {
     "code": "cy",
-    "fa": "قِبرِس",
+    "fa": "قبرس",
     "en": "Cyprus",
     "capital": "Nicosia",
     "currencyName": "Euro",
@@ -568,7 +568,7 @@
   },
   {
     "code": "cd",
-    "fa": "کنگو دموکراتیک",
+    "fa": "جمهوری دموکراتیک کنگو",
     "en": "DR Congo",
     "capital": "Kinshasa",
     "currencyName": "Congolese franc",
@@ -688,7 +688,7 @@
   },
   {
     "code": "ee",
-    "fa": "اِستونی",
+    "fa": "استونی",
     "en": "Estonia",
     "capital": "Tallinn",
     "currencyName": "Euro",
@@ -700,7 +700,7 @@
   },
   {
     "code": "sz",
-    "fa": "اسواتینی",
+    "fa": "سوازیلند",
     "en": "Eswatini",
     "capital": "Lobamba",
     "currencyName": "Swazi lilangeni",
@@ -712,7 +712,7 @@
   },
   {
     "code": "et",
-    "fa": "اِتیوپی",
+    "fa": "اتیوپی",
     "en": "Ethiopia",
     "capital": "Addis Ababa",
     "currencyName": "Ethiopian birr",
@@ -844,7 +844,7 @@
   },
   {
     "code": "gt",
-    "fa": "گواتِمالا",
+    "fa": "گواتمالا",
     "en": "Guatemala",
     "capital": "Guatemala City",
     "currencyName": "Guatemalan quetzal",
@@ -904,7 +904,7 @@
   },
   {
     "code": "hn",
-    "fa": "هُندوراس",
+    "fa": "هندوراس",
     "en": "Honduras",
     "capital": "Tegucigalpa",
     "currencyName": "Honduran lempira",
@@ -1120,7 +1120,7 @@
   },
   {
     "code": "kw",
-    "fa": "کُویت",
+    "fa": "کویت",
     "en": "Kuwait",
     "capital": "Kuwait City",
     "currencyName": "Kuwaiti dinar",
@@ -1564,7 +1564,7 @@
   },
   {
     "code": "kp",
-    "fa": "کُره شمالی",
+    "fa": "کره شمالی",
     "en": "North Korea",
     "capital": "Pyongyang",
     "currencyName": "North Korean won",
@@ -1927,7 +1927,7 @@
   },
   {
     "code": "sk",
-    "fa": "اِسلُواکی",
+    "fa": "اسلواکی",
     "en": "Slovakia",
     "capital": "Bratislava",
     "currencyName": "Euro",
@@ -1987,7 +1987,7 @@
   },
   {
     "code": "kr",
-    "fa": "کرهٔ جنوبی",
+    "fa": "کره جنوبی",
     "en": "South Korea",
     "capital": "Seoul",
     "currencyName": "South Korean won",
@@ -2119,7 +2119,7 @@
   },
   {
     "code": "tj",
-    "fa": "تاجیکِستان",
+    "fa": "تاجیکستان",
     "en": "Tajikistan",
     "capital": "Dushanbe",
     "currencyName": "Tajikistani somoni",

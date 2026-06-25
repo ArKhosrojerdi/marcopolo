@@ -53,6 +53,10 @@ class Question {
   /// The exact label the player must type in hard mode.
   final String correctAnswer;
 
+  /// Neighbor labels shown in the hard neighbor prompt (all borders of
+  /// [answer]). Empty for every other question.
+  final List<String> neighborLabels;
+
   const Question({
     required this.mode,
     required this.answer,
@@ -60,6 +64,7 @@ class Question {
     required this.correctIndex,
     required this.correctAnswer,
     this.direction,
+    this.neighborLabels = const [],
   });
 
   /// Prompt line shown above the options.
@@ -70,7 +75,9 @@ class Question {
             ? 'پایتختِ ${answer.capitalFa.isNotEmpty ? answer.capitalFa : answer.capital} مربوط به کدام کشور است؟'
             : 'پایتختِ ${answer.fa} کدام است؟',
         GameMode.map => 'این کدام کشور است؟',
-        GameMode.neighbor => 'کدام کشور همسایهٔ ${answer.fa} نیست؟',
+        GameMode.neighbor => neighborLabels.isNotEmpty
+            ? 'این‌ها همسایه‌های کدام کشورند؟'
+            : 'کدام کشور همسایهٔ ${answer.fa} نیست؟',
       };
 }
 
@@ -115,6 +122,7 @@ class QuizRepository {
     String? region,
     Set<String>? exclude,
     CapitalDirection direction = CapitalDirection.countryToCapital,
+    GameDifficulty difficulty = GameDifficulty.normal,
   }) {
     final pool = _pool(mode, region);
     final remaining = exclude == null
@@ -124,7 +132,9 @@ class QuizRepository {
     final answer = remaining[_rng.nextInt(remaining.length)];
 
     if (mode == GameMode.neighbor) {
-      return _nextNeighbor(answer);
+      return difficulty == GameDifficulty.hard
+          ? _nextNeighborHard(answer)
+          : _nextNeighbor(answer);
     }
 
     // distractors: 3 other countries from same pool, distinct labels
@@ -192,6 +202,46 @@ class QuizRepository {
       options: all.map((c) => c.fa).toList(),
       correctIndex: all.indexWhere((c) => c.code == nonNeighbor.code),
       correctAnswer: nonNeighbor.fa,
+    );
+  }
+
+  /// Builds the hard neighbor question: shows ALL neighbors of [answer] and the
+  /// player picks which country they border. Options are [answer] plus three
+  /// distractor countries (preferring the same region for plausibility).
+  Question _nextNeighborHard(Country answer) {
+    final byCode = {for (final c in _data.all) c.code: c};
+
+    final neighborLabels = answer.borders
+        .map((code) => byCode[code])
+        .whereType<Country>()
+        .map((c) => c.fa)
+        .toList();
+
+    // distractors: 3 countries that are neither the answer nor one of the
+    // shown neighbors, distinct labels, prefer same region.
+    final excludedCodes = {answer.code, ...answer.borders};
+    final used = <String>{answer.fa, ...neighborLabels};
+    bool eligible(Country c) =>
+        !excludedCodes.contains(c.code) && !used.contains(c.fa);
+    final sameRegion = _data.all
+        .where((c) => eligible(c) && c.region == answer.region)
+        .toList()
+      ..shuffle(_rng);
+    final rest = _data.all.where(eligible).toList()..shuffle(_rng);
+    final distractors = <Country>[];
+    for (final c in [...sameRegion, ...rest]) {
+      if (distractors.length == 3) break;
+      if (used.add(c.fa)) distractors.add(c);
+    }
+
+    final all = [answer, ...distractors]..shuffle(_rng);
+    return Question(
+      mode: GameMode.neighbor,
+      answer: answer,
+      options: all.map((c) => c.fa).toList(),
+      correctIndex: all.indexWhere((c) => c.code == answer.code),
+      correctAnswer: answer.fa,
+      neighborLabels: neighborLabels,
     );
   }
 

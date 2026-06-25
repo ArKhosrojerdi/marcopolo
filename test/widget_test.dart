@@ -98,4 +98,45 @@ void main() {
       }
     }
   });
+
+  test('neighbor hard: correct option is the bordered country, prompt lists '
+      'its neighbors', () {
+    Country c(String code, List<String> borders) => Country(
+          code: code,
+          fa: code,
+          en: code.toUpperCase(),
+          capital: '$code-cap',
+          currencyName: '',
+          currencyFa: '',
+          currencySymbol: '',
+          region: 'آسیا',
+          borders: borders,
+        );
+    final data = CountryData.fromList([
+      c('a', ['b', 'c', 'd']),
+      c('b', ['a']),
+      c('c', ['a']),
+      c('d', ['a']),
+      c('e', []),
+      c('f', []),
+      c('g', []),
+      c('h', []),
+    ]);
+    final repo = QuizRepository(data, Random(7));
+    for (var i = 0; i < 30; i++) {
+      final q = repo.next(GameMode.neighbor, difficulty: GameDifficulty.hard)!;
+      expect(q.options.length, 4);
+      expect(q.options.toSet().length, 4); // distinct
+      expect(q.answer.code, 'a'); // only country with >=3 neighbors
+      // correct option is the answer country itself
+      expect(q.options[q.correctIndex], 'a');
+      expect(q.correctAnswer, 'a');
+      // prompt shows all neighbors of the answer
+      expect(q.neighborLabels.toSet(), {'b', 'c', 'd'});
+      // no shown neighbor appears among the options
+      for (final n in q.neighborLabels) {
+        expect(q.options, isNot(contains(n)));
+      }
+    }
+  });
 }

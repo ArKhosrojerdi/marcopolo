@@ -72,7 +72,9 @@ class DifficultyScreen extends StatelessWidget {
                   _DifficultyRow(
                     emoji: '🔴',
                     title: 'سخت',
-                    subtitle: 'جواب را خودت تایپ کن — بدون گزینه',
+                    subtitle: mode == GameMode.neighbor
+                        ? 'همهٔ همسایه‌ها را می‌بینی — کشور را پیدا کن'
+                        : 'جواب را خودت تایپ کن — بدون گزینه',
                     onTap: () => _start(context, GameDifficulty.hard),
                   ),
                 ],

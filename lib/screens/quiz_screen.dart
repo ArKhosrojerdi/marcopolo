@@ -106,7 +106,11 @@ class _QuizScreenState extends State<QuizScreen> {
                   );
                 }
                 final q = _ctrl.question!;
-                final isHard = _ctrl.difficulty == GameDifficulty.hard;
+                // Neighbor mode is always option-based — its hard variant asks
+                // the player to pick the country, not type it. So the typing
+                // keyboard only appears for the other hard modes.
+                final useKeyboard = _ctrl.difficulty == GameDifficulty.hard &&
+                    q.mode != GameMode.neighbor;
                 return Padding(
                   padding: const EdgeInsets.symmetric(
                     horizontal: 0,
@@ -173,7 +177,7 @@ class _QuizScreenState extends State<QuizScreen> {
                           ),
                         ),
                       ),
-                      if (isHard) ...[
+                      if (useKeyboard) ...[
                         Center(
                           child: WordBlanks(
                             length: stripSpaces(q.correctAnswer).length,
@@ -209,7 +213,7 @@ class _QuizScreenState extends State<QuizScreen> {
                           ),
                         ),
                       ],
-                      if (isHard) ...[
+                      if (useKeyboard) ...[
                         HardKeyboard(
                           onChar: _onChar,
                           onBackspace: _onBackspace,

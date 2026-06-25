@@ -81,8 +81,13 @@ class GameController extends ChangeNotifier {
     _direction = direction;
     _difficulty = difficulty;
     _reset();
-    _question =
-        _repo.next(mode, region: region, exclude: _seen, direction: direction);
+    _question = _repo.next(
+      mode,
+      region: region,
+      exclude: _seen,
+      direction: direction,
+      difficulty: difficulty,
+    );
     _seen.add(_question!.answer.code);
     notifyListeners();
   }
@@ -163,6 +168,7 @@ class GameController extends ChangeNotifier {
       region: _region,
       exclude: _seen,
       direction: _direction,
+      difficulty: _difficulty,
     );
     if (q == null) {
       _finished = true;
