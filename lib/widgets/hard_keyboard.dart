@@ -24,7 +24,7 @@ class HardKeyboard extends StatelessWidget {
   static const _rows = [
     ['چ', 'ج', 'ح', 'خ', 'ه', 'ع', 'غ', 'ف', 'ق', 'ث', 'ص', 'ض'],
     ['گ', 'ک', 'م', 'ن', 'ت', 'ا', 'ل', 'ب', 'ی', 'س', 'ش'],
-    ['ؤ', 'ئ', 'آ', 'پ', 'ژ', 'و', 'د', 'ذ', 'ر', 'ز', 'ط', 'ظ'],
+    ['پ', 'و', 'د', 'ذ', 'ر', 'ز', 'ژ', 'ط', 'ظ'],
   ];
 
   static const _maxKeys = 12;
@@ -47,38 +47,37 @@ class HardKeyboard extends StatelessWidget {
     return Column(
       mainAxisSize: MainAxisSize.min,
       children: [
-        for (final row in _rows) ...[
+        for (int r = 0; r < _rows.length; r++) ...[
           _KeyRow(
-            keys: row,
+            keys: _rows[r],
             keyWidth: keyWidth,
             maxKeys: _maxKeys,
             onTap: disabled ? null : onChar,
+            // Backspace sits inline at the end of the last row, next to 'پ'.
+            onBackspace: r == _rows.length - 1
+                ? (disabled ? () {} : onBackspace)
+                : null,
+            backspaceEnabled: r == _rows.length - 1 && !disabled,
           ),
           const SizedBox(height: 6),
         ],
+        const SizedBox(height: 6),
         Row(
           children: [
-            Expanded(
-              child: _ActionKey(
-                label: '⌫',
-                onTap: disabled ? null : onBackspace,
-              ),
-            ),
-            const SizedBox(width: 6),
-            Expanded(
-              flex: 2,
-              child: _ActionKey(
-                label: 'تأیید',
-                onTap: (disabled || !submitEnabled) ? null : onSubmit,
-                highlight: submitEnabled && !disabled,
-              ),
-            ),
-            const SizedBox(width: 6),
             Expanded(
               child: _ActionKey(
                 label: 'بعدی',
                 onTap: disabled ? null : onSkip,
                 error: true,
+              ),
+            ),
+            const SizedBox(width: 6),
+            Expanded(
+              flex: 3,
+              child: _ActionKey(
+                label: 'تأیید',
+                onTap: (disabled || !submitEnabled) ? null : onSubmit,
+                highlight: submitEnabled && !disabled,
               ),
             ),
           ],
@@ -94,20 +93,37 @@ class _KeyRow extends StatelessWidget {
     required this.keyWidth,
     required this.maxKeys,
     this.onTap,
+    this.onBackspace,
+    this.backspaceEnabled = false,
   });
   final List<String> keys;
   final double keyWidth;
   final int maxKeys;
   final ValueChanged<String>? onTap;
+  final VoidCallback? onBackspace;
+  final bool backspaceEnabled;
 
   @override
   Widget build(BuildContext context) {
-    final missing = maxKeys - keys.length;
+    // Inline backspace is double-width, so it counts as 2 keys when
+    // reserving row width.
+    final extra = onBackspace != null ? 2 : 0;
+    final missing = maxKeys - keys.length - extra;
     final halfMissing = missing / 2;
     return Row(
       children: [
         // left phantom space
         SizedBox(width: halfMissing * (keyWidth + _gap)),
+        if (onBackspace != null) ...[
+          SizedBox(
+            width: keyWidth * 2 + _gap,
+            child: _ActionKey(
+              label: '⌫',
+              onTap: backspaceEnabled ? onBackspace : null,
+            ),
+          ),
+          const SizedBox(width: _gap),
+        ],
         for (int i = 0; i < keys.length; i++) ...[
           if (i > 0) const SizedBox(width: _gap),
           SizedBox(

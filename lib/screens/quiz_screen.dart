@@ -109,8 +109,8 @@ class _QuizScreenState extends State<QuizScreen> {
                 final isHard = _ctrl.difficulty == GameDifficulty.hard;
                 return Padding(
                   padding: const EdgeInsets.symmetric(
-                    horizontal: 8,
-                    vertical: 20,
+                    horizontal: 0,
+                    vertical: 12,
                   ),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -216,7 +216,8 @@ class _QuizScreenState extends State<QuizScreen> {
                           onSubmit: _onSubmit,
                           onSkip: _onSkip,
                           submitEnabled:
-                              _typed.length == stripSpaces(q.correctAnswer).length,
+                              _typed.length ==
+                              stripSpaces(q.correctAnswer).length,
                           disabled: _ctrl.answered,
                         ),
                         const SizedBox(height: 4),
