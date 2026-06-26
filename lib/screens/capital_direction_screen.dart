@@ -5,7 +5,7 @@ import '../state/game_controller.dart';
 import '../theme/app_theme.dart';
 import '../widgets/back_button.dart';
 import '../widgets/sticker_card.dart';
-import 'difficulty_screen.dart';
+import 'region_screen.dart';
 
 /// Direction selection — only for the capital mode. Lets the player choose
 /// whether they're shown the country (and pick the capital) or shown the
@@ -22,7 +22,7 @@ class CapitalDirectionScreen extends StatelessWidget {
   void _start(BuildContext context, CapitalDirection direction) {
     Navigator.of(context).push(
       MaterialPageRoute(
-        builder: (_) => DifficultyScreen(
+        builder: (_) => RegionScreen(
           controller: controller,
           mode: mode,
           direction: direction,

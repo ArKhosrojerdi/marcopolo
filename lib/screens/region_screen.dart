@@ -7,11 +7,18 @@ import '../widgets/back_button.dart';
 import '../widgets/sticker_card.dart';
 import 'difficulty_screen.dart';
 
-/// Region (continent) selection — only for the flag mode (wireframe).
+/// Region (continent) selection. Used by the flag/map/neighbor modes directly,
+/// and by the capital mode after its direction step (carrying [direction]).
 class RegionScreen extends StatelessWidget {
-  const RegionScreen({super.key, required this.controller, required this.mode});
+  const RegionScreen({
+    super.key,
+    required this.controller,
+    required this.mode,
+    this.direction = CapitalDirection.countryToCapital,
+  });
   final GameController controller;
   final GameMode mode;
+  final CapitalDirection direction;
 
   void _start(BuildContext context, String? region) {
     Navigator.of(context).push(
@@ -20,6 +27,7 @@ class RegionScreen extends StatelessWidget {
           controller: controller,
           mode: mode,
           region: region,
+          direction: direction,
         ),
       ),
     );
