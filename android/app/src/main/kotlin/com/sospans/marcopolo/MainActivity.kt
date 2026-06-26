@@ -1,4 +1,4 @@
-package com.alireza.marcopolo
+package com.sospans.marcopolo
 
 import io.flutter.embedding.android.FlutterActivity
 
