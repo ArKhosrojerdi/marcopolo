@@ -12,12 +12,9 @@ class AdService {
   AdService._();
   static final AdService instance = AdService._();
 
-  // static const String _appId = 'ec109c5a-aa80-4c2d-b384-6f13dc5cd59d';
-  // static const String _interstitialPlacement =
-  //     'bd94eebe-60b1-4365-81ad-ca0cf0a82f8a';
-  static const String _appId = '59c36ce3-7125-40a7-bd34-144e6906c796';
+  static const String _appId = 'ec109c5a-aa80-4c2d-b384-6f13dc5cd59d';
   static const String _interstitialPlacement =
-      'd3d19c2a-142c-4551-92f1-1d2c38aea3ec';
+      'bd94eebe-60b1-4365-81ad-ca0cf0a82f8a';
 
   /// Configure the SDK, register listeners, and warm the first interstitial.
   /// Call once at startup.
