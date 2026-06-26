@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../data/quiz_repository.dart';
+import '../state/ad_service.dart';
 import '../state/game_controller.dart';
 import '../theme/app_theme.dart';
 import '../widgets/hard_keyboard.dart';
@@ -51,11 +52,14 @@ class _QuizScreenState extends State<QuizScreen> {
   void initState() {
     super.initState();
     _ctrl.addListener(_onControllerChange);
+    // Show an interstitial every third wrong answer.
+    _ctrl.onMistakeThreshold = AdService.instance.showInterstitial;
   }
 
   @override
   void dispose() {
     _ctrl.removeListener(_onControllerChange);
+    _ctrl.onMistakeThreshold = null;
     super.dispose();
   }
 

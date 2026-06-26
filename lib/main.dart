@@ -3,12 +3,14 @@ import 'package:shared_preferences/shared_preferences.dart';
 
 import 'data/country.dart';
 import 'data/quiz_repository.dart';
+import 'state/ad_service.dart';
 import 'state/game_controller.dart';
 import 'screens/home_screen.dart';
 import 'theme/app_theme.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
+  AdService.instance.init();
   final data = await CountryData.load();
   final prefs = await SharedPreferences.getInstance();
   final controller = GameController(QuizRepository(data), prefs);

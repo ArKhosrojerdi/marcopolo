@@ -1,6 +1,6 @@
 name: marcopolo
 description: "Persian offline country quiz game (flag / currency / capital)."
-publish_to: 'none'
+publish_to: "none"
 version: 1.0.0+1
 
 environment:
@@ -13,6 +13,7 @@ dependencies:
   flutter_svg: ^2.0.10+1
   shared_preferences: ^2.3.2
   audioplayers: ^6.7.1
+  adivery: ^4.8.8
 
 dev_dependencies:
   flutter_test:

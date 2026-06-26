@@ -2,6 +2,8 @@ allprojects {
     repositories {
         google()
         mavenCentral()
+        // Adivery Android SDK is hosted on its own maven repo.
+        maven { url = uri("https://maven.adivery.com/repository/release") }
     }
 }
 

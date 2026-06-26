@@ -37,6 +37,16 @@ class GameController extends ChangeNotifier {
   /// (for the "new record!" pulse). Cleared on [next].
   bool _justBeatRecord = false;
 
+  /// Wrong answers so far this round. Every [_mistakesPerAd] of them fires
+  /// [onMistakeThreshold] (used to show an interstitial ad).
+  int _mistakes = 0;
+  static const int _mistakesPerAd = 3;
+
+  /// Invoked each time the mistake count hits a multiple of [_mistakesPerAd].
+  /// Set by the UI layer, which owns the ad SDK. Kept out of the controller so
+  /// game logic has no ad dependency.
+  VoidCallback? onMistakeThreshold;
+
   /// Country codes already asked this round (never repeated within a round).
   final Set<String> _seen = {};
   int _correct = 0;
@@ -137,8 +147,15 @@ class GameController extends ChangeNotifier {
       _state = AnswerState.wrong;
       _streak = 0;
       SoundService.instance.playWrong();
+      _registerMistake();
     }
     notifyListeners();
+  }
+
+  /// Records a wrong answer and fires [onMistakeThreshold] on every third one.
+  void _registerMistake() {
+    _mistakes += 1;
+    if (_mistakes % _mistakesPerAd == 0) onMistakeThreshold?.call();
   }
 
   /// Clears per-round session state (seen pool, score, streak).
@@ -146,6 +163,7 @@ class GameController extends ChangeNotifier {
     _streak = 0;
     _correct = 0;
     _total = 0;
+    _mistakes = 0;
     _finished = false;
     _seen.clear();
     _state = AnswerState.unanswered;
@@ -173,6 +191,7 @@ class GameController extends ChangeNotifier {
       _state = AnswerState.wrong;
       _streak = 0;
       SoundService.instance.playWrong();
+      _registerMistake();
     }
     notifyListeners();
   }
