@@ -2,18 +2,27 @@ import 'package:flutter/material.dart';
 
 import '../data/quiz_repository.dart';
 import '../state/game_controller.dart';
+import '../state/level_progress.dart';
 import '../state/sound_service.dart';
 import '../theme/app_theme.dart';
 import '../widgets/mute_button.dart';
+import '../widgets/press_sink.dart';
 import '../widgets/sticker_card.dart';
+import 'achievements_screen.dart';
 import 'capital_direction_screen.dart';
 import 'difficulty_screen.dart';
+import 'levels/seasons_screen.dart';
 import 'region_screen.dart';
 
 /// Home — 2x2 mode grid (wireframe Variant A).
 class HomeScreen extends StatelessWidget {
-  const HomeScreen({super.key, required this.controller});
+  const HomeScreen({
+    super.key,
+    required this.controller,
+    required this.progress,
+  });
   final GameController controller;
+  final LevelProgress progress;
 
   void _pick(BuildContext context, GameMode mode) {
     if (mode.hasRegionStep) {
@@ -38,26 +47,53 @@ class HomeScreen extends StatelessWidget {
     }
   }
 
+  void _openSeasons(BuildContext context) {
+    Navigator.of(context).push(
+      MaterialPageRoute(
+        builder: (_) =>
+            SeasonsScreen(repo: controller.repo, progress: progress),
+      ),
+    );
+  }
+
+  void _openAchievements(BuildContext context) {
+    Navigator.of(context).push(
+      MaterialPageRoute(
+        builder: (_) => AchievementsScreen(
+          controller: controller,
+          progress: progress,
+          repo: controller.repo,
+        ),
+      ),
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: SafeArea(
-        child: Center(
+        child: Align(
+          alignment: Alignment.topCenter,
           child: ConstrainedBox(
             constraints: const BoxConstraints(maxWidth: 420),
             child: SingleChildScrollView(
               padding: const EdgeInsets.symmetric(horizontal: 18, vertical: 22),
               child: Column(
                 children: [
-                  Align(
-                    alignment: Alignment.centerLeft,
-                    child: ListenableBuilder(
-                      listenable: SoundService.instance,
-                      builder: (context, _) => MuteStickerButton(
-                        muted: SoundService.instance.muted,
-                        onTap: SoundService.instance.toggleMute,
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      ListenableBuilder(
+                        listenable: SoundService.instance,
+                        builder: (context, _) => MuteStickerButton(
+                          muted: SoundService.instance.muted,
+                          onTap: SoundService.instance.toggleMute,
+                        ),
                       ),
-                    ),
+                      _AchievementsButton(
+                        onTap: () => _openAchievements(context),
+                      ),
+                    ],
                   ),
                   const SizedBox(height: 4),
                   Text('مارکوپولو', style: AppTheme.handSize(38)),
@@ -71,6 +107,8 @@ class HomeScreen extends StatelessWidget {
                     ),
                   ),
                   const SizedBox(height: 24),
+                  _LevelsCard(onTap: () => _openSeasons(context)),
+                  const SizedBox(height: 16),
                   ListenableBuilder(
                     listenable: controller,
                     builder: (context, _) => GridView.count(
@@ -84,7 +122,6 @@ class HomeScreen extends StatelessWidget {
                         for (final mode in GameMode.values)
                           _ModeCard(
                             mode: mode,
-                            record: controller.recordFor(mode),
                             onTap: () => _pick(context, mode),
                           ),
                       ],
@@ -101,14 +138,55 @@ class HomeScreen extends StatelessWidget {
   }
 }
 
+/// Full-width entry into the levels ("مراحل") game mode, below the mode grid.
+class _LevelsCard extends StatelessWidget {
+  const _LevelsCard({required this.onTap});
+  final VoidCallback onTap;
+
+  @override
+  Widget build(BuildContext context) {
+    return StickerCard(
+      onTap: onTap,
+      background: AppColors.highlight,
+      borderWidth: 1.8,
+      padding: const EdgeInsets.symmetric(vertical: 16, horizontal: 16),
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          const Text('🧩', style: TextStyle(fontSize: 28)),
+          const SizedBox(width: 12),
+          Text('مراحل', style: AppTheme.handSize(26)),
+        ],
+      ),
+    );
+  }
+}
+
+/// Trophy button in the home header that opens the achievements screen.
+class _AchievementsButton extends StatelessWidget {
+  const _AchievementsButton({required this.onTap});
+  final VoidCallback onTap;
+
+  @override
+  Widget build(BuildContext context) {
+    return PressSink(
+      onTap: onTap,
+      shape: BoxShape.circle,
+      borderWidth: 1.8,
+      width: 44,
+      height: 44,
+      alignment: Alignment.center,
+      child: const Text('🏆', style: TextStyle(fontSize: 20)),
+    );
+  }
+}
+
 class _ModeCard extends StatelessWidget {
   const _ModeCard({
     required this.mode,
-    required this.record,
     required this.onTap,
   });
   final GameMode mode;
-  final int record;
   final VoidCallback onTap;
 
   String get _emoji => switch (mode) {
@@ -121,61 +199,16 @@ class _ModeCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // Post-it "page marker" tab pokes out the top-right, sitting *behind* the
-    // card so it reads like a bookmark stuck to the back of the sticker.
-    const tabHeight = 26.0;
-    return Stack(
-      clipBehavior: Clip.none,
-      fit: StackFit.expand,
-      children: [
-        // Tab — painted first so the card overlaps its lower edge.
-        Positioned(top: 0, right: 12, child: _RecordTab(record: record)),
-        // Card fills the grid cell below the tab.
-        Positioned.fill(
-          top: tabHeight - 6,
-          child: StickerCard(
-            onTap: onTap,
-            padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 12),
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Text(_emoji, style: const TextStyle(fontSize: 34)),
-                const SizedBox(height: 10),
-                Text(mode.titleFa, style: AppTheme.handSize(24)),
-              ],
-            ),
-          ),
-        ),
-      ],
-    );
-  }
-}
-
-/// Small post-it tab showing the record number, tucked behind a [_ModeCard].
-class _RecordTab extends StatelessWidget {
-  const _RecordTab({required this.record});
-  final int record;
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      // extra bottom padding tucks under the card's top edge
-      padding: const EdgeInsets.fromLTRB(10, 3, 10, 12),
-      decoration: BoxDecoration(
-        color: AppColors.postit,
-        border: Border.all(color: AppColors.postitBorder, width: 1.6),
-        borderRadius: const BorderRadius.only(
-          topLeft: Radius.circular(5),
-          topRight: Radius.circular(5),
-        ),
-      ),
-      child: Text(
-        toPersianDigits(record),
-        style: const TextStyle(
-          fontFamily: AppTheme.sans,
-          fontSize: 12,
-          color: AppColors.ink,
-        ),
+    return StickerCard(
+      onTap: onTap,
+      padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 12),
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          Text(_emoji, style: const TextStyle(fontSize: 34)),
+          const SizedBox(height: 10),
+          Text(mode.titleFa, style: AppTheme.handSize(24)),
+        ],
       ),
     );
   }

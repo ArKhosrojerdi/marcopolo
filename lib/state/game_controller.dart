@@ -20,6 +20,10 @@ class GameController extends ChangeNotifier {
   final QuizRepository _repo;
   final SharedPreferences _prefs;
 
+  /// The shared question source, exposed so the levels mode can draw from the
+  /// same pool/generators without a second repository instance.
+  QuizRepository get repo => _repo;
+
   /// Per-category record key. Each [GameMode] keeps its own best streak.
   static String _recordKey(GameMode mode) => 'streak_record_${mode.name}';
 

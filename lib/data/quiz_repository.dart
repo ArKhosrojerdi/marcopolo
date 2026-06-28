@@ -1,5 +1,6 @@
 import 'dart:math';
 import 'country.dart';
+import 'flag_colors.dart';
 
 enum GameMode { flag, currency, map, capital, neighbor }
 
@@ -11,10 +12,8 @@ String stripSpaces(String s) => s.replaceAll(RegExp(r'[‌ ً-ٟ]'), '');
 
 /// Normalize Persian letter variants before comparison:
 /// آ→ا  ئ→ی  ؤ→و
-String normalizeAnswer(String s) => s
-    .replaceAll('آ', 'ا')
-    .replaceAll('ئ', 'ی')
-    .replaceAll('ؤ', 'و');
+String normalizeAnswer(String s) =>
+    s.replaceAll('آ', 'ا').replaceAll('ئ', 'ی').replaceAll('ؤ', 'و');
 
 /// Direction for the capital mode: show the country and ask its capital, or
 /// show the capital and ask which country it belongs to.
@@ -22,12 +21,12 @@ enum CapitalDirection { countryToCapital, capitalToCountry }
 
 extension GameModeInfo on GameMode {
   String get titleFa => switch (this) {
-        GameMode.flag => 'پرچم',
-        GameMode.currency => 'واحد پول',
-        GameMode.map => 'نقشه کشور',
-        GameMode.capital => 'پایتخت',
-        GameMode.neighbor => 'همسایه‌ها',
-      };
+    GameMode.flag => 'پرچم',
+    GameMode.currency => 'واحد پول',
+    GameMode.map => 'نقشه کشور',
+    GameMode.capital => 'پایتخت',
+    GameMode.neighbor => 'همسایه‌ها',
+  };
 
   /// Whether this mode has a region (continent) selection step. Flag + map +
   /// neighbor.
@@ -57,6 +56,11 @@ class Question {
   /// [answer]). Empty for every other question.
   final List<String> neighborLabels;
 
+  /// When set, this exact text is used as the prompt instead of the mode-derived
+  /// [promptFa]. Used by attribute questions (e.g. color levels) whose prompt
+  /// doesn't fit the per-mode template.
+  final String? promptOverride;
+
   const Question({
     required this.mode,
     required this.answer,
@@ -65,19 +69,24 @@ class Question {
     required this.correctAnswer,
     this.direction,
     this.neighborLabels = const [],
+    this.promptOverride,
   });
 
   /// Prompt line shown above the options.
-  String get promptFa => switch (mode) {
+  String get promptFa =>
+      promptOverride ??
+      switch (mode) {
         GameMode.flag => 'این پرچم برای کدام کشور است؟',
         GameMode.currency => 'واحد پولِ ${answer.fa} کدام است؟',
-        GameMode.capital => direction == CapitalDirection.capitalToCountry
-            ? 'پایتختِ ${answer.capitalFa.isNotEmpty ? answer.capitalFa : answer.capital} مربوط به کدام کشور است؟'
-            : 'پایتختِ ${answer.fa} کدام است؟',
+        GameMode.capital =>
+          direction == CapitalDirection.capitalToCountry
+              ? 'پایتختِ ${answer.capitalFa.isNotEmpty ? answer.capitalFa : answer.capital} مربوط به کدام کشور است؟'
+              : 'پایتختِ ${answer.fa} کدام است؟',
         GameMode.map => 'این کدام کشور است؟',
-        GameMode.neighbor => neighborLabels.isNotEmpty
-            ? 'این‌ها همسایه‌های کدام کشورند؟'
-            : 'کدام کشور همسایهٔ ${answer.fa} نیست؟',
+        GameMode.neighbor =>
+          neighborLabels.isNotEmpty
+              ? 'این‌ها همسایه‌های کدام کشورند؟'
+              : 'کدام کشور همسایهٔ ${answer.fa} نیست؟',
       };
 }
 
@@ -129,13 +138,17 @@ class QuizRepository {
     Set<String>? exclude,
     CapitalDirection direction = CapitalDirection.countryToCapital,
     GameDifficulty difficulty = GameDifficulty.normal,
+    Random? rng,
   }) {
+    // [rng] lets a caller make the draw deterministic (e.g. a fixed per-level
+    // question set). Falls back to the shared instance RNG for endless play.
+    final r = rng ?? _rng;
     final pool = _pool(mode, region);
     final remaining = exclude == null
         ? pool
         : pool.where((c) => !exclude.contains(c.code)).toList();
     if (remaining.isEmpty) return null;
-    final answer = remaining[_rng.nextInt(remaining.length)];
+    final answer = remaining[r.nextInt(remaining.length)];
 
     if (mode == GameMode.neighbor) {
       return difficulty == GameDifficulty.hard
@@ -147,7 +160,7 @@ class QuizRepository {
     final correctLabel = _label(mode, answer, direction);
     final used = <String>{correctLabel};
     final distractors = <Country>[];
-    final shuffled = [...pool]..shuffle(_rng);
+    final shuffled = [...pool]..shuffle(r);
     for (final c in shuffled) {
       if (distractors.length == 3) break;
       if (c.code == answer.code) continue;
@@ -157,7 +170,7 @@ class QuizRepository {
       distractors.add(c);
     }
 
-    final all = [answer, ...distractors]..shuffle(_rng);
+    final all = [answer, ...distractors]..shuffle(r);
     final options = all.map((c) => _label(mode, c, direction)).toList();
     return Question(
       mode: mode,
@@ -169,17 +182,54 @@ class QuizRepository {
     );
   }
 
+  /// Builds a flag-color question (normal-difficulty flag level): "which country
+  /// has a given color in its flag?" — the answer is a country whose flag
+  /// contains the color, the three distractors are countries whose flags do NOT.
+  ///
+  /// Draws only from countries present in the [kFlagColors] stub data, and skips
+  /// any whose code is in [exclude]. Returns null when there isn't a color with
+  /// both ≥1 matching and ≥3 non-matching countries available.
+  Question? colorQuestion({Set<String>? exclude, Random? rng}) {
+    final r = rng ?? _rng;
+    final pool = _data.all
+        .where((c) => kFlagColors.containsKey(c.code))
+        .where((c) => exclude == null || !exclude.contains(c.code))
+        .toList();
+    if (pool.length < 4) return null;
+
+    final colors = [...FlagColor.values]..shuffle(r);
+    for (final color in colors) {
+      final have = pool.where((c) => flagHasColor(c.code, color)).toList();
+      final lack = pool.where((c) => !flagHasColor(c.code, color)).toList();
+      if (have.isEmpty || lack.length < 3) continue;
+
+      final answer = have[r.nextInt(have.length)];
+      final distractors = ([...lack]..shuffle(r)).take(3).toList();
+      final all = [answer, ...distractors]..shuffle(r);
+      return Question(
+        mode: GameMode.flag,
+        answer: answer,
+        options: all.map((c) => c.fa).toList(),
+        correctIndex: all.indexWhere((c) => c.code == answer.code),
+        correctAnswer: answer.fa,
+        promptOverride: 'کدام کشور رنگ ${color.fa} در پرچمش دارد؟',
+      );
+    }
+    return null;
+  }
+
   /// Builds an "odd one out" neighbor question: three real neighbors of
   /// [answer] plus one country that does NOT border it. The non-neighbor is the
   /// correct choice. Non-neighbor is drawn from the same region when possible so
   /// it stays plausible, falling back to the whole world otherwise.
   Question _nextNeighbor(Country answer) {
     // three real neighbors, distinct labels
-    final neighbors = answer.borders
-        .map((code) => _byCode[code])
-        .whereType<Country>()
-        .toList()
-      ..shuffle(_rng);
+    final neighbors =
+        answer.borders
+            .map((code) => _byCode[code])
+            .whereType<Country>()
+            .toList()
+          ..shuffle(_rng);
     final usedLabels = <String>{};
     final picked = <Country>[];
     for (final n in neighbors) {
@@ -192,8 +242,9 @@ class QuizRepository {
     final excluded = {answer.code, ...answer.borders};
     bool eligible(Country c) =>
         !excluded.contains(c.code) && !usedLabels.contains(c.fa);
-    final sameRegion =
-        _data.all.where((c) => eligible(c) && c.region == answer.region).toList();
+    final sameRegion = _data.all
+        .where((c) => eligible(c) && c.region == answer.region)
+        .toList();
     final candidates = sameRegion.isNotEmpty
         ? sameRegion
         : _data.all.where(eligible).toList();
@@ -225,10 +276,11 @@ class QuizRepository {
     final used = <String>{answer.fa, ...neighborLabels};
     bool eligible(Country c) =>
         !excludedCodes.contains(c.code) && !used.contains(c.fa);
-    final sameRegion = _data.all
-        .where((c) => eligible(c) && c.region == answer.region)
-        .toList()
-      ..shuffle(_rng);
+    final sameRegion =
+        _data.all
+            .where((c) => eligible(c) && c.region == answer.region)
+            .toList()
+          ..shuffle(_rng);
     final rest = _data.all.where(eligible).toList()..shuffle(_rng);
     final distractors = <Country>[];
     for (final c in [...sameRegion, ...rest]) {
@@ -252,9 +304,11 @@ class QuizRepository {
   String _label(GameMode mode, Country c, CapitalDirection direction) =>
       switch (mode) {
         GameMode.flag || GameMode.map || GameMode.neighbor => c.fa,
-        GameMode.currency => c.currencyFa.isNotEmpty ? c.currencyFa : c.currencyName,
-        GameMode.capital => direction == CapitalDirection.capitalToCountry
-            ? c.fa
-            : (c.capitalFa.isNotEmpty ? c.capitalFa : c.capital),
+        GameMode.currency =>
+          c.currencyFa.isNotEmpty ? c.currencyFa : c.currencyName,
+        GameMode.capital =>
+          direction == CapitalDirection.capitalToCountry
+              ? c.fa
+              : (c.capitalFa.isNotEmpty ? c.capitalFa : c.capital),
       };
 }

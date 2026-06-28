@@ -14,6 +14,19 @@ class QuizPrompt extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    // Attribute questions (e.g. color levels) carry their own prompt text and
+    // have no image to show — render the override as a framed text panel.
+    if (question.promptOverride != null) {
+      return Panel(
+        children: [
+          Text(
+            question.promptOverride!,
+            textAlign: TextAlign.center,
+            style: AppTheme.handSize(28),
+          ),
+        ],
+      );
+    }
     switch (question.mode) {
       case GameMode.flag:
         return FlagImage(assetPath: question.answer.flagAsset);

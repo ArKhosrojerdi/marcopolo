@@ -5,6 +5,7 @@ import 'data/country.dart';
 import 'data/quiz_repository.dart';
 import 'state/ad_service.dart';
 import 'state/game_controller.dart';
+import 'state/level_progress.dart';
 import 'screens/home_screen.dart';
 import 'theme/app_theme.dart';
 
@@ -14,12 +15,18 @@ Future<void> main() async {
   final data = await CountryData.load();
   final prefs = await SharedPreferences.getInstance();
   final controller = GameController(QuizRepository(data), prefs);
-  runApp(CountryQuizApp(controller: controller));
+  final progress = LevelProgress(prefs);
+  runApp(CountryQuizApp(controller: controller, progress: progress));
 }
 
 class CountryQuizApp extends StatelessWidget {
-  const CountryQuizApp({super.key, required this.controller});
+  const CountryQuizApp({
+    super.key,
+    required this.controller,
+    required this.progress,
+  });
   final GameController controller;
+  final LevelProgress progress;
 
   @override
   Widget build(BuildContext context) {
@@ -31,7 +38,7 @@ class CountryQuizApp extends StatelessWidget {
       // Force RTL for the whole app.
       builder: (context, child) =>
           Directionality(textDirection: TextDirection.rtl, child: child!),
-      home: HomeScreen(controller: controller),
+      home: HomeScreen(controller: controller, progress: progress),
     );
   }
 }
